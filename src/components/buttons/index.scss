@@ -1,0 +1,53 @@
+.pal-button-container {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.primary {
+  background-color: #5851ff;
+  box-shadow: rgb(2 8 20 / 10%) 0px 2px 4px 0px,
+    rgb(2 8 20 / 8%) 0px 1px 2px 0px;
+  color: #ffffff;
+  &:hover {
+    box-shadow: 1px 4px 10px -1px #5851ff;
+  }
+}
+.secondary {
+  background-color: #ffffff;
+  box-shadow: rgb(2 8 20 / 10%) 0px 2px 4px 0px,
+    rgb(2 8 20 / 8%) 0px 1px 2px 0px;
+  &:hover {
+    box-shadow: 1px 4px 10px -1px #ccc;
+  }
+}
+
+.mini {
+  height: 18px;
+  font-size: 12px;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.small {
+  font-size: 14px;
+  padding: 12px 20px;
+  height: 40px;
+}
+
+.large {
+  font-size: 16px;
+  padding: 20px 24px;
+}
+.uppercase {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.56px;
+}
