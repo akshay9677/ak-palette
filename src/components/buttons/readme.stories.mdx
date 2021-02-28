@@ -1,0 +1,103 @@
+import { Meta, Story } from "@storybook/addon-docs/blocks";
+import Button from "./Button.tsx";
+
+<Meta title="Palette Button" />
+
+# Palette Button
+
+Button Component is use to render a button in the user interface, that can perform tasks when clicked
+
+## Appearance
+
+The Palette Button component has two `appearance`
+
+- `primary`
+- `secondary`
+
+<Story name="Palette Button">
+  <div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
+    <span style={{ paddingRight: "10px" }}>
+      <Button onClick={() => alert("hello")}>Primary Button</Button>
+    </span>
+    <Button appearance="secondary" onClick={() => alert("hello")}>
+      Secondary Button
+    </Button>
+  </div>
+</Story>
+
+#### Code
+
+```jsx
+// primary button
+<Button onClick={() => alert("hello")}>Primary Button</Button>;
+// secondary button
+<Button appearance="secondary" onClick={() => alert("hello")}>
+  Secondary Button
+</Button>;
+```
+
+## Sizes
+
+By default the Button Component has a size of `small`. The Palette Button component has three `size` variants
+
+- `mini`
+- `small`
+- `large`
+
+<Story name="Button Sizes">
+  <div
+    style={{
+      display: "flex",
+      alignItems: "center",
+      paddingBottom: "25px",
+      paddingTop: "10px",
+    }}
+  >
+    <span style={{ paddingRight: "10px" }}>
+      <Button size="mini">Mini Button</Button>
+    </span>
+    <span style={{ paddingRight: "10px" }}>
+      <Button size="small">Small Button</Button>
+    </span>
+    <span style={{ paddingRight: "10px" }}>
+      <Button size="large">Large Button</Button>
+    </span>
+  </div>
+</Story>
+
+#### Code
+
+```jsx
+// mini button
+      <Button size="mini">Mini Button</Button>
+// small button
+      <Button size="small">Small Button</Button>
+// large button
+      <Button size="large">Large Button</Button>
+```
+
+## Disabled button
+
+The `disabled` prop is used to render a disabled button in the user interface
+
+<Story name="Disabled button">
+  <div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
+    <span style={{ paddingRight: "10px" }}>
+      <Button disabled>Disabled Button</Button>
+    </span>
+    <Button disabled appearance="secondary">
+      Disabled Button
+    </Button>
+  </div>
+</Story>
+
+## Properties
+
+|    Prop    |   Type    |         Possible values          | Default Value |
+| :--------: | :-------: | :------------------------------: | :-----------: |
+| appearance | `string`  |   `"primary"`and`"secondary"`    |  `"primary"`  |
+|    size    | `string`  | `"mini"`,`"small"` and `"large"` |   `"small"`   |
+| uppercase  | `boolean` |        `true` and `false`        |    `false`    |
+|  disabled  | `boolean` |        `true` and `false`        |    `false`    |
+
+Built by Akshay 🤙

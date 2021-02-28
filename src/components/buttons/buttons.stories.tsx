@@ -1,36 +1,53 @@
-import * as React from "react";
-import { storiesOf } from "@storybook/react";
+import React from "react";
+// also exported from '@storybook/react' if you can deal with breaking changes in 6.1
+import { Story, Meta } from "@storybook/react/types-6-0";
+
 import Button from "./Button";
 
-storiesOf("Button", module)
-  .add("Primary Button", () => <Button appearance="primary" onClick={()=>alert('hello')}>New Record</Button>)
-  .add("Secondary Button", () => (
-    <Button appearance="secondary">Click Me</Button>
-  ))
-  .add("Mini button", () => (
-	  <div style={{display:'flex',justifyContent:'space-around'}}>
-    <Button appearance="primary" size='mini'>Click Me</Button>
-    <Button appearance="secondary" size='mini'>Click Me</Button>
-	</div>
-  ))
-  .add("Large button", () => (
-	  <div style={{display:'flex',justifyContent:'space-around'}}>
-    <Button appearance="primary" size='large'>New Record</Button>
-    <Button appearance="secondary" size='large'>New Record</Button>
-	</div>
-  ))
+export default {
+  title: "Example/Buttons",
+  component: Button,
+  argTypes: {
+    backgroundColor: { control: "color" },
+  },
+} as Meta;
 
-  .add("Uppercase", () => (
-	  <div>
-	<div style={{display:'flex',justifyContent:'space-around',padding:'20px'}}>
-  <Button appearance="primary" uppercase size='mini'>New Record</Button>
-  <Button appearance="primary" uppercase >New Record</Button>
-  <Button appearance="primary" uppercase size='large'>New Record</Button>
-  </div>
-	<div style={{display:'flex',justifyContent:'space-around',padding:'20px'}}>
-  <Button appearance="secondary" uppercase size='mini'>New Record</Button>
-  <Button appearance="secondary" uppercase >New Record</Button>
-  <Button appearance="secondary" uppercase size='large'>New Record</Button>
-  </div>
-  </div>
-))
+const Template: Story = (args) => (
+  <Button
+    appearance={args.appearance}
+    size={args.size}
+    onClick={() => alert("hello")}
+    uppercase={args.uppercase}
+    disabled={args.disabled}
+  >
+    {args.label}
+  </Button>
+);
+
+export const Primary = Template.bind({});
+Primary.args = {
+  label: "Button",
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  appearance: "secondary",
+  label: "Button",
+};
+
+export const Mini = Template.bind({});
+Mini.args = {
+  size: "mini",
+  label: "Button",
+};
+
+export const Small = Template.bind({});
+Small.args = {
+  label: "Button",
+};
+
+export const Large = Template.bind({});
+Large.args = {
+  size: "large",
+  label: "Button",
+};

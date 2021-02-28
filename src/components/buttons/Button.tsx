@@ -2,12 +2,13 @@ import React from "react";
 import "./index.scss";
 
 type ButtonProps = {
-  children: React.ReactNode
-  appearance?: string | undefined
-  size?:string | undefined
-  uppercase?:boolean
-  onClick?:()=> void,
-}
+  children: React.ReactNode;
+  appearance?: "primary" | "secondary";
+  size?: "mini" | "small" | "large";
+  uppercase?: boolean;
+  onClick?: () => void;
+  disabled?: boolean;
+};
 
 const Button: React.FC<ButtonProps> = ({
   children,
@@ -15,19 +16,25 @@ const Button: React.FC<ButtonProps> = ({
   size,
   uppercase,
   onClick,
+  disabled,
   ...rest
 }): JSX.Element => {
   return (
-    <button
-    onClick={onClick}
-      className={`pal-button-container 
-    ${appearance ?  appearance  : "primary"}
-     ${size ? size : 'small'} 
-     ${uppercase ? 'uppercase' : ''}`}
-     {...rest}
-    >
-      {children}
-    </button>
+    <div className="pal-button">
+      <button
+        onClick={() => {
+          if (!disabled && onClick) onClick();
+        }}
+        className={`pal-button-container 
+    ${appearance ? appearance : "primary"}
+     ${size ? size : "small"} 
+     ${uppercase ? "uppercase" : ""}
+     ${disabled && "disabled"}`}
+        {...rest}
+      >
+        {children}
+      </button>
+    </div>
   );
 };
 
