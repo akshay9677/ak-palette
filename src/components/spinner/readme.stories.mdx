@@ -1,0 +1,100 @@
+import { Meta, Story } from "@storybook/addon-docs/blocks";
+import Spinner from "./Spinner.tsx";
+
+<Meta title="Palette Spinner" />
+
+# Palette Spinner
+
+Palette Spinner component is use to render a spinner in the user interface, this mainly acts as a loading indicator while performing asynchronous tasks
+
+## Default Spinner
+
+By default Palette Spinner renders a spinner with size `default` and color `#5851ff`
+
+<Story name="Spinner">
+  <div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
+    <Spinner />
+  </div>
+</Story>
+
+#### Code
+
+```jsx
+<Spinner />
+```
+
+## Size
+
+By default the Spinner Component has a size of `default`. The Palette Button component has four `size` variants
+
+- `small`
+- `default`
+- `medium`
+- `large`
+
+<Story name="Sizes">
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "space-around",
+      paddingBottom: "25px",
+      paddingTop: "10px",
+      width: "50%",
+    }}
+  >
+    <Spinner size="small" />
+    <Spinner size="default" />
+    <Spinner size="medium" />
+    <Spinner size="large" />
+  </div>
+</Story>
+
+#### Code
+
+```jsx
+<Spinner size="small" />
+<Spinner size="default" />
+<Spinner size="medium" />
+<Spinner size="large" />
+```
+
+## Color
+
+By default the Spinner Component has a color of `#5851ff`. The Palette Spinner component has a color prop which accepts a string value which can accept the color for the spinner component
+
+<Story name="Colors">
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "space-around",
+      paddingBottom: "25px",
+      paddingTop: "10px",
+      width: "50%",
+    }}
+  >
+    <Spinner size="large" color="green" />
+    <Spinner size="large" color="brown" />
+    <Spinner size="large" color="red" />
+    <Spinner size="large" color="blue" />
+  </div>
+</Story>
+
+#### Code
+
+```jsx
+<Spinner size="large" color="green" />
+<Spinner size="large" color="brown" />
+<Spinner size="large" color="red" />
+<Spinner size="large" color="blue" />
+```
+
+## Properties
+
+| Prop  |   Type   |                Possible values                 | Default Value |
+| :---: | :------: | :--------------------------------------------: | :-----------: |
+| size  | `string` | `"small"`,`"default"`,`"medium"` and `"large"` |  `"default"`  |
+| color | `string` |   Any string with color accepted valuevalue    |     `""`      |
+
+Built by Akshay 🤙

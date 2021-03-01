@@ -11,7 +11,7 @@ const sizeHash = {
   small: 12,
   default: 20,
   medium: 24,
-  large: 32,
+  large: 36,
 };
 
 const Spinner: React.FC<SpinnerProps> = ({
