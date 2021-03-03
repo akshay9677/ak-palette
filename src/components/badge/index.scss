@@ -1,0 +1,10 @@
+@import "../../assets/main.scss";
+.pal-badge {
+  font-family: $pal-font-family;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 6px;
+  border-radius: 3px;
+  line-height: 1.5;
+  display: flex;
+}

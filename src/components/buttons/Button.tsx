@@ -8,6 +8,7 @@ type ButtonProps = {
   uppercase?: boolean;
   onClick?: () => void;
   disabled?: boolean;
+  color?: string;
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -17,6 +18,7 @@ const Button: React.FC<ButtonProps> = ({
   uppercase,
   onClick,
   disabled,
+  color,
   ...rest
 }): JSX.Element => {
   return (
@@ -30,6 +32,13 @@ const Button: React.FC<ButtonProps> = ({
      ${size ? size : "small"} 
      ${uppercase ? "uppercase" : ""}
      ${disabled && "disabled"}`}
+        style={
+          color
+            ? !appearance || appearance === "primary"
+              ? { backgroundColor: `${color}` }
+              : { color: `${color}` }
+            : {}
+        }
         {...rest}
       >
         {children}

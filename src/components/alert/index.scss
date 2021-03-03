@@ -1,0 +1,41 @@
+@import "../../assets/main.scss";
+.pal-alert-container {
+  font-family: $pal-font-family;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  line-height: 1.5;
+  display: inline-flex;
+  background-color: $pal-secondary;
+  box-shadow: rgb(2 8 20 / 10%) 0px 2px 4px 0px,
+    rgb(2 8 20 / 8%) 0px 1px 2px 0px;
+  min-width: 25rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pal-alert-main {
+  display: flex;
+  align-items: center;
+}
+
+.pal-alert-secondary-container {
+  cursor: pointer;
+  padding: 0px 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.pal-alert-header {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.pal-alert-primary-icon {
+  font-size: 20px;
+  padding-right: 12px;
+}

@@ -1,7 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Button from './components/buttons/Button'
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Button from "./components/buttons/Button";
 
 function App() {
   return (
@@ -15,5 +15,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

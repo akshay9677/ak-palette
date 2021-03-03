@@ -1,0 +1,81 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import Badge from "./Badge.tsx";
+
+<Meta title="Palette/ Badge" />
+
+# Badge
+
+`Badge` component is used to render a badge in the user interface this can be used as a `status indicator`
+
+## Usage
+
+<div
+  style={{
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    paddingBottom: "25px",
+    paddingTop: "10px",
+    width: "50%",
+  }}
+>
+  <Badge label="Trial" color="purple" />
+  <Badge label="Success" color="green" />
+  <Badge label="Danger" color="red" />
+  <Badge label="Warning" color="yellow" />
+  <Badge label="Information" color="blue" />
+  <Badge label="Default" color="default" />
+</div>
+
+#### Code
+
+```jsx
+
+<Badge label="Trial" color="purple" />
+<Badge label="Success" color="green" />
+<Badge label="Danger" color="red" />
+<Badge label="Warning" color="yellow" />
+<Badge label="Information" color="blue" />
+<Badge label="Default" color="default" />
+
+```
+
+## When to use
+
+These badges are indicators they denote the status of somenthing, here are some examples on when to use them.
+
+<div style={{ display: "flex", flexDirection: "column" }}>
+  <div style={{ paddingTop: "10px", display: "flex" }}>
+    <Badge label="Trial" color="purple" />
+    <span style={{ paddingLeft: "10px" }}>- Trial, new, help</span>
+  </div>
+  <div style={{ paddingTop: "10px", display: "flex" }}>
+    <Badge label="Success" color="green" />
+    <span style={{ paddingLeft: "10px" }}>- Success, completed, resolved</span>
+  </div>
+  <div style={{ paddingTop: "10px", display: "flex" }}>
+    <Badge label="Danger" color="red" />
+    <span style={{ paddingLeft: "10px" }}>- Danger, rejected, issue</span>
+  </div>
+  <div style={{ paddingTop: "10px", display: "flex" }}>
+    <Badge label="Warning" color="yellow" />
+    <span style={{ paddingLeft: "10px" }}>- Warning, alert, attention</span>
+  </div>
+  <div style={{ paddingTop: "10px", display: "flex" }}>
+    <Badge label="Information" color="blue" />
+    <span style={{ paddingLeft: "10px" }}>- Information, note, tip</span>
+  </div>
+  <div style={{ paddingTop: "10px", display: "flex" }}>
+    <Badge label="Default" color="default" />
+    <span style={{ paddingLeft: "10px" }}>- Beta, default, disabled</span>
+  </div>
+</div>
+
+## API
+
+| Prop  |   Type   |                           Possible values                            | Default Value |
+| :---: | :------: | :------------------------------------------------------------------: | :-----------: |
+| color | `string` | `"green"`, `"red"`, `"blue"`, `"yellow"`, `"purple"` and `"default"` |   `default`   |
+| label | `string` |                              Any string                              |     `""`      |
+
+Built by Akshay 🤙

@@ -1,0 +1,129 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import Alert from "./Alert.tsx";
+
+<Meta title="Palette/ Alert" />
+
+# Alert
+
+The alert component is used to give feedback to the user based on some action. These alerts can also act as
+response handler for some specific activity
+
+## Usage
+
+The Alert component has 5 display type which can be mentioned using the `type` prop. By default the alert has `default` as its
+value. The alert component also has a label prop which is used to render the main text of the response
+
+- `default`
+- `success`
+- `info`
+- `warning`
+- `danger`
+
+  <div style={{ padding: "20px 0px" }}>
+    <div style={{ padding: "10px 0px" }}>
+      <Alert type="default" label="This is a sample alert" />
+    </div>
+    <div style={{ padding: "10px 0px" }}>
+      <Alert type="success" label="This is a sample alert" />
+    </div>
+    <div style={{ padding: "10px 0px" }}>
+      <Alert type="info" label="This is a sample alert" />
+    </div>
+    <div style={{ padding: "10px 0px" }}>
+      <Alert type="warning" label="This is a sample alert" />
+    </div>
+    <div style={{ padding: "10px 0px" }}>
+      <Alert type="danger" label="This is a sample alert" />
+    </div>
+  </div>
+
+#### Code
+
+```jsx
+<Alert type="default" label="This is a sample alert" />
+<Alert type="success" label="This is a sample alert" />
+<Alert type="info" label="This is a sample alert" />
+<Alert type="warning" label="This is a sample alert" />
+<Alert type="danger" label="This is a sample alert" />
+
+```
+
+## Title
+
+Alert component also has a optional `title` prop which renders a title for the alert
+
+<div style={{ padding: "30px 0px" }}>
+  <Alert
+    type="success"
+    title="Response Title"
+    label="This is the label of this sample alert"
+  />
+</div>
+
+```jsx
+<Alert
+  type="success"
+  title="Response Title"
+  label="This is the label of this sample alert"
+/>
+```
+
+## Close Icon
+
+Alert component also has a `onClose` prop which is triggered when the close icon is clicked. This is can be used if this alert component is used as a
+toaster to show toast message and then, if you want to hide it you can use this prop.
+
+<div style={{ padding: "30px 0px" }}>
+  <Alert
+    type="warning"
+    label="Click the close icon"
+    onClose={() => alert("close is clicked")}
+  />
+</div>
+
+```jsx
+<Alert
+  type="warning"
+  label="Click the close icon"
+  onClose={() => alert("close is clicked")}
+/>
+```
+
+## Loading
+
+The alert component has a loading prop which shows a loading icon. This also acts as a loading indicator to the user, indicating that
+the requested activity is in progress.
+
+{" "}
+
+<div style={{ padding: "30px 0px" }}>
+  <Alert
+    type="info"
+    title="In Progress"
+    label="Your request is in progress"
+    showLoading={true}
+  />
+</div>
+
+```jsx
+<Alert
+  type="info"
+  title="In Progress"
+  label="Please wait, the request you made is taking some time..."
+  showLoading={true}
+/>
+```
+
+## API
+
+|    Prop     |     Type     |                           Possible values                            | Default Value |
+| :---------: | :----------: | :------------------------------------------------------------------: | :-----------: |
+|    color    |   `string`   | `"green"`, `"red"`, `"blue"`, `"yellow"`, `"purple"` and `"default"` |   `default`   |
+|    label    |   `string`   |                              Any string                              |       -       |
+|    title    |   `string`   |                              Any string                              |     `""`      |
+| showLoading |  `boolean`   |                           `true` & `false`                           |    `false`    |
+|   onClose   | `() => void` |                                  -                                   |       -       |
+
+To check on when to use which check [Badge](?path=/docs/palette-badge--when-to-use) component documentation
+
+Built by Akshay 🤙

@@ -1,0 +1,171 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import Button from "./Button.tsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRocket } from "@fortawesome/free-solid-svg-icons";
+
+<Meta title="Palette/ Button" />
+
+# Button
+
+Button Component is use to render a button in the user interface, that can perform tasks when clicked
+
+## Appearance
+
+The Palette Button component has two `appearance`
+
+- `primary`
+- `secondary`
+
+  <div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
+    <span style={{ paddingRight: "10px" }}>
+      <Button onClick={() => alert("hello")}>Primary Button</Button>
+    </span>
+    <Button appearance="secondary" onClick={() => alert("hello")}>
+      Secondary Button
+    </Button>
+  </div>
+
+## Sizes
+
+By default the Button Component has a size of `small`. The Palette Button component has three `size` variants
+
+- `mini`
+- `small`
+- `large`
+
+  <div
+    style={{
+      display: "flex",
+      alignItems: "center",
+      paddingBottom: "25px",
+      paddingTop: "10px",
+    }}
+  >
+    <span style={{ paddingRight: "10px" }}>
+      <Button size="mini">Mini Button</Button>
+    </span>
+    <span style={{ paddingRight: "10px" }}>
+      <Button size="small">Small Button</Button>
+    </span>
+    <span style={{ paddingRight: "10px" }}>
+      <Button size="large">Large Button</Button>
+    </span>
+  </div>
+
+#### Code
+
+```jsx
+// mini button
+<Button size="mini">Mini Button</Button>
+// small button
+<Button size="small">Small Button</Button>
+// large button
+<Button size="large">Large Button</Button>
+```
+
+## Color
+
+The Palette Button component has `color` prop which is used as the background color or the text color depending on the `appearance`
+prop.
+
+> - `appearance` - `primary` then `color` - `background-color`
+> - `appearance` - `secondary` then `color` - `text color`
+
+<div>
+  <div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
+    <span style={{ paddingRight: "10px" }}>
+      <Button onClick={() => alert("hello")} color="teal" appearance="primary">
+        Primary Button
+      </Button>
+    </span>
+    <Button appearance="secondary" onClick={() => alert("hello")} color="teal">
+      Secondary Button
+    </Button>
+  </div>
+  <div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
+    <span style={{ paddingRight: "10px" }}>
+      <Button onClick={() => alert("hello")} color="red">
+        Primary Button
+      </Button>
+    </span>
+    <Button appearance="secondary" onClick={() => alert("hello")} color="red">
+      Secondary Button
+    </Button>
+  </div>
+</div>
+
+#### Code
+
+```jsx
+<Button onClick={() => alert("hello")} color="teal" appearance="primary">
+  Primary Button
+</Button>
+<Button
+  appearance="secondary"
+  onClick={() => alert("hello")}
+  color="teal"
+>
+  Secondary Button
+</Button>
+<Button onClick={() => alert("hello")} color="red">
+  Primary Button
+</Button>
+<Button appearance="secondary" onClick={() => alert("hello")} color="red">
+  Secondary Button
+</Button>
+```
+
+## Icon buttons
+
+Since the child of the Button component is rendered as it is when can render icons easily
+
+<div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
+  <Button>
+    <span style={{ padding: "0px 10px 0px 0px", fontSize: "13px" }}>
+      <FontAwesomeIcon icon={faRocket} />
+    </span>
+    Send
+  </Button>
+</div>
+
+#### Code
+
+```jsx
+<Button>
+  <FontAwesomeIcon icon={faRocket} />
+  Send
+</Button>
+```
+
+## Disabled button
+
+The `disabled` prop is used to render a disabled button in the user interface
+
+<div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
+  <span style={{ paddingRight: "10px" }}>
+    <Button disabled>Disabled Button</Button>
+  </span>
+  <Button disabled appearance="secondary">
+    Disabled Button
+  </Button>
+</div>
+
+#### Code
+
+```jsx
+<Button disabled>Disabled Button</Button>
+<Button disabled appearance="secondary">Disabled Button</Button>
+```
+
+## API
+
+|    Prop    |    Type    |              Possible values              | Default Value |
+| :--------: | :--------: | :---------------------------------------: | :-----------: |
+| appearance |  `string`  |        `"primary"`and`"secondary"`        |  `"primary"`  |
+|    size    |  `string`  |     `"mini"`,`"small"` and `"large"`      |   `"small"`   |
+|   color    |  `string`  | Any string with color accepted valuevalue |     `""`      |
+| uppercase  | `boolean`  |            `true` and `false`             |    `false`    |
+|  disabled  | `boolean`  |            `true` and `false`             |    `false`    |
+|  onClick   | `()=>void` |                     -                     |       -       |
+
+Built by Akshay 🤙

@@ -19,6 +19,7 @@ const Template: Story = (args) => (
     onClick={() => alert("hello")}
     uppercase={args.uppercase}
     disabled={args.disabled}
+    color={args.color}
   >
     {args.label}
   </Button>

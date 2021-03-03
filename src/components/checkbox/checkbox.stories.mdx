@@ -1,0 +1,103 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import CheckBox from "./Checkbox.tsx";
+
+<Meta title="Palette/Checkbox" />
+
+# Checkbox
+
+Palette Component is use to render a checkbox input in the user interface.
+
+## Usage
+
+Checkbox component has a `checkbox` input field and a optional `label` which if mentioned is rendered in user interface
+
+<div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
+  <CheckBox
+    label="Checkbox"
+    checked={true}
+    onChange={(value) => console.log(`The value is ${value}`)}
+  />
+</div>
+
+#### Code
+
+```jsx
+// default checkbox
+ let React from 'react'
+
+ const MyComponent = () => {
+  const [checked, setChecked] = React.useState(false);
+  return (
+    <Checkbox
+      label="Checkbox"
+      checked={checked}
+      onChange={(value) => {
+        setChecked(value);
+        console.log(`The value is ${value}`)
+      }}
+    />
+  );
+};
+```
+
+## Default checked
+
+The starting value for a check box can also be mentioned in Palette Checkbox by providing a boolean value to the checked prop.
+
+> Note `checked` prop acts as only a starting value. The checked state is emitted by `onChange` prop
+
+<div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
+  <CheckBox
+    label="Checkbox"
+    checked={false}
+    onChange={(e) => console.log(`The value is ${e}`)}
+  />
+</div>
+
+#### Code
+
+```jsx
+// default checkbox
+ let React from 'react'
+
+ const MyComponent = () => {
+  const [checked, setChecked] = React.useState(true);
+  return (
+    <Checkbox
+      label="Checkbox"
+      checked={checked}
+      onChange={(value) => {
+        setChecked(value);
+      }}
+    />
+  );
+};
+```
+
+## Disabled Checkbox
+
+<div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
+  <CheckBox
+    label="Checkbox"
+    onChange={(e) => console.log(`The value is ${e}`)}
+    disabled
+  />
+</div>
+
+#### Code
+
+```jsx
+// default checkbox
+<CheckBox label="Checkbox" disabled />
+```
+
+## API
+
+|   Prop   |    Type    |  Possible values   | Default Value |
+| :------: | :--------: | :----------------: | :-----------: |
+|  label   |  `string`  |  Any String value  |     `""`      |
+| checked  | `boolean`  | `true` and `false` |    `false`    |
+| disabled | `boolean`  | `true` and `false` |    `false`    |
+| onChange | `function` |         --         |      --       |
+
+Built by Akshay 🤙

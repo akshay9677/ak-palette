@@ -9,9 +9,9 @@ interface SpinnerProps {
 
 const sizeHash = {
   small: 12,
-  default: 20,
-  medium: 24,
-  large: 36,
+  default: 24,
+  medium: 32,
+  large: 44,
 };
 
 const Spinner: React.FC<SpinnerProps> = ({
