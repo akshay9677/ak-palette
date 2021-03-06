@@ -94,8 +94,6 @@ toaster to show toast message and then, if you want to hide it you can use this 
 The alert component has a loading prop which shows a loading icon. This also acts as a loading indicator to the user, indicating that
 the requested activity is in progress.
 
-{" "}
-
 <div style={{ padding: "30px 0px" }}>
   <Alert
     type="info"
@@ -116,13 +114,13 @@ the requested activity is in progress.
 
 ## API
 
-|    Prop     |     Type     |                           Possible values                            | Default Value |
-| :---------: | :----------: | :------------------------------------------------------------------: | :-----------: |
-|    color    |   `string`   | `"green"`, `"red"`, `"blue"`, `"yellow"`, `"purple"` and `"default"` |   `default`   |
-|    label    |   `string`   |                              Any string                              |       -       |
-|    title    |   `string`   |                              Any string                              |     `""`      |
-| showLoading |  `boolean`   |                           `true` & `false`                           |    `false`    |
-|   onClose   | `() => void` |                                  -                                   |       -       |
+|    Prop     |     Type     |                        Possible values                         | Default Value |
+| :---------: | :----------: | :------------------------------------------------------------: | :-----------: |
+|    type     |   `string`   | `"default"`, `"success"`, `"info"`, `"danger"` and `"warning"` |   `default`   |
+|    label    |   `string`   |                           Any string                           |       -       |
+|    title    |   `string`   |                           Any string                           |     `""`      |
+| showLoading |  `boolean`   |                        `true` & `false`                        |    `false`    |
+|   onClose   | `() => void` |                               -                                |       -       |
 
 To check on when to use which check [Badge](?path=/docs/palette-badge--when-to-use) component documentation
 

@@ -1,0 +1,261 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+import toast from "./Toast";
+import Button from "../buttons/Button";
+
+<Meta title="Palette/ Toaster" />
+
+# Toaster
+
+The toaster component is used to render a toast message in the user interface. This acts as a response handler for some
+tasks done by the user.
+
+## Usage
+
+The toaster component has a toast method which can be use to render the toast message. It has five methods which differentiates
+the types of Alert messages
+
+- `toast.default()`
+- `toast.success()`
+- `toast.info()`
+- `toast.warning()`
+- `toast.danger()`
+
+Check out Alert component to know more about the types
+
+<div style={{ padding: "20px 0px" }}>
+  <Button onClick={() => toast.success("This is a sample alert from props")}>
+    Sample Toast
+  </Button>
+</div>
+
+#### Code
+
+```jsx
+<Button onClick={() => toast.success("This is a sample alert from props")}>
+  Sample Toast
+</Button>
+```
+
+> The toast component, when called renders only one toast message. If it is called n number of
+> times then the nth toast will only be displayed
+
+## Properties
+
+The toast method accepts a optional second argument which defines the properties for the toast methods
+
+#### Example
+
+Toaster has a title method which can be used to add a title to the Toast message
+
+<Button
+  onClick={() =>
+    toast.warning("This is a sample alert from props", { title: "Warning" })
+  }
+>
+  Toast with title
+</Button>
+
+#### Code
+
+```jsx
+<Button
+  onClick={() =>
+    toast.warning("This is a sample alert from props", { title: "Warning" })
+  }
+>
+  Toast with title
+</Button>
+```
+
+As you can see the toast has second argument with title key which is used to render the title for the toaster. The second argument for
+toast method can be used to give certain properties for the toaster component
+
+## Loading
+
+It is possible to add a loading for the toast method. By making a `showLoading` as `true` to the second argument
+
+<Button
+  onClick={() =>
+    toast.info("This is a sample alert from props", { showLoading: true })
+  }
+>
+  Loading
+</Button>
+
+#### Code
+
+```jsx
+<Button
+  onClick={() =>
+    toast.info("This is a sample alert from props", { showLoading: true })
+  }
+>
+  Loading
+</Button>
+```
+
+## Custom Duration
+
+We can add a custom duration to the toast method. By default the toast method has a duration of `5 seconds`. In the following
+example the toast component has a duration of `10 seconds`.
+
+<Button
+  onClick={() =>
+    toast.default("This is a sample alert from props", { duration: 10 })
+  }
+>
+  Custom Duration Toast
+</Button>
+
+#### Code
+
+```jsx
+<Button
+  onClick={() =>
+    toast.default("This is a sample alert from props", { duration: 10 })
+  }
+>
+  Custom Duration Toast
+</Button>
+```
+
+## Positions
+
+The position of the toast is also customizable, the second argument accepts an optional properties `horizontal` and `vertical`,
+which defines the position of the toast message
+
+<div
+  style={{
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    flexWrap: "wrap",
+  }}
+>
+  <div style={{ padding: "10px" }}>
+    <Button
+      onClick={() => toast.default("Top Left alert", { horizontal: "left" })}
+    >
+      Top-Left
+    </Button>
+  </div>
+  <div style={{ padding: "10px" }}>
+    <Button onClick={() => toast.default("Top center alert (default)")}>
+      Top-Center
+    </Button>
+  </div>
+  <div style={{ padding: "10px" }}>
+    <Button
+      onClick={() =>
+        toast.default("Top Right alert", {
+          horizontal: "right",
+        })
+      }
+    >
+      Top-Right
+    </Button>
+  </div>
+  <div style={{ padding: "10px" }}>
+    <Button
+      onClick={() =>
+        toast.default("Bottom Left alert", {
+          vertical: "bottom",
+          horizontal: "left",
+        })
+      }
+    >
+      Bottom-Left
+    </Button>
+  </div>
+  <div style={{ padding: "10px" }}>
+    <Button
+      onClick={() =>
+        toast.default("Bottom Center alert", {
+          vertical: "bottom",
+          horizontal: "center",
+        })
+      }
+    >
+      Bottom-Center
+    </Button>
+  </div>
+  <div style={{ padding: "10px" }}>
+    <Button
+      onClick={() =>
+        toast.default("Bottom Right alert", {
+          vertical: "bottom",
+          horizontal: "right",
+          duration: 30,
+        })
+      }
+    >
+      Bottom-Right
+    </Button>
+  </div>
+</div>
+
+```jsx
+<Button onClick={() => toast.default("Top Left alert", { horizontal: "left" })}>
+Top Left
+</Button>
+<Button onClick={() => toast.default("Top center alert (default)")}>
+Top Center
+</Button>
+<Button onClick={() =>
+    toast.default("Top Right alert", {
+    horizontal: "right",
+    })
+}>Top Right</Button>
+<Button onClick={() =>
+    toast.default("Bottom Left alert", {
+    vertical: "bottom",
+    horizontal: "left",
+    })
+}>Bottom Left</Button>
+<Button onClick={() =>
+    toast.default("Bottom Center alert", {
+    vertical: "bottom",
+    horizontal: "center",
+    })
+}>Bottom Center</Button>
+<Button onClick={() =>
+    toast.default("Bottom Right alert", {
+    vertical: "bottom",
+    horizontal: "right",
+    duration: 30,
+    })
+}>Bottom Right</Button>
+
+```
+
+The `vertical` property has two values `top` & `bottom` and the `horizontal` property has `left`, `center` & `right`
+
+## API
+
+### Options
+
+The toast method accepts two argument
+
+`toast.default(description,settingsArgumemnt)`
+
+Here description is a string which is the label for your toast component.
+These are the properties given as second argument to the toast method
+
+|    Prop     |   Type    |      Possible values      | Default Value |
+| :---------: | :-------: | :-----------------------: | :-----------: |
+|    title    | `string`  |        Any string         |     `""`      |
+| showLoading | `boolean` |     `true` & `false`      |    `false`    |
+|  duration   | `number`  |        Any number         |      `5`      |
+|  vertical   | `string`  |     `top` & `bottom`      |     `top`     |
+| horizontal  | `string`  | `left`,`center` & `right` |   `center`    |
+
+### Methods
+
+- `toast.default()` - grey
+- `toast.success()` - green
+- `toast.info()` - blue
+- `toast.warning()` - yellow
+- `toast.danger()` - red
+
+Built by Akshay 🤙
