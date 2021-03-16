@@ -1,0 +1,17 @@
+{
+  "unversionedId": "component-docs/alert",
+  "id": "component-docs/alert",
+  "isDocsHomePage": false,
+  "title": "alert",
+  "description": "Alert",
+  "source": "@site/docs/component-docs/alert.mdx",
+  "slug": "/component-docs/alert",
+  "permalink": "/docs/component-docs/alert",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/alert.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/docs/getting-started/installation"
+  }
+}

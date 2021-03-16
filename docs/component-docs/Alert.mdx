@@ -1,9 +1,4 @@
-import { Meta } from "@storybook/addon-docs/blocks";
-import Alert from "./Alert.tsx";
-
-<Meta title="Palette/ Alert" />
-
-# Alert
+import { Alert } from "../../src/index";
 
 The alert component is used to give feedback to the user based on some action. These alerts can also act as
 response handler for some specific activity
@@ -19,23 +14,25 @@ value. The alert component also has a label prop which is used to render the mai
 - `warning`
 - `danger`
 
-  <div style={{ padding: "20px 0px" }}>
-    <div style={{ padding: "10px 0px" }}>
-      <Alert type="default" label="This is a sample alert" />
-    </div>
-    <div style={{ padding: "10px 0px" }}>
-      <Alert type="success" label="This is a sample alert" />
-    </div>
-    <div style={{ padding: "10px 0px" }}>
-      <Alert type="info" label="This is a sample alert" />
-    </div>
-    <div style={{ padding: "10px 0px" }}>
-      <Alert type="warning" label="This is a sample alert" />
-    </div>
-    <div style={{ padding: "10px 0px" }}>
-      <Alert type="danger" label="This is a sample alert" />
-    </div>
+##### Example
+
+<div style={{ padding: "10px 0px" }}>
+  <div style={{ padding: "10px 0px" }}>
+    <Alert type="default" label="This is a sample alert" />
   </div>
+  <div style={{ padding: "10px 0px" }}>
+    <Alert type="success" label="This is a sample alert" />
+  </div>
+  <div style={{ padding: "10px 0px" }}>
+    <Alert type="info" label="This is a sample alert" />
+  </div>
+  <div style={{ padding: "10px 0px" }}>
+    <Alert type="warning" label="This is a sample alert" />
+  </div>
+  <div style={{ padding: "10px 0px" }}>
+    <Alert type="danger" label="This is a sample alert" />
+  </div>
+</div>
 
 #### Code
 

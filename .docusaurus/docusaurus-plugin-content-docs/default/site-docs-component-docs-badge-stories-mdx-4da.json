@@ -1,0 +1,12 @@
+{
+  "unversionedId": "component-docs/badge.stories",
+  "id": "component-docs/badge.stories",
+  "isDocsHomePage": false,
+  "title": "badge.stories",
+  "description": "Badge",
+  "source": "@site/docs/component-docs/badge.stories.mdx",
+  "slug": "/component-docs/badge.stories",
+  "permalink": "/docs/component-docs/badge.stories",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/badge.stories.mdx",
+  "version": "current"
+}

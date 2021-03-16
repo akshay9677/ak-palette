@@ -1,0 +1,12 @@
+{
+  "unversionedId": "component-docs/toast.stories",
+  "id": "component-docs/toast.stories",
+  "isDocsHomePage": false,
+  "title": "toast.stories",
+  "description": "Toaster",
+  "source": "@site/docs/component-docs/toast.stories.mdx",
+  "slug": "/component-docs/toast.stories",
+  "permalink": "/docs/component-docs/toast.stories",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/toast.stories.mdx",
+  "version": "current"
+}

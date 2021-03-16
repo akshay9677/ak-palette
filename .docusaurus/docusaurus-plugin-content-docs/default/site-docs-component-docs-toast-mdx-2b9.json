@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Toast",
+  "id": "component-docs/Toast",
+  "isDocsHomePage": false,
+  "title": "Toast",
+  "description": "The toaster component is used to render a toast message in the user interface. This acts as a response handler for some",
+  "source": "@site/docs/component-docs/Toast.mdx",
+  "slug": "/component-docs/Toast",
+  "permalink": "/docs/component-docs/Toast",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Toast.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Spinner",
+    "permalink": "/docs/component-docs/Spinner"
+  },
+  "next": {
+    "title": "ToolTip",
+    "permalink": "/docs/component-docs/ToolTip"
+  }
+}

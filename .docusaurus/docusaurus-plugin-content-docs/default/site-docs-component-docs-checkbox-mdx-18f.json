@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Checkbox",
+  "id": "component-docs/Checkbox",
+  "isDocsHomePage": false,
+  "title": "Checkbox",
+  "description": "CheckBox Component is use to render a checkbox input in the user interface.",
+  "source": "@site/docs/component-docs/Checkbox.mdx",
+  "slug": "/component-docs/Checkbox",
+  "permalink": "/docs/component-docs/Checkbox",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Checkbox.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Button",
+    "permalink": "/docs/component-docs/Button"
+  },
+  "next": {
+    "title": "Modal",
+    "permalink": "/docs/component-docs/Modal"
+  }
+}

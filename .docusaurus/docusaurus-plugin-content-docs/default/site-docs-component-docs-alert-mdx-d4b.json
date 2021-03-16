@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Alert",
+  "id": "component-docs/Alert",
+  "isDocsHomePage": false,
+  "title": "Alert",
+  "description": "The alert component is used to give feedback to the user based on some action. These alerts can also act as",
+  "source": "@site/docs/component-docs/Alert.mdx",
+  "slug": "/component-docs/Alert",
+  "permalink": "/docs/component-docs/Alert",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Alert.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/getting-started/overview"
+  },
+  "next": {
+    "title": "Avatar",
+    "permalink": "/docs/component-docs/Avatar"
+  }
+}

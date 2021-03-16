@@ -1,0 +1,92 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "isLast": true,
+  "docsSidebars": {
+    "someSidebar": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "GettingStarted",
+        "items": [
+          {
+            "type": "link",
+            "label": "Overview",
+            "href": "/docs/getting-started/overview"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Components",
+        "items": [
+          {
+            "type": "link",
+            "label": "Alert",
+            "href": "/docs/component-docs/Alert"
+          },
+          {
+            "type": "link",
+            "label": "Avatar",
+            "href": "/docs/component-docs/Avatar"
+          },
+          {
+            "type": "link",
+            "label": "Badge",
+            "href": "/docs/component-docs/Badge"
+          },
+          {
+            "type": "link",
+            "label": "Button",
+            "href": "/docs/component-docs/Button"
+          },
+          {
+            "type": "link",
+            "label": "Checkbox",
+            "href": "/docs/component-docs/Checkbox"
+          },
+          {
+            "type": "link",
+            "label": "Modal",
+            "href": "/docs/component-docs/Modal"
+          },
+          {
+            "type": "link",
+            "label": "SideSheet",
+            "href": "/docs/component-docs/SideSheet"
+          },
+          {
+            "type": "link",
+            "label": "Spinner",
+            "href": "/docs/component-docs/Spinner"
+          },
+          {
+            "type": "link",
+            "label": "Toast",
+            "href": "/docs/component-docs/Toast"
+          },
+          {
+            "type": "link",
+            "label": "ToolTip",
+            "href": "/docs/component-docs/ToolTip"
+          }
+        ]
+      }
+    ]
+  },
+  "permalinkToSidebar": {
+    "/docs/component-docs/Alert": "someSidebar",
+    "/docs/component-docs/Avatar": "someSidebar",
+    "/docs/component-docs/Badge": "someSidebar",
+    "/docs/component-docs/Button": "someSidebar",
+    "/docs/component-docs/Checkbox": "someSidebar",
+    "/docs/component-docs/Modal": "someSidebar",
+    "/docs/component-docs/SideSheet": "someSidebar",
+    "/docs/component-docs/Spinner": "someSidebar",
+    "/docs/component-docs/Toast": "someSidebar",
+    "/docs/component-docs/ToolTip": "someSidebar",
+    "/docs/getting-started/overview": "someSidebar"
+  }
+}

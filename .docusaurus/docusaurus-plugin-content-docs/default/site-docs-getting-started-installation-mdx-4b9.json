@@ -1,0 +1,17 @@
+{
+  "unversionedId": "getting-started/installation",
+  "id": "getting-started/installation",
+  "isDocsHomePage": false,
+  "title": "Installation",
+  "description": "To install palette ui tool kit run the following command in your terminal",
+  "source": "@site/docs/getting-started/Installation.mdx",
+  "slug": "/getting-started/installation",
+  "permalink": "/docs/getting-started/installation",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/getting-started/Installation.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "next": {
+    "title": "Alert",
+    "permalink": "/docs/component-docs/Alert"
+  }
+}

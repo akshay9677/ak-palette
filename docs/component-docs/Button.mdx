@@ -1,11 +1,6 @@
-import { Meta } from "@storybook/addon-docs/blocks";
-import Button from "./Button.tsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
-
-<Meta title="Palette/ Button" />
-
-# Button
+import { Button } from "../../src/index";
 
 Button Component is use to render a button in the user interface, that can perform tasks when clicked
 
@@ -16,14 +11,27 @@ The Palette Button component has two `appearance`
 - `primary`
 - `secondary`
 
-  <div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
-    <span style={{ paddingRight: "10px" }}>
-      <Button onClick={() => alert("hello")}>Primary Button</Button>
-    </span>
-    <Button appearance="secondary" onClick={() => alert("hello")}>
-      Secondary Button
-    </Button>
-  </div>
+##### Example
+
+<div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
+  <span style={{ paddingRight: "10px" }}>
+    <Button onClick={() => alert("hello")}>Primary Button</Button>
+  </span>
+  <Button appearance="secondary" onClick={() => alert("hello")}>
+    Secondary Button
+  </Button>
+</div>
+
+#### Code
+
+```jsx
+// primary button
+    <Button onClick={() => alert("hello")}>Primary Button</Button>
+// secondary button
+  <Button appearance="secondary" onClick={() => alert("hello")}>
+    Secondary Button
+  </Button>
+```
 
 ## Sizes
 

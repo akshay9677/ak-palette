@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Spinner",
+  "id": "component-docs/Spinner",
+  "isDocsHomePage": false,
+  "title": "Spinner",
+  "description": "Palette Spinner component is use to render a spinner in the user interface, this mainly acts as a loading indicator while performing asynchronous tasks",
+  "source": "@site/docs/component-docs/Spinner.mdx",
+  "slug": "/component-docs/Spinner",
+  "permalink": "/docs/component-docs/Spinner",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Spinner.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "SideSheet",
+    "permalink": "/docs/component-docs/SideSheet"
+  },
+  "next": {
+    "title": "Toast",
+    "permalink": "/docs/component-docs/Toast"
+  }
+}

@@ -1,0 +1,79 @@
+@import "../../assets/main.scss";
+
+.pal-input-field {
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  padding: 5px;
+  width: 100%;
+  &:hover {
+    border-color: #40a9ff;
+    border-right-width: 1px !important;
+    outline: 0;
+  }
+  &:focus {
+    border-color: #40a9ff;
+    border-right-width: 1px !important;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgb(24 144 255 / 20%);
+    box-shadow: 0 0 0 2px rgb(24 144 255 / 20%);
+  }
+}
+::placeholder {
+  color: #bfbfbf;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+::-ms-input-placeholder {
+  color: #bfbfbf;
+}
+// props
+// size
+.large {
+  height: 26px;
+  font-size: 16px;
+  padding: 10px;
+}
+.mini {
+  height: 10px;
+  font-size: 12px;
+}
+.small {
+  height: 14px;
+  font-size: 14px;
+  padding: 8px;
+}
+// disabled
+.disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  &:hover {
+    border-color: #d9d9d9;
+  }
+  &:focus {
+    border-color: #d9d9d9;
+  }
+}
+// validation
+
+.isValid {
+  border-color: #e67575;
+  &:hover {
+    border-color: #e67575;
+  }
+  &:focus {
+    border-color: #e67575;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.validate-text {
+  color: #e67575;
+  font-family: $pal-font-family;
+  font-size: 12px;
+  padding: 3px 0px 0px 2px;
+}

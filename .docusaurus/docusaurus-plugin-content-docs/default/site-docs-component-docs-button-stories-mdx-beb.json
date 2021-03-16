@@ -1,0 +1,12 @@
+{
+  "unversionedId": "component-docs/button.stories",
+  "id": "component-docs/button.stories",
+  "isDocsHomePage": false,
+  "title": "button.stories",
+  "description": "Button",
+  "source": "@site/docs/component-docs/button.stories.mdx",
+  "slug": "/component-docs/button.stories",
+  "permalink": "/docs/component-docs/button.stories",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/button.stories.mdx",
+  "version": "current"
+}

@@ -1,0 +1,12 @@
+{
+  "unversionedId": "component-docs/checkbox.stories",
+  "id": "component-docs/checkbox.stories",
+  "isDocsHomePage": false,
+  "title": "checkbox.stories",
+  "description": "Checkbox",
+  "source": "@site/docs/component-docs/checkbox.stories.mdx",
+  "slug": "/component-docs/checkbox.stories",
+  "permalink": "/docs/component-docs/checkbox.stories",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/checkbox.stories.mdx",
+  "version": "current"
+}

@@ -1,0 +1,17 @@
+{
+  "unversionedId": "component-docs/ToolTip",
+  "id": "component-docs/ToolTip",
+  "isDocsHomePage": false,
+  "title": "ToolTip",
+  "description": "The Tooltip component is used render a small info toast for any content, when it is hovered.",
+  "source": "@site/docs/component-docs/ToolTip.mdx",
+  "slug": "/component-docs/ToolTip",
+  "permalink": "/docs/component-docs/ToolTip",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/ToolTip.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Toast",
+    "permalink": "/docs/component-docs/Toast"
+  }
+}

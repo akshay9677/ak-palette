@@ -1,0 +1,12 @@
+{
+  "unversionedId": "component-docs/spinner.stories",
+  "id": "component-docs/spinner.stories",
+  "isDocsHomePage": false,
+  "title": "spinner.stories",
+  "description": "Spinner",
+  "source": "@site/docs/component-docs/spinner.stories.mdx",
+  "slug": "/component-docs/spinner.stories",
+  "permalink": "/docs/component-docs/spinner.stories",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/spinner.stories.mdx",
+  "version": "current"
+}

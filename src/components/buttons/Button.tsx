@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.scss";
+import Spinner from "../spinner/Spinner";
 
 type ButtonProps = {
   children: React.ReactNode;
@@ -9,6 +10,7 @@ type ButtonProps = {
   onClick?: () => void;
   disabled?: boolean;
   color?: string;
+  loading?: boolean;
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -19,6 +21,7 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   disabled,
   color,
+  loading,
   ...rest
 }): JSX.Element => {
   return (
@@ -41,6 +44,12 @@ const Button: React.FC<ButtonProps> = ({
         }
         {...rest}
       >
+        {loading && (
+          <Spinner
+            size="small"
+            color={appearance === "secondary" ? color : "white"}
+          />
+        )}
         {children}
       </button>
     </div>

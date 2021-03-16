@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Badge",
+  "id": "component-docs/Badge",
+  "isDocsHomePage": false,
+  "title": "Badge",
+  "description": "Badge component is used to render a badge in the user interface this can be used as a status indicator",
+  "source": "@site/docs/component-docs/Badge.mdx",
+  "slug": "/component-docs/Badge",
+  "permalink": "/docs/component-docs/Badge",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Badge.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Avatar",
+    "permalink": "/docs/component-docs/Avatar"
+  },
+  "next": {
+    "title": "Button",
+    "permalink": "/docs/component-docs/Button"
+  }
+}

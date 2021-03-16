@@ -1,0 +1,73 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "getting-started/overview",
+          "docs": [
+            {
+              "id": "component-docs/Alert",
+              "path": "/docs/component-docs/Alert",
+              "sidebar": "someSidebar"
+            },
+            {
+              "id": "component-docs/Avatar",
+              "path": "/docs/component-docs/Avatar",
+              "sidebar": "someSidebar"
+            },
+            {
+              "id": "component-docs/Badge",
+              "path": "/docs/component-docs/Badge",
+              "sidebar": "someSidebar"
+            },
+            {
+              "id": "component-docs/Button",
+              "path": "/docs/component-docs/Button",
+              "sidebar": "someSidebar"
+            },
+            {
+              "id": "component-docs/Checkbox",
+              "path": "/docs/component-docs/Checkbox",
+              "sidebar": "someSidebar"
+            },
+            {
+              "id": "component-docs/Modal",
+              "path": "/docs/component-docs/Modal",
+              "sidebar": "someSidebar"
+            },
+            {
+              "id": "component-docs/SideSheet",
+              "path": "/docs/component-docs/SideSheet",
+              "sidebar": "someSidebar"
+            },
+            {
+              "id": "component-docs/Spinner",
+              "path": "/docs/component-docs/Spinner",
+              "sidebar": "someSidebar"
+            },
+            {
+              "id": "component-docs/Toast",
+              "path": "/docs/component-docs/Toast",
+              "sidebar": "someSidebar"
+            },
+            {
+              "id": "component-docs/ToolTip",
+              "path": "/docs/component-docs/ToolTip",
+              "sidebar": "someSidebar"
+            },
+            {
+              "id": "getting-started/overview",
+              "path": "/docs/getting-started/overview",
+              "sidebar": "someSidebar"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

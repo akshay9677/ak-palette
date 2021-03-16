@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Button",
+  "id": "component-docs/Button",
+  "isDocsHomePage": false,
+  "title": "Button",
+  "description": "Button Component is use to render a button in the user interface, that can perform tasks when clicked",
+  "source": "@site/docs/component-docs/Button.mdx",
+  "slug": "/component-docs/Button",
+  "permalink": "/docs/component-docs/Button",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Button.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Badge",
+    "permalink": "/docs/component-docs/Badge"
+  },
+  "next": {
+    "title": "Checkbox",
+    "permalink": "/docs/component-docs/Checkbox"
+  }
+}

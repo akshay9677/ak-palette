@@ -1,0 +1,232 @@
+import { Modal } from "../../src/index";
+import { Button } from "../../src/index";
+
+import { useState } from "react";
+
+The `Modal` component is used to render a Dialog in the user interface above an overlay.
+Modals blocks interaction on the page until it is closed or clicked on the action buttons. Genarally used if you want
+to prompt the user with something.
+
+## Usage
+
+export const ButtonModal1 = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{ padding: "10px 0px 20px 0px" }}>
+      <Button onClick={() => setOpen(true)}>Open Modal</Button>
+      <Modal open={open} onClose={() => setOpen(false)} header="Dialog Title">
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </Modal>
+    </div>
+  );
+};
+
+<ButtonModal1 />
+
+```jsx
+const ButtonModal = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div>
+      <Button onClick={() => setOpen(true)}>Open Modal</Button>
+      <Modal open={open} onClose={() => setOpen(false)} header="Dialog Title">
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </Modal>
+    </div>
+  );
+};
+```
+
+## Detachable Header and Footer
+
+The header and footer of the modal is detachable to remove header just don't add the `header` prop and for removing
+the footer just make `hideFooter` prop true
+
+export const ButtonModal2 = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{ padding: "10px 0px 20px 0px" }}>
+      <Button onClick={() => setOpen(true)}>No Header Footer Modal</Button>
+      <Modal open={open} onClose={() => setOpen(false)} hideFooter={true}>
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+        </div>
+      </Modal>
+    </div>
+  );
+};
+
+<ButtonModal2 />
+
+```jsx
+const ButtonModal = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{ padding: "10px 0px 20px 0px" }}>
+      <Button onClick={() => setOpen(true)}>No Header Footer Modal</Button>
+      <Modal open={open} onClose={() => setOpen(false)} hideFooter={true}>
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+        </div>
+      </Modal>
+    </div>
+  );
+};
+```
+
+## Customizable Action Buttons
+
+The action button names can be customized by using the object props `primaryButton` & `secondaryButton`. These two props accept
+an object and it has `name` and `color` prop which you can use to customize the buttons
+
+export const ButtonModal3 = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{ padding: "10px 0px 20px 0px" }}>
+      <Button onClick={() => setOpen(true)}>Custom Action Names</Button>
+      <Modal
+        open={open}
+        onClose={() => setOpen(false)}
+        header="Dialog Title"
+        primaryButton={{
+          name: "Ok",
+          color: "teal",
+        }}
+        secondaryButton={{
+          name: "Cancel",
+          color: "teal",
+        }}
+      >
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+        </div>
+      </Modal>
+    </div>
+  );
+};
+
+<ButtonModal3 />
+
+```jsx
+const ButtonModal = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{ padding: "10px 0px 20px 0px" }}>
+      <Button onClick={() => setOpen(true)}>Custom Action Names</Button>
+      <Modal
+        open={open}
+        onClose={() => setOpen(false)}
+        header="Dialog Title"
+        primaryButton={{
+          name: "Ok",
+          color: "red",
+        }}
+        secondaryButton={{
+          name: "Cancel",
+          color: "red",
+        }}
+      >
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+        </div>
+      </Modal>
+    </div>
+  );
+};
+```
+
+## Actions
+
+The two action buttons can perform certain actions the `secondaryButton` the `onClose` function you pass
+whereas the `primaryButton` calls the `onConfirm` action
+
+export const ButtonModal4 = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{ padding: "10px 0px 20px 0px" }}>
+      <Button onClick={() => setOpen(true)}>Open Modal</Button>
+      <Modal
+        open={open}
+        onClose={() => setOpen(false)}
+        onConfirm={() => {
+          alert("Are you sure ?");
+          setOpen(false);
+        }}
+        header="Dialog Title"
+      >
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+        </div>
+      </Modal>
+    </div>
+  );
+};
+
+<ButtonModal4 />
+
+```jsx
+const ButtonModal = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{ padding: "10px 0px 20px 0px" }}>
+      <Button onClick={() => setOpen(true)}>Open Modal</Button>
+      <Modal
+        open={open}
+        onClose={() => setOpen(false)}
+        onConfirm={() => {
+          alert("Are you sure ?");
+          setOpen(false);
+        }}
+        header="Dialog Title"
+      >
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+        </div>
+      </Modal>
+    </div>
+  );
+};
+```
+
+## API
+
+|                      Prop                       |    Type    |          Possible values           |           Default Value            |
+| :---------------------------------------------: | :--------: | :--------------------------------: | :--------------------------------: |
+|                      size                       |  `string`  | `"small"`,`"medium"` and `"large"` |             `"medium"`             |
+|                     header                      |  `string`  |          Any string value          |                 --                 |
+|                   hideFooter                    | `boolean`  |         `true` and `false`         |               false                |
+|                      open                       | `boolean`  |         `true` and `false`         |               false                |
+| onClose - Used when secondary button is clicked | `()=>void` |                 --                 |                 --                 |
+| onConfirm - Used when primary button is clicked | `()=>void` |                 --                 |                 --                 |
+|                  primaryButton                  |  `object`  |   {name:`string`,color:`string`}   | `{name:'Confirm',color:'#5851ff'}` |
+|                 secondaryButton                 |  `object`  |   {name:`string`,color:`string`}   | `{name:'Cancel',color:'#5851ff'}`  |
+
+Built by Akshay 🤙

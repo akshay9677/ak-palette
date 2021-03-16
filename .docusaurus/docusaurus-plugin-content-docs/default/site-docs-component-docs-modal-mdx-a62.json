@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Modal",
+  "id": "component-docs/Modal",
+  "isDocsHomePage": false,
+  "title": "Modal",
+  "description": "The Modal component is used to render a Dialog in the user interface above an overlay.",
+  "source": "@site/docs/component-docs/Modal.mdx",
+  "slug": "/component-docs/Modal",
+  "permalink": "/docs/component-docs/Modal",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Modal.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Checkbox",
+    "permalink": "/docs/component-docs/Checkbox"
+  },
+  "next": {
+    "title": "SideSheet",
+    "permalink": "/docs/component-docs/SideSheet"
+  }
+}

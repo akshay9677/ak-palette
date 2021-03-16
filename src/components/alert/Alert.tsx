@@ -75,7 +75,9 @@ const Alert: React.FC<AlertProps> = ({
   return (
     <div className="pal-alert-container" style={_getAlertTypeStyle()}>
       <div className="pal-alert-main">
-        <FontAwesomeIcon icon={_getIcon()} className="pal-alert-primary-icon" />
+        <span className="pal-alert-primary-icon">
+          <FontAwesomeIcon icon={_getIcon()} />
+        </span>
         <div>
           <div className="pal-alert-header"> {title}</div>
           <div> {label}</div>

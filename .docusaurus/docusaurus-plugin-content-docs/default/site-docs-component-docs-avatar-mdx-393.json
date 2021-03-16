@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Avatar",
+  "id": "component-docs/Avatar",
+  "isDocsHomePage": false,
+  "title": "Avatar",
+  "description": "Avatar component is used to render a avatar icon in the user interface. This component is used reperesent user in UI.",
+  "source": "@site/docs/component-docs/Avatar.mdx",
+  "slug": "/component-docs/Avatar",
+  "permalink": "/docs/component-docs/Avatar",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Avatar.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Alert",
+    "permalink": "/docs/component-docs/Alert"
+  },
+  "next": {
+    "title": "Badge",
+    "permalink": "/docs/component-docs/Badge"
+  }
+}

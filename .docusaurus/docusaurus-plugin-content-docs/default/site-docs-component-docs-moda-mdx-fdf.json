@@ -1,0 +1,12 @@
+{
+  "unversionedId": "component-docs/Moda",
+  "id": "component-docs/Moda",
+  "isDocsHomePage": false,
+  "title": "Moda",
+  "description": "Badge component is used to render a badge in the user interface this can be used as a status indicator",
+  "source": "@site/docs/component-docs/Moda.mdx",
+  "slug": "/component-docs/Moda",
+  "permalink": "/docs/component-docs/Moda",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Moda.mdx",
+  "version": "current"
+}

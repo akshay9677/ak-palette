@@ -1,0 +1,114 @@
+import { ToolTip, Button } from "../../src/index";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+
+The `Tooltip` component is used render a small info toast for any content, when it is hovered.
+
+## Usage
+
+To use the tooltip component wrap it over the content, for which you need to show the ToolTip. The `label` prop is used
+to render the text for the tooltip
+
+<div style={{ padding: "0px 0px 10px 0px" }}>
+  <ToolTip label="Sample tool tip">
+    <div style={{ fontSize: "20px", color: "#888" }}>
+      <FontAwesomeIcon icon={faInfoCircle} />
+    </div>
+  </ToolTip>
+</div>
+
+#### Code
+
+```jsx
+<ToolTip label="Sample tool tip">
+  <FontAwesomeIcon icon={faInfoCircle} />
+</ToolTip>
+```
+
+## Position
+
+The ToolTip component position can also be varied by using the `position` prop which accepts a string value.
+The accepted values are the following, each reperesents a seperate position for the component,
+
+- `"left"`
+- `"right"`
+- `"top"`
+- `"bottom"`
+
+export const ToolTipText = ({ position }) => {
+  return (
+    <ToolTip label="Sample tool tip" position={position}>
+      <div
+        style={{
+          fontSize: "20px",
+          color: "#888",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <FontAwesomeIcon icon={faInfoCircle} />
+        <div style={{ fontSize: "14px", color: "black" }}>
+          {position.toUpperCase()}
+        </div>
+      </div>
+    </ToolTip>
+  );
+};
+
+<div
+  style={{
+    padding: "0px 0px 10px 0px",
+    display: "flex",
+    justifyContent: "space-around",
+    width: "70%",
+  }}
+>
+  <ToolTipText position="right" />
+  <ToolTipText position="left" />
+  <ToolTipText position="top" />
+  <ToolTipText position="bottom" />
+</div>
+
+#### Code
+
+```jsx
+<ToolTip label="Sample tool tip" position='left'>
+    // your content here
+</ToolTip>
+<ToolTip label="Sample tool tip" position='right'>
+    // your content here
+</ToolTip>
+<ToolTip label="Sample tool tip" position='top'>
+    // your content here
+</ToolTip>
+<ToolTip label="Sample tool tip" position='bottom'>
+    // your content here
+</ToolTip>
+```
+
+## Width
+
+The width of the ToolTip can also be adjusted by using the `width` prop. This prop accepts `number` value.
+
+<ToolTip label="This is a sample tool tip" width={300}>
+  <div style={{ fontWeight: "500" }}>Hover over me</div>
+</ToolTip>
+
+#### Code
+
+```jsx
+<ToolTip label="This is a sample tool tip" width={300}>
+  Hover over me
+</ToolTip>
+```
+
+## API
+
+|   Prop   |   Type   |              Possible values              | Default Value |
+| :------: | :------: | :---------------------------------------: | :-----------: |
+| position | `string` | `"top"`,`"bottom"`,`"left"` and `"right"` |   `"right"`   |
+|  label   | `string` |             Any string value              |      --       |
+|  width   | `number` |             Any number value              |      500      |
+
+Built by Akshay 🤙

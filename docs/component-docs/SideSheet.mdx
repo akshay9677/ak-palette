@@ -1,0 +1,156 @@
+import { SideSheet, Button } from "../../src/index";
+import { useState } from "react";
+
+The `SideSheet` component is used to render a sidesheet above an overlay. This can be used to prompt the user with some
+extra information about something the user clicked
+
+## Usage
+
+export const ButtonSideSheet1 = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{ padding: "10px 0px 20px 0px" }}>
+      <Button onClick={() => setOpen(true)}>Open SideSheet</Button>
+      <SideSheet open={open} onClose={() => setOpen(false)}>
+        Body Content
+      </SideSheet>
+    </div>
+  );
+};
+
+<ButtonSideSheet1 />
+
+```jsx
+export const ButtonSideSheet = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div>
+      <Button onClick={() => setOpen(true)}>Open SideSheet</Button>
+      <SideSheet open={open} onClose={() => setOpen(false)}>
+        Body Content
+      </SideSheet>
+    </div>
+  );
+};
+```
+
+## Position
+
+The position of the `SideSheet` component is also customizable by using the `position` prop, it accepts two values
+
+- `"right"`
+- `"left"`
+
+export const ButtonSideSheet2 = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{ padding: "10px 0px 20px 0px" }}>
+      <Button onClick={() => setOpen(true)}>Left SideSheet</Button>
+      <SideSheet position="left" open={open} onClose={() => setOpen(false)}>
+        Body Content
+      </SideSheet>
+    </div>
+  );
+};
+
+<ButtonSideSheet2 />
+
+```jsx
+export const ButtonSideSheet = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div >
+      <Button onClick={() => setOpen(true)}>Left SideSheet</Button>
+      <SideSheet position="left" open={open} onClose={() => setOpen(false)}>
+        Body Content
+      </SideSheet>
+    </div>
+  );
+```
+
+## Header
+
+The SideSheet component can also be rendered with a header by providing `header` prop, which accepts a string
+input.
+
+export const ButtonSideSheet3 = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{ padding: "10px 0px 20px 0px" }}>
+      <Button onClick={() => setOpen(true)}>Open SideSheet</Button>
+      <SideSheet
+        header="Side Sheet Title"
+        open={open}
+        onClose={() => setOpen(false)}
+      >
+        Custom Header Sheet
+      </SideSheet>
+    </div>
+  );
+};
+
+<ButtonSideSheet3 />
+
+```jsx
+export const ButtonSideSheet = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div>
+      <Button onClick={() => setOpen(true)}>Open SideSheet</Button>
+      <SideSheet
+        header="Side Sheet Title"
+        open={open}
+        onClose={() => setOpen(false)}
+      >
+        Custom Header Sheet
+      </SideSheet>
+    </div>
+  );
+};
+```
+
+## Adjustable Width
+
+The width of the sheet can also be adjusted by changing the value of `width` prop, it accepts number values.
+In the below example the width is `700` which means the side sheet width is `700px`
+
+export const ButtonSideSheet4 = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{ padding: "10px 0px 20px 0px" }}>
+      <Button onClick={() => setOpen(true)}>Adjustable Width</Button>
+      <SideSheet width={700} open={open} onClose={() => setOpen(false)}>
+        Body Content
+      </SideSheet>
+    </div>
+  );
+};
+
+<ButtonSideSheet4 />
+
+```jsx
+export const ButtonSideSheet = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div>
+      <Button onClick={() => setOpen(true)}>Adjustable Width</Button>
+      <SideSheet width={700} open={open} onClose={() => setOpen(false)}>
+        Body Content
+      </SideSheet>
+    </div>
+  );
+};
+```
+
+## API
+
+|   Prop    |    Type    |    Possible values     | Default Value |
+| :-------: | :--------: | :--------------------: | :-----------: |
+| position  |  `string`  | `"left"` and `"right"` |   `"right"`   |
+|  header   |  `string`  |    Any string value    |      --       |
+|   width   |  `number`  |    Any number value    |      500      |
+| showClose | `boolean`  |   `true` and `false`   |     false     |
+|   open    | `boolean`  |   `true` and `false`   |     false     |
+|  onClose  | `()=>void` |           --           |      --       |
+
+Built by Akshay 🤙

@@ -1,0 +1,17 @@
+{
+  "unversionedId": "getting-started/overview",
+  "id": "getting-started/overview",
+  "isDocsHomePage": false,
+  "title": "Overview",
+  "description": "Palette is a library of UI Components to build products for the web. Palette provides re-usable components to help",
+  "source": "@site/docs/getting-started/Overview.mdx",
+  "slug": "/getting-started/overview",
+  "permalink": "/docs/getting-started/overview",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/getting-started/Overview.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "next": {
+    "title": "Alert",
+    "permalink": "/docs/component-docs/Alert"
+  }
+}

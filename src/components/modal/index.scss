@@ -1,0 +1,64 @@
+@import "../../assets/main.scss";
+.pal-modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  z-index: 9999;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(18, 52, 77, 0.5);
+  justify-content: center;
+  align-items: center;
+  font-family: $pal-font-family;
+  transition: all 0.3s linear 0s;
+}
+
+.pal-modal-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  animation: modal-entry 0.5s 1;
+  text-align: left;
+}
+
+.pal-modal-header {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+  align-items: center;
+}
+
+.pal-close-btn {
+  font-size: 14px;
+  font-weight: normal;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.4;
+  }
+}
+
+.pal-modal-body {
+  padding: 10px 30px 20px 30px;
+}
+
+.pal-modal-footer {
+  border-radius: 8px;
+  padding: 10px 30px;
+  background-color: #f2f5f7;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@keyframes modal-entry {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,126 @@
+import { Avatar } from "../../src/index";
+
+`Avatar` component is used to render a avatar icon in the user interface. This component is used reperesent user in UI.
+They act as an avatar for user.
+
+## Usage
+
+There are basically two usage either you can use it to render avatar images using `src` prop or you can provide a `label` prop which is then
+used to get a unique avatar based on the `label` provided.
+
+<div style={{ padding: "10px 0px" }}>
+  <Avatar filled label="John " />
+</div>
+
+#### Code
+
+```jsx
+<Avatar filled label="John " />
+```
+
+## Color
+
+The Avatar component generates a unique `background color` based on the `label` prop you provide.
+
+<div style={{display:'flex',flexDirection:'row',justifyContent:'space-between',width:'40%',padding:'10px 0px'}}>
+
+<Avatar label="John " />
+<Avatar label="Jim Halpert" />
+<Avatar label="Michael Scott" />
+<Avatar label="Dwight Schrute" />
+<Avatar label="Ann" />
+<Avatar label="Akshay Kannan" />
+
+</div>
+
+#### Code
+
+```jsx
+<Avatar label="John " />
+<Avatar label="Jim Halpert" />
+<Avatar label="Michael Scott" />
+<Avatar label="Dwight Schrute" />
+<Avatar label="Ann" />
+<Avatar label="Akshay Kannan" />
+
+```
+
+## Filled Avatar
+
+The Avatar component can have a filled color by providing `filled` boolean prop.
+
+<div style={{display:'flex',flexDirection:'row',justifyContent:'space-between',width:'40%',padding:'10px 0px'}}>
+
+<Avatar filled label="John " />
+<Avatar filled label="Jim Halpert" />
+<Avatar filled label="Michael Scott" />
+<Avatar filled label="Dwight Schrute" />
+<Avatar filled label="Ann" />
+<Avatar filled label="Akshay Kannan" />
+
+</div>
+
+#### Code
+
+```jsx
+<Avatar filled label="John " />
+<Avatar filled label="Jim Halpert" />
+<Avatar filled label="Michael Scott" />
+<Avatar filled label="Dwight Schrute" />
+<Avatar filled label="Ann" />
+<Avatar filled label="Akshay Kannan" />
+
+```
+
+## Size
+
+The size of the Avatar can be varied by using the `size` prop which accepts number values. By default the size is `40`.
+
+<div style={{display:'flex',flexDirection:'row',justifyContent:'space-between',width:'30%',padding:'10px 0px',alignItems:'center'}}>
+
+<Avatar label="Jim Halpert" size={40} />
+<Avatar label="Dwight Schrute" size={60} />
+<Avatar label="Bob" size={80} />
+
+</div>
+
+#### Code
+
+```jsx
+<Avatar label="Jim Halpert" size={40} />
+<Avatar label="Dwight Schrute" size={60} />
+<Avatar label="Bob" size={80} />
+```
+
+## Image Avatar
+
+The Avatar component can be used to render images as avatar if `src` prop is provided.
+
+> Both `src` and `label` prop has to be given for image avatar.
+
+<Avatar
+  src="https://wallpapercave.com/wp/wp4292822.jpg"
+  size={80}
+  label="Michael Scott"
+/>
+
+#### Code
+
+```jsx
+<Avatar
+  src="https://wallpapercave.com/wp/wp4292822.jpg"
+  size={80}
+  label="Michael Scott"
+/>
+```
+
+## API
+
+|  Prop  |   Type    |  Possible values   | Default Value |
+| :----: | :-------: | :----------------: | :-----------: |
+| label  | `string`  |  Any String value  |     `""`      |
+| filled | `boolean` | `true` and `false` |    `false`    |
+|  size  | `number`  |  Any number value  |      40       |
+|  src   | `string`  |   Any image url    |      --       |
+
+Built by Akshay 🤙

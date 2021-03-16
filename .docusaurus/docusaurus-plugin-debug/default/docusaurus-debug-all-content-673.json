@@ -1,0 +1,340 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/docs",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/test/Desktop/palette/sidebars.js",
+          "docsDirPath": "/Users/test/Desktop/palette/docs",
+          "docsDirPathLocalized": "/Users/test/Desktop/palette/i18n/en/docusaurus-plugin-content-docs/current",
+          "mainDocId": "getting-started/overview",
+          "sidebars": {
+            "someSidebar": [
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "GettingStarted",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "getting-started/overview"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Components",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Alert"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Avatar"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Badge"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Button"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Checkbox"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Modal"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/SideSheet"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Spinner"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Toast"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/ToolTip"
+                  }
+                ]
+              }
+            ]
+          },
+          "permalinkToSidebar": {
+            "/docs/component-docs/Alert": "someSidebar",
+            "/docs/component-docs/Avatar": "someSidebar",
+            "/docs/component-docs/Badge": "someSidebar",
+            "/docs/component-docs/Button": "someSidebar",
+            "/docs/component-docs/Checkbox": "someSidebar",
+            "/docs/component-docs/Modal": "someSidebar",
+            "/docs/component-docs/SideSheet": "someSidebar",
+            "/docs/component-docs/Spinner": "someSidebar",
+            "/docs/component-docs/Toast": "someSidebar",
+            "/docs/component-docs/ToolTip": "someSidebar",
+            "/docs/getting-started/overview": "someSidebar"
+          },
+          "docs": [
+            {
+              "unversionedId": "component-docs/Alert",
+              "id": "component-docs/Alert",
+              "isDocsHomePage": false,
+              "title": "Alert",
+              "description": "The alert component is used to give feedback to the user based on some action. These alerts can also act as",
+              "source": "@site/docs/component-docs/Alert.mdx",
+              "slug": "/component-docs/Alert",
+              "permalink": "/docs/component-docs/Alert",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Alert.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/getting-started/overview"
+              },
+              "next": {
+                "title": "Avatar",
+                "permalink": "/docs/component-docs/Avatar"
+              }
+            },
+            {
+              "unversionedId": "component-docs/Avatar",
+              "id": "component-docs/Avatar",
+              "isDocsHomePage": false,
+              "title": "Avatar",
+              "description": "Avatar component is used to render a avatar icon in the user interface. This component is used reperesent user in UI.",
+              "source": "@site/docs/component-docs/Avatar.mdx",
+              "slug": "/component-docs/Avatar",
+              "permalink": "/docs/component-docs/Avatar",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Avatar.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Alert",
+                "permalink": "/docs/component-docs/Alert"
+              },
+              "next": {
+                "title": "Badge",
+                "permalink": "/docs/component-docs/Badge"
+              }
+            },
+            {
+              "unversionedId": "component-docs/Badge",
+              "id": "component-docs/Badge",
+              "isDocsHomePage": false,
+              "title": "Badge",
+              "description": "Badge component is used to render a badge in the user interface this can be used as a status indicator",
+              "source": "@site/docs/component-docs/Badge.mdx",
+              "slug": "/component-docs/Badge",
+              "permalink": "/docs/component-docs/Badge",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Badge.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Avatar",
+                "permalink": "/docs/component-docs/Avatar"
+              },
+              "next": {
+                "title": "Button",
+                "permalink": "/docs/component-docs/Button"
+              }
+            },
+            {
+              "unversionedId": "component-docs/Button",
+              "id": "component-docs/Button",
+              "isDocsHomePage": false,
+              "title": "Button",
+              "description": "Button Component is use to render a button in the user interface, that can perform tasks when clicked",
+              "source": "@site/docs/component-docs/Button.mdx",
+              "slug": "/component-docs/Button",
+              "permalink": "/docs/component-docs/Button",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Button.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Badge",
+                "permalink": "/docs/component-docs/Badge"
+              },
+              "next": {
+                "title": "Checkbox",
+                "permalink": "/docs/component-docs/Checkbox"
+              }
+            },
+            {
+              "unversionedId": "component-docs/Checkbox",
+              "id": "component-docs/Checkbox",
+              "isDocsHomePage": false,
+              "title": "Checkbox",
+              "description": "CheckBox Component is use to render a checkbox input in the user interface.",
+              "source": "@site/docs/component-docs/Checkbox.mdx",
+              "slug": "/component-docs/Checkbox",
+              "permalink": "/docs/component-docs/Checkbox",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Checkbox.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Button",
+                "permalink": "/docs/component-docs/Button"
+              },
+              "next": {
+                "title": "Modal",
+                "permalink": "/docs/component-docs/Modal"
+              }
+            },
+            {
+              "unversionedId": "component-docs/Modal",
+              "id": "component-docs/Modal",
+              "isDocsHomePage": false,
+              "title": "Modal",
+              "description": "The Modal component is used to render a Dialog in the user interface above an overlay.",
+              "source": "@site/docs/component-docs/Modal.mdx",
+              "slug": "/component-docs/Modal",
+              "permalink": "/docs/component-docs/Modal",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Modal.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Checkbox",
+                "permalink": "/docs/component-docs/Checkbox"
+              },
+              "next": {
+                "title": "SideSheet",
+                "permalink": "/docs/component-docs/SideSheet"
+              }
+            },
+            {
+              "unversionedId": "component-docs/SideSheet",
+              "id": "component-docs/SideSheet",
+              "isDocsHomePage": false,
+              "title": "SideSheet",
+              "description": "The SideSheet component is used to render a sidesheet above an overlay. This can be used to prompt the user with some",
+              "source": "@site/docs/component-docs/SideSheet.mdx",
+              "slug": "/component-docs/SideSheet",
+              "permalink": "/docs/component-docs/SideSheet",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/SideSheet.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Modal",
+                "permalink": "/docs/component-docs/Modal"
+              },
+              "next": {
+                "title": "Spinner",
+                "permalink": "/docs/component-docs/Spinner"
+              }
+            },
+            {
+              "unversionedId": "component-docs/Spinner",
+              "id": "component-docs/Spinner",
+              "isDocsHomePage": false,
+              "title": "Spinner",
+              "description": "Palette Spinner component is use to render a spinner in the user interface, this mainly acts as a loading indicator while performing asynchronous tasks",
+              "source": "@site/docs/component-docs/Spinner.mdx",
+              "slug": "/component-docs/Spinner",
+              "permalink": "/docs/component-docs/Spinner",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Spinner.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "SideSheet",
+                "permalink": "/docs/component-docs/SideSheet"
+              },
+              "next": {
+                "title": "Toast",
+                "permalink": "/docs/component-docs/Toast"
+              }
+            },
+            {
+              "unversionedId": "component-docs/Toast",
+              "id": "component-docs/Toast",
+              "isDocsHomePage": false,
+              "title": "Toast",
+              "description": "The toaster component is used to render a toast message in the user interface. This acts as a response handler for some",
+              "source": "@site/docs/component-docs/Toast.mdx",
+              "slug": "/component-docs/Toast",
+              "permalink": "/docs/component-docs/Toast",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Toast.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Spinner",
+                "permalink": "/docs/component-docs/Spinner"
+              },
+              "next": {
+                "title": "ToolTip",
+                "permalink": "/docs/component-docs/ToolTip"
+              }
+            },
+            {
+              "unversionedId": "component-docs/ToolTip",
+              "id": "component-docs/ToolTip",
+              "isDocsHomePage": false,
+              "title": "ToolTip",
+              "description": "The Tooltip component is used render a small info toast for any content, when it is hovered.",
+              "source": "@site/docs/component-docs/ToolTip.mdx",
+              "slug": "/component-docs/ToolTip",
+              "permalink": "/docs/component-docs/ToolTip",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/ToolTip.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Toast",
+                "permalink": "/docs/component-docs/Toast"
+              }
+            },
+            {
+              "unversionedId": "getting-started/overview",
+              "id": "getting-started/overview",
+              "isDocsHomePage": false,
+              "title": "Overview",
+              "description": "Palette is a library of UI Components to build products for the web. Palette provides re-usable components to help",
+              "source": "@site/docs/getting-started/Overview.mdx",
+              "slug": "/getting-started/overview",
+              "permalink": "/docs/getting-started/overview",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/getting-started/Overview.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "next": {
+                "title": "Alert",
+                "permalink": "/docs/component-docs/Alert"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": null
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  },
+  "docusaurus-plugin-sass": {
+    "default": null
+  }
+}

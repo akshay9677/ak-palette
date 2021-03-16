@@ -1,0 +1,31 @@
+@import "../../assets/main.scss";
+
+.pal-tooltip-container {
+  position: relative;
+  display: inline-flex;
+}
+
+.pal-tooltip-container .pal-tooltip-text {
+  background-color: #667889;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  font-size: 12px;
+  font-family: $pal-font-family;
+  animation: pal-tooltip 0.2s 1;
+}
+
+@keyframes pal-tooltip {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

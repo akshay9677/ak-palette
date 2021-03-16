@@ -6,10 +6,12 @@ import Toaster from "./Toaster";
 class Toast {
   constructor() {
     const container = document.createElement("div");
+    container.setAttribute('pal-toaster-main', '')
     document.body.appendChild(container);
 
-    ReactDOM.render(<Toaster onShow={this._onShow} />, container);
+    ReactDOM.render(<Toaster onShow={this._onShow} key={this.key} />, container);
   }
+  key = 0
   _onShow = (toggleShow) => {
     this._toggleShow = toggleShow;
   };

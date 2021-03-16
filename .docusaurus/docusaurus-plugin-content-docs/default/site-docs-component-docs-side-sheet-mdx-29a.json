@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/SideSheet",
+  "id": "component-docs/SideSheet",
+  "isDocsHomePage": false,
+  "title": "SideSheet",
+  "description": "The SideSheet component is used to render a sidesheet above an overlay. This can be used to prompt the user with some",
+  "source": "@site/docs/component-docs/SideSheet.mdx",
+  "slug": "/component-docs/SideSheet",
+  "permalink": "/docs/component-docs/SideSheet",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/SideSheet.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Modal",
+    "permalink": "/docs/component-docs/Modal"
+  },
+  "next": {
+    "title": "Spinner",
+    "permalink": "/docs/component-docs/Spinner"
+  }
+}
