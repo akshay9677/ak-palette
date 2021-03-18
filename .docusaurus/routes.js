@@ -44,7 +44,7 @@ export default [
 },
 {
   path: '/docs',
-  component: ComponentCreator('/docs','e32'),
+  component: ComponentCreator('/docs','a48'),
   
   routes: [
 {
@@ -73,6 +73,11 @@ export default [
   exact: true,
 },
 {
+  path: '/docs/component-docs/Input',
+  component: ComponentCreator('/docs/component-docs/Input','da3'),
+  exact: true,
+},
+{
   path: '/docs/component-docs/Modal',
   component: ComponentCreator('/docs/component-docs/Modal','cff'),
   exact: true,
@@ -85,6 +90,11 @@ export default [
 {
   path: '/docs/component-docs/Spinner',
   component: ComponentCreator('/docs/component-docs/Spinner','d3c'),
+  exact: true,
+},
+{
+  path: '/docs/component-docs/TextArea',
+  component: ComponentCreator('/docs/component-docs/TextArea','f51'),
   exact: true,
 },
 {

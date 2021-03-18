@@ -2,24 +2,25 @@ import React, { useState } from "react";
 
 import { Story, Meta } from "@storybook/react/types-6-0";
 
-import Input from "./Input";
+import TextArea from "./TextArea";
 
 export default {
-  title: "Example/Input",
-  component: Input,
+  title: "Example/TextArea",
+  component: TextArea,
 } as Meta;
 
 const Template: Story = (args) => {
   const [value, setValue] = useState("");
   return (
-    <Input
+    <TextArea
       placeholder={args.placeholder}
-      size={args.size}
       disabled={args.disabled}
       value={value}
       width={args.width}
-      isInvalid={args.isValid}
+      isInvalid={args.isInvalid}
       validationText={args.validationText}
+      rows={args.rows}
+      cols={args.cols}
       onChange={(e: any) => {
         setValue(e.target.value);
         console.log(e.target.value);

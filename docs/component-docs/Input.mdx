@@ -1,0 +1,113 @@
+import { Input } from "../../src/index";
+
+The `Input` component is a basic input component which users can use to enter values into it.
+
+## Usage
+
+<Input placeholder="Enter your name" />
+
+#### Code
+
+```jsx
+<Input placeholder="Enter your name" />
+```
+
+## Sizes
+
+The input component comes in three different sizes,
+
+- `"mini"`
+- `"small"`
+- `"large"`
+
+The default size is `"small"` and the width of the field is also adjustable by using the `width` prop, which accepts
+number values
+
+<div style={{ paddingBottom: "10px" }}>
+  <Input placeholder="Enter your name" size="mini" width={300} />
+</div>
+<div style={{ paddingBottom: "10px" }}>
+  <Input placeholder="Enter your name" width={300} />
+</div>
+<div style={{ paddingBottom: "10px" }}>
+  <Input placeholder="Enter your name" size="large" width={300} />
+</div>
+
+#### Code
+
+```jsx
+<Input placeholder="Enter your name" size="mini" width={300} />
+<Input placeholder="Enter your name" width={300} />
+<Input placeholder="Enter your name" size="large" width={300} />
+```
+
+## Disabled
+
+The input field can be disabled by using a boolean prop called `disabled`
+
+<Input placeholder="Enter your name" disabled />
+
+#### Code
+
+```jsx
+<Input placeholder="Enter your name" disabled />
+```
+
+## Validation
+
+The validation of input field is done by two props `isValid` and `validationText`. The `isValid` prop
+is a boolean which denotes the validation for the field and `validationText` acts as a validation message. The
+`validationText` prop is not mandatory for indicating validation
+
+<Input placeholder="Enter your name" isInvalid={true} />
+<div style={{ paddingTop: "20px" }}>
+  <Input
+    placeholder="Enter your name"
+    isInvalid={true}
+    validationText="Please enter a name"
+  />
+</div>
+
+#### Code
+
+```jsx
+<Input placeholder="Enter your name" isInvalid={true} />
+<Input
+  placeholder="Enter your name"
+  isInvalid={true}
+  validationText="Please enter a name"
+/>
+```
+
+## Controlled Usage
+
+The Input component from Palette is same as the `input` use `value` and `onChange` props to control the field value.
+Use `event.target.value` from `onChange` to set the value
+
+```jsx
+const MyComponent = () => {
+  const [name, setName] = useState("");
+  return (
+    <Input
+      placeholder="Enter your name"
+      value={name}
+      onChange={(e) => {
+        setName(e.target.value);
+      }}
+    />
+  );
+};
+```
+
+## API
+
+|      Prop      |   Type    |         Possible values          | Default Value |
+| :------------: | :-------: | :------------------------------: | :-----------: |
+|  placeholder   | `string`  |         Any string value         |     `""`      |
+|      size      | `string`  | `"mini"`,`"small"` and `"large"` |   `"small"`   |
+|     width      | `number`  |    Any number accepted values    |      400      |
+|    disabled    | `boolean` |        `true` and `false`        |    `false`    |
+|   isInvalid    | `boolean` |        `true` and `false`        |    `false`    |
+| validationText | `string`  |         Any string value         |     `""`      |
+
+Built by Akshay 🤙

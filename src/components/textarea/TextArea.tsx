@@ -4,33 +4,34 @@ import Container from "ui-box";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamationCircle } from "@fortawesome/free-solid-svg-icons";
 
-type InputProps = {
+type TextAreaProps = {
   placeholder?: string;
-  size?: "mini" | "small" | "large";
   disabled?: boolean;
   width?: number;
   isInvalid?: boolean;
   validationText?: string;
+  rows?: number;
   [prop: string]: any;
 };
 
-const Input: React.FC<InputProps> = ({
+const TextArea: React.FC<TextAreaProps> = ({
   placeholder,
-  size,
   disabled,
   width,
   isInvalid,
   validationText,
+  rows,
   ...rest
 }): JSX.Element => {
   return (
     <Container width={width ? width : 300}>
-      <input
-        className={`pal-input-field ${size ? size : "small"} ${
-          disabled ? "disabled" : ""
-        } ${isInvalid ? "isInvalid" : ""}`}
+      <textarea
+        className={`pal-text-area-field ${disabled ? "disabled" : ""} ${
+          isInvalid ? "isInvalid" : ""
+        }`}
         placeholder={placeholder}
         disabled={disabled}
+        rows={rows}
         {...rest}
       />
       {isInvalid && validationText && (
@@ -45,4 +46,4 @@ const Input: React.FC<InputProps> = ({
   );
 };
 
-export default Input;
+export default TextArea;

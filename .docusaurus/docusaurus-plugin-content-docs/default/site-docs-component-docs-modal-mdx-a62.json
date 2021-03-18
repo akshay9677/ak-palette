@@ -11,8 +11,8 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Checkbox",
-    "permalink": "/docs/component-docs/Checkbox"
+    "title": "Input",
+    "permalink": "/docs/component-docs/Input"
   },
   "next": {
     "title": "SideSheet",

@@ -36,6 +36,11 @@
               "sidebar": "someSidebar"
             },
             {
+              "id": "component-docs/Input",
+              "path": "/docs/component-docs/Input",
+              "sidebar": "someSidebar"
+            },
+            {
               "id": "component-docs/Modal",
               "path": "/docs/component-docs/Modal",
               "sidebar": "someSidebar"
@@ -48,6 +53,11 @@
             {
               "id": "component-docs/Spinner",
               "path": "/docs/component-docs/Spinner",
+              "sidebar": "someSidebar"
+            },
+            {
+              "id": "component-docs/TextArea",
+              "path": "/docs/component-docs/TextArea",
               "sidebar": "someSidebar"
             },
             {

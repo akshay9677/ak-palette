@@ -49,6 +49,11 @@
           },
           {
             "type": "link",
+            "label": "Input",
+            "href": "/docs/component-docs/Input"
+          },
+          {
+            "type": "link",
             "label": "Modal",
             "href": "/docs/component-docs/Modal"
           },
@@ -61,6 +66,11 @@
             "type": "link",
             "label": "Spinner",
             "href": "/docs/component-docs/Spinner"
+          },
+          {
+            "type": "link",
+            "label": "TextArea",
+            "href": "/docs/component-docs/TextArea"
           },
           {
             "type": "link",
@@ -82,9 +92,11 @@
     "/docs/component-docs/Badge": "someSidebar",
     "/docs/component-docs/Button": "someSidebar",
     "/docs/component-docs/Checkbox": "someSidebar",
+    "/docs/component-docs/Input": "someSidebar",
     "/docs/component-docs/Modal": "someSidebar",
     "/docs/component-docs/SideSheet": "someSidebar",
     "/docs/component-docs/Spinner": "someSidebar",
+    "/docs/component-docs/TextArea": "someSidebar",
     "/docs/component-docs/Toast": "someSidebar",
     "/docs/component-docs/ToolTip": "someSidebar",
     "/docs/getting-started/overview": "someSidebar"

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/TextArea",
+  "id": "component-docs/TextArea",
+  "isDocsHomePage": false,
+  "title": "TextArea",
+  "description": "The TextArea component is a basic textarea component which users can use to enter values into it.",
+  "source": "@site/docs/component-docs/TextArea.mdx",
+  "slug": "/component-docs/TextArea",
+  "permalink": "/docs/component-docs/TextArea",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/TextArea.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Spinner",
+    "permalink": "/docs/component-docs/Spinner"
+  },
+  "next": {
+    "title": "Toast",
+    "permalink": "/docs/component-docs/Toast"
+  }
+}

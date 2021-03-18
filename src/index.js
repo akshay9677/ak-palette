@@ -14,6 +14,9 @@ export * from './components/buttons/Button';
 export {default as CheckBox} from './components/checkbox/Checkbox'
 export * from './components/checkbox/Checkbox';
 
+export {default as Input} from './components/input/Input'
+export * from './components/input/Input';
+
 export {default as Modal} from './components/modal/Modal'
 export * from './components/modal/Modal';
 
@@ -22,6 +25,9 @@ export * from './components/sidesheet/SideSheet';
 
 export {default as Spinner} from './components/spinner/Spinner'
 export * from './components/spinner/Spinner';
+
+export {default as TextArea} from './components/textarea/TextArea'
+export * from './components/textarea/TextArea';
 
 export {default as toast} from './components/toaster/Toast'
 export * from './components/toaster/Toast';

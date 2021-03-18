@@ -52,6 +52,10 @@
                   },
                   {
                     "type": "doc",
+                    "id": "component-docs/Input"
+                  },
+                  {
+                    "type": "doc",
                     "id": "component-docs/Modal"
                   },
                   {
@@ -61,6 +65,10 @@
                   {
                     "type": "doc",
                     "id": "component-docs/Spinner"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/TextArea"
                   },
                   {
                     "type": "doc",
@@ -80,9 +88,11 @@
             "/docs/component-docs/Badge": "someSidebar",
             "/docs/component-docs/Button": "someSidebar",
             "/docs/component-docs/Checkbox": "someSidebar",
+            "/docs/component-docs/Input": "someSidebar",
             "/docs/component-docs/Modal": "someSidebar",
             "/docs/component-docs/SideSheet": "someSidebar",
             "/docs/component-docs/Spinner": "someSidebar",
+            "/docs/component-docs/TextArea": "someSidebar",
             "/docs/component-docs/Toast": "someSidebar",
             "/docs/component-docs/ToolTip": "someSidebar",
             "/docs/getting-started/overview": "someSidebar"
@@ -189,6 +199,27 @@
                 "permalink": "/docs/component-docs/Button"
               },
               "next": {
+                "title": "Input",
+                "permalink": "/docs/component-docs/Input"
+              }
+            },
+            {
+              "unversionedId": "component-docs/Input",
+              "id": "component-docs/Input",
+              "isDocsHomePage": false,
+              "title": "Input",
+              "description": "The Input component is a basic input component which users can use to enter values into it.",
+              "source": "@site/docs/component-docs/Input.mdx",
+              "slug": "/component-docs/Input",
+              "permalink": "/docs/component-docs/Input",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Input.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Checkbox",
+                "permalink": "/docs/component-docs/Checkbox"
+              },
+              "next": {
                 "title": "Modal",
                 "permalink": "/docs/component-docs/Modal"
               }
@@ -206,8 +237,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Checkbox",
-                "permalink": "/docs/component-docs/Checkbox"
+                "title": "Input",
+                "permalink": "/docs/component-docs/Input"
               },
               "next": {
                 "title": "SideSheet",
@@ -252,6 +283,27 @@
                 "permalink": "/docs/component-docs/SideSheet"
               },
               "next": {
+                "title": "TextArea",
+                "permalink": "/docs/component-docs/TextArea"
+              }
+            },
+            {
+              "unversionedId": "component-docs/TextArea",
+              "id": "component-docs/TextArea",
+              "isDocsHomePage": false,
+              "title": "TextArea",
+              "description": "The TextArea component is a basic textarea component which users can use to enter values into it.",
+              "source": "@site/docs/component-docs/TextArea.mdx",
+              "slug": "/component-docs/TextArea",
+              "permalink": "/docs/component-docs/TextArea",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/TextArea.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Spinner",
+                "permalink": "/docs/component-docs/Spinner"
+              },
+              "next": {
                 "title": "Toast",
                 "permalink": "/docs/component-docs/Toast"
               }
@@ -269,8 +321,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Spinner",
-                "permalink": "/docs/component-docs/Spinner"
+                "title": "TextArea",
+                "permalink": "/docs/component-docs/TextArea"
               },
               "next": {
                 "title": "ToolTip",
