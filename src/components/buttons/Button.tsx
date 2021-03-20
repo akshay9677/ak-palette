@@ -5,7 +5,6 @@ import Spinner from "../spinner/Spinner";
 type ButtonProps = {
   children: React.ReactNode;
   appearance?: "primary" | "secondary";
-  size?: "mini" | "small" | "large";
   uppercase?: boolean;
   onClick?: () => void;
   disabled?: boolean;
@@ -16,7 +15,6 @@ type ButtonProps = {
 const Button: React.FC<ButtonProps> = ({
   children,
   appearance,
-  size,
   uppercase,
   onClick,
   disabled,
@@ -32,7 +30,6 @@ const Button: React.FC<ButtonProps> = ({
         }}
         className={`pal-button-container 
     ${appearance ? appearance : "primary"}
-     ${size ? size : "small"} 
      ${uppercase ? "uppercase" : ""}
      ${disabled && "disabled"}`}
         style={

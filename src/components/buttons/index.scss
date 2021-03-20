@@ -1,6 +1,7 @@
 @import "../../assets/main.scss";
 .pal-button {
   .pal-button-container {
+    padding: 8px 12px;
     -webkit-font-smoothing: antialiased;
     appearance: none;
     vertical-align: middle;
@@ -30,24 +31,6 @@
     color: $pal-primary;
   }
 
-  .mini {
-    height: 20px;
-    font-size: 10px;
-    padding: 0px 12px;
-    border-radius: 4px;
-  }
-
-  .small {
-    font-size: 13px;
-    padding: 0px 18px;
-    height: 34px;
-  }
-
-  .large {
-    height: 48px;
-    font-size: 16px;
-    padding: 0px 24px;
-  }
   .uppercase {
     text-transform: uppercase;
     letter-spacing: 0.56px;

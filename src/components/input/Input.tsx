@@ -6,33 +6,65 @@ import { faExclamationCircle } from "@fortawesome/free-solid-svg-icons";
 
 type InputProps = {
   placeholder?: string;
-  size?: "mini" | "small" | "large";
   disabled?: boolean;
   width?: number;
   isInvalid?: boolean;
   validationText?: string;
+  height?: number;
+  prefix?: React.ReactNode;
+  suffix?: React.ReactNode;
   [prop: string]: any;
+};
+
+const getTextSizeForControlHeight = (height: number) => {
+  return `${(0.45 * height).toFixed()}px`;
 };
 
 const Input: React.FC<InputProps> = ({
   placeholder,
-  size,
   disabled,
   width,
   isInvalid,
   validationText,
+  height,
+  prefix,
+  suffix,
   ...rest
 }): JSX.Element => {
   return (
-    <Container width={width ? width : 300}>
-      <input
-        className={`pal-input-field ${size ? size : "small"} ${
+    <div className="pal-input">
+      <Container
+        width={width ? width : 300}
+        height={height && height >= 24 ? height : 32}
+        position="relative"
+        className={`pal-input-field-container ${isInvalid ? "isInvalid" : ""} ${
           disabled ? "disabled" : ""
-        } ${isInvalid ? "isInvalid" : ""}`}
-        placeholder={placeholder}
-        disabled={disabled}
-        {...rest}
-      />
+        }`}
+      >
+        {suffix && (
+          <Container maxWidth={40} paddingX="2px">
+            {suffix}
+          </Container>
+        )}
+        <input
+          className="pal-input-field"
+          placeholder={placeholder}
+          disabled={disabled}
+          style={{
+            fontSize: getTextSizeForControlHeight(
+              height && height >= 24 ? height : 32
+            ),
+          }}
+          {...rest}
+        />
+
+        {prefix && (
+          <Container maxWidth={40} paddingX="2px">
+            {prefix}
+          </Container>
+        )}
+      </Container>
+
       {isInvalid && validationText && (
         <span className="validate-text">
           <span style={{ paddingRight: "4px" }}>
@@ -41,7 +73,7 @@ const Input: React.FC<InputProps> = ({
           {validationText}
         </span>
       )}
-    </Container>
+    </div>
   );
 };
 

@@ -15,7 +15,6 @@ export default {
 const Template: Story = (args) => (
   <Button
     appearance={args.appearance}
-    size={args.size}
     onClick={() => alert("hello")}
     uppercase={args.uppercase}
     disabled={args.disabled}

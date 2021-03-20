@@ -1,4 +1,6 @@
 import { Input } from "../../src/index";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAt, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 The `Input` component is a basic input component which users can use to enter values into it.
 
@@ -14,31 +16,25 @@ The `Input` component is a basic input component which users can use to enter va
 
 ## Sizes
 
-The input component comes in three different sizes,
-
-- `"mini"`
-- `"small"`
-- `"large"`
-
-The default size is `"small"` and the width of the field is also adjustable by using the `width` prop, which accepts
-number values
+The input component uses `width` and `height` properties for the size of the component. Both the props accepts number values.
+The default value for width is `300` and height is `32`
 
 <div style={{ paddingBottom: "10px" }}>
-  <Input placeholder="Enter your name" size="mini" width={300} />
+  <Input placeholder="Enter your name" height={28} width={200} />
 </div>
 <div style={{ paddingBottom: "10px" }}>
-  <Input placeholder="Enter your name" width={300} />
+  <Input placeholder="Enter your name" height={40} width={280} />
 </div>
 <div style={{ paddingBottom: "10px" }}>
-  <Input placeholder="Enter your name" size="large" width={300} />
+  <Input placeholder="Enter your name" height={50} width={320} />
 </div>
 
 #### Code
 
 ```jsx
-<Input placeholder="Enter your name" size="mini" width={300} />
-<Input placeholder="Enter your name" width={300} />
-<Input placeholder="Enter your name" size="large" width={300} />
+<Input placeholder="Enter your name" height={28} width={200} />
+<Input placeholder="Enter your name" height={40} width={300} />
+<Input placeholder="Enter your name" height={40} width={300} />
 ```
 
 ## Disabled
@@ -51,6 +47,60 @@ The input field can be disabled by using a boolean prop called `disabled`
 
 ```jsx
 <Input placeholder="Enter your name" disabled />
+```
+
+## Icon Input
+
+The input field can have a icon by using the props `suffix` and `prefix`
+
+<div style={{ paddingBottom: "15px" }}>
+  <Input
+    placeholder="Enter your email"
+    suffix={
+      <div style={{ color: "#888" }}>
+        <FontAwesomeIcon icon={faAt} />
+      </div>
+    }
+  />
+</div>
+<div style={{ paddingBottom: "15px" }}>
+  <Input
+    placeholder="Search"
+    prefix={
+      <div style={{ color: "#888" }}>
+        <FontAwesomeIcon icon={faSearch} />
+      </div>
+    }
+  />
+</div>
+<Input
+  placeholder="Enter amount"
+  prefix={<div style={{ color: "#888" }}>₹</div>}
+/>
+
+#### Code
+
+```jsx
+<Input
+  placeholder="Enter your email"
+  suffix={
+    <div style={{ color: "#888" }}>
+      <FontAwesomeIcon icon={faAt} />
+    </div>
+  }
+/>
+<Input
+  placeholder="Search"
+  prefix={
+    <div style={{ color: "#888" }}>
+      <FontAwesomeIcon icon={faSearch} />
+    </div>
+  }
+/>
+<Input
+  placeholder="Enter amount"
+  prefix={<div style={{ color: "#888" }}>₹</div>}
+/>
 ```
 
 ## Validation
@@ -101,13 +151,15 @@ const MyComponent = () => {
 
 ## API
 
-|      Prop      |   Type    |         Possible values          | Default Value |
-| :------------: | :-------: | :------------------------------: | :-----------: |
-|  placeholder   | `string`  |         Any string value         |     `""`      |
-|      size      | `string`  | `"mini"`,`"small"` and `"large"` |   `"small"`   |
-|     width      | `number`  |    Any number accepted values    |      400      |
-|    disabled    | `boolean` |        `true` and `false`        |    `false`    |
-|   isInvalid    | `boolean` |        `true` and `false`        |    `false`    |
-| validationText | `string`  |         Any string value         |     `""`      |
+|      Prop      |    Type     |      Possible values       | Default Value |
+| :------------: | :---------: | :------------------------: | :-----------: |
+|  placeholder   |  `string`   |      Any string value      |     `""`      |
+|     height     |  `number`   | Any number accepted values |      400      |
+|     width      |  `number`   | Any number accepted values |      400      |
+|    disabled    |  `boolean`  |     `true` and `false`     |    `false`    |
+|     suffix     | `ReactNode` |             -              |       -       |
+|     prefix     | `ReactNode` |             -              |       -       |
+|   isInvalid    |  `boolean`  |     `true` and `false`     |    `false`    |
+| validationText |  `string`   |      Any string value      |     `""`      |
 
 Built by Akshay 🤙

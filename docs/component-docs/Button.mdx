@@ -33,42 +33,38 @@ The Palette Button component has two `appearance`
   </Button>
 ```
 
-## Sizes
+## Size
 
-By default the Button Component has a size of `small`. The Palette Button component has three `size` variants
+Since the Button component renders the children as it is, the height is determined by the children.
 
-- `mini`
-- `small`
-- `large`
-
+<Button>
   <div
     style={{
+      height: "50px",
       display: "flex",
       alignItems: "center",
-      paddingBottom: "25px",
-      paddingTop: "10px",
+      fontSize: "16px",
     }}
   >
-    <span style={{ paddingRight: "10px" }}>
-      <Button size="mini">Mini Button</Button>
-    </span>
-    <span style={{ paddingRight: "10px" }}>
-      <Button size="small">Small Button</Button>
-    </span>
-    <span style={{ paddingRight: "10px" }}>
-      <Button size="large">Large Button</Button>
-    </span>
+    Large Button
   </div>
+</Button>
 
 #### Code
 
 ```jsx
-// mini button
-<Button size="mini">Mini Button</Button>
-// small button
-<Button size="small">Small Button</Button>
-// large button
-<Button size="large">Large Button</Button>
+<Button>
+  <div
+    style={{
+      height: "50px",
+      display: "flex",
+      alignItems: "center",
+      fontSize: "16px",
+    }}
+  >
+    Large Button
+  </div>
+</Button>
 ```
 
 ## Color
@@ -170,7 +166,6 @@ The `disabled` prop is used to render a disabled button in the user interface
 |    Prop    |    Type    |              Possible values              | Default Value |
 | :--------: | :--------: | :---------------------------------------: | :-----------: |
 | appearance |  `string`  |        `"primary"`and`"secondary"`        |  `"primary"`  |
-|    size    |  `string`  |     `"mini"`,`"small"` and `"large"`      |   `"small"`   |
 |   color    |  `string`  | Any string with color accepted valuevalue |     `""`      |
 | uppercase  | `boolean`  |            `true` and `false`             |    `false`    |
 |  disabled  | `boolean`  |            `true` and `false`             |    `false`    |

@@ -27,12 +27,12 @@ const ToolTip: React.FC<ToolTipProps> = ({
       left: "105%",
     },
     top: {
-      bottom: "100%",
+      bottom: "90%",
       left: "50%",
       marginLeft: `-${width ? width / 2 : 60}px`,
     },
     bottom: {
-      top: "100%",
+      top: "90%",
       left: "50%",
       marginLeft: `-${width ? width / 2 : 60}px`,
     },
