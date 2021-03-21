@@ -1,10 +1,15 @@
 import React from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+
 import "./index.scss";
 
 type BadgeProps = {
   label: string;
   color?: "green" | "red" | "blue" | "yellow" | "purple" | "default";
+  showClose?: boolean;
+  onClose?: () => void;
 };
 
 const badgeColorHash = {
@@ -29,12 +34,17 @@ const badgeColorHash = {
     color: "#E96F25",
   },
   purple: {
-    backgroundColor: "#dbd9fc",
+    backgroundColor: "#EFF0FF",
     color: "#5851FF",
   },
 };
 
-const Badge: React.FC<BadgeProps> = ({ label, color }): JSX.Element => {
+const Badge: React.FC<BadgeProps> = ({
+  label,
+  color,
+  showClose,
+  onClose,
+}): JSX.Element => {
   const _getBadgeColors = () => {
     let colors = color ? color : "default";
     return badgeColorHash[colors]
@@ -44,6 +54,11 @@ const Badge: React.FC<BadgeProps> = ({ label, color }): JSX.Element => {
   return (
     <span style={_getBadgeColors()} className="pal-badge">
       {label}
+      {showClose && (
+        <span className="pal-badge-close" onClick={onClose}>
+          <FontAwesomeIcon icon={faTimes} />
+        </span>
+      )}
     </span>
   );
 };

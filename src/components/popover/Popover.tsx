@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { createPopper } from "@popperjs/core";
 import Container from "ui-box";
 
@@ -24,6 +24,7 @@ type PopoverProps = {
   hideArrow?: boolean;
   onOpen?: () => void;
   onClose?: () => void;
+  togglePopup?: boolean;
 };
 
 const PLACEMENT_HASH = [
@@ -49,19 +50,28 @@ const Popover: React.FC<PopoverProps> = ({
   hideArrow,
   onClose,
   onOpen,
+  togglePopup,
 }): JSX.Element => {
-  const [showPopover, setShowPopover] = useState(false);
+  const [showPopover, setShowPopover] = useState(
+    togglePopup ? togglePopup : false
+  );
   const popoverRef = useRef(null);
+  const popoverParentRef = useRef(null);
 
-  const openPopover = (e: any): void => {
+  useEffect(() => {
+    if (togglePopup) openPopover(togglePopup);
+  }, [togglePopup]);
+
+  const openPopover = (canShowPopup: boolean): void => {
     const popoverContent = popoverRef.current;
+    const popoverParent = popoverParentRef.current;
 
     if (showPopover && onClose) onClose();
     else if (onOpen) onOpen();
 
-    setShowPopover(!showPopover);
-    if (e && e.target && popoverContent) {
-      createPopper(e.target, popoverContent, {
+    setShowPopover(canShowPopup);
+    if (popoverParent && popoverContent) {
+      createPopper(popoverParent, popoverContent, {
         placement:
           placement && PLACEMENT_HASH.includes(placement)
             ? placement
@@ -79,12 +89,12 @@ const Popover: React.FC<PopoverProps> = ({
   };
   const _onClickOpen = (e: any): void => {
     if (trigger === "click" || !trigger) {
-      openPopover(e);
+      openPopover(!showPopover);
     }
   };
   const _onHoverPopover = (e: any): void => {
     if (trigger === "hover") {
-      openPopover(e);
+      openPopover(!showPopover);
     }
   };
   return (
@@ -93,6 +103,7 @@ const Popover: React.FC<PopoverProps> = ({
       onClick={_onClickOpen}
       onMouseEnter={_onHoverPopover}
       onMouseLeave={_onHoverPopover}
+      ref={popoverParentRef}
     >
       <div id="pal-popover-parent">{children}</div>
       <div id="pal-popover-content" ref={popoverRef}>

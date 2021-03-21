@@ -13,7 +13,12 @@ export default {
 } as Meta;
 
 const Template: Story = (args) => (
-  <Badge color={args.color} label={args.label} />
+  <Badge
+    color={args.color}
+    label={args.label}
+    showClose={args.showClose}
+    onClose={() => alert("Closed")}
+  />
 );
 
 export const Primary = Template.bind({});

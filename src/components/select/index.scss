@@ -1,0 +1,131 @@
+@import "../../assets/main.scss";
+.pal-select {
+  .pal-select-input-field {
+    border: none;
+    width: 97%;
+    color: #425a70;
+    height: 93%;
+    &:hover {
+      border: none;
+    }
+    &:focus {
+      border-color: none;
+      outline: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+  .pal-select-container {
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    // &:focus-within {
+    //   border-color: #5851ff85;
+    //   outline: 0;
+    //   -webkit-box-shadow: 0 0 0 2px #5851ff33;
+    //   box-shadow: 0 0 0 2px #5851ff33;
+    // }
+    &:hover {
+      border-color: #5851ff85;
+      outline: 0;
+      -webkit-box-shadow: 0 0 0 2px #5851ff33;
+      box-shadow: 0 0 0 2px #5851ff33;
+    }
+  }
+
+  .pal-select-container:hover > .pal-select-clear {
+    visibility: visible;
+  }
+
+  :disabled {
+    background-color: unset;
+    cursor: not-allowed;
+  }
+  .disabled {
+    background-color: #fafafa;
+    cursor: not-allowed;
+    &:hover {
+      border-color: #d9d9d9;
+      outline: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+  .isInvalid {
+    border-color: #e67575;
+    &:hover {
+      border-color: #e67575;
+      outline: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+  .validate-text {
+    color: #e67575;
+    font-family: $pal-font-family;
+    font-size: 12px;
+    padding: 3px 0px 0px 2px;
+  }
+  .pal-select-down-arrow {
+    color: #9b9b9b;
+    font-size: 10px;
+    transition: all 0.15s ease 0s;
+    padding-right: 3px;
+  }
+
+  .pal-select-clear {
+    visibility: hidden;
+    cursor: pointer;
+  }
+
+  .pal-arrow-expanded {
+    transform: rotate(180deg);
+    padding-right: 3px;
+  }
+  .pal-select-popover-content {
+    z-index: 9999;
+    display: inline-block;
+  }
+  .pal-select-popover-body {
+    border-radius: 5px;
+    font-family: $pal-font-family;
+    background-color: #ffffff;
+    padding: 5px;
+    animation: pal-popver 0.1s 1;
+    box-shadow: rgb(18 52 77 / 16%) 0px 2px 18px 0px,
+      rgb(18 52 77 / 6%) 0px 2px 4px 0px;
+    font-size: 14px;
+  }
+  .pal-select-dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 12px;
+    display: flex;
+    margin: 5px 0px;
+    justify-content: space-between;
+    &:hover {
+      background-color: #f5f4f4;
+    }
+  }
+  .pal-selected-item {
+    background-color: #efefff;
+    color: $pal-primary;
+  }
+
+  @keyframes pal-popver {
+    0% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

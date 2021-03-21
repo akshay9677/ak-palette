@@ -6,5 +6,13 @@
   padding: 3px 6px;
   border-radius: 3px;
   line-height: 1.5;
-  display: flex;
+  display: inline-flex;
+  .pal-badge-close {
+    font-size: 12px;
+    padding-left: 5px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
 }

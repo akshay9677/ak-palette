@@ -1,5 +1,6 @@
 import { Popover } from "../../src/index";
 import { Button } from "../../src/index";
+import { useState } from "react";
 
 export const SampleContent = () => {
   return (
@@ -219,14 +220,80 @@ The accepted values are the following, each reperesents a seperate position for 
 </Popover>
 ```
 
+## Close from within the content
+
+The Popover content can be closed from within by using `togglePopup` prop. This prop is used when the value is changed
+so if it is required to close the popup content from within set the value for `togglePopup` as `false`
+
+export const MyComponent = () => {
+  const [openPopup, setOpenPopup] = useState(false);
+  return (
+    <Popover
+      content={
+        <div
+          style={{
+            width: "200px",
+            height: "200px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Button appearance="secondary" onClick={() => setOpenPopup(false)}>
+            Close
+          </Button>
+        </div>
+      }
+      togglePopup={openPopup}
+      trigger="click"
+    >
+      <Button>Custom Close</Button>
+    </Popover>
+  );
+};
+
+<MyComponent />
+
+#### Code
+
+```jsx
+const MyComponent = () => {
+  const [openPopup, setOpenPopup] = useState(false);
+  return (
+    <Popover
+      content={
+        <div
+          style={{
+            width: "200px",
+            height: "200px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Button appearance="secondary" onClick={() => setOpenPopup(false)}>
+            Close
+          </Button>
+        </div>
+      }
+      togglePopup={openPopup}
+      trigger="click"
+    >
+      <Button>Custom Close</Button>
+    </Popover>
+  );
+};
+```
+
 ## API
 
-|   Prop    |    Type     |                                                                        Possible values                                                                        | Default Value |
-| :-------: | :---------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------: |
-| children  | `ReactNode` |                                                                               -                                                                               |       -       |
-|  content  | `ReactNose` |                                                                               -                                                                               |       -       |
-|  trigger  |  `string`   |                                                                    `"click"` and `"hover"`                                                                    |   `"click"`   |
-| placement |  `string`   | `"right"`,`"right-start"`,`"right-end"`,`"top"`,`"top-start"`,`"top-end"`,`"left"`,`"left-start"`,`"left-end"`,`"bottom"`,`"bottom-start"` and `"bottom-end"` |  `"bottom"`   |
-| hideArrow |  `boolean`  |                                                                      `true` and `false`                                                                       |    `false`    |
+|    Prop     |    Type     |                                                                        Possible values                                                                        | Default Value |
+| :---------: | :---------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------: |
+|  children   | `ReactNode` |                                                                               -                                                                               |       -       |
+|   content   | `ReactNose` |                                                                               -                                                                               |       -       |
+|   trigger   |  `string`   |                                                                    `"click"` and `"hover"`                                                                    |   `"click"`   |
+|  placement  |  `string`   | `"right"`,`"right-start"`,`"right-end"`,`"top"`,`"top-start"`,`"top-end"`,`"left"`,`"left-start"`,`"left-end"`,`"bottom"`,`"bottom-start"` and `"bottom-end"` |  `"bottom"`   |
+|  hideArrow  |  `boolean`  |                                                                      `true` and `false`                                                                       |    `false`    |
+| togglePopup |  `boolean`  |                                                                      `true` and `false`                                                                       |    `false`    |
 
 Built by Akshay 🤙
