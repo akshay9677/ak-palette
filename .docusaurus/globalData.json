@@ -46,6 +46,11 @@
               "sidebar": "someSidebar"
             },
             {
+              "id": "component-docs/Popover",
+              "path": "/docs/component-docs/Popover",
+              "sidebar": "someSidebar"
+            },
+            {
               "id": "component-docs/SideSheet",
               "path": "/docs/component-docs/SideSheet",
               "sidebar": "someSidebar"

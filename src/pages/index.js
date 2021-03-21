@@ -75,10 +75,12 @@ function Home() {
               to={useBaseUrl("docs/getting-started/Overview")}
             >
               <Button appearance="secondary" size="large">
+                <div style={{height:'25px',display:'flex',alignItems:'center'}}>
                 Get Started
                 <span style={{ padding: "0px 0px 0px 10px", fontSize: "18px" ,color:'#FFD300'}}>
                   <FontAwesomeIcon icon={faRocket} />
                 </span>
+                </div>
               </Button>
             </Link>
           </div>

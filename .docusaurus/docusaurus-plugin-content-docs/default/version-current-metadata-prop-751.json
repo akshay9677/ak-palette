@@ -59,6 +59,11 @@
           },
           {
             "type": "link",
+            "label": "Popover",
+            "href": "/docs/component-docs/Popover"
+          },
+          {
+            "type": "link",
             "label": "SideSheet",
             "href": "/docs/component-docs/SideSheet"
           },
@@ -94,6 +99,7 @@
     "/docs/component-docs/Checkbox": "someSidebar",
     "/docs/component-docs/Input": "someSidebar",
     "/docs/component-docs/Modal": "someSidebar",
+    "/docs/component-docs/Popover": "someSidebar",
     "/docs/component-docs/SideSheet": "someSidebar",
     "/docs/component-docs/Spinner": "someSidebar",
     "/docs/component-docs/TextArea": "someSidebar",

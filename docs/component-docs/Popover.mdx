@@ -1,0 +1,232 @@
+import { Popover } from "../../src/index";
+import { Button } from "../../src/index";
+
+export const SampleContent = () => {
+  return (
+    <div
+      style={{
+        width: "200px",
+        height: "200px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      Sample Content
+    </div>
+  );
+};
+
+The Popover component is used to render a floating card with respect to a target. The Popover component uses
+`children` and `content` prop to render the target and the floating card respectively.
+
+> The `children` is a single child element of the `Popover` component
+
+<Popover
+  content={
+    <div
+      style={{
+        width: "200px",
+        height: "200px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      Sample Content
+    </div>
+  }
+>
+  <Button>Click me</Button>
+</Popover>
+
+#### Code
+
+```jsx
+const SampleContent = () => {
+  return (
+    <div
+      style={{
+        width: "200px",
+        height: "200px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      Sample Content
+    </div>
+  );
+};
+
+<Popover content={<SampleContent />}>
+  <Button>Click me</Button>
+</Popover>;
+```
+
+## Trigger
+
+The Popver component can show the popup content either triggered by a click or a hover event, this can be achieved by using the
+`trigger` prop which accepts `"click"` or `"hover"` strings as its value
+
+<Popover content={<SampleContent />} trigger="hover">
+  <Button>Hover me</Button>
+</Popover>
+
+<Popover content={<SampleContent />}>
+  <Button>Click me</Button>
+</Popover>
+
+#### Code
+
+```jsx
+<Popover
+  content={<SampleContent />}
+  trigger="hover"
+>
+  <Button>Hover me</Button>
+</Popover>
+
+<Popover
+  content={<SampleContent />}
+>
+  <Button>Click me</Button>
+</Popover>
+```
+
+## Placement
+
+The Popover component position can be varied by using the `placement` prop which accepts a string value.
+The accepted values are the following, each reperesents a seperate position for the component,
+
+- `"right"`
+- `"right-start"`
+- `"right-end"`
+- `"top"`
+- `"top-start"`
+- `"top-end"`
+- `"left"`
+- `"left-start"`
+- `"left-end"`
+- `"bottom"`
+- `"bottom-start"`
+- `"bottom-end"`
+
+### Placement Example
+
+#### Center
+
+<Popover content={<SampleContent />} placement="left" trigger="hover">
+  <Button>Left</Button>
+</Popover>
+<Popover content={<SampleContent />} placement="top" trigger="hover">
+  <Button>Top</Button>
+</Popover>
+<Popover content={<SampleContent />} trigger="hover">
+  <Button>Bottom</Button>
+</Popover>
+
+<Popover content={<SampleContent />} placement="right" trigger="hover">
+  <Button>Right</Button>
+</Popover>
+
+#### Code
+
+```jsx
+<Popover content={<SampleContent />} placement="left" trigger="hover">
+  <Button>Left</Button>
+</Popover>
+<Popover content={<SampleContent />} placement="top" trigger="hover">
+  <Button>Top</Button>
+</Popover>
+<Popover content={<SampleContent />} trigger="hover">
+  <Button>Bottom</Button>
+</Popover>
+<Popover content={<SampleContent />} placement="right" trigger="hover">
+  <Button>Right</Button>
+</Popover>
+
+```
+
+#### Start
+
+<Popover content={<SampleContent />} placement="left-start" trigger="hover">
+  <Button>Left-Start</Button>
+</Popover>
+<Popover content={<SampleContent />} placement="top-start" trigger="hover">
+  <Button>Top-Start</Button>
+</Popover>
+<Popover content={<SampleContent />} placement="bottom-start" trigger="hover">
+  <Button>Bottom-Start</Button>
+</Popover>
+
+<Popover content={<SampleContent />} placement="right-start" trigger="hover">
+  <Button>Right-Start</Button>
+</Popover>
+<div></div>
+
+#### Code
+
+```jsx
+
+<Popover content={<SampleContent />} placement="left-start" trigger="hover">
+  <Button>Left-Start</Button>
+</Popover>
+<Popover content={<SampleContent />} placement="top-start" trigger="hover">
+  <Button>Top-Start</Button>
+</Popover>
+<Popover content={<SampleContent />} placement="bottom-start" trigger="hover">
+  <Button>Bottom-Start</Button>
+</Popover>
+
+<Popover content={<SampleContent />} placement="right-start" trigger="hover">
+  <Button>Right-Start</Button>
+</Popover>
+```
+
+#### End
+
+<Popover content={<SampleContent />} placement="left-end" trigger="hover">
+  <Button>Left-End</Button>
+</Popover>
+<Popover content={<SampleContent />} placement="top-end" trigger="hover">
+  <Button>Top-End</Button>
+</Popover>
+<Popover content={<SampleContent />} placement="bottom-end" trigger="hover">
+  <Button>Bottom-End</Button>
+</Popover>
+
+<Popover content={<SampleContent />} placement="right-end" trigger="hover">
+  <Button>Right-End</Button>
+</Popover>
+
+#### Code
+
+```jsx
+
+<Popover content={<SampleContent />} placement="left-end" trigger="hover">
+  <Button>Left-End</Button>
+</Popover>
+<Popover content={<SampleContent />} placement="top-end" trigger="hover">
+  <Button>Top-End</Button>
+</Popover>
+<Popover content={<SampleContent />} placement="bottom-end" trigger="hover">
+  <Button>Bottom-End</Button>
+</Popover>
+
+<Popover content={<SampleContent />} placement="right-end" trigger="hover">
+  <Button>Right-End</Button>
+</Popover>
+```
+
+## API
+
+|   Prop    |    Type     |                                                                        Possible values                                                                        | Default Value |
+| :-------: | :---------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------: |
+| children  | `ReactNode` |                                                                               -                                                                               |       -       |
+|  content  | `ReactNose` |                                                                               -                                                                               |       -       |
+|  trigger  |  `string`   |                                                                    `"click"` and `"hover"`                                                                    |   `"click"`   |
+| placement |  `string`   | `"right"`,`"right-start"`,`"right-end"`,`"top"`,`"top-start"`,`"top-end"`,`"left"`,`"left-start"`,`"left-end"`,`"bottom"`,`"bottom-start"` and `"bottom-end"` |  `"bottom"`   |
+| hideArrow |  `boolean`  |                                                                      `true` and `false`                                                                       |    `false`    |
+
+Built by Akshay 🤙

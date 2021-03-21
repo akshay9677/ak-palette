@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Popover",
+  "id": "component-docs/Popover",
+  "isDocsHomePage": false,
+  "title": "Popover",
+  "description": "export const SampleContent = () => {",
+  "source": "@site/docs/component-docs/Popover.mdx",
+  "slug": "/component-docs/Popover",
+  "permalink": "/docs/component-docs/Popover",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Popover.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Modal",
+    "permalink": "/docs/component-docs/Modal"
+  },
+  "next": {
+    "title": "SideSheet",
+    "permalink": "/docs/component-docs/SideSheet"
+  }
+}

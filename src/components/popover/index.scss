@@ -1,0 +1,61 @@
+@import "../../assets/main.scss";
+.pal-popover {
+  display: inline-flex;
+  font-family: $pal-font-family;
+  border-radius: 4px;
+  position: relative;
+  #pal-popover-parent {
+    padding: 3px;
+  }
+  #pal-popover-content {
+    z-index: 9999;
+    display: inline-block;
+  }
+  .pal-popover-content-main {
+    background-color: #ffffff;
+    padding: 10px;
+    animation: pal-popver 0.1s 1;
+    box-shadow: rgb(67 90 111 / 30%) 0px 0px 1px,
+      rgb(67 90 111 / 47%) 0px 8px 10px -4px;
+  }
+  #pal-popover-content[data-popper-placement^="top"] > #arrow {
+    bottom: -4px;
+  }
+
+  #pal-popover-content[data-popper-placement^="bottom"] > #arrow {
+    top: -4px;
+  }
+
+  #pal-popover-content[data-popper-placement^="left"] > #arrow {
+    right: -4px;
+  }
+
+  #pal-popover-content[data-popper-placement^="right"] > #arrow {
+    left: -4px;
+  }
+
+  @keyframes pal-popver {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  #arrow,
+  #arrow::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: inherit;
+  }
+
+  #arrow {
+    visibility: hidden;
+  }
+  #arrow::before {
+    background-color: #ffffff;
+    content: "";
+    transform: rotate(45deg);
+  }
+}

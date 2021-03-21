@@ -9,6 +9,7 @@ module.exports = {
       "component-docs/Checkbox",
       "component-docs/Input",
       "component-docs/Modal",
+      "component-docs/Popover",
       "component-docs/SideSheet",
       "component-docs/Spinner",
       "component-docs/TextArea",

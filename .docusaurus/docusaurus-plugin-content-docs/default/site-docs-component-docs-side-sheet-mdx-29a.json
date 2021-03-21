@@ -11,8 +11,8 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Modal",
-    "permalink": "/docs/component-docs/Modal"
+    "title": "Popover",
+    "permalink": "/docs/component-docs/Popover"
   },
   "next": {
     "title": "Spinner",

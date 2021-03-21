@@ -11,7 +11,7 @@ export default {
 
 const Template: Story = (args) => {
   return (
-    <ToolTip label={args.label} position={args.position} width={args.width}>
+    <ToolTip label={args.label} placement={args.placement} width={args.width}>
       Hover over me to get a tooltip
     </ToolTip>
   );

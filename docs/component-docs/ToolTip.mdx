@@ -25,19 +25,27 @@ to render the text for the tooltip
 </ToolTip>
 ```
 
-## Position
+## Placement
 
-The ToolTip component position can also be varied by using the `position` prop which accepts a string value.
+The ToolTip component position can also be varied by using the `placement` prop which accepts a string value.
 The accepted values are the following, each reperesents a seperate position for the component,
 
-- `"left"`
 - `"right"`
+- `"right-start"`
+- `"right-end"`
 - `"top"`
+- `"top-start"`
+- `"top-end"`
+- `"left"`
+- `"left-start"`
+- `"left-end"`
 - `"bottom"`
+- `"bottom-start"`
+- `"bottom-end"`
 
-export const ToolTipText = ({ position }) => {
+export const ToolTipText = ({ placement }) => {
   return (
-    <ToolTip label="Sample tool tip" position={position}>
+    <ToolTip label="Sample tool tip" placement={placement}>
       <div
         style={{
           fontSize: "20px",
@@ -49,7 +57,7 @@ export const ToolTipText = ({ position }) => {
       >
         <FontAwesomeIcon icon={faInfoCircle} />
         <div style={{ fontSize: "14px", color: "black" }}>
-          {position.toUpperCase()}
+          {placement.toUpperCase()}
         </div>
       </div>
     </ToolTip>
@@ -64,10 +72,10 @@ export const ToolTipText = ({ position }) => {
     width: "70%",
   }}
 >
-  <ToolTipText position="right" />
-  <ToolTipText position="left" />
-  <ToolTipText position="top" />
-  <ToolTipText position="bottom" />
+  <ToolTipText placement="left" />
+  <ToolTipText placement="top" />
+  <ToolTipText placement="bottom" />
+  <ToolTipText placement="right" />
 </div>
 
 #### Code
@@ -91,16 +99,27 @@ export const ToolTipText = ({ position }) => {
 
 The width of the ToolTip can also be adjusted by using the `width` prop. This prop accepts `number` value.
 
-<ToolTip label="This is a sample tool tip width custom width" width={300}>
-  <div style={{ fontWeight: "500" }}>Hover over me</div>
+<ToolTip label="This is a sample tool tip with custom width" width={300}>
+  <div style={{ fontWeight: "700" }}>Custom Width</div>
+</ToolTip>
+
+<span style={{ paddingRight: "10px" }}></span>
+
+<ToolTip label="This is a sample tool tip without custom width">
+  <div style={{ fontWeight: "700" }}>Default Width</div>
 </ToolTip>
 
 #### Code
 
 ```jsx
-<ToolTip label="This is a sample tool tip" width={300}>
-  Hover over me
+<ToolTip label="This is a sample tool tip with custom width" width={300}>
+  <div style={{ fontWeight: "500" }}>Hover over me</div>
 </ToolTip>
+
+<ToolTip label="This is a sample tool tip without custom width">
+  <div style={{ fontWeight: "500" }}>Hover over me</div>
+</ToolTip>
+
 ```
 
 ## API
