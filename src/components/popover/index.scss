@@ -2,7 +2,6 @@
 .pal-popover {
   display: inline-flex;
   font-family: $pal-font-family;
-  border-radius: 4px;
   position: relative;
   #pal-popover-parent {
     padding: 3px;
@@ -12,7 +11,7 @@
     display: inline-block;
   }
   .pal-popover-content-main {
-    border-radius: 5px;
+    border-radius: 6px;
     background-color: #ffffff;
     padding: 10px;
     animation: pal-popver 0.1s 1;

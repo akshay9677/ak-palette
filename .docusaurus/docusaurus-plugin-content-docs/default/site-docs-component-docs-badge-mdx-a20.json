@@ -11,11 +11,11 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Avatar",
-    "permalink": "/docs/component-docs/Avatar"
+    "title": "Alert",
+    "permalink": "/docs/component-docs/Alert"
   },
   "next": {
-    "title": "Button",
-    "permalink": "/docs/component-docs/Button"
+    "title": "Spinner",
+    "permalink": "/docs/component-docs/Spinner"
   }
 }

@@ -23,69 +23,95 @@
         "label": "Components",
         "items": [
           {
-            "type": "link",
-            "label": "Alert",
-            "href": "/docs/component-docs/Alert"
+            "collapsed": true,
+            "type": "category",
+            "label": "Forms",
+            "items": [
+              {
+                "type": "link",
+                "label": "Button",
+                "href": "/docs/component-docs/Button"
+              },
+              {
+                "type": "link",
+                "label": "Checkbox",
+                "href": "/docs/component-docs/Checkbox"
+              },
+              {
+                "type": "link",
+                "label": "Input",
+                "href": "/docs/component-docs/Input"
+              },
+              {
+                "type": "link",
+                "label": "Select",
+                "href": "/docs/component-docs/Select"
+              },
+              {
+                "type": "link",
+                "label": "TextArea",
+                "href": "/docs/component-docs/TextArea"
+              }
+            ]
           },
           {
-            "type": "link",
-            "label": "Avatar",
-            "href": "/docs/component-docs/Avatar"
+            "collapsed": true,
+            "type": "category",
+            "label": "Overlays",
+            "items": [
+              {
+                "type": "link",
+                "label": "Modal",
+                "href": "/docs/component-docs/Modal"
+              },
+              {
+                "type": "link",
+                "label": "SideSheet",
+                "href": "/docs/component-docs/SideSheet"
+              },
+              {
+                "type": "link",
+                "label": "ToolTip",
+                "href": "/docs/component-docs/ToolTip"
+              },
+              {
+                "type": "link",
+                "label": "Popover",
+                "href": "/docs/component-docs/Popover"
+              }
+            ]
           },
           {
-            "type": "link",
-            "label": "Badge",
-            "href": "/docs/component-docs/Badge"
-          },
-          {
-            "type": "link",
-            "label": "Button",
-            "href": "/docs/component-docs/Button"
-          },
-          {
-            "type": "link",
-            "label": "Checkbox",
-            "href": "/docs/component-docs/Checkbox"
-          },
-          {
-            "type": "link",
-            "label": "Input",
-            "href": "/docs/component-docs/Input"
-          },
-          {
-            "type": "link",
-            "label": "Modal",
-            "href": "/docs/component-docs/Modal"
-          },
-          {
-            "type": "link",
-            "label": "Popover",
-            "href": "/docs/component-docs/Popover"
-          },
-          {
-            "type": "link",
-            "label": "SideSheet",
-            "href": "/docs/component-docs/SideSheet"
-          },
-          {
-            "type": "link",
-            "label": "Spinner",
-            "href": "/docs/component-docs/Spinner"
-          },
-          {
-            "type": "link",
-            "label": "TextArea",
-            "href": "/docs/component-docs/TextArea"
-          },
-          {
-            "type": "link",
-            "label": "Toast",
-            "href": "/docs/component-docs/Toast"
-          },
-          {
-            "type": "link",
-            "label": "ToolTip",
-            "href": "/docs/component-docs/ToolTip"
+            "collapsed": true,
+            "type": "category",
+            "label": "FeedBack / Indicators",
+            "items": [
+              {
+                "type": "link",
+                "label": "Alert",
+                "href": "/docs/component-docs/Alert"
+              },
+              {
+                "type": "link",
+                "label": "Badge",
+                "href": "/docs/component-docs/Badge"
+              },
+              {
+                "type": "link",
+                "label": "Spinner",
+                "href": "/docs/component-docs/Spinner"
+              },
+              {
+                "type": "link",
+                "label": "Toast",
+                "href": "/docs/component-docs/Toast"
+              },
+              {
+                "type": "link",
+                "label": "Avatar",
+                "href": "/docs/component-docs/Avatar"
+              }
+            ]
           }
         ]
       }
@@ -100,6 +126,7 @@
     "/docs/component-docs/Input": "someSidebar",
     "/docs/component-docs/Modal": "someSidebar",
     "/docs/component-docs/Popover": "someSidebar",
+    "/docs/component-docs/Select": "someSidebar",
     "/docs/component-docs/SideSheet": "someSidebar",
     "/docs/component-docs/Spinner": "someSidebar",
     "/docs/component-docs/TextArea": "someSidebar",

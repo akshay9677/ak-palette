@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Select",
+  "id": "component-docs/Select",
+  "isDocsHomePage": false,
+  "title": "Select",
+  "description": "The Select component is used to render a field with list which users can use to select a single value or",
+  "source": "@site/docs/component-docs/Select.mdx",
+  "slug": "/component-docs/Select",
+  "permalink": "/docs/component-docs/Select",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Select.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Input",
+    "permalink": "/docs/component-docs/Input"
+  },
+  "next": {
+    "title": "TextArea",
+    "permalink": "/docs/component-docs/TextArea"
+  }
+}

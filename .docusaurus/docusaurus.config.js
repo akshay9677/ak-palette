@@ -9,6 +9,7 @@ export default {
   "organizationName": "akshay",
   "projectName": "palette",
   "themeConfig": {
+    "sidebarCollapsible": false,
     "colorMode": {
       "defaultMode": "light",
       "disableSwitch": true,

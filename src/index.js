@@ -20,6 +20,9 @@ export * from './components/input/Input';
 export {default as Modal} from './components/modal/Modal'
 export * from './components/modal/Modal';
 
+export {default as Select} from './components/select/Select'
+export * from './components/select/Select';
+
 export {default as Popover} from './components/popover/Popover'
 export * from './components/popover/Popover';
 

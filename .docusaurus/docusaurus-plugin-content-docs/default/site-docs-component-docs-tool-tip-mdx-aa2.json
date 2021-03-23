@@ -11,7 +11,11 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Toast",
-    "permalink": "/docs/component-docs/Toast"
+    "title": "SideSheet",
+    "permalink": "/docs/component-docs/SideSheet"
+  },
+  "next": {
+    "title": "Popover",
+    "permalink": "/docs/component-docs/Popover"
   }
 }

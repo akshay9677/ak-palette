@@ -11,11 +11,11 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Popover",
-    "permalink": "/docs/component-docs/Popover"
+    "title": "Modal",
+    "permalink": "/docs/component-docs/Modal"
   },
   "next": {
-    "title": "Spinner",
-    "permalink": "/docs/component-docs/Spinner"
+    "title": "ToolTip",
+    "permalink": "/docs/component-docs/ToolTip"
   }
 }

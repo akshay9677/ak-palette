@@ -51,6 +51,11 @@
               "sidebar": "someSidebar"
             },
             {
+              "id": "component-docs/Select",
+              "path": "/docs/component-docs/Select",
+              "sidebar": "someSidebar"
+            },
+            {
               "id": "component-docs/SideSheet",
               "path": "/docs/component-docs/SideSheet",
               "sidebar": "someSidebar"

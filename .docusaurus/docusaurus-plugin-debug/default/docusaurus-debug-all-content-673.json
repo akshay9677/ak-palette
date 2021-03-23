@@ -31,56 +31,81 @@
                 "label": "Components",
                 "items": [
                   {
-                    "type": "doc",
-                    "id": "component-docs/Alert"
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Forms",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "component-docs/Button"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "component-docs/Checkbox"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "component-docs/Input"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "component-docs/Select"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "component-docs/TextArea"
+                      }
+                    ]
                   },
                   {
-                    "type": "doc",
-                    "id": "component-docs/Avatar"
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Overlays",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "component-docs/Modal"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "component-docs/SideSheet"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "component-docs/ToolTip"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "component-docs/Popover"
+                      }
+                    ]
                   },
                   {
-                    "type": "doc",
-                    "id": "component-docs/Badge"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "component-docs/Button"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "component-docs/Checkbox"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "component-docs/Input"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "component-docs/Modal"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "component-docs/Popover"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "component-docs/SideSheet"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "component-docs/Spinner"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "component-docs/TextArea"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "component-docs/Toast"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "component-docs/ToolTip"
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "FeedBack / Indicators",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "component-docs/Alert"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "component-docs/Badge"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "component-docs/Spinner"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "component-docs/Toast"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "component-docs/Avatar"
+                      }
+                    ]
                   }
                 ]
               }
@@ -95,6 +120,7 @@
             "/docs/component-docs/Input": "someSidebar",
             "/docs/component-docs/Modal": "someSidebar",
             "/docs/component-docs/Popover": "someSidebar",
+            "/docs/component-docs/Select": "someSidebar",
             "/docs/component-docs/SideSheet": "someSidebar",
             "/docs/component-docs/Spinner": "someSidebar",
             "/docs/component-docs/TextArea": "someSidebar",
@@ -116,12 +142,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Overview",
-                "permalink": "/docs/getting-started/overview"
+                "title": "Popover",
+                "permalink": "/docs/component-docs/Popover"
               },
               "next": {
-                "title": "Avatar",
-                "permalink": "/docs/component-docs/Avatar"
+                "title": "Badge",
+                "permalink": "/docs/component-docs/Badge"
               }
             },
             {
@@ -137,12 +163,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Alert",
-                "permalink": "/docs/component-docs/Alert"
-              },
-              "next": {
-                "title": "Badge",
-                "permalink": "/docs/component-docs/Badge"
+                "title": "Toast",
+                "permalink": "/docs/component-docs/Toast"
               }
             },
             {
@@ -158,12 +180,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Avatar",
-                "permalink": "/docs/component-docs/Avatar"
+                "title": "Alert",
+                "permalink": "/docs/component-docs/Alert"
               },
               "next": {
-                "title": "Button",
-                "permalink": "/docs/component-docs/Button"
+                "title": "Spinner",
+                "permalink": "/docs/component-docs/Spinner"
               }
             },
             {
@@ -179,8 +201,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Badge",
-                "permalink": "/docs/component-docs/Badge"
+                "title": "Overview",
+                "permalink": "/docs/getting-started/overview"
               },
               "next": {
                 "title": "Checkbox",
@@ -225,8 +247,8 @@
                 "permalink": "/docs/component-docs/Checkbox"
               },
               "next": {
-                "title": "Modal",
-                "permalink": "/docs/component-docs/Modal"
+                "title": "Select",
+                "permalink": "/docs/component-docs/Select"
               }
             },
             {
@@ -242,12 +264,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Input",
-                "permalink": "/docs/component-docs/Input"
+                "title": "TextArea",
+                "permalink": "/docs/component-docs/TextArea"
               },
               "next": {
-                "title": "Popover",
-                "permalink": "/docs/component-docs/Popover"
+                "title": "SideSheet",
+                "permalink": "/docs/component-docs/SideSheet"
               }
             },
             {
@@ -263,12 +285,33 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Modal",
-                "permalink": "/docs/component-docs/Modal"
+                "title": "ToolTip",
+                "permalink": "/docs/component-docs/ToolTip"
               },
               "next": {
-                "title": "SideSheet",
-                "permalink": "/docs/component-docs/SideSheet"
+                "title": "Alert",
+                "permalink": "/docs/component-docs/Alert"
+              }
+            },
+            {
+              "unversionedId": "component-docs/Select",
+              "id": "component-docs/Select",
+              "isDocsHomePage": false,
+              "title": "Select",
+              "description": "The Select component is used to render a field with list which users can use to select a single value or",
+              "source": "@site/docs/component-docs/Select.mdx",
+              "slug": "/component-docs/Select",
+              "permalink": "/docs/component-docs/Select",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Select.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Input",
+                "permalink": "/docs/component-docs/Input"
+              },
+              "next": {
+                "title": "TextArea",
+                "permalink": "/docs/component-docs/TextArea"
               }
             },
             {
@@ -284,12 +327,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Popover",
-                "permalink": "/docs/component-docs/Popover"
+                "title": "Modal",
+                "permalink": "/docs/component-docs/Modal"
               },
               "next": {
-                "title": "Spinner",
-                "permalink": "/docs/component-docs/Spinner"
+                "title": "ToolTip",
+                "permalink": "/docs/component-docs/ToolTip"
               }
             },
             {
@@ -305,12 +348,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "SideSheet",
-                "permalink": "/docs/component-docs/SideSheet"
+                "title": "Badge",
+                "permalink": "/docs/component-docs/Badge"
               },
               "next": {
-                "title": "TextArea",
-                "permalink": "/docs/component-docs/TextArea"
+                "title": "Toast",
+                "permalink": "/docs/component-docs/Toast"
               }
             },
             {
@@ -326,12 +369,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Spinner",
-                "permalink": "/docs/component-docs/Spinner"
+                "title": "Select",
+                "permalink": "/docs/component-docs/Select"
               },
               "next": {
-                "title": "Toast",
-                "permalink": "/docs/component-docs/Toast"
+                "title": "Modal",
+                "permalink": "/docs/component-docs/Modal"
               }
             },
             {
@@ -347,12 +390,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "TextArea",
-                "permalink": "/docs/component-docs/TextArea"
+                "title": "Spinner",
+                "permalink": "/docs/component-docs/Spinner"
               },
               "next": {
-                "title": "ToolTip",
-                "permalink": "/docs/component-docs/ToolTip"
+                "title": "Avatar",
+                "permalink": "/docs/component-docs/Avatar"
               }
             },
             {
@@ -368,8 +411,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Toast",
-                "permalink": "/docs/component-docs/Toast"
+                "title": "SideSheet",
+                "permalink": "/docs/component-docs/SideSheet"
+              },
+              "next": {
+                "title": "Popover",
+                "permalink": "/docs/component-docs/Popover"
               }
             },
             {
@@ -385,8 +432,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "next": {
-                "title": "Alert",
-                "permalink": "/docs/component-docs/Alert"
+                "title": "Button",
+                "permalink": "/docs/component-docs/Button"
               }
             }
           ]

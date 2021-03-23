@@ -37,18 +37,6 @@ The default value for width is `300` and height is `32`
 <Input placeholder="Enter your name" height={40} width={300} />
 ```
 
-## Disabled
-
-The input field can be disabled by using a boolean prop called `disabled`
-
-<Input placeholder="Enter your name" disabled />
-
-#### Code
-
-```jsx
-<Input placeholder="Enter your name" disabled />
-```
-
 ## Icon Input
 
 The input field can have a icon by using the props `suffix` and `prefix`
@@ -103,11 +91,24 @@ The input field can have a icon by using the props `suffix` and `prefix`
 />
 ```
 
+## Disabled
+
+The input field can be disabled by using a boolean prop called `disabled`
+
+<Input placeholder="Enter your name" disabled />
+
+#### Code
+
+```jsx
+<Input placeholder="Enter your name" disabled />
+```
+
 ## Validation
 
 The validation of input field is done by two props `isValid` and `validationText`. The `isValid` prop
-is a boolean which denotes the validation for the field and `validationText` acts as a validation message. The
-`validationText` prop is not mandatory for indicating validation
+is a boolean which denotes the validation for the field and `validationText` acts as a validation message
+
+> The `validationText` prop is not mandatory for indicating validation
 
 <Input placeholder="Enter your name" isInvalid={true} />
 <div style={{ paddingTop: "20px" }}>
@@ -161,5 +162,7 @@ const MyComponent = () => {
 |     prefix     | `ReactNode` |             -              |       -       |
 |   isInvalid    |  `boolean`  |     `true` and `false`     |    `false`    |
 | validationText |  `string`   |      Any string value      |     `""`      |
+|     value      |    `any`    |            Any             |       -       |
+|    onChange    | `()=>void`  |             -              |       -       |
 
 Built by Akshay 🤙

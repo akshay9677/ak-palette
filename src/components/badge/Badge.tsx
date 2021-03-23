@@ -10,6 +10,7 @@ type BadgeProps = {
   color?: "green" | "red" | "blue" | "yellow" | "purple" | "default";
   showClose?: boolean;
   onClose?: () => void;
+  [prop: string]: any;
 };
 
 const badgeColorHash = {
@@ -44,6 +45,7 @@ const Badge: React.FC<BadgeProps> = ({
   color,
   showClose,
   onClose,
+  ...rest
 }): JSX.Element => {
   const _getBadgeColors = () => {
     let colors = color ? color : "default";
@@ -52,7 +54,7 @@ const Badge: React.FC<BadgeProps> = ({
       : badgeColorHash["default"];
   };
   return (
-    <span style={_getBadgeColors()} className="pal-badge">
+    <span {...rest} style={_getBadgeColors()} className="pal-badge">
       {label}
       {showClose && (
         <span className="pal-badge-close" onClick={onClose}>

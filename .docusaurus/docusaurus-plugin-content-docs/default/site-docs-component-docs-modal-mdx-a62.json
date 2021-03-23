@@ -11,11 +11,11 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Input",
-    "permalink": "/docs/component-docs/Input"
+    "title": "TextArea",
+    "permalink": "/docs/component-docs/TextArea"
   },
   "next": {
-    "title": "Popover",
-    "permalink": "/docs/component-docs/Popover"
+    "title": "SideSheet",
+    "permalink": "/docs/component-docs/SideSheet"
   }
 }

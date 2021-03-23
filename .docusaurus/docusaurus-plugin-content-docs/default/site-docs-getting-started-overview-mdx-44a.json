@@ -11,7 +11,7 @@
   "version": "current",
   "sidebar": "someSidebar",
   "next": {
-    "title": "Alert",
-    "permalink": "/docs/component-docs/Alert"
+    "title": "Button",
+    "permalink": "/docs/component-docs/Button"
   }
 }

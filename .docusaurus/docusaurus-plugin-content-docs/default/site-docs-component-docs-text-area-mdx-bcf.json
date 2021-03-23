@@ -11,11 +11,11 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Spinner",
-    "permalink": "/docs/component-docs/Spinner"
+    "title": "Select",
+    "permalink": "/docs/component-docs/Select"
   },
   "next": {
-    "title": "Toast",
-    "permalink": "/docs/component-docs/Toast"
+    "title": "Modal",
+    "permalink": "/docs/component-docs/Modal"
   }
 }

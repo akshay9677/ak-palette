@@ -9,6 +9,7 @@ module.exports = {
   organizationName: 'akshay', // Usually your GitHub org/user name.
   projectName: 'palette', // Usually your repo name.
   themeConfig: {
+    sidebarCollapsible: false,
     colorMode:{
       defaultMode: 'light',
       disableSwitch: true,

@@ -11,11 +11,11 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Overview",
-    "permalink": "/docs/getting-started/overview"
+    "title": "Popover",
+    "permalink": "/docs/component-docs/Popover"
   },
   "next": {
-    "title": "Avatar",
-    "permalink": "/docs/component-docs/Avatar"
+    "title": "Badge",
+    "permalink": "/docs/component-docs/Badge"
   }
 }

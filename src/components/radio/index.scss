@@ -1,0 +1,29 @@
+@import "../../assets/main.scss";
+
+.pal-radio-container {
+  display: inline-flex;
+  align-items: center;
+  .pal-radio-label {
+    font-size: 14px;
+    color: #425a70;
+    font-family: $pal-font-family;
+    padding-left: 8px;
+  }
+  .pal-radio-actual-input {
+    border: solid 1px #eee;
+    .pal-select-input-filled {
+      background-color: $pal-primary;
+    }
+  }
+  .pal-radio-input-native {
+    border: 0px;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    opacity: 0;
+  }
+}

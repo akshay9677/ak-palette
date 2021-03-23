@@ -66,6 +66,19 @@ const Select: React.FC<SelectProps> = ({
   useEffect(() => {
     if (onChange) onChange(multiple ? multiSelectItems : selectedItem);
   }, [selectedItem, multiSelectItems]);
+  useEffect(() => {
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
+
+  const handleOutsideClick = (e: any) => {
+    const parentRef = selectParent.current;
+    if (parentRef && !parentRef.contains(e.target)) {
+      setOpenDropdown(false);
+    }
+  };
 
   const TagsList = (): JSX.Element => {
     if (collapseTags) {
@@ -79,13 +92,12 @@ const Select: React.FC<SelectProps> = ({
                 color={tagColor ? tagColor : "purple"}
                 onClose={_removeMultiItem.bind(this, multiSelectItems[0])}
               />
+              <span style={{ paddingLeft: "2px" }}></span>
               {multiSelectItems.length - 1 > 0 && (
-                <span style={{ paddingLeft: "2px" }}>
-                  <Badge
-                    label={`+${multiSelectItems.length - 1}`}
-                    color={tagColor ? tagColor : "purple"}
-                  />
-                </span>
+                <Badge
+                  label={`+${multiSelectItems.length - 1}`}
+                  color={tagColor ? tagColor : "purple"}
+                />
               )}
             </>
           )}
@@ -98,14 +110,17 @@ const Select: React.FC<SelectProps> = ({
             multiSelectItems.map((item, index) => {
               let { label } = item;
               return (
-                <span key={index} style={{ padding: "0px 2px" }}>
+                <>
                   <Badge
+                    key={index}
                     label={label}
                     showClose
                     color={tagColor ? tagColor : "purple"}
                     onClose={_removeMultiItem.bind(this, item)}
                   />
-                </span>
+
+                  <span key={index} style={{ paddingLeft: "2px" }}></span>
+                </>
               );
             })}
         </>
@@ -191,7 +206,7 @@ const Select: React.FC<SelectProps> = ({
           readOnly
           type="input"
           className="pal-select-input-field"
-          placeholder={placeholder}
+          placeholder={multiSelectItems.length > 0 ? "" : placeholder}
           disabled={disabled}
           value={selectedItem.label}
           style={{
@@ -232,7 +247,7 @@ const Select: React.FC<SelectProps> = ({
             width={width ? width : 300}
             className="pal-select-popover-body"
           >
-            {options &&
+            {options ? (
               options.map((currOption, index) => {
                 let { label } = currOption;
                 return (
@@ -251,7 +266,10 @@ const Select: React.FC<SelectProps> = ({
                     )}
                   </div>
                 );
-              })}
+              })
+            ) : (
+              <div className="pal-select-dropdown-no-item">No Data</div>
+            )}
           </Container>
         )}
       </div>

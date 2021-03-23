@@ -44,7 +44,7 @@ export default [
 },
 {
   path: '/docs',
-  component: ComponentCreator('/docs','f5a'),
+  component: ComponentCreator('/docs','a61'),
   
   routes: [
 {
@@ -85,6 +85,11 @@ export default [
 {
   path: '/docs/component-docs/Popover',
   component: ComponentCreator('/docs/component-docs/Popover','737'),
+  exact: true,
+},
+{
+  path: '/docs/component-docs/Select',
+  component: ComponentCreator('/docs/component-docs/Select','222'),
   exact: true,
 },
 {

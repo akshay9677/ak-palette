@@ -1,5 +1,7 @@
 @import "../../assets/main.scss";
 .pal-select {
+  display: inline-flex;
+  flex-direction: column;
   .pal-select-input-field {
     border: none;
     width: 97%;
@@ -17,7 +19,7 @@
   }
   .pal-select-container {
     border: 1px solid #d9d9d9;
-    border-radius: 3px;
+    border-radius: 6px;
     padding: 5px;
     display: flex;
     align-items: center;
@@ -89,10 +91,9 @@
   }
   .pal-select-popover-content {
     z-index: 9999;
-    display: inline-block;
   }
   .pal-select-popover-body {
-    border-radius: 5px;
+    border-radius: 6px;
     font-family: $pal-font-family;
     background-color: #ffffff;
     padding: 5px;
@@ -100,12 +101,16 @@
     box-shadow: rgb(18 52 77 / 16%) 0px 2px 18px 0px,
       rgb(18 52 77 / 6%) 0px 2px 4px 0px;
     font-size: 14px;
+
+    max-height: 200px;
+    overflow: scroll;
   }
   .pal-select-dropdown-item {
+    color: #425a70;
     padding: 10px;
     cursor: pointer;
     font-weight: 500;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 12px;
     display: flex;
     margin: 5px 0px;
@@ -113,6 +118,17 @@
     &:hover {
       background-color: #f5f4f4;
     }
+  }
+  .pal-select-dropdown-no-item {
+    color: #425a70;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 6px;
+    font-size: 12px;
+    display: flex;
+    margin: 5px 0px;
+    justify-content: center;
   }
   .pal-selected-item {
     background-color: #efefff;

@@ -11,11 +11,11 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "TextArea",
-    "permalink": "/docs/component-docs/TextArea"
+    "title": "Spinner",
+    "permalink": "/docs/component-docs/Spinner"
   },
   "next": {
-    "title": "ToolTip",
-    "permalink": "/docs/component-docs/ToolTip"
+    "title": "Avatar",
+    "permalink": "/docs/component-docs/Avatar"
   }
 }
