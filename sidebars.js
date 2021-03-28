@@ -6,6 +6,7 @@ module.exports = {
         Forms: [
           "component-docs/Button",
           "component-docs/Checkbox",
+          "component-docs/DatePicker",
           "component-docs/Input",
           "component-docs/Radio",
           "component-docs/Select",

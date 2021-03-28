@@ -45,6 +45,10 @@
                       },
                       {
                         "type": "doc",
+                        "id": "component-docs/DatePicker"
+                      },
+                      {
+                        "type": "doc",
                         "id": "component-docs/Input"
                       },
                       {
@@ -133,6 +137,7 @@
             "/docs/component-docs/Button": "someSidebar",
             "/docs/component-docs/Card": "someSidebar",
             "/docs/component-docs/Checkbox": "someSidebar",
+            "/docs/component-docs/DatePicker": "someSidebar",
             "/docs/component-docs/Input": "someSidebar",
             "/docs/component-docs/Modal": "someSidebar",
             "/docs/component-docs/Popover": "someSidebar",
@@ -264,6 +269,26 @@
                 "permalink": "/docs/component-docs/Button"
               },
               "next": {
+                "title": "DatePicker",
+                "permalink": "/docs/component-docs/DatePicker"
+              }
+            },
+            {
+              "unversionedId": "component-docs/DatePicker",
+              "id": "component-docs/DatePicker",
+              "isDocsHomePage": false,
+              "title": "DatePicker",
+              "source": "@site/docs/component-docs/DatePicker.mdx",
+              "slug": "/component-docs/DatePicker",
+              "permalink": "/docs/component-docs/DatePicker",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/DatePicker.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Checkbox",
+                "permalink": "/docs/component-docs/Checkbox"
+              },
+              "next": {
                 "title": "Input",
                 "permalink": "/docs/component-docs/Input"
               }
@@ -281,8 +306,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Checkbox",
-                "permalink": "/docs/component-docs/Checkbox"
+                "title": "DatePicker",
+                "permalink": "/docs/component-docs/DatePicker"
               },
               "next": {
                 "title": "Radio",

@@ -1,0 +1,20 @@
+{
+  "unversionedId": "component-docs/DatePicker",
+  "id": "component-docs/DatePicker",
+  "isDocsHomePage": false,
+  "title": "DatePicker",
+  "source": "@site/docs/component-docs/DatePicker.mdx",
+  "slug": "/component-docs/DatePicker",
+  "permalink": "/docs/component-docs/DatePicker",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/DatePicker.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Checkbox",
+    "permalink": "/docs/component-docs/Checkbox"
+  },
+  "next": {
+    "title": "Input",
+    "permalink": "/docs/component-docs/Input"
+  }
+}

@@ -44,7 +44,7 @@ export default [
 },
 {
   path: '/docs',
-  component: ComponentCreator('/docs','63d'),
+  component: ComponentCreator('/docs','8bd'),
   
   routes: [
 {
@@ -75,6 +75,11 @@ export default [
 {
   path: '/docs/component-docs/Checkbox',
   component: ComponentCreator('/docs/component-docs/Checkbox','42b'),
+  exact: true,
+},
+{
+  path: '/docs/component-docs/DatePicker',
+  component: ComponentCreator('/docs/component-docs/DatePicker','34a'),
   exact: true,
 },
 {

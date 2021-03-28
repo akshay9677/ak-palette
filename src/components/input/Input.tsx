@@ -41,9 +41,14 @@ const Input: React.FC<InputProps> = ({
           disabled ? "disabled" : ""
         }`}
       >
-        {suffix && (
-          <Container maxWidth={40} paddingX="2px">
-            {suffix}
+        {prefix && (
+          <Container
+            maxWidth={40}
+            paddingX="2px"
+            display="flex"
+            alignItems="center"
+          >
+            {prefix}
           </Container>
         )}
         <input
@@ -58,9 +63,14 @@ const Input: React.FC<InputProps> = ({
           {...rest}
         />
 
-        {prefix && (
-          <Container maxWidth={40} paddingX="2px">
-            {prefix}
+        {suffix && (
+          <Container
+            maxWidth={40}
+            paddingX="2px"
+            display="flex"
+            alignItems="center"
+          >
+            {suffix}
           </Container>
         )}
       </Container>

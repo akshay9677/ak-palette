@@ -34,6 +34,7 @@ type SelectProps = {
   multiple?: boolean;
   tagColor?: "green" | "red" | "blue" | "yellow" | "purple" | "default";
   collapseTags?: boolean;
+  icon?: React.ReactNode;
 };
 
 const getTextSizeForControlHeight = (height: number) => {
@@ -54,6 +55,7 @@ const Select: React.FC<SelectProps> = ({
   multiple,
   tagColor,
   collapseTags,
+  icon,
 }): JSX.Element => {
   const [openDropdown, setOpenDropdown] = useState(false);
   const [selectedItem, setSelectedItem] = useState(
@@ -202,6 +204,17 @@ const Select: React.FC<SelectProps> = ({
         }`}
         ref={inputRef}
       >
+        {icon && (
+          <Container
+            display="flex"
+            alignItems="center"
+            maxWidth={40}
+            paddingX="3px"
+            color="#425a70"
+          >
+            {icon}
+          </Container>
+        )}
         {multiple && <TagsList />}
         <input
           onClick={_openSelectDropDown}
@@ -251,7 +264,7 @@ const Select: React.FC<SelectProps> = ({
           >
             {options ? (
               options.map((currOption, index) => {
-                let { label } = currOption;
+                let { label } = currOption || {};
                 return (
                   <div
                     key={index}

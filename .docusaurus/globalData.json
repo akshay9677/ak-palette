@@ -41,6 +41,11 @@
               "sidebar": "someSidebar"
             },
             {
+              "id": "component-docs/DatePicker",
+              "path": "/docs/component-docs/DatePicker",
+              "sidebar": "someSidebar"
+            },
+            {
               "id": "component-docs/Input",
               "path": "/docs/component-docs/Input",
               "sidebar": "someSidebar"

@@ -17,6 +17,9 @@ export * from './components/card/Card';
 export {default as CheckBox} from './components/checkbox/Checkbox'
 export * from './components/checkbox/Checkbox';
 
+export {default as DatePicker} from './components/datepicker/DatePicker'
+export * from './components/datepicker/DatePicker';
+
 export {default as Input} from './components/input/Input'
 export * from './components/input/Input';
 

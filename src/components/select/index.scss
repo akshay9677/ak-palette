@@ -45,10 +45,12 @@
   :disabled {
     background-color: unset;
     cursor: not-allowed;
+    opacity: 0.6;
   }
   .disabled {
     background-color: #fafafa;
     cursor: not-allowed;
+    opacity: 0.6;
     &:hover {
       border-color: #d9d9d9;
       outline: 0;
@@ -74,7 +76,7 @@
     padding: 3px 0px 0px 2px;
   }
   .pal-select-down-arrow {
-    color: #9b9b9b;
+    color: #425a70;
     font-size: 10px;
     transition: all 0.15s ease 0s;
     padding-right: 3px;
@@ -83,6 +85,7 @@
   .pal-select-clear {
     visibility: hidden;
     cursor: pointer;
+    color: #425a70;
   }
 
   .pal-arrow-expanded {

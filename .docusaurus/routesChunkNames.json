@@ -25,7 +25,7 @@
   "/__docusaurus/debug/routes-244": {
     "component": "component---theme-debug-routes-946-699"
   },
-  "/docs-63d": {
+  "/docs-8bd": {
     "component": "component---theme-doc-page-1-be-9be",
     "versionMetadata": "versionMetadata---docs-935-398"
   },
@@ -52,6 +52,10 @@
   "/docs/component-docs/Checkbox-42b": {
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-component-docs-checkbox-18-f-2da"
+  },
+  "/docs/component-docs/DatePicker-34a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-component-docs-date-picker-786-f37"
   },
   "/docs/component-docs/Input-da3": {
     "component": "component---theme-doc-item-178-a40",

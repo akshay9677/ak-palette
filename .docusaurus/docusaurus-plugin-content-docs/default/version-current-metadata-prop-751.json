@@ -39,6 +39,11 @@
               },
               {
                 "type": "link",
+                "label": "DatePicker",
+                "href": "/docs/component-docs/DatePicker"
+              },
+              {
+                "type": "link",
                 "label": "Input",
                 "href": "/docs/component-docs/Input"
               },
@@ -141,6 +146,7 @@
     "/docs/component-docs/Button": "someSidebar",
     "/docs/component-docs/Card": "someSidebar",
     "/docs/component-docs/Checkbox": "someSidebar",
+    "/docs/component-docs/DatePicker": "someSidebar",
     "/docs/component-docs/Input": "someSidebar",
     "/docs/component-docs/Modal": "someSidebar",
     "/docs/component-docs/Popover": "someSidebar",
