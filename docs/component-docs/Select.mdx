@@ -41,18 +41,33 @@ export let optionsList = [
 The size of the select component can be varied by using the `height` and `width` prop bothe accepts number values and this
 determines the size of the component the default values are `32` and `300` respectively.
 
-<Select width={250} height={34} placeholder="Select a country" />
+<Select
+  width={250}
+  options={optionsList}
+  height={34}
+  placeholder="Select a country"
+/>
 <div style={{ paddingBottom: "10px" }}></div>
-<Select width={280} height={38} placeholder="Select a country" />
+<Select
+  width={280}
+  options={optionsList}
+  height={38}
+  placeholder="Select a country"
+/>
 <div style={{ paddingBottom: "10px" }}></div>
-<Select width={300} height={46} placeholder="Select a country" />
+<Select
+  width={300}
+  options={optionsList}
+  height={46}
+  placeholder="Select a country"
+/>
 
 #### Code
 
 ```jsx
-<Select width={250} height={34} placeholder="Select a country" />
-<Select width={280} height={38} placeholder="Select a country" />
-<Select width={300} height={46} placeholder="Select a country" />
+<Select width={250} height={34} options={optionsList} placeholder="Select a country" />
+<Select width={280} height={38} options={optionsList} placeholder="Select a country" />
+<Select width={300} height={46} options={optionsList} placeholder="Select a country" />
 ```
 
 ## Multiple Select
@@ -120,6 +135,8 @@ to know about the available tag colors
 ## Disabled
 
 The input field can be disabled by using a boolean prop called `disabled`
+
+<Select disabled placeholder="Select a country" />
 
 #### Code
 

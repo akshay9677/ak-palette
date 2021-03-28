@@ -49,6 +49,10 @@
                       },
                       {
                         "type": "doc",
+                        "id": "component-docs/Radio"
+                      },
+                      {
+                        "type": "doc",
                         "id": "component-docs/Select"
                       },
                       {
@@ -91,6 +95,10 @@
                       },
                       {
                         "type": "doc",
+                        "id": "component-docs/Avatar"
+                      },
+                      {
+                        "type": "doc",
                         "id": "component-docs/Badge"
                       },
                       {
@@ -100,10 +108,17 @@
                       {
                         "type": "doc",
                         "id": "component-docs/Toast"
-                      },
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Patterns",
+                    "items": [
                       {
                         "type": "doc",
-                        "id": "component-docs/Avatar"
+                        "id": "component-docs/Card"
                       }
                     ]
                   }
@@ -116,10 +131,12 @@
             "/docs/component-docs/Avatar": "someSidebar",
             "/docs/component-docs/Badge": "someSidebar",
             "/docs/component-docs/Button": "someSidebar",
+            "/docs/component-docs/Card": "someSidebar",
             "/docs/component-docs/Checkbox": "someSidebar",
             "/docs/component-docs/Input": "someSidebar",
             "/docs/component-docs/Modal": "someSidebar",
             "/docs/component-docs/Popover": "someSidebar",
+            "/docs/component-docs/Radio": "someSidebar",
             "/docs/component-docs/Select": "someSidebar",
             "/docs/component-docs/SideSheet": "someSidebar",
             "/docs/component-docs/Spinner": "someSidebar",
@@ -146,8 +163,8 @@
                 "permalink": "/docs/component-docs/Popover"
               },
               "next": {
-                "title": "Badge",
-                "permalink": "/docs/component-docs/Badge"
+                "title": "Avatar",
+                "permalink": "/docs/component-docs/Avatar"
               }
             },
             {
@@ -163,8 +180,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Toast",
-                "permalink": "/docs/component-docs/Toast"
+                "title": "Alert",
+                "permalink": "/docs/component-docs/Alert"
+              },
+              "next": {
+                "title": "Badge",
+                "permalink": "/docs/component-docs/Badge"
               }
             },
             {
@@ -180,8 +201,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Alert",
-                "permalink": "/docs/component-docs/Alert"
+                "title": "Avatar",
+                "permalink": "/docs/component-docs/Avatar"
               },
               "next": {
                 "title": "Spinner",
@@ -207,6 +228,23 @@
               "next": {
                 "title": "Checkbox",
                 "permalink": "/docs/component-docs/Checkbox"
+              }
+            },
+            {
+              "unversionedId": "component-docs/Card",
+              "id": "component-docs/Card",
+              "isDocsHomePage": false,
+              "title": "Card",
+              "description": "The Card component is used to render a reusable card component which can be used to group certain information about",
+              "source": "@site/docs/component-docs/Card.mdx",
+              "slug": "/component-docs/Card",
+              "permalink": "/docs/component-docs/Card",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Card.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Toast",
+                "permalink": "/docs/component-docs/Toast"
               }
             },
             {
@@ -247,8 +285,8 @@
                 "permalink": "/docs/component-docs/Checkbox"
               },
               "next": {
-                "title": "Select",
-                "permalink": "/docs/component-docs/Select"
+                "title": "Radio",
+                "permalink": "/docs/component-docs/Radio"
               }
             },
             {
@@ -294,6 +332,27 @@
               }
             },
             {
+              "unversionedId": "component-docs/Radio",
+              "id": "component-docs/Radio",
+              "isDocsHomePage": false,
+              "title": "Radio",
+              "description": "There are two types of radio components that are available",
+              "source": "@site/docs/component-docs/Radio.mdx",
+              "slug": "/component-docs/Radio",
+              "permalink": "/docs/component-docs/Radio",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Radio.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Input",
+                "permalink": "/docs/component-docs/Input"
+              },
+              "next": {
+                "title": "Select",
+                "permalink": "/docs/component-docs/Select"
+              }
+            },
+            {
               "unversionedId": "component-docs/Select",
               "id": "component-docs/Select",
               "isDocsHomePage": false,
@@ -306,8 +365,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Input",
-                "permalink": "/docs/component-docs/Input"
+                "title": "Radio",
+                "permalink": "/docs/component-docs/Radio"
               },
               "next": {
                 "title": "TextArea",
@@ -394,8 +453,8 @@
                 "permalink": "/docs/component-docs/Spinner"
               },
               "next": {
-                "title": "Avatar",
-                "permalink": "/docs/component-docs/Avatar"
+                "title": "Card",
+                "permalink": "/docs/component-docs/Card"
               }
             },
             {

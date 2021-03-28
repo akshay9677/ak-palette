@@ -1,0 +1,17 @@
+{
+  "unversionedId": "component-docs/Card",
+  "id": "component-docs/Card",
+  "isDocsHomePage": false,
+  "title": "Card",
+  "description": "The Card component is used to render a reusable card component which can be used to group certain information about",
+  "source": "@site/docs/component-docs/Card.mdx",
+  "slug": "/component-docs/Card",
+  "permalink": "/docs/component-docs/Card",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Card.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Toast",
+    "permalink": "/docs/component-docs/Toast"
+  }
+}

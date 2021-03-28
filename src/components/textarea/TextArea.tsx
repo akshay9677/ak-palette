@@ -32,6 +32,10 @@ const TextArea: React.FC<TextAreaProps> = ({
         placeholder={placeholder}
         disabled={disabled}
         rows={rows}
+        style={{
+          fontSize: "13px",
+          resize: "none",
+        }}
         {...rest}
       />
       {isInvalid && validationText && (

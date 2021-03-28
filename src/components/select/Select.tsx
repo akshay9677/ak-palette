@@ -10,10 +10,12 @@ import {
   faExclamationCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import Badge from "../badge/Badge";
+import Text from "../typography/Text";
+import Empty from "../../assets/icons/empty-white-box.svg";
 
 import "./index.scss";
 
-type OptionProps = {
+export type OptionProps = {
   label: string;
   value: any;
 };
@@ -35,7 +37,7 @@ type SelectProps = {
 };
 
 const getTextSizeForControlHeight = (height: number) => {
-  return `${(0.45 * height).toFixed()}px`;
+  return `${(0.41 * height).toFixed()}px`;
 };
 
 const Select: React.FC<SelectProps> = ({
@@ -258,7 +260,7 @@ const Select: React.FC<SelectProps> = ({
                     }`}
                     onClick={_onClickItem.bind(this, currOption)}
                   >
-                    <div>{label}</div>
+                    <Text label={label} />
                     {_isSelectedItem(currOption) && (
                       <div className="pal-selected-tick">
                         <FontAwesomeIcon icon={faCheck} />
@@ -268,7 +270,17 @@ const Select: React.FC<SelectProps> = ({
                 );
               })
             ) : (
-              <div className="pal-select-dropdown-no-item">No Data</div>
+              <div className="pal-select-dropdown-no-item">
+                <img
+                  style={{
+                    width: "20px",
+                    height: "20px",
+                  }}
+                  src={Empty}
+                  alt="empty-svg"
+                />
+                <Text label="No Options" paddingY={4} />
+              </div>
             )}
           </Container>
         )}

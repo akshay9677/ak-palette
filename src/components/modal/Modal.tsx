@@ -4,6 +4,7 @@ import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import Button from "../buttons/Button";
+import Text from "../typography/Text";
 
 type ModalProps = {
   open: boolean;
@@ -56,7 +57,7 @@ const Modal: React.FC<ModalProps> = ({
         >
           <div className="pal-modal-container" style={{ width: _getWidth() }}>
             <div className="pal-modal-header">
-              <div>{header}</div>
+              <Text size="heading" label={header} />
               <div onClick={onClose} className="pal-close-btn">
                 <FontAwesomeIcon icon={faTimes} />
               </div>

@@ -3,6 +3,7 @@ import Container from "ui-box";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./index.scss";
+import Text from "../typography/Text";
 
 type SideSheetProps = {
   open: boolean;
@@ -64,7 +65,7 @@ const SideSheet: React.FC<SideSheetProps> = ({
               paddingX={20}
               paddingY={10}
             >
-              {header && <div className="pal-side-sheet-header">{header}</div>}
+              {header && <Text size="heading" label={header} />}
               {children}
             </Container>
             {!_isRightPosition() && !showClose && (

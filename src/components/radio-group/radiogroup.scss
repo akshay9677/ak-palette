@@ -1,0 +1,12 @@
+@import "../../assets/main.scss";
+
+.pal-radio-group-container {
+  display: inline-flex;
+  flex-direction: column;
+  .validate-text {
+    color: #e67575;
+    font-family: $pal-font-family;
+    font-size: 12px;
+    padding: 5px 0px 0px 2px;
+  }
+}

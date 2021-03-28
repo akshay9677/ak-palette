@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Story, Meta } from "@storybook/react/types-6-0";
 
@@ -10,7 +10,15 @@ export default {
 } as Meta;
 
 const Template: Story = (args) => {
-  return <Radio label={args.label} />;
+  const [isChecked, setChecked] = useState(false);
+  return (
+    <Radio
+      label={args.label}
+      checked={isChecked}
+      onChange={(e) => setChecked(e.target.value)}
+      disabled={args.disabled}
+    />
+  );
 };
 
 export const Primary = Template.bind({});

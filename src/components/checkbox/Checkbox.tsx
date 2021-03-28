@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./index.scss";
+import "./checkbox.scss";
+import Text from "../typography/Text";
 
 type CheckBoxProps = {
   onChange: (checked: boolean) => void;
@@ -22,7 +23,9 @@ const CheckBox: React.FC<CheckBoxProps> = ({
   };
   return (
     <label
-      className={`pal-checkbox-container ${disabled ? "disabled" : ""}`}
+      className={`pal-checkbox-container ${
+        disabled ? "pal-checkbox-disabled" : ""
+      }`}
       {...rest}
     >
       <input
@@ -32,7 +35,7 @@ const CheckBox: React.FC<CheckBoxProps> = ({
         disabled={disabled}
       />
       <span className="checkmark"></span>
-      {label && <span className="label">{label}</span>}
+      <Text opacity={disabled && 0.5} label={label}></Text>
     </label>
   );
 };

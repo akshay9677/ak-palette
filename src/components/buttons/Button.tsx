@@ -4,7 +4,7 @@ import Spinner from "../spinner/Spinner";
 
 type ButtonProps = {
   children: React.ReactNode;
-  appearance?: "primary" | "secondary";
+  appearance?: "primary" | "secondary" | "tertiary" | "link";
   uppercase?: boolean;
   onClick?: () => void;
   disabled?: boolean;

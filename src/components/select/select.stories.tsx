@@ -16,13 +16,6 @@ const Template: Story = (args) => {
       height={args.height}
       disabled={args.disabled}
       placeholder={args.placeholder}
-      options={[
-        { label: "India", value: "IND" },
-        { label: "America", value: "USA" },
-        { label: "England", value: "UK" },
-        { label: "China", value: "CHI" },
-        { label: "Spain", value: "SP" },
-      ]}
       isInvalid={args.isInvalid}
       validationText={args.validationText}
       onChange={(value: any) => console.log(value)}

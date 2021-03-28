@@ -62,6 +62,20 @@ const Popover: React.FC<PopoverProps> = ({
     if (togglePopup) openPopover(togglePopup);
   }, [togglePopup]);
 
+  useEffect(() => {
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
+
+  const handleOutsideClick = (e: any) => {
+    const parentRef = popoverParentRef.current;
+    if (parentRef && !parentRef.contains(e.target)) {
+      setShowPopover(false);
+    }
+  };
+
   const openPopover = (canShowPopup: boolean): void => {
     const popoverContent = popoverRef.current;
     const popoverParent = popoverParentRef.current;

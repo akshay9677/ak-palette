@@ -7,6 +7,7 @@ import {
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 import Spinner from "../spinner/Spinner";
+import Text from "../typography/Text";
 
 import "./index.scss";
 
@@ -79,8 +80,8 @@ const Alert: React.FC<AlertProps> = ({
           <FontAwesomeIcon icon={_getIcon()} />
         </span>
         <div>
-          <div className="pal-alert-header"> {title}</div>
-          <div> {label}</div>
+          <Text size="sub-heading" color={"inherit"} label={title} />
+          <Text fontSize={14} label={label} color={"inherit"} />
         </div>
       </div>
       {(onClose || showLoading) && (

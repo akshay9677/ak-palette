@@ -44,7 +44,7 @@ export default [
 },
 {
   path: '/docs',
-  component: ComponentCreator('/docs','a61'),
+  component: ComponentCreator('/docs','63d'),
   
   routes: [
 {
@@ -68,6 +68,11 @@ export default [
   exact: true,
 },
 {
+  path: '/docs/component-docs/Card',
+  component: ComponentCreator('/docs/component-docs/Card','56b'),
+  exact: true,
+},
+{
   path: '/docs/component-docs/Checkbox',
   component: ComponentCreator('/docs/component-docs/Checkbox','42b'),
   exact: true,
@@ -85,6 +90,11 @@ export default [
 {
   path: '/docs/component-docs/Popover',
   component: ComponentCreator('/docs/component-docs/Popover','737'),
+  exact: true,
+},
+{
+  path: '/docs/component-docs/Radio',
+  component: ComponentCreator('/docs/component-docs/Radio','5ec'),
   exact: true,
 },
 {

@@ -44,6 +44,11 @@
               },
               {
                 "type": "link",
+                "label": "Radio",
+                "href": "/docs/component-docs/Radio"
+              },
+              {
+                "type": "link",
                 "label": "Select",
                 "href": "/docs/component-docs/Select"
               },
@@ -93,6 +98,11 @@
               },
               {
                 "type": "link",
+                "label": "Avatar",
+                "href": "/docs/component-docs/Avatar"
+              },
+              {
+                "type": "link",
                 "label": "Badge",
                 "href": "/docs/component-docs/Badge"
               },
@@ -105,11 +115,18 @@
                 "type": "link",
                 "label": "Toast",
                 "href": "/docs/component-docs/Toast"
-              },
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Patterns",
+            "items": [
               {
                 "type": "link",
-                "label": "Avatar",
-                "href": "/docs/component-docs/Avatar"
+                "label": "Card",
+                "href": "/docs/component-docs/Card"
               }
             ]
           }
@@ -122,10 +139,12 @@
     "/docs/component-docs/Avatar": "someSidebar",
     "/docs/component-docs/Badge": "someSidebar",
     "/docs/component-docs/Button": "someSidebar",
+    "/docs/component-docs/Card": "someSidebar",
     "/docs/component-docs/Checkbox": "someSidebar",
     "/docs/component-docs/Input": "someSidebar",
     "/docs/component-docs/Modal": "someSidebar",
     "/docs/component-docs/Popover": "someSidebar",
+    "/docs/component-docs/Radio": "someSidebar",
     "/docs/component-docs/Select": "someSidebar",
     "/docs/component-docs/SideSheet": "someSidebar",
     "/docs/component-docs/Spinner": "someSidebar",

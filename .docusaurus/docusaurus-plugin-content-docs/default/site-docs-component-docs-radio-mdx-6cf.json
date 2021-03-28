@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Radio",
+  "id": "component-docs/Radio",
+  "isDocsHomePage": false,
+  "title": "Radio",
+  "description": "There are two types of radio components that are available",
+  "source": "@site/docs/component-docs/Radio.mdx",
+  "slug": "/component-docs/Radio",
+  "permalink": "/docs/component-docs/Radio",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Radio.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Input",
+    "permalink": "/docs/component-docs/Input"
+  },
+  "next": {
+    "title": "Select",
+    "permalink": "/docs/component-docs/Select"
+  }
+}

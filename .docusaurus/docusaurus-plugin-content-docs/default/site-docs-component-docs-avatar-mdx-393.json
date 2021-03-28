@@ -11,7 +11,11 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Toast",
-    "permalink": "/docs/component-docs/Toast"
+    "title": "Alert",
+    "permalink": "/docs/component-docs/Alert"
+  },
+  "next": {
+    "title": "Badge",
+    "permalink": "/docs/component-docs/Badge"
   }
 }

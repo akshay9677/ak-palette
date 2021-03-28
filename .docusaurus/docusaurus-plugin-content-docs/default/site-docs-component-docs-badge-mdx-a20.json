@@ -11,8 +11,8 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Alert",
-    "permalink": "/docs/component-docs/Alert"
+    "title": "Avatar",
+    "permalink": "/docs/component-docs/Avatar"
   },
   "next": {
     "title": "Spinner",

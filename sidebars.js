@@ -7,6 +7,7 @@ module.exports = {
           "component-docs/Button",
           "component-docs/Checkbox",
           "component-docs/Input",
+          "component-docs/Radio",
           "component-docs/Select",
           "component-docs/TextArea",
         ],
@@ -18,11 +19,15 @@ module.exports = {
         ],
         "FeedBack / Indicators": [
           "component-docs/Alert",
+          "component-docs/Avatar",
           "component-docs/Badge",
           "component-docs/Spinner",
           "component-docs/Toast",
-          "component-docs/Avatar",
         ],
+        "Patterns":[
+
+          "component-docs/Card",
+        ]
       },
     ],
   },

@@ -1,0 +1,157 @@
+import { Radio, RadioGroup } from "../../src/index";
+import { useState } from "react";
+
+There are two types of radio components that are available
+
+- Radio, a single Radio component
+- RadioGroup, a multiple option Radio button (group)
+
+## Usage
+
+##### Radio
+
+export const RadioSingle = ({ ...props }) => {
+  const [checked, setChecked] = useState(false);
+  return (
+    <Radio
+      checked={checked}
+      onChange={(e) => setChecked(e.target.value)}
+      {...props}
+    />
+  );
+};
+
+<RadioSingle label="Single Radio" />
+
+##### RadioGroup
+
+<RadioGroup
+  options={[
+    { label: "India", value: "IND" },
+    { label: "America", value: "USA" },
+  ]}
+/>
+
+#### Code
+
+```jsx
+// Radio
+
+const [checked, setChecked] = useState(false);
+
+<Radio
+  checked={checked}
+  onChange={(e) => setChecked(e.target.value)}
+  {...props}
+/>
+
+// RadioGroup
+
+<RadioGroup
+  options={[
+    { label: "India", value: "IND" },
+    { label: "America", value: "USA" },
+  ]}
+/>
+```
+
+> Try RadioGroup rather than Radio, since RadioGroup having multiple options
+
+## Position
+
+The RadioGroup component position can be changed to either `horizontal` and `vertical` by using `isHorizontal` boolean
+prop.
+
+<RadioGroup
+  options={[
+    { label: "India", value: "IND" },
+    { label: "America", value: "USA" },
+  ]}
+  isHorizontal
+/>
+
+#### Code
+
+```jsx
+<RadioGroup
+  options={[
+    { label: "India", value: "IND" },
+    { label: "America", value: "USA" },
+  ]}
+  isHorizontal
+/>
+```
+
+## Disabled
+
+The RadioGroup and Radio component can be disabled by using the `disabled` prop.
+
+<RadioGroup
+  options={[
+    { label: "India", value: "IND" },
+    { label: "America", value: "USA" },
+  ]}
+  disabled
+/>
+
+#### Code
+
+```jsx
+<RadioGroup
+  options={[
+    { label: "India", value: "IND" },
+    { label: "America", value: "USA" },
+  ]}
+  disabled
+/>
+```
+
+## Validation
+
+The RadioGroup component can be validated using `validationText` prop, if provided the validation text will be displayed
+
+<RadioGroup
+  options={[
+    { label: "India", value: "IND" },
+    { label: "America", value: "USA" },
+  ]}
+  isHorizontal
+  validationText="Please select a country"
+/>
+
+#### Code
+
+```jsx
+<RadioGroup
+  options={[
+    { label: "India", value: "IND" },
+    { label: "America", value: "USA" },
+  ]}
+  isHorizontal
+  validationText="Please select a country"
+/>
+```
+
+## API
+
+#### Radio
+
+|   Prop   |    Type    |  Possible values   | Default Value |
+| :------: | :--------: | :----------------: | :-----------: |
+|  label   |  `string`  |  Any string value  |     `""`      |
+| checked  | `boolean`  | `true` and `false` |    `false`    |
+| disabled | `boolean`  | `true` and `false` |    `false`    |
+| onChange | `()=>void` |         -          |       -       |
+
+#### RadioGroup
+
+|      Prop      |              Type              |  Possible values   | Default Value |
+| :------------: | :----------------------------: | :----------------: | :-----------: |
+|    options     | `{label:'String',value:'any'}` |         -          |     null      |
+|  isHorizontal  |           `boolean`            | `true` and `false` |    `false`    |
+|    disabled    |           `boolean`            | `true` and `false` |    `false`    |
+| validationText |            `string`            |  Any string value  |     `""`      |
+|     value      |             `any`              |         -          |       -       |
+|    onChange    |           `()=>void`           |         -          |       -       |
+
+Built by Akshay 🤙

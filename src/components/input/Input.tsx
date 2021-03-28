@@ -17,7 +17,7 @@ type InputProps = {
 };
 
 const getTextSizeForControlHeight = (height: number) => {
-  return `${(0.45 * height).toFixed()}px`;
+  return `${(0.41 * height).toFixed()}px`;
 };
 
 const Input: React.FC<InputProps> = ({

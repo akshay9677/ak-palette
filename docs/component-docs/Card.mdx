@@ -1,0 +1,106 @@
+import { Card, Text, Button } from "../../src/index";
+
+The Card component is used to render a reusable card component which can be used to group certain information about
+something or can be used to show overview about something
+
+## Usage
+
+The card component has three main section title, content and footer. The props `header` can be used to render a title,
+the `footer` prop which is of type `ReactNode` can be used to render the footer and the `children` of this component
+will be rendered as content
+
+<span style={{ paddingTop: "10px" }}></span>
+<Card header="Card Title" footer={<Text label={"Footer"} />}>
+  <div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  </div>
+</Card>
+
+#### Code
+
+```jsx
+<Card header="Card Title" footer={<Text label={"Footer"} />}>
+  <div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  </div>
+</Card>
+```
+
+## Image Cards
+
+Card component can be rendered with a image by using a `src` prop which is of type string and the url for the image can
+be given here
+
+<span style={{ paddingTop: "10px" }}></span>
+<Card
+  header="Card Title"
+  footer={<Text label={"Footer"} />}
+  src="https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png"
+>
+  <div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+  </div>
+</Card>
+
+#### Code
+
+```jsx
+<Card
+  header="Card Title"
+  footer={<Text label={"Footer"} />}
+  src="https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png"
+>
+  <div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+  </div>
+</Card>
+```
+
+## Dynamic Width
+
+The Card component width can be resized by using the `width` prop
+
+<span style={{ paddingTop: "10px" }}></span>
+<Card header="Card Title" footer={<Text label={"Footer"} />} width={350}>
+  <div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  </div>
+</Card>
+
+## Footer actions
+
+Since footer is a react node we can render action button as normal `JSX.Element`
+
+<Card
+  header="Card Title"
+  footer={
+    <div style={{ display: "flex", justifyContent: "flex-end" }}>
+      <Button appearance="secondary">Cancel</Button>
+      <span style={{ paddingRight: "10px" }}></span>
+      <Button>Confirm</Button>
+    </div>
+  }
+>
+  <div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  </div>
+</Card>
+
+## API
+
+|  Prop  |    Type     | Possible values  | Default Value |
+| :----: | :---------: | :--------------: | :-----------: |
+| header |  `string`   | Any String value |     `""`      |
+| footer | `ReactNode` |        -         |       -       |
+|  src   |  `string`   | Any String value |     `""`      |
+| width  |  `number`   | Any number value |     `300`     |
+
+Built by Akshay 🤙

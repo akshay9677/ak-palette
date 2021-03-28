@@ -13,13 +13,33 @@ The Palette Button component has two `appearance`
 
 ##### Example
 
-<div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
-  <span style={{ paddingRight: "10px" }}>
+<div
+  style={{
+    display: "flex",
+    flexWrap: "wrap",
+  }}
+>
+  <span style={{ padding: "6px" }}>
     <Button onClick={() => alert("hello")}>Primary Button</Button>
   </span>
-  <Button appearance="secondary" onClick={() => alert("hello")}>
-    Secondary Button
-  </Button>
+  <span style={{ padding: "10px" }}>
+    <Button appearance="secondary" onClick={() => alert("hello")}>
+      Secondary Button
+    </Button>
+  </span>
+  <span style={{ padding: "10px" }}>
+    <Button appearance="tertiary" onClick={() => alert("hello")}>
+      Tertiary Button
+    </Button>
+  </span>
+  <span style={{ padding: "10px" }}>
+    <Button
+      appearance="link"
+      onClick={() => window.open("https://www.google.com/")}
+    >
+      Link Button
+    </Button>
+  </span>
 </div>
 
 #### Code
@@ -30,6 +50,12 @@ The Palette Button component has two `appearance`
 // secondary button
   <Button appearance="secondary" onClick={() => alert("hello")}>
     Secondary Button
+  </Button>
+  <Button appearance="tertiary" onClick={() => alert("hello")}>
+    Tertiary Button
+  </Button>
+  <Button appearance="link" onClick={() => alert("hello")}>
+    Link Button
   </Button>
 ```
 
@@ -76,47 +102,45 @@ prop.
 > - `appearance` - `secondary` then `color` - `text color`
 
 <div>
-  <div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
-    <span style={{ paddingRight: "10px" }}>
-      <Button onClick={() => alert("hello")} color="teal" appearance="primary">
+  <div
+    style={{
+      display: "flex",
+      flexWrap: "wrap",
+    }}
+  >
+    <span style={{ padding: "6px" }}>
+      <Button color="teal" appearance="primary">
         Primary Button
       </Button>
     </span>
-    <Button appearance="secondary" onClick={() => alert("hello")} color="teal">
-      Secondary Button
-    </Button>
-  </div>
-  <div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
-    <span style={{ paddingRight: "10px" }}>
-      <Button onClick={() => alert("hello")} color="red">
-        Primary Button
+    <span style={{ padding: "6px" }}>
+      <Button appearance="secondary" color="teal">
+        Secondary Button
       </Button>
     </span>
-    <Button appearance="secondary" onClick={() => alert("hello")} color="red">
-      Secondary Button
-    </Button>
+    <span style={{ padding: "6px" }}>
+      <Button appearance="tertiary" color="teal">
+        Tertiary Button
+      </Button>
+    </span>
   </div>
 </div>
 
 #### Code
 
 ```jsx
-<Button onClick={() => alert("hello")} color="teal" appearance="primary">
+<Button color="teal" appearance="primary">
   Primary Button
 </Button>
 <Button
   appearance="secondary"
-  onClick={() => alert("hello")}
   color="teal"
 >
   Secondary Button
 </Button>
-<Button onClick={() => alert("hello")} color="red">
-  Primary Button
-</Button>
-<Button appearance="secondary" onClick={() => alert("hello")} color="red">
-  Secondary Button
-</Button>
+  <Button appearance="tertiary" color="teal">
+    Tertiary Button
+  </Button>
 ```
 
 ## Icon buttons
@@ -163,12 +187,12 @@ The `disabled` prop is used to render a disabled button in the user interface
 
 ## API
 
-|    Prop    |    Type    |              Possible values              | Default Value |
-| :--------: | :--------: | :---------------------------------------: | :-----------: |
-| appearance |  `string`  |        `"primary"`and`"secondary"`        |  `"primary"`  |
-|   color    |  `string`  | Any string with color accepted valuevalue |     `""`      |
-| uppercase  | `boolean`  |            `true` and `false`             |    `false`    |
-|  disabled  | `boolean`  |            `true` and `false`             |    `false`    |
-|  onClick   | `()=>void` |                     -                     |       -       |
+|    Prop    |    Type    |                   Possible values                   | Default Value |
+| :--------: | :--------: | :-------------------------------------------------: | :-----------: |
+| appearance |  `string`  | `"primary"`,`"secondary"`,`"tertiary"` and `"link"` |  `"primary"`  |
+|   color    |  `string`  |      Any string with color accepted valuevalue      |     `""`      |
+| uppercase  | `boolean`  |                 `true` and `false`                  |    `false`    |
+|  disabled  | `boolean`  |                 `true` and `false`                  |    `false`    |
+|  onClick   | `()=>void` |                          -                          |       -       |
 
 Built by Akshay 🤙

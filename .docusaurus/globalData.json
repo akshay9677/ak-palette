@@ -31,6 +31,11 @@
               "sidebar": "someSidebar"
             },
             {
+              "id": "component-docs/Card",
+              "path": "/docs/component-docs/Card",
+              "sidebar": "someSidebar"
+            },
+            {
               "id": "component-docs/Checkbox",
               "path": "/docs/component-docs/Checkbox",
               "sidebar": "someSidebar"
@@ -48,6 +53,11 @@
             {
               "id": "component-docs/Popover",
               "path": "/docs/component-docs/Popover",
+              "sidebar": "someSidebar"
+            },
+            {
+              "id": "component-docs/Radio",
+              "path": "/docs/component-docs/Radio",
               "sidebar": "someSidebar"
             },
             {

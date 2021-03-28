@@ -1,5 +1,7 @@
 .pal-checkbox-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   padding: 1px;
   padding-left: 25px;
@@ -14,10 +16,10 @@
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.disabled {
+.pal-checkbox-disabled {
   cursor: not-allowed;
 }
-.disabled .checkmark {
+.pal-checkbox-disabled .checkmark {
   background-color: #f3f1f1;
 }
 .pal-checkbox-container input {
@@ -28,12 +30,16 @@
 }
 
 .checkmark {
+  margin-top: 3px;
   position: absolute;
   top: 0;
   left: 0;
   height: 18px;
   width: 18px;
   border: solid 1px #eee;
+  background-image: linear-gradient(to top, rgba(67, 90, 111, 0.06), white);
+  box-shadow: rgb(67 90 111 / 8%) 0px 0px 0px 1px inset,
+    rgb(67 90 111 / 9%) 0px -1px 1px 0px inset;
   border-radius: 6px;
   &:hover {
     box-shadow: rgb(16 112 202 / 14%) 0px 0px 0px 2px,
@@ -42,7 +48,7 @@
   }
 }
 
-.disabled .checkmark {
+.pal-checkbox-disabled .checkmark {
   background-color: #f3f1f1;
   &:hover {
     box-shadow: none;
@@ -55,6 +61,7 @@
 
 .pal-checkbox-container input:checked ~ .checkmark {
   background-color: #5851ff;
+  background-image: none;
 }
 
 .checkmark:after {

@@ -3,19 +3,8 @@
 .pal-radio-container {
   display: inline-flex;
   align-items: center;
-  .pal-radio-label {
-    font-size: 14px;
-    color: #425a70;
-    font-family: $pal-font-family;
-    padding-left: 8px;
-  }
-  .pal-radio-actual-input {
-    border: solid 1px #eee;
-    .pal-select-input-filled {
-      background-color: $pal-primary;
-    }
-  }
-  .pal-radio-input-native {
+  cursor: pointer;
+  .pal-radio-inactive {
     border: 0px;
     clip: rect(1px, 1px, 1px, 1px);
     height: 1px;
@@ -26,4 +15,34 @@
     width: 1px;
     opacity: 0;
   }
+  .pal-radio-label {
+    font-size: 14px;
+    color: #425a70;
+    font-family: $pal-font-family;
+    padding-left: 8px;
+  }
+  .pal-radio-input {
+    background-color: $pal-primary;
+    color: #ffffff;
+    .pal-select-input-filled {
+      background-color: $pal-primary;
+    }
+    &:hover {
+      box-shadow: rgb(16 112 202 / 14%) 0px 0px 0px 2px,
+        rgb(67 90 111 / 30%) 0px 0px 0px 1px inset,
+        rgb(67 90 111 / 9%) 0px -1px 1px 0px inset;
+    }
+  }
+  .pal-radio-unselected {
+    color: white;
+    background-color: white;
+    background-image: linear-gradient(to top, rgba(67, 90, 111, 0.06), white);
+    box-shadow: rgb(67 90 111 / 8%) 0px 0px 0px 1px inset,
+      rgb(67 90 111 / 9%) 0px -1px 1px 0px inset;
+  }
+}
+
+.pal-radio-disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
 }
