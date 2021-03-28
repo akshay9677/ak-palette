@@ -3,10 +3,19 @@
   "id": "component-docs/TimePicker",
   "isDocsHomePage": false,
   "title": "TimePicker",
-  "description": "",
+  "description": "The TimePicker component is used to render a time picker field which users can use to select a time from the list of",
   "source": "@site/docs/component-docs/TimePicker.mdx",
   "slug": "/component-docs/TimePicker",
   "permalink": "/docs/component-docs/TimePicker",
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/TimePicker.mdx",
-  "version": "current"
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "TextArea",
+    "permalink": "/docs/component-docs/TextArea"
+  },
+  "next": {
+    "title": "Modal",
+    "permalink": "/docs/component-docs/Modal"
+  }
 }

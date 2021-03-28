@@ -13,7 +13,7 @@ import Badge from "../badge/Badge";
 import Text from "../typography/Text";
 import Empty from "../../assets/icons/empty-white-box.svg";
 
-import "./index.scss";
+import "./select.scss";
 
 export type OptionProps = {
   label: string;
@@ -61,7 +61,7 @@ const Select: React.FC<SelectProps> = ({
   const [selectedItem, setSelectedItem] = useState(
     value ? value : { label: "", value: null }
   );
-  const [multiSelectItems, setMultiSelectItems] = useState([]);
+  const [multiSelectItems, setMultiSelectItems] = useState<any>([]);
 
   const inputRef = useRef(null);
   const selectPopupRef = useRef(null);
@@ -78,7 +78,7 @@ const Select: React.FC<SelectProps> = ({
   }, []);
 
   const handleOutsideClick = (e: any) => {
-    const parentRef = selectParent.current;
+    const parentRef: any = selectParent.current;
     if (parentRef && !parentRef.contains(e.target)) {
       setOpenDropdown(false);
     }
@@ -111,7 +111,7 @@ const Select: React.FC<SelectProps> = ({
       return (
         <>
           {multiSelectItems.length > 0 &&
-            multiSelectItems.map((item, index) => {
+            multiSelectItems.map((item: OptionProps, index: number) => {
               let { label } = item;
               return (
                 <>
@@ -156,7 +156,7 @@ const Select: React.FC<SelectProps> = ({
   const _isSelectedItem = (currOption: OptionProps): boolean => {
     if (multiple) {
       let isItemPresent = multiSelectItems.find(
-        (item) => item.value === currOption.value
+        (item: OptionProps) => item.value === currOption.value
       );
       return isItemPresent ? true : false;
     } else {
@@ -189,7 +189,7 @@ const Select: React.FC<SelectProps> = ({
 
   const _removeMultiItem = (currOption: OptionProps): void => {
     const afterRemoveItems = multiSelectItems.filter(
-      (item) => item.value !== currOption.value
+      (item: OptionProps) => item.value !== currOption.value
     );
     setMultiSelectItems(afterRemoveItems);
   };

@@ -86,6 +86,11 @@
               "sidebar": "someSidebar"
             },
             {
+              "id": "component-docs/TimePicker",
+              "path": "/docs/component-docs/TimePicker",
+              "sidebar": "someSidebar"
+            },
+            {
               "id": "component-docs/Toast",
               "path": "/docs/component-docs/Toast",
               "sidebar": "someSidebar"

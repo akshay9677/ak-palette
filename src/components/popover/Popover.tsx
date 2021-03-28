@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { createPopper } from "@popperjs/core";
 import Container from "ui-box";
 
-import "./index.scss";
+import "./popover.scss";
 
 type PopoverProps = {
   children: React.ReactNode;
@@ -70,7 +70,7 @@ const Popover: React.FC<PopoverProps> = ({
   }, []);
 
   const handleOutsideClick = (e: any) => {
-    const parentRef = popoverParentRef.current;
+    const parentRef: any = popoverParentRef.current;
     if (parentRef && !parentRef.contains(e.target)) {
       setShowPopover(false);
     }

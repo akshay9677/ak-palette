@@ -15,7 +15,8 @@ const DatePickers = ({
   isInvalid,
   validationText,
   value,
-  onChange
+  onChange,
+  isDoc
 }) => {
   const [startDate, setStartDate] = useState(value ? value : null);
   const InputDate = forwardRef(({ value, onClick }, ref) => {
@@ -32,7 +33,7 @@ const DatePickers = ({
           width: "14px",
           height: "14px",
         }}
-        src={Calendar}
+        src={isDoc ? '/img/calendar.svg' : Calendar}
         alt="calendar-svg"
       />} onChange={()=>{}} />
   });

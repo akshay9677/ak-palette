@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./index.scss";
+import "./modal.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import Button from "../buttons/Button";

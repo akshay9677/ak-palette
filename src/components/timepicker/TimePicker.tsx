@@ -18,6 +18,7 @@ type TimePicker = {
   step?: number;
   clearable?: boolean;
   is24Hour?: boolean;
+  isDoc?: boolean;
 };
 
 const TimePicker: React.FC<TimePicker> = ({
@@ -32,8 +33,9 @@ const TimePicker: React.FC<TimePicker> = ({
   step,
   clearable,
   is24Hour,
+  isDoc,
 }): JSX.Element => {
-  const [options, setOptions] = useState([]);
+  const [options, setOptions] = useState<any>();
   useEffect(() => {
     if (startTime && endTime) {
       let format = is24Hour ? "HH:mm" : "hh:mm a";
@@ -71,7 +73,7 @@ const TimePicker: React.FC<TimePicker> = ({
             width: "14px",
             height: "14px",
           }}
-          src={Clock}
+          src={isDoc ? "/img/clock.svg" : Clock}
           alt="clock-svg"
         />
       }

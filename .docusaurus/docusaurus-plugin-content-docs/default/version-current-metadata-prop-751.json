@@ -61,6 +61,11 @@
                 "type": "link",
                 "label": "TextArea",
                 "href": "/docs/component-docs/TextArea"
+              },
+              {
+                "type": "link",
+                "label": "TimePicker",
+                "href": "/docs/component-docs/TimePicker"
               }
             ]
           },
@@ -155,6 +160,7 @@
     "/docs/component-docs/SideSheet": "someSidebar",
     "/docs/component-docs/Spinner": "someSidebar",
     "/docs/component-docs/TextArea": "someSidebar",
+    "/docs/component-docs/TimePicker": "someSidebar",
     "/docs/component-docs/Toast": "someSidebar",
     "/docs/component-docs/ToolTip": "someSidebar",
     "/docs/getting-started/overview": "someSidebar"

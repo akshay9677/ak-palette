@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Container from "ui-box";
 
 import Text from "../typography/Text";
-import "./index.scss";
+import "./radio.scss";
 
 type RadioProps = {
   label: string;

@@ -44,7 +44,7 @@ export default [
 },
 {
   path: '/docs',
-  component: ComponentCreator('/docs','8bd'),
+  component: ComponentCreator('/docs','ed2'),
   
   routes: [
 {
@@ -120,6 +120,11 @@ export default [
 {
   path: '/docs/component-docs/TextArea',
   component: ComponentCreator('/docs/component-docs/TextArea','f51'),
+  exact: true,
+},
+{
+  path: '/docs/component-docs/TimePicker',
+  component: ComponentCreator('/docs/component-docs/TimePicker','49e'),
   exact: true,
 },
 {

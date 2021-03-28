@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.scss";
+import "./avatar.scss";
 import Container from "ui-box";
 
 type AvatarProps = {

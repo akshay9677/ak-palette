@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import Alert from "../alert/Alert";
-import "./index.scss";
+import "./toaster.scss";
 
 
 const VERTICAL_HASH={

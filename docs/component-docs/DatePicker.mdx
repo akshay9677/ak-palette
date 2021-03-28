@@ -1,3 +1,117 @@
 import { DatePicker } from "../../src/index";
+import { useState } from "react";
 
-<DatePicker />
+The DatePicker component is used to render a date picker field which users can use to select a date.
+
+## Usage
+
+<DatePicker placeholder="Select a date" isDoc />
+
+#### Code
+
+```jsx
+<DatePicker placeholder="Select a date" />
+```
+
+## Size
+
+The size of the DatePicker component can be adjusted by using the `width` and `height` props of DatePicker component. Both the
+props accepts number values.
+
+<DatePicker placeholder="Select a date" width={300} height={36} isDoc />
+
+#### Code
+
+```jsx
+<DatePicker placeholder="Select a date" width={300} height={36} />
+```
+
+## Disabled
+
+The DatePicker component can be disabled by using the `disabled` boolean props
+
+<DatePicker placeholder="Select a date" disabled isDoc />
+
+#### Code
+
+```jsx
+<DatePicker placeholder="Select a date" disabled />
+```
+
+## Validation
+
+The validation of DatePicker field is done by two props `isValid` and `validationText`. The `isValid` prop
+is a boolean which denotes the validation for the field and `validationText` acts as a validation message
+
+> The `validationText` prop is not mandatory for indicating validation
+
+<DatePicker
+  placeholder="Select a date"
+  isInvalid
+  validationText="Please select a date"
+  isDoc
+/>
+
+#### Code
+
+```jsx
+<DatePicker
+  placeholder="Select a date"
+  isInvalid
+  validationText="Please select a date"
+/>
+```
+
+## Controlled Usage
+
+The DatePicker component value can be controlled by using the props `value` and `onChange`. The initial value is given in
+`value` prop and `onChange` prop passes a date prop which is the date value upon user selection
+
+export const DatePickerComponent = () => {
+  const [date, setDate] = useState(new Date());
+  return (
+    <DatePicker
+      placeholder="Select a date"
+      isDoc
+      value={date}
+      onChange={(selectedDate) => {
+        alert(selectedDate);
+        setDate(selectedDate);
+      }}
+    />
+  );
+};
+
+<DatePickerComponent />
+
+#### Code
+
+```jsx
+const DatePickerComponent = () => {
+  const [date, setDate] = useState(new Date());
+  return (
+    <DatePicker
+      placeholder="Select a date"
+      value={date}
+      onChange={(selectedDate) => {
+        alert(selectedDate);
+        setDate(selectedDate);
+      }}
+    />
+  );
+};
+```
+
+## API
+
+|      Prop      |    Type    |  Possible values   | Default Value |
+| :------------: | :--------: | :----------------: | :-----------: |
+|  placeholder   |  `string`  |  Any String value  |     `""`      |
+|     width      |  `number`  |  Any Number value  |     `150`     |
+|     height     |  `number`  |  Any Number value  |     `32`      |
+|    disbled     | `boolean`  | `true` and `false` |    `false`    |
+|   isInvalid    | `boolean`  | `true` and `false` |    `false`    |
+| validationText |  `string`  |  Any String value  |     `""`      |
+|    onChange    | `function` |         --         |      --       |
+
+Built by Akshay 🤙

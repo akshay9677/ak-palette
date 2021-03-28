@@ -2,7 +2,7 @@ import React from "react";
 import Container from "ui-box";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
-import "./index.scss";
+import "./sidesheet.scss";
 import Text from "../typography/Text";
 
 type SideSheetProps = {

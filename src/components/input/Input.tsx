@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.scss";
+import "./input.scss";
 import Container from "ui-box";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamationCircle } from "@fortawesome/free-solid-svg-icons";

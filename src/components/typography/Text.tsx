@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "ui-box";
 
-import "./index.scss";
+import "./text.scss";
 
 type TextProps = {
   label?: string;

@@ -1,0 +1,29 @@
+import { TimePicker } from "../../src/index";
+
+The TimePicker component is used to render a time picker field which users can use to select a time from the list of
+time intervals. The intervals, start time and end time for the selection list is customizable is customizable
+
+## Usage
+
+<TimePicker isDoc startTime="00:00" endTime="12:00" />
+
+#### Code
+
+```jsx
+<TimePicker isDoc startTime="00:00" endTime="12:00" />
+```
+
+## Customizable Time Range
+
+The time interval is custiomizable by using three props `step` , `startTime` and `endTime` props.
+The startTime and endTime is in either 24 hour or 12 hour `strings` based on the prop `is24Hour`.
+The `step` prop accepts `number` values where the number represents the interval in minutes, in the below
+example the interval is `15 min`
+
+<TimePicker isDoc startTime="00:00" endTime="12:00" step={15} />
+
+#### Code
+
+```jsx
+<TimePicker isDoc startTime="00:00" endTime="12:00" step={15} />
+```

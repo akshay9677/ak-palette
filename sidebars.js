@@ -11,6 +11,7 @@ module.exports = {
           "component-docs/Radio",
           "component-docs/Select",
           "component-docs/TextArea",
+          "component-docs/TimePicker",
         ],
         Overlays: [
           "component-docs/Modal",

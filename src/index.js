@@ -47,6 +47,9 @@ export * from './components/spinner/Spinner';
 export {default as TextArea} from './components/textarea/TextArea'
 export * from './components/textarea/TextArea';
 
+export {default as TimePicker} from './components/timepicker/TimePicker'
+export * from './components/timepicker/TimePicker';
+
 export {default as toast} from './components/toaster/Toast'
 export * from './components/toaster/Toast';
 

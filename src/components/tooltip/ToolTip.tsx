@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { createPopper } from "@popperjs/core";
 
-import "./index.scss";
+import "./tooltip.scss";
 import Container from "ui-box";
 
 type ToolTipProps = {

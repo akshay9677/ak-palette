@@ -9,7 +9,7 @@ import {
 import Spinner from "../spinner/Spinner";
 import Text from "../typography/Text";
 
-import "./index.scss";
+import "./alert.scss";
 
 type AlertProps = {
   label: string;
