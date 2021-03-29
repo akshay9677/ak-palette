@@ -17,8 +17,8 @@ export * from './components/card/Card';
 export {default as CheckBox} from './components/checkbox/Checkbox'
 export * from './components/checkbox/Checkbox';
 
-export {default as DatePicker} from './components/datepicker/DatePicker'
-export * from './components/datepicker/DatePicker';
+// export {default as DatePicker} from './components/datepicker/DatePicker'
+// export * from './components/datepicker/DatePicker';
 
 export {default as Input} from './components/input/Input'
 export * from './components/input/Input';
@@ -50,8 +50,8 @@ export * from './components/textarea/TextArea';
 export {default as TimePicker} from './components/timepicker/TimePicker'
 export * from './components/timepicker/TimePicker';
 
-export {default as toast} from './components/toaster/Toast'
-export * from './components/toaster/Toast';
+// export {default as toast} from './components/toaster/Toast'
+// export * from './components/toaster/Toast';
 
 export {default as ToolTip} from './components/tooltip/ToolTip'
 export * from './components/tooltip/ToolTip';

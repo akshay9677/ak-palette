@@ -1,7 +1,15 @@
 {
-  "name": "palette",
-  "version": "0.1.0",
-  "private": true,
+  "name": "ak-palette",
+  "version": "0.3.0",
+  "main": "build/index.js",
+  "module": "build/index.esm.js",
+  "files": [
+    "build"
+  ],
+  "author": {
+    "name":"Akshay K",
+    "email": "akshaykannan9677@gmail.com"
+  },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@docusaurus/core": "2.0.0-alpha.70",
@@ -36,7 +44,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rollup -c",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "start-storybook -p 6006 -s public --docs",
@@ -62,8 +70,14 @@
       "last 1 safari version"
     ]
   },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.13.8",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
     "@storybook/addon-actions": "^6.1.20",
     "@storybook/addon-docs": "^6.1.20",
     "@storybook/addon-essentials": "^6.1.20",
@@ -74,6 +88,12 @@
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.2.2",
     "react-docgen-typescript-loader": "^3.7.2",
-    "react-docgen-typescript-webpack-plugin": "^1.1.0"
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "rollup": "^2.44.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-svg": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "tslib": "^2.1.0"
   }
 }

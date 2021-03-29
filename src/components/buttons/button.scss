@@ -23,14 +23,14 @@
   .primary {
     background-color: $pal-primary;
     color: $pal-secondary;
-    box-shadow: rgb(2 8 20 / 10%) 0px 2px 4px 0px,
-      rgb(2 8 20 / 8%) 0px 1px 2px 0px;
+    box-shadow: RGB(2 8 20 / 10%) 0px 2px 4px 0px,
+      RGB(2 8 20 / 8%) 0px 1px 2px 0px;
   }
   .secondary {
     background-color: $pal-secondary;
     color: $pal-primary;
-    box-shadow: rgb(2 8 20 / 10%) 0px 2px 4px 0px,
-      rgb(2 8 20 / 8%) 0px 1px 2px 0px;
+    box-shadow: RGB(2 8 20 / 10%) 0px 2px 4px 0px,
+      RGB(2 8 20 / 8%) 0px 1px 2px 0px;
   }
   .tertiary {
     background-color: transparent;

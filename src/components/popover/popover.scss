@@ -15,8 +15,8 @@
     background-color: #ffffff;
     padding: 10px;
     animation: pal-popver 0.1s 1;
-    box-shadow: rgb(67 90 111 / 30%) 0px 0px 1px,
-      rgb(67 90 111 / 47%) 0px 8px 10px -4px;
+    box-shadow: RGB(67 90 111 / 30%) 0px 0px 1px,
+      RGB(67 90 111 / 47%) 0px 8px 10px -4px;
   }
   #pal-popover-content[data-popper-placement^="top"] > #arrow {
     bottom: -4px;

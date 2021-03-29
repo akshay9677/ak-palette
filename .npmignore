@@ -1,0 +1,7 @@
+/.docusaurus
+/.storybook
+/docs
+/docusaurus.config.js
+/sidebars.js
+/static
+/public
