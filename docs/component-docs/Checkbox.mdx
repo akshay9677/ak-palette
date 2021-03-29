@@ -17,10 +17,7 @@ CheckBox component has a `checkbox` input field and a optional `label` which if 
 #### Code
 
 ```jsx
-// default checkbox
- let React from 'react'
-
- const MyComponent = () => {
+const MyComponent = () => {
   const [checked, setChecked] = React.useState(false);
   return (
     <Checkbox
@@ -28,7 +25,7 @@ CheckBox component has a `checkbox` input field and a optional `label` which if 
       checked={checked}
       onChange={(value) => {
         setChecked(value);
-        console.log(`The value is ${value}`)
+        console.log(`The value is ${value}`);
       }}
     />
   );
@@ -52,10 +49,7 @@ The starting value for a check box can also be mentioned in Palette Checkbox by 
 #### Code
 
 ```jsx
-// default checkbox
- let React from 'react'
-
- const MyComponent = () => {
+const MyComponent = () => {
   const [checked, setChecked] = React.useState(true);
   return (
     <Checkbox
@@ -82,7 +76,6 @@ The starting value for a check box can also be mentioned in Palette Checkbox by 
 #### Code
 
 ```jsx
-// default checkbox
 <CheckBox label="Checkbox" disabled />
 ```
 

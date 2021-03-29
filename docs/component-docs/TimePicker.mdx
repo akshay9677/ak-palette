@@ -5,25 +5,207 @@ time intervals. The intervals, start time and end time for the selection list is
 
 ## Usage
 
-<TimePicker isDoc startTime="00:00" endTime="12:00" />
+<TimePicker
+  isDoc
+  startTime="00:00"
+  endTime="12:00"
+  placeholder="Select a time"
+/>
 
 #### Code
 
 ```jsx
-<TimePicker isDoc startTime="00:00" endTime="12:00" />
+<TimePicker
+  isDoc
+  startTime="00:00"
+  endTime="12:00"
+  placeholder="Select a time"
+/>
 ```
 
 ## Customizable Time Range
 
 The time interval is custiomizable by using three props `step` , `startTime` and `endTime` props.
-The startTime and endTime is in either 24 hour or 12 hour `strings` based on the prop `is24Hour`.
+The startTime and endTime is in either 24 hour or 12 hour `strings` based on the prop `is12Hour`.
 The `step` prop accepts `number` values where the number represents the interval in minutes, in the below
 example the interval is `15 min`
 
-<TimePicker isDoc startTime="00:00" endTime="12:00" step={15} />
+<TimePicker
+  isDoc
+  startTime="00:00"
+  endTime="12:00"
+  step={15}
+  placeholder="Select a time"
+/>
 
 #### Code
 
 ```jsx
-<TimePicker isDoc startTime="00:00" endTime="12:00" step={15} />
+<TimePicker
+  isDoc
+  startTime="00:00"
+  endTime="12:00"
+  step={15}
+  placeholder="Select a time"
+/>
 ```
+
+## 12 and 24 Hour format
+
+The time range or time list from the TimePicker component can be either in 12 hour format or 24 hour format, by
+using the prop `is12Hour` boolean prop. If true then the startTime and endTime should be in that format
+
+<TimePicker
+  isDoc
+  startTime="12:00 am"
+  endTime="12:00 pm"
+  step={15}
+  is12Hour
+  placeholder="Select a time"
+/>
+
+#### Code
+
+```jsx
+<TimePicker
+  startTime="12:00 am"
+  endTime="12:00 pm"
+  step={15}
+  is12Hour
+  placeholder="Select a time"
+/>
+```
+
+## Sizes
+
+The size of the TimePicker component can be varied by using the `height` and `width` prop bothe accepts number values and this
+determines the size of the component, the default values are `32` and `300` respectively.
+
+<TimePicker
+  width={280}
+  isDoc
+  startTime="00:00"
+  endTime="12:00"
+  height={38}
+  placeholder="Select a time"
+/>
+<div style={{ paddingBottom: "10px" }}></div>
+<TimePicker
+  width={300}
+  isDoc
+  startTime="00:00"
+  endTime="12:00"
+  height={46}
+  placeholder="Select a time"
+/>
+
+#### Code
+
+```jsx
+<TimePicker
+  width={280}
+  startTime="00:00"
+  endTime="12:00"
+  height={38}
+  placeholder="Select a time"
+/>
+<TimePicker
+  width={300}
+  startTime="00:00"
+  endTime="12:00"
+  height={46}
+  placeholder="Select a time"
+/>
+```
+
+## Disabled
+
+The TimePicker component can be disabled by using a boolean prop called `disabled`
+
+<TimePicker
+  isDoc
+  startTime="00:00"
+  endTime="12:00"
+  placeholder="Select a time"
+  disabled
+/>
+
+#### Code
+
+```jsx
+<TimePicker
+  startTime="00:00"
+  endTime="12:00"
+  placeholder="Select a time"
+  disabled
+/>
+```
+
+## Validation
+
+The validation of TimePicker component is done by two props `isValid` and `validationText`. The `isValid` prop
+is a boolean which denotes the validation for the field and `validationText` acts as a validation message.
+
+> The `validationText` prop is not mandatory for indicating validation. It can be used for providing context.
+
+<TimePicker
+  isDoc
+  startTime="00:00"
+  endTime="12:00"
+  placeholder="Select a time"
+  isInvalid
+  validationText="Please select a country"
+/>
+
+#### Code
+
+```jsx
+<TimePicker
+  startTime="00:00"
+  endTime="12:00"
+  placeholder="Select a time"
+  isInvalid
+  validationText="Please select a country"
+/>
+```
+
+## Clearable
+
+The selected item can be clearable if `clearable` prop.
+
+<TimePicker
+  isDoc
+  startTime="00:00"
+  endTime="12:00"
+  placeholder="Select a time"
+  clearable
+/>
+
+#### Code
+
+```jsx
+<TimePicker
+  startTime="00:00"
+  endTime="12:00"
+  placeholder="Select a time"
+  clearable
+/>
+```
+
+## API
+
+|      Prop      |    Type    |                            Possible values                            | Default Value |
+| :------------: | :--------: | :-------------------------------------------------------------------: | :-----------: |
+|   startTime    |  `string`  | Time string in 24 hour or 12 hour format (Ex: '12:00' pm or '24:00' ) |    `00:00`    |
+|    endTime     |  `string`  | Time string in 24 hour or 12 hour format (Ex: '12:00' pm or '24:00' ) |    `12:00`    |
+|    is12Hour    | `boolean`  |                          `true` and `false`                           |    `false`    |
+|  placeholder   |  `string`  |                           Any string value                            |     `""`      |
+|     height     |  `number`  |                      Any number accepted values                       |      400      |
+|     width      |  `number`  |                      Any number accepted values                       |      400      |
+|    disabled    | `boolean`  |                          `true` and `false`                           |    `false`    |
+|   isInvalid    | `boolean`  |                          `true` and `false`                           |    `false`    |
+| validationText |  `string`  |                           Any string value                            |     `""`      |
+|     value      |   `any`    |                                  Any                                  |       -       |
+|    onChange    | `()=>void` |                                   -                                   |       -       |
+
+Built by Akshay 🤙

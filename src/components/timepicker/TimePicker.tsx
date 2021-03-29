@@ -17,7 +17,7 @@ type TimePicker = {
   endTime?: string;
   step?: number;
   clearable?: boolean;
-  is24Hour?: boolean;
+  is12Hour?: boolean;
   isDoc?: boolean;
 };
 
@@ -32,15 +32,15 @@ const TimePicker: React.FC<TimePicker> = ({
   endTime,
   step,
   clearable,
-  is24Hour,
+  is12Hour,
   isDoc,
 }): JSX.Element => {
   const [options, setOptions] = useState<any>();
   useEffect(() => {
     if (startTime && endTime) {
-      let format = is24Hour ? "HH:mm" : "hh:mm a";
-      let start = moment(startTime, format);
-      let end = moment(endTime, format);
+      let format = !is12Hour && startTime && endTime ? "HH:mm" : "hh:mm a";
+      let start = moment(startTime || "00:00", format);
+      let end = moment(endTime || "12:00", format);
       let currStep = step ? step : 60;
 
       if (end.isBefore(startTime)) {

@@ -19,7 +19,7 @@ The Palette Button component has two `appearance`
     flexWrap: "wrap",
   }}
 >
-  <span style={{ padding: "6px" }}>
+  <span style={{ padding: "10px" }}>
     <Button onClick={() => alert("hello")}>Primary Button</Button>
   </span>
   <span style={{ padding: "10px" }}>
@@ -45,18 +45,16 @@ The Palette Button component has two `appearance`
 #### Code
 
 ```jsx
-// primary button
-    <Button onClick={() => alert("hello")}>Primary Button</Button>
-// secondary button
-  <Button appearance="secondary" onClick={() => alert("hello")}>
-    Secondary Button
-  </Button>
-  <Button appearance="tertiary" onClick={() => alert("hello")}>
-    Tertiary Button
-  </Button>
-  <Button appearance="link" onClick={() => alert("hello")}>
-    Link Button
-  </Button>
+<Button onClick={() => alert("hello")}>Primary Button</Button>
+<Button appearance="secondary" onClick={() => alert("hello")}>
+Secondary Button
+</Button>
+<Button appearance="tertiary" onClick={() => alert("hello")}>
+Tertiary Button
+</Button>
+<Button appearance="link" onClick={() => alert("hello")}>
+Link Button
+</Button>
 ```
 
 ## Size
@@ -100,6 +98,8 @@ prop.
 
 > - `appearance` - `primary` then `color` - `background-color`
 > - `appearance` - `secondary` then `color` - `text color`
+> - `appearance` - `tertiary` then `color` - `text color`
+> - `appearance` - `link` then does not apply
 
 <div>
   <div
