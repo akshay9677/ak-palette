@@ -30,7 +30,7 @@
     "docusaurus-plugin-sass": {
       "type": "package",
       "name": "docusaurus-plugin-sass",
-      "version": "0.1.11"
+      "version": "0.1.12"
     }
   }
 }

@@ -7,7 +7,7 @@
     "build"
   ],
   "author": {
-    "name":"Akshay K",
+    "name": "Akshay K",
     "email": "akshaykannan9677@gmail.com"
   },
   "dependencies": {
@@ -43,14 +43,15 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "rollup --config --watch",
     "build": "rollup -c",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "start-storybook -p 6006 -s public --docs",
     "build-storybook": "build-storybook -s public",
     "docusaurus": "docusaurus",
-    "doc-start": "docusaurus start"
+    "doc-start": "docusaurus start",
+    "publish":"npm run build && np"
   },
   "eslintConfig": {
     "extends": [
@@ -77,6 +78,7 @@
   "devDependencies": {
     "@babel/core": "^7.13.8",
     "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-image": "^2.0.6",
     "@rollup/plugin-node-resolve": "^11.2.1",
     "@storybook/addon-actions": "^6.1.20",
     "@storybook/addon-docs": "^6.1.20",
@@ -85,15 +87,18 @@
     "@storybook/node-logger": "^6.1.20",
     "@storybook/preset-create-react-app": "^3.1.6",
     "@storybook/react": "^6.1.20",
+    "@types/react-datepicker": "^3.1.8",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.2.2",
+    "postcss": "^8.2.8",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
     "rollup": "^2.44.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-svg": "^2.0.0",
     "rollup-plugin-typescript2": "^0.30.0",
-    "tslib": "^2.1.0"
+    "tslib": "^2.1.0",
+    "np": "^7.4.0"
   }
 }

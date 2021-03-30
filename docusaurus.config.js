@@ -22,12 +22,12 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/getting-started/installation',
+          to: 'docs/getting-started/overview',
           activeBasePath: 'docs',
           label: 'Getting Started',
           position: 'left',
         },
-        {to: 'docs/component-docs/alert', label: 'Components', position: 'left'},
+        {to: 'docs/component-docs/button', label: 'Components', position: 'left'},
         {
           href: 'https://github.com/akshay9677/palette',
           label: 'GitHub',

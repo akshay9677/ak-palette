@@ -29,13 +29,13 @@ export default {
       },
       "items": [
         {
-          "to": "docs/getting-started/installation",
+          "to": "docs/getting-started/overview",
           "activeBasePath": "docs",
           "label": "Getting Started",
           "position": "left"
         },
         {
-          "to": "docs/component-docs/alert",
+          "to": "docs/component-docs/button",
           "label": "Components",
           "position": "left"
         },
