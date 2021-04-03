@@ -101,6 +101,16 @@
               "sidebar": "someSidebar"
             },
             {
+              "id": "foundation/Color",
+              "path": "/docs/foundation/Color",
+              "sidebar": "someSidebar"
+            },
+            {
+              "id": "foundation/Typography",
+              "path": "/docs/foundation/Typography",
+              "sidebar": "someSidebar"
+            },
+            {
               "id": "getting-started/overview",
               "path": "/docs/getting-started/overview",
               "sidebar": "someSidebar"

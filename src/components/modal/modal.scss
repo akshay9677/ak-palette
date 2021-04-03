@@ -17,7 +17,7 @@
 
 .pal-modal-container {
   background-color: #ffffff;
-  border-radius: 6px;
+  border-radius: $pal-border-radius;
   animation: modal-entry 0.5s 1;
   text-align: left;
 }
@@ -45,20 +45,23 @@
 }
 
 .pal-modal-footer {
-  border-radius: 6px;
+  border-radius: $pal-border-radius;
   padding: 10px 30px;
   background-color: #f2f5f7;
   height: 10%;
   display: flex;
   justify-content: flex-end;
 }
+.pal-modal-exit {
+  animation: modal-entry 0.5s 1;
+}
 
 @keyframes modal-entry {
-  0% {
-    transform: translateY(-10px);
+  from {
+    transform: translateY(-15px);
   }
 
-  100% {
+  to {
     transform: translateY(0);
   }
 }

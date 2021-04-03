@@ -3,7 +3,7 @@
 .react-datepicker {
   font-family: $pal-font-family;
   border: solid 1px #d9d9d9;
-  border-radius: 6px;
+  border-radius: $pal-border-radius;
   color: #425a70;
   box-shadow: RGB(2 8 20 / 10%) 0px 2px 4px 0px,
     RGB(2 8 20 / 8%) 0px 1px 2px 0px;

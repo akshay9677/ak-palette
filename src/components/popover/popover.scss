@@ -11,7 +11,7 @@
     display: inline-block;
   }
   .pal-popover-content-main {
-    border-radius: 6px;
+    border-radius: $pal-border-radius;
     background-color: #ffffff;
     padding: 10px;
     animation: pal-popver 0.1s 1;

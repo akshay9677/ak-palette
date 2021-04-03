@@ -25,7 +25,7 @@ const Spinner: React.FC<SpinnerProps> = ({
   };
   return (
     <svg
-      className={`spinner ${size}`}
+      className={`spinner`}
       style={{
         width: `${getDimensions()}px`,
         height: `${getDimensions()}px`,

@@ -1,3 +1,4 @@
+@import "../../assets/main.scss";
 .pal-checkbox-container {
   display: flex;
   align-items: center;
@@ -40,7 +41,7 @@
   background-image: linear-gradient(to top, RGBA(67, 90, 111, 0.06), white);
   box-shadow: RGB(67 90 111 / 8%) 0px 0px 0px 1px inset,
     RGB(67 90 111 / 9%) 0px -1px 1px 0px inset;
-  border-radius: 6px;
+  border-radius: 5px;
   &:hover {
     box-shadow: RGB(16 112 202 / 14%) 0px 0px 0px 2px,
       RGB(67 90 111 / 30%) 0px 0px 0px 1px inset,
@@ -60,7 +61,7 @@
 }
 
 .pal-checkbox-container input:checked ~ .checkmark {
-  background-color: #5851ff;
+  background-color: $pal-primary;
   background-image: none;
 }
 

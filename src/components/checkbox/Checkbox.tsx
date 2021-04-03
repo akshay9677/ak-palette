@@ -35,7 +35,7 @@ const CheckBox: React.FC<CheckBoxProps> = ({
         disabled={disabled}
       />
       <span className="checkmark"></span>
-      <Text opacity={disabled && 0.5} label={label}></Text>
+      <Text opacity={disabled && 0.5}>{label}</Text>
     </label>
   );
 };

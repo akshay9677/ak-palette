@@ -1,6 +1,7 @@
 module.exports = {
   someSidebar: {
     GettingStarted: ["getting-started/overview"],
+    Foundations:["foundation/Color","foundation/Typography"],
     Components: [
       { 
         Forms: [

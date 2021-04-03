@@ -10,7 +10,7 @@ the `footer` prop which is of type `ReactNode` can be used to render the footer 
 will be rendered as content
 
 <span style={{ paddingTop: "10px" }}></span>
-<Card header="Card Title" footer={<Text label={"Footer"} />}>
+<Card header="Card Title" footer={<Text>Footer</Text>}>
   <div>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -21,7 +21,7 @@ will be rendered as content
 #### Code
 
 ```jsx
-<Card header="Card Title" footer={<Text label={"Footer"} />}>
+<Card header="Card Title" footer={<Text>Footer</Text>}>
   <div>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -38,7 +38,7 @@ be given here
 <span style={{ paddingTop: "10px" }}></span>
 <Card
   header="Card Title"
-  footer={<Text label={"Footer"} />}
+  footer={<Text>Footer</Text>}
   src="https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png"
 >
   <div>
@@ -51,7 +51,7 @@ be given here
 ```jsx
 <Card
   header="Card Title"
-  footer={<Text label={"Footer"} />}
+  footer={<Text>Footer</Text>}
   src="https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png"
 >
   <div>
@@ -65,7 +65,7 @@ be given here
 The Card component width can be resized by using the `width` prop
 
 <span style={{ paddingTop: "10px" }}></span>
-<Card header="Card Title" footer={<Text label={"Footer"} />} width={350}>
+<Card header="Card Title" footer={<Text>Footer</Text>} width={350}>
   <div>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -81,9 +81,9 @@ Since footer is a react node we can render action button as normal `JSX.Element`
   header="Card Title"
   footer={
     <div style={{ display: "flex", justifyContent: "flex-end" }}>
-      <Button appearance="secondary">Cancel</Button>
-      <span style={{ paddingRight: "10px" }}></span>
       <Button>Confirm</Button>
+      <span style={{ paddingRight: "10px" }}></span>
+      <Button appearance="secondary">Cancel</Button>
     </div>
   }
 >

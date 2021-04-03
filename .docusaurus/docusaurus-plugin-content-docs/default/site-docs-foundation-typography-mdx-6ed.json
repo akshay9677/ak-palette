@@ -1,0 +1,21 @@
+{
+  "unversionedId": "foundation/Typography",
+  "id": "foundation/Typography",
+  "isDocsHomePage": false,
+  "title": "Typography",
+  "description": "The Palette component library uses Text component to maintain a consistent font-family, font-size and color for out",
+  "source": "@site/docs/foundation/Typography.mdx",
+  "slug": "/foundation/Typography",
+  "permalink": "/docs/foundation/Typography",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/foundation/Typography.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Color",
+    "permalink": "/docs/foundation/Color"
+  },
+  "next": {
+    "title": "Button",
+    "permalink": "/docs/component-docs/Button"
+  }
+}

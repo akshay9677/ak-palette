@@ -25,7 +25,7 @@
   "/__docusaurus/debug/routes-244": {
     "component": "component---theme-debug-routes-946-699"
   },
-  "/docs-ed2": {
+  "/docs-dba": {
     "component": "component---theme-doc-page-1-be-9be",
     "versionMetadata": "versionMetadata---docs-935-398"
   },
@@ -100,6 +100,14 @@
   "/docs/component-docs/ToolTip-fa9": {
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-component-docs-tool-tipaa-2-717"
+  },
+  "/docs/foundation/Color-cf1": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-foundation-color-2-fd-d74"
+  },
+  "/docs/foundation/Typography-8a4": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-foundation-typography-6-ed-9b4"
   },
   "/docs/getting-started/overview-d64": {
     "component": "component---theme-doc-item-178-a40",

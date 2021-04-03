@@ -93,14 +93,14 @@ const Select: React.FC<SelectProps> = ({
               <Badge
                 label={(multiSelectItems[0] || {}).label}
                 showClose
-                color={tagColor ? tagColor : "purple"}
+                color={tagColor ? tagColor : "blue"}
                 onClose={_removeMultiItem.bind(this, multiSelectItems[0])}
               />
               <span style={{ paddingLeft: "2px" }}></span>
               {multiSelectItems.length - 1 > 0 && (
                 <Badge
                   label={`+${multiSelectItems.length - 1}`}
-                  color={tagColor ? tagColor : "purple"}
+                  color={tagColor ? tagColor : "blue"}
                 />
               )}
             </>
@@ -114,17 +114,17 @@ const Select: React.FC<SelectProps> = ({
             multiSelectItems.map((item: OptionProps, index: number) => {
               let { label } = item;
               return (
-                <>
+                <span
+                  key={`${label}-${index}`}
+                  style={{ paddingLeft: "2px", paddingBottom: "4px" }}
+                >
                   <Badge
-                    key={index}
                     label={label}
                     showClose
-                    color={tagColor ? tagColor : "purple"}
+                    color={tagColor ? tagColor : "blue"}
                     onClose={_removeMultiItem.bind(this, item)}
                   />
-
-                  <span key={index} style={{ paddingLeft: "2px" }}></span>
-                </>
+                </span>
               );
             })}
         </>
@@ -228,6 +228,7 @@ const Select: React.FC<SelectProps> = ({
             fontSize: getTextSizeForControlHeight(
               height && height >= 24 ? height : 32
             ),
+            cursor: "pointer",
           }}
         />
         {clearable &&
@@ -267,13 +268,13 @@ const Select: React.FC<SelectProps> = ({
                 let { label } = currOption || {};
                 return (
                   <div
-                    key={index}
+                    key={`${index}`}
                     className={`pal-select-dropdown-item ${
                       _isSelectedItem(currOption) ? "pal-selected-item" : ""
                     }`}
                     onClick={_onClickItem.bind(this, currOption)}
                   >
-                    <Text label={label} />
+                    <Text color={"inherit"}>{label}</Text>
                     {_isSelectedItem(currOption) && (
                       <div className="pal-selected-tick">
                         <FontAwesomeIcon icon={faCheck} />

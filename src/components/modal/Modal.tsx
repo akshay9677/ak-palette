@@ -13,14 +13,20 @@ type ModalProps = {
   children: React.ReactNode;
   onClose: () => void;
   onConfirm?: () => void;
-  primaryButton?: { name?: string; color?: string };
-  secondaryButton?: { name?: string; color?: string };
+  primaryButton?: {
+    name?: string;
+    color?: "success" | "info" | "warning" | "danger" | "default";
+  };
+  secondaryButton?: {
+    name?: string;
+    color?: "success" | "info" | "warning" | "danger" | "default";
+  };
   hideFooter?: boolean;
 };
 
 const _sizeHash = {
   small: "424px",
-  medium: "512px",
+  medium: "600px",
   large: "800px",
 };
 
@@ -55,12 +61,15 @@ const Modal: React.FC<ModalProps> = ({
           className="pal-modal"
           onClick={_handleOutsideClick}
         >
-          <div className="pal-modal-container" style={{ width: _getWidth() }}>
+          <div
+            className={`pal-modal-container ${!open && "pal-modal-exit"}`}
+            style={{ width: _getWidth() }}
+          >
             <div className="pal-modal-header">
-              <Text size="heading" label={header} />
-              <div onClick={onClose} className="pal-close-btn">
+              <Text size="large">{header}</Text>
+              <Button appearance="tertiary" onClick={onClose}>
                 <FontAwesomeIcon icon={faTimes} />
-              </div>
+              </Button>
             </div>
             <div className="pal-modal-body">{children}</div>
             {!hideFooter && (
@@ -70,22 +79,22 @@ const Modal: React.FC<ModalProps> = ({
                 >
                   <div style={{ paddingRight: "15px" }}>
                     <Button
-                      appearance="secondary"
-                      color={(secondaryButton || {}).color}
-                      onClick={onClose}
+                      type={(primaryButton || {}).color}
+                      onClick={onConfirm}
                     >
-                      {(secondaryButton || {}).name
-                        ? (secondaryButton || {}).name
-                        : "Cancel"}
+                      {(primaryButton || {}).name
+                        ? (primaryButton || {}).name
+                        : "Confirm"}
                     </Button>
                   </div>
                   <Button
-                    color={(primaryButton || {}).color}
-                    onClick={onConfirm}
+                    appearance="tertiary"
+                    type={(secondaryButton || {}).color}
+                    onClick={onClose}
                   >
-                    {(primaryButton || {}).name
-                      ? (primaryButton || {}).name
-                      : "Confirm"}
+                    {(secondaryButton || {}).name
+                      ? (secondaryButton || {}).name
+                      : "Cancel"}
                   </Button>
                 </div>
               </div>

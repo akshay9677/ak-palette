@@ -93,13 +93,25 @@ Since the Button component renders the children as it is, the height is determin
 
 ## Color
 
-The Palette Button component has `color` prop which is used as the background color or the text color depending on the `appearance`
+The Palette Button component has `type` prop which is used as the background color or the text color depending on the `appearance`
 prop.
 
-> - `appearance` - `primary` then `color` - `background-color`
-> - `appearance` - `secondary` then `color` - `text color`
-> - `appearance` - `tertiary` then `color` - `text color`
+There are five color types,
+
+- `default`
+- `success`
+- `info`
+- `warning`
+- `danger`
+
+The following is the way in which the type is applied
+
+> - `appearance` - `primary` then `type` - `background-color`
+> - `appearance` - `secondary` then `type` - `text color`
+> - `appearance` - `tertiary` then `type` - `text color`
 > - `appearance` - `link` then does not apply
+
+##### Primary Appearance
 
 <div>
   <div
@@ -109,18 +121,92 @@ prop.
     }}
   >
     <span style={{ padding: "6px" }}>
-      <Button color="teal" appearance="primary">
-        Primary Button
+      <Button type="success">Success</Button>
+    </span>
+    <span style={{ padding: "6px" }}>
+      <Button type="info">Info</Button>
+    </span>
+    <span style={{ padding: "6px" }}>
+      <Button type="warning">Warning</Button>
+    </span>
+    <span style={{ padding: "6px" }}>
+      <Button type="danger">Danger</Button>
+    </span>
+    <span style={{ padding: "6px" }}>
+      <Button type="default">Default</Button>
+    </span>
+  </div>
+</div>
+
+##### Secondary Appearance
+
+<div>
+  <div
+    style={{
+      display: "flex",
+      flexWrap: "wrap",
+    }}
+  >
+    <span style={{ padding: "6px" }}>
+      <Button type="success" appearance="secondary">
+        Success
       </Button>
     </span>
     <span style={{ padding: "6px" }}>
-      <Button appearance="secondary" color="teal">
-        Secondary Button
+      <Button type="info" appearance="secondary">
+        Info
       </Button>
     </span>
     <span style={{ padding: "6px" }}>
-      <Button appearance="tertiary" color="teal">
-        Tertiary Button
+      <Button type="warning" appearance="secondary">
+        Warning
+      </Button>
+    </span>
+    <span style={{ padding: "6px" }}>
+      <Button type="danger" appearance="secondary">
+        Danger
+      </Button>
+    </span>
+    <span style={{ padding: "6px" }}>
+      <Button type="default" appearance="secondary">
+        Default
+      </Button>
+    </span>
+  </div>
+</div>
+
+##### Tertiary Appearance
+
+<div>
+  <div
+    style={{
+      display: "flex",
+      flexWrap: "wrap",
+    }}
+  >
+    <span style={{ padding: "6px" }}>
+      <Button type="success" appearance="tertiary">
+        Success
+      </Button>
+    </span>
+    <span style={{ padding: "6px" }}>
+      <Button type="info" appearance="tertiary">
+        Info
+      </Button>
+    </span>
+    <span style={{ padding: "6px" }}>
+      <Button type="warning" appearance="tertiary">
+        Warning
+      </Button>
+    </span>
+    <span style={{ padding: "6px" }}>
+      <Button type="danger" appearance="tertiary">
+        Danger
+      </Button>
+    </span>
+    <span style={{ padding: "6px" }}>
+      <Button type="default" appearance="tertiary">
+        Default
       </Button>
     </span>
   </div>
@@ -129,31 +215,35 @@ prop.
 #### Code
 
 ```jsx
-<Button color="teal" appearance="primary">
-  Primary Button
-</Button>
-<Button
-  appearance="secondary"
-  color="teal"
->
-  Secondary Button
-</Button>
-  <Button appearance="tertiary" color="teal">
-    Tertiary Button
-  </Button>
+<Button type="success">Success</Button>
+<Button type="info">Info</Button>
+<Button type="warning">Warning</Button>
+<Button type="danger">Danger</Button>
+<Button type="default">Default</Button>
 ```
+
+> The above code is only for appearance `"primary"`, the same applies to other two appearance - `"secondary"` & `"tertiary"`
 
 ## Icon buttons
 
 Since the child of the Button component is rendered as it is when can render icons easily
 
-<div style={{ display: "flex", paddingBottom: "25px", paddingTop: "10px" }}>
-  <Button>
-    <span style={{ padding: "0px 10px 0px 0px", fontSize: "13px" }}>
-      <FontAwesomeIcon icon={faRocket} />
-    </span>
-    Send
-  </Button>
+<div style={{ display: "flex", flexDirection: "row" }}>
+  <div style={{ display: "flex", padding: "10px" }}>
+    <Button>
+      <span style={{ padding: "0px 10px 0px 0px", fontSize: "13px" }}>
+        <FontAwesomeIcon icon={faRocket} />
+      </span>
+      Send
+    </Button>
+  </div>
+  <div style={{ display: "flex", padding: "10px" }}>
+    <Button appearance="tertiary">
+      <span style={{ fontSize: "13px" }}>
+        <FontAwesomeIcon icon={faRocket} />
+      </span>
+    </Button>
+  </div>
 </div>
 
 #### Code
@@ -187,12 +277,11 @@ The `disabled` prop is used to render a disabled button in the user interface
 
 ## API
 
-|    Prop    |    Type    |                   Possible values                   | Default Value |
-| :--------: | :--------: | :-------------------------------------------------: | :-----------: |
-| appearance |  `string`  | `"primary"`,`"secondary"`,`"tertiary"` and `"link"` |  `"primary"`  |
-|   color    |  `string`  |      Any string with color accepted valuevalue      |     `""`      |
-| uppercase  | `boolean`  |                 `true` and `false`                  |    `false`    |
-|  disabled  | `boolean`  |                 `true` and `false`                  |    `false`    |
-|  onClick   | `()=>void` |                          -                          |       -       |
+|    Prop    |    Type    |                        Possible values                         | Default Value |
+| :--------: | :--------: | :------------------------------------------------------------: | :-----------: |
+| appearance |  `string`  |      `"primary"`,`"secondary"`,`"tertiary"` and `"link"`       |  `"primary"`  |
+|    type    |  `string`  | `"default"`, `"success"`, `"info"`, `"danger"` and `"warning"` |   `default`   |
+|  disabled  | `boolean`  |                       `true` and `false`                       |    `false`    |
+|  onClick   | `()=>void` |                               -                                |       -       |
 
 Built by Akshay 🤙

@@ -1,6 +1,6 @@
 {
   "name": "ak-palette",
-  "version": "0.3.0",
+  "version": "0.5.0",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -52,6 +52,9 @@
     "docusaurus": "docusaurus",
     "doc-start": "docusaurus start",
     "publish":"npm run build && np"
+  },
+  "np": {
+    "tests": false
   },
   "eslintConfig": {
     "extends": [

@@ -10,11 +10,11 @@
   color: #fff;
   text-align: center;
   padding: 5px;
-  border-radius: 6px;
+  border-radius: $pal-border-radius;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 99999;
+  z-index: 999;
   font-size: 12px;
   font-family: $pal-font-family;
   animation: pal-tooltip 0.2s 1;

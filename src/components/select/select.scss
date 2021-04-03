@@ -19,22 +19,20 @@
   }
   .pal-select-container {
     border: 1px solid #d9d9d9;
-    border-radius: 6px;
+    border-radius: $pal-border-radius;
     padding: 5px;
     display: flex;
     align-items: center;
     overflow: hidden;
-    // &:focus-within {
-    //   border-color: #5851ff85;
-    //   outline: 0;
-    //   -webkit-box-shadow: 0 0 0 2px #5851ff33;
-    //   box-shadow: 0 0 0 2px #5851ff33;
-    // }
-    &:hover {
-      border-color: #5851ff85;
+
+    &:focus-within {
+      border-color: $pal-primary;
       outline: 0;
-      -webkit-box-shadow: 0 0 0 2px #5851ff33;
-      box-shadow: 0 0 0 2px #5851ff33;
+      -webkit-box-shadow: 0 0 0 2px $pal-primary-light;
+      box-shadow: 0 0 0 2px $pal-primary-light;
+    }
+    &:hover {
+      border-color: $pal-primary;
     }
   }
 
@@ -72,7 +70,7 @@
   .validate-text {
     color: #e67575;
     font-family: $pal-font-family;
-    font-size: 12px;
+    font-size: 13px;
     padding: 3px 0px 0px 2px;
   }
   .pal-select-down-arrow {
@@ -96,7 +94,7 @@
     z-index: 9999;
   }
   .pal-select-popover-body {
-    border-radius: 6px;
+    border-radius: $pal-border-radius;
     font-family: $pal-font-family;
     background-color: #ffffff;
     padding: 5px;
@@ -113,8 +111,8 @@
     padding: 10px;
     cursor: pointer;
     font-weight: 500;
-    border-radius: 6px;
-    font-size: 12px;
+    border-radius: $pal-border-radius;
+    font-size: 11px;
     display: flex;
     margin: 5px 0px;
     justify-content: space-between;
@@ -127,7 +125,7 @@
     padding: 10px;
     cursor: pointer;
     font-weight: 500;
-    border-radius: 6px;
+    border-radius: $pal-border-radius;
     font-size: 12px;
     display: flex;
     margin: 5px 0px;

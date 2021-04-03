@@ -10,7 +10,7 @@ storiesOf("Example/Toaster", module)
     return (
       <div>
         <Button
-          onClick={() => toast.success("This is a sample alert from props")}
+          onClick={() => toast.success("This is a sample alert from props", {})}
         >
           Click Me
         </Button>

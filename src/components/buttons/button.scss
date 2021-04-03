@@ -12,11 +12,18 @@
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: 6px;
+    border-radius: $pal-border-radius;
     font-weight: 600;
     font-family: $pal-font-family;
+    font-size: 13px;
     &:hover {
       filter: brightness(0.92);
+    }
+    &:focus-within {
+      border-color: $pal-primary;
+      outline: 0;
+      -webkit-box-shadow: 0 0 0 2px $pal-primary;
+      box-shadow: 0 0 0 2px $pal-primary;
     }
   }
 
@@ -37,16 +44,16 @@
     color: $pal-primary;
     &:hover {
       background-color: #f0eeee;
-      filter: brightness(1);
+      filter: brightness(0.92);
     }
   }
 
   .link {
-    text-decoration: underline;
     color: #498bd5;
     background-color: transparent;
     &:hover {
       color: #1066d0;
+      text-decoration: underline;
     }
   }
 

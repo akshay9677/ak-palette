@@ -28,6 +28,21 @@
               {
                 "collapsed": true,
                 "type": "category",
+                "label": "Foundations",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "foundation/Color"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "foundation/Typography"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
                 "label": "Components",
                 "items": [
                   {
@@ -153,6 +168,8 @@
             "/docs/component-docs/TimePicker": "someSidebar",
             "/docs/component-docs/Toast": "someSidebar",
             "/docs/component-docs/ToolTip": "someSidebar",
+            "/docs/foundation/Color": "someSidebar",
+            "/docs/foundation/Typography": "someSidebar",
             "/docs/getting-started/overview": "someSidebar"
           },
           "docs": [
@@ -232,8 +249,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Overview",
-                "permalink": "/docs/getting-started/overview"
+                "title": "Typography",
+                "permalink": "/docs/foundation/Typography"
               },
               "next": {
                 "title": "Checkbox",
@@ -531,6 +548,48 @@
               }
             },
             {
+              "unversionedId": "foundation/Color",
+              "id": "foundation/Color",
+              "isDocsHomePage": false,
+              "title": "Color",
+              "description": "The colors for a design system is important because it reflects the consistency that a design system maintains.",
+              "source": "@site/docs/foundation/Color.mdx",
+              "slug": "/foundation/Color",
+              "permalink": "/docs/foundation/Color",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/foundation/Color.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/getting-started/overview"
+              },
+              "next": {
+                "title": "Typography",
+                "permalink": "/docs/foundation/Typography"
+              }
+            },
+            {
+              "unversionedId": "foundation/Typography",
+              "id": "foundation/Typography",
+              "isDocsHomePage": false,
+              "title": "Typography",
+              "description": "The Palette component library uses Text component to maintain a consistent font-family, font-size and color for out",
+              "source": "@site/docs/foundation/Typography.mdx",
+              "slug": "/foundation/Typography",
+              "permalink": "/docs/foundation/Typography",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/foundation/Typography.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Color",
+                "permalink": "/docs/foundation/Color"
+              },
+              "next": {
+                "title": "Button",
+                "permalink": "/docs/component-docs/Button"
+              }
+            },
+            {
               "unversionedId": "getting-started/overview",
               "id": "getting-started/overview",
               "isDocsHomePage": false,
@@ -543,8 +602,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "next": {
-                "title": "Button",
-                "permalink": "/docs/component-docs/Button"
+                "title": "Color",
+                "permalink": "/docs/foundation/Color"
               }
             }
           ]

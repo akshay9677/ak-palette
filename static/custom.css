@@ -7,15 +7,21 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #5851ff;
-  --ifm-color-primary-dark: #5851ff;
+  --ifm-color-primary: #0569ce;
+  --ifm-color-primary-dark: #0569ce;
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
   --ifm-color-primary-light: rgb(70, 203, 174);
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 90%;
+  --ifm-code-font-size: 80%;
   --ifm-z-index-fixed: 1;
+  --ifm-code-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  --ifm-navbar-link-color: #234361;
+  --ifm-heading-color: #234361;
+  --ifm-font-color-base: #425a70;
 }
 
 .docusaurus-highlight-code-line {
@@ -25,6 +31,17 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+.navbar__link--active {
+  color: #234361;
+}
 a:hover {
   text-decoration: none;
+}
+
+.footer {
+  background-color: #f2f5f7;
+  padding: 20px;
+  font-size: 13px;
+  color: #425a70;
+  font-weight: 500;
 }

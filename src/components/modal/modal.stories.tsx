@@ -3,6 +3,7 @@ import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
 
 import Modal from "./Modal";
+import Text from "../typography/Text";
 
 export default {
   title: "Example/Modal",
@@ -27,7 +28,7 @@ const Template: Story = (args) => {
         secondaryButton={args.secondaryButton}
         hideFooter={args.hideFooter}
       >
-        <div>
+        <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -35,7 +36,7 @@ const Template: Story = (args) => {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
-        </div>
+        </Text>
       </Modal>
     </>
   );

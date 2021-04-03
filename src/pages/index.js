@@ -5,39 +5,39 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
-import Button from "../components/buttons/Button";
+import {Button,Text} from "../index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 
 const features = [
   {
     title: "Easy to Use",
-    imageUrl: "img/Webdev.svg",
+    imageUrl: "img/Design.svg",
     description: (
-      <>
+      <Text>
         Palette was designed from the ground up to be easily installed and
         used to get your website up and running quickly.
-      </>
+      </Text>
     ),
   },
   {
     title: "Focus on What Matters",
     imageUrl: "img/Code.svg",
     description: (
-      <>
+      <Text>
         Palette lets you focus on your project, and we&apos;ll do the chores. Go
         ahead and install <code>@ak/palette</code> to use Palette library.
-      </>
+      </Text>
     ),
   },
   {
     title: "Powered by React",
-    imageUrl: "img/Design.svg",
+    imageUrl: "img/Webdev.svg",
     description: (
-      <>
+      <Text>
       Palette is a React component library which has pre-defined and re-usable 
       react component that you can install and use it right away.
-      </>
+      </Text>
     ),
   },
 ];
@@ -51,8 +51,8 @@ function Feature({ imageUrl, title, description }) {
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <Text size='xlarge'>{title}</Text>
+      <Text size='medium'>{description}</Text>
     </div>
   );
 }
@@ -67,8 +67,8 @@ function Home() {
     >
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">Palette <span style={{color:'#FFD300'}}>UI Kit</span></h1>
-          <p className="hero__subtitle">A <span style={{color:'#FFD300'}}>minimal</span> component library for <span style={{color:'#FFD300'}}>React</span></p>
+          <Text size='xxxlarge' color='white'>Palette <span style={{color:'#FFD300'}}>UI Kit</span></Text>
+          <Text size='xlarge' color='white' paddingTop={5} paddingBottom={15}>A <span style={{color:'#FFD300'}}>minimal</span> component library for <span style={{color:'#FFD300',paddingRight:'4px'}}>React</span>🔥</Text>
           <div className={styles.buttons}>
             <Link
               style={{ textDecoration: "none" }}

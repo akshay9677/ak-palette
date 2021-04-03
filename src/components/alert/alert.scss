@@ -3,12 +3,12 @@
   font-family: $pal-font-family;
   font-size: 14px;
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: $pal-border-radius;
   line-height: 1.5;
   display: inline-flex;
   background-color: $pal-secondary;
-  box-shadow: RGB(2 8 20 / 10%) 0px 2px 4px 0px,
-    RGB(2 8 20 / 8%) 0px 1px 2px 0px;
+  box-shadow: RGB(2 8 20 / 20%) 0px 2px 8px 0px,
+    RGB(2 8 20 / 10%) 0px 1px 6px 0px;
   min-width: calc(100vh - 472px) !important;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +21,7 @@
 
 .pal-alert-secondary-container {
   cursor: pointer;
-  padding: 0px 20px;
+  padding: 2px 20px 0px 20px;
   font-size: 12px;
   display: flex;
   align-items: center;

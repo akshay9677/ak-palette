@@ -14,7 +14,7 @@ const Template: Story = (args) => {
   return (
     <Card
       header={args.header}
-      footer={<Text label={"Footer"} />}
+      footer={<Text>Footer</Text>}
       width={args.width}
       src={args.src}
     >

@@ -51,7 +51,9 @@ const Radio: React.FC<RadioProps> = ({
           </svg>
         )}
       </Container>
-      <Text opacity={disabled && 0.5} paddingLeft="8px" label={label}></Text>
+      <Text opacity={disabled && 0.5} paddingLeft="8px">
+        {label}
+      </Text>
     </Container>
   );
 };

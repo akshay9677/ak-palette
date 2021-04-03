@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "ui-box";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./sidesheet.scss";
 import Text from "../typography/Text";
 
@@ -49,14 +49,14 @@ const SideSheet: React.FC<SideSheetProps> = ({
               _isRightPosition() ? "modal-entry-right" : "modal-entry-left"
             }
           >
-            {_isRightPosition() && !showClose && (
+            {/* {_isRightPosition() && !showClose && (
               <div
                 className="pal-side-sheet-close-btn"
                 onClick={() => onClose()}
               >
                 <FontAwesomeIcon icon={faTimes} />
               </div>
-            )}
+            )} */}
             <Container
               width={width ? width : 500}
               height="100vh"
@@ -65,17 +65,17 @@ const SideSheet: React.FC<SideSheetProps> = ({
               paddingX={20}
               paddingY={10}
             >
-              {header && <Text size="heading" label={header} />}
+              {header && <Text size="large">{header}</Text>}
               {children}
             </Container>
-            {!_isRightPosition() && !showClose && (
+            {/* {!_isRightPosition() && !showClose && (
               <div
                 className="pal-side-sheet-close-btn"
                 onClick={() => onClose()}
               >
                 <FontAwesomeIcon icon={faTimes} />
               </div>
-            )}
+            )} */}
           </div>
         </div>
       )}

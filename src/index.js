@@ -50,11 +50,15 @@ export * from './components/textarea/TextArea';
 export {default as TimePicker} from './components/timepicker/TimePicker'
 export * from './components/timepicker/TimePicker';
 
-// export {default as toast} from './components/toaster/Toast'
-// export * from './components/toaster/Toast';
+export {default as toast} from './components/toaster/Toast'
+export * from './components/toaster/Toast';
 
 export {default as ToolTip} from './components/tooltip/ToolTip'
 export * from './components/tooltip/ToolTip';
 
 export {default as Text} from './components/typography/Text'
 export * from './components/typography/Text';
+
+export {default as palette} from './foundations/palette'
+export * from './foundations/palette';
+

@@ -16,7 +16,7 @@ const Template: Story = (args) => (
   <Button
     appearance={args.appearance}
     onClick={() => alert("hello")}
-    uppercase={args.uppercase}
+    loading={args.loading}
     disabled={args.disabled}
     color={args.color}
   >

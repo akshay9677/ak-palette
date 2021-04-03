@@ -35,7 +35,9 @@ const Card: React.FC<CardProps> = ({
         />
       )}
       {header && (
-        <Text paddingX={10} paddingY={5} size="heading" label={header} />
+        <Text paddingX={10} paddingY={5} size="large">
+          {header}
+        </Text>
       )}
       {children && (
         <Container

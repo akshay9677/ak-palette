@@ -1,0 +1,21 @@
+{
+  "unversionedId": "foundation/Color",
+  "id": "foundation/Color",
+  "isDocsHomePage": false,
+  "title": "Color",
+  "description": "The colors for a design system is important because it reflects the consistency that a design system maintains.",
+  "source": "@site/docs/foundation/Color.mdx",
+  "slug": "/foundation/Color",
+  "permalink": "/docs/foundation/Color",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/foundation/Color.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/getting-started/overview"
+  },
+  "next": {
+    "title": "Typography",
+    "permalink": "/docs/foundation/Typography"
+  }
+}

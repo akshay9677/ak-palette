@@ -11,7 +11,7 @@
   "version": "current",
   "sidebar": "someSidebar",
   "next": {
-    "title": "Button",
-    "permalink": "/docs/component-docs/Button"
+    "title": "Color",
+    "permalink": "/docs/foundation/Color"
   }
 }

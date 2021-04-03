@@ -1,6 +1,22 @@
-$pal-primary: #5851ff;
-
+$pal-primary: #0569ce;
+$pal-primary-light: #2e548d23;
+$pal-primary-lighter: #3c5e924a;
 $pal-secondary: #ffffff;
+
+$pal-success: #3bc178;
+$pal-success-secondary: #eaf7ee;
+
+$pal-info: #0569ce;
+$pal-info-secondary: #e5f2fd;
+
+$pal-warning: #e89f29;
+$pal-warning-secondary: #fef7e9;
+
+$pal-danger: #e85a4b;
+$pal-danger-secondary: #ffdde0;
+
+$pal-default: #475967;
+$pal-default-secondary: #ebeff3;
 
 $pal-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
   Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -9,3 +25,5 @@ $pal-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+$pal-border-radius: 4px;

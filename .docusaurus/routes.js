@@ -44,7 +44,7 @@ export default [
 },
 {
   path: '/docs',
-  component: ComponentCreator('/docs','ed2'),
+  component: ComponentCreator('/docs','dba'),
   
   routes: [
 {
@@ -135,6 +135,16 @@ export default [
 {
   path: '/docs/component-docs/ToolTip',
   component: ComponentCreator('/docs/component-docs/ToolTip','fa9'),
+  exact: true,
+},
+{
+  path: '/docs/foundation/Color',
+  component: ComponentCreator('/docs/foundation/Color','cf1'),
+  exact: true,
+},
+{
+  path: '/docs/foundation/Typography',
+  component: ComponentCreator('/docs/foundation/Typography','8a4'),
   exact: true,
 },
 {

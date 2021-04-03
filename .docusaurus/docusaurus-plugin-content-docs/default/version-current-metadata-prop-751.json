@@ -20,6 +20,23 @@
       {
         "collapsed": true,
         "type": "category",
+        "label": "Foundations",
+        "items": [
+          {
+            "type": "link",
+            "label": "Color",
+            "href": "/docs/foundation/Color"
+          },
+          {
+            "type": "link",
+            "label": "Typography",
+            "href": "/docs/foundation/Typography"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
         "label": "Components",
         "items": [
           {
@@ -163,6 +180,8 @@
     "/docs/component-docs/TimePicker": "someSidebar",
     "/docs/component-docs/Toast": "someSidebar",
     "/docs/component-docs/ToolTip": "someSidebar",
+    "/docs/foundation/Color": "someSidebar",
+    "/docs/foundation/Typography": "someSidebar",
     "/docs/getting-started/overview": "someSidebar"
   }
 }

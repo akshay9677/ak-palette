@@ -1,0 +1,135 @@
+import { Text, palette, Popover } from "../../src/index";
+
+The colors for a design system is important because it reflects the consistency that a design system maintains.
+The color system in palette is quite simple, straight forward and easy to follow.
+
+The Palette component library also exports a palette object which has access to all the color constants mention below.
+For Example in order to access the color constant primary, it can be done like this,
+
+```js
+palette.primary.primary;
+```
+
+> Hover over the color box to get to know the color constant value
+
+export const ColorBox = ({ color, isPrimary, access }) => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        padding: "10px 0px",
+      }}
+    >
+      <Popover
+        placement="left"
+        hideArrow
+        trigger="hover"
+        content={
+          <div
+            style={{
+              width: "200px",
+              height: "100px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Text size="medium" paddingBottom="5px">
+              Color Hex: {color}
+            </Text>
+            <code
+              style={{
+                backgroundColor: palette.primary.secondary,
+                border: "solid 1px rgb(228, 231, 235)",
+                color: "#425a70",
+              }}
+            >
+              {access}
+            </code>
+          </div>
+        }
+      >
+        <div
+          style={{
+            height: "40px",
+            width: "40px",
+            backgroundColor: color,
+            border: "1px solid rgb(228, 231, 235)",
+            borderRadius: "4px",
+            cursor: "pointer",
+            zIndex: "2",
+          }}
+        ></div>
+      </Popover>
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <Text paddingX={10} size="medium">
+          {isPrimary ? "Primary" : "Secondary"}
+        </Text>
+        <Text paddingX={10}>{color}</Text>
+      </div>
+    </div>
+  );
+};
+
+### Palette Primary (Blue)
+
+<ColorBox
+  color={palette.primary.primary}
+  access="palette.primary.primary"
+  isPrimary
+/>
+<ColorBox
+  color={palette.primary.secondary}
+  access={"palette.primary.secondary"}
+/>
+
+### Palette Secondary
+
+<ColorBox
+  color={palette.secondary.primary}
+  access="palette.secondary.primary"
+  isPrimary
+/>
+
+<ColorBox
+  color={palette.secondary.secondary}
+  access="palette.secondary.secondary"
+/>
+
+### Green
+
+<ColorBox
+  color={palette.green.primary}
+  access="palette.green.primary"
+  isPrimary
+/>
+<ColorBox color={palette.green.secondary} access={"palette.green.secondary"} />
+
+### Yellow
+
+<ColorBox
+  color={palette.yellow.primary}
+  access="palette.yellow.primary"
+  isPrimary
+/>
+<ColorBox
+  color={palette.yellow.secondary}
+  access={"palette.yellow.secondary"}
+/>
+
+### Red
+
+<ColorBox color={palette.red.primary} access="palette.red.primary" isPrimary />
+<ColorBox color={palette.red.secondary} access={"palette.red.secondary"} />
+
+### Grey
+
+<ColorBox
+  color={palette.grey.primary}
+  access="palette.grey.primary"
+  isPrimary
+/>
+<ColorBox color={palette.grey.secondary} access={"palette.grey.secondary"} />

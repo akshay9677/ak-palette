@@ -3,19 +3,19 @@
 .pal-input {
   .pal-input-field-container {
     border: 1px solid #d9d9d9;
-    border-radius: 6px;
+    border-radius: $pal-border-radius;
     padding: 5px;
     display: flex;
     align-items: center;
     overflow: hidden;
     &:focus-within {
-      border-color: #5851ff85;
+      border-color: $pal-primary;
       outline: 0;
-      -webkit-box-shadow: 0 0 0 2px #5851ff33;
-      box-shadow: 0 0 0 2px #5851ff33;
+      -webkit-box-shadow: 0 0 0 2px $pal-primary-light;
+      box-shadow: 0 0 0 2px $pal-primary-light;
     }
     &:hover {
-      border-color: #5851ff85;
+      border-color: $pal-primary;
     }
   }
   .disabled {
@@ -76,7 +76,7 @@
   .validate-text {
     color: #e67575;
     font-family: $pal-font-family;
-    font-size: 12px;
+    font-size: 11px;
     padding: 3px 0px 0px 2px;
   }
 }

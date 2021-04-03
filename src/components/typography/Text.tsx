@@ -4,20 +4,24 @@ import Container from "ui-box";
 import "./text.scss";
 
 type TextProps = {
-  label?: string;
+  children?: any;
   color?: string;
-  size?: "heading" | "sub-heading";
+  size?: "large" | "medium";
   [prop: string]: any;
 };
 
 const SIZE_HASH = {
-  heading: { fontSize: 18, color: "#1f4160" },
-  "sub-heading": { fontSize: 15, color: "#1f4160" },
-  normal: { fontSize: 13, color: "#425a70" },
+  xxxlarge: { fontSize: "33px", color: "#234361", fontWeight: "600" },
+  xxlarge: { fontSize: "25px", color: "#234361", fontWeight: "600" },
+  xlarge: { fontSize: "21px", color: "#234361", fontWeight: "600" },
+  large: { fontSize: "17px", color: "#234361", fontWeight: "600" },
+  medium: { fontSize: "15px", color: "#234361" },
+  normal: { fontSize: "13px", color: "#425a70" },
+  small: { fontSize: "11px", color: "#425a70" },
 };
 
 const Text: React.FC<TextProps> = ({
-  label,
+  children,
   color,
   size,
   ...rest
@@ -29,11 +33,10 @@ const Text: React.FC<TextProps> = ({
     <Container
       className="pal-typography"
       fontSize={_getSizeBasedCss().fontSize}
-      fontWeight={size && 600}
       color={color ? color : _getSizeBasedCss().color}
       {...rest}
     >
-      {label}
+      {children}
     </Container>
   );
 };

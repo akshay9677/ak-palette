@@ -1,8 +1,9 @@
 @import "../../assets/main.scss";
 
 .pal-toast-container {
-  display: flex;
+  display: inline-flex;
   justify-content: flex-end;
+  padding-top: 20px;
   width: 100%;
   position: fixed;
   flex-direction: column;
