@@ -25,7 +25,7 @@
   "/__docusaurus/debug/routes-244": {
     "component": "component---theme-debug-routes-946-699"
   },
-  "/docs-dba": {
+  "/docs-d9b": {
     "component": "component---theme-doc-page-1-be-9be",
     "versionMetadata": "versionMetadata---docs-935-398"
   },
@@ -84,6 +84,10 @@
   "/docs/component-docs/Spinner-d3c": {
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-component-docs-spinnera-2-c-1c1"
+  },
+  "/docs/component-docs/Table-ef3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-component-docs-table-6-f-6-8ec"
   },
   "/docs/component-docs/TextArea-f51": {
     "component": "component---theme-doc-item-178-a40",

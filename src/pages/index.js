@@ -1,13 +1,10 @@
 import React from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
-import {Button,Text} from "../index";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRocket } from "@fortawesome/free-solid-svg-icons";
+import { Button, Text } from "../index";
 
 const features = [
   {
@@ -15,8 +12,8 @@ const features = [
     imageUrl: "img/Design.svg",
     description: (
       <Text>
-        Palette was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Palette was designed from the ground up to be easily installed and used
+        to get your website up and running quickly.
       </Text>
     ),
   },
@@ -35,8 +32,8 @@ const features = [
     imageUrl: "img/Webdev.svg",
     description: (
       <Text>
-      Palette is a React component library which has pre-defined and re-usable 
-      react component that you can install and use it right away.
+        Palette is a React component library which has pre-defined and re-usable
+        react component that you can install and use it right away.
       </Text>
     ),
   },
@@ -51,8 +48,8 @@ function Feature({ imageUrl, title, description }) {
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
-      <Text size='xlarge'>{title}</Text>
-      <Text size='medium'>{description}</Text>
+      <Text size="xlarge">{title}</Text>
+      <Text size="medium">{description}</Text>
     </div>
   );
 }
@@ -65,27 +62,54 @@ function Home() {
       title={`Palette UI Kit`}
       description="Description will go into a meta tag in <head />"
     >
-      <header className={clsx("hero hero--primary", styles.heroBanner)}>
-        <div className="container">
-          <Text size='xxxlarge' color='white'>Palette <span style={{color:'#FFD300'}}>UI Kit</span></Text>
-          <Text size='xlarge' color='white' paddingTop={5} paddingBottom={15}>A <span style={{color:'#FFD300'}}>minimal</span> component library for <span style={{color:'#FFD300',paddingRight:'4px'}}>React</span>🔥</Text>
-          <div className={styles.buttons}>
-            <Link
-              style={{ textDecoration: "none" }}
-              to={useBaseUrl("docs/getting-started/Overview")}
+      <div className={styles.mainHeaderContainer}>
+        <div className={styles.headerIntroText}>
+          <div className={styles.headerIntro}>
+            <Text fontWeight={600} size="xxxlarge">
+              Palette Design System
+            </Text>
+          </div>
+          <Text size="large" paddingTop={5} paddingBottom={15}>
+            A minimal component library and design system <br /> for React 🔥
+          </Text>
+          <div style={{ display: "flex" }}>
+            <Button
+              onClick={() =>
+                (window.location.href = "docs/getting-started/overview")
+              }
             >
-              <Button appearance="secondary" size="large">
-                <div style={{height:'25px',display:'flex',alignItems:'center'}}>
-                Get Started
-                <span style={{ padding: "0px 0px 0px 10px", fontSize: "18px" ,color:'#FFD300'}}>
-                  <FontAwesomeIcon icon={faRocket} />
-                </span>
-                </div>
-              </Button>
-            </Link>
+              <div style={{ display: "flex", alignItems: "center" }}>
+                
+              <Text color='white'>Get Started</Text>
+              </div>
+            </Button>
+            <span style={{ paddingLeft: "5px" }}></span>
+            <Button
+              appearance="secondary"
+              onClick={() => {
+                window.open("https://github.com/akshay9677/palette");
+              }}
+              type="default"
+            >
+              <Text>Github</Text>
+              <img
+                style={{
+                  width: "16px",
+                  height: "16px",
+                  paddingLeft: "5px",
+                }}
+                src={useBaseUrl("img/github.svg")}
+                alt="github-svg"
+              />
+            </Button>
           </div>
         </div>
-      </header>
+        <img
+          className={styles.headerDesignSvg}
+          src={useBaseUrl("img/Design_Comp.svg")}
+          alt={"header-svg"}
+        />
+      </div>
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>

@@ -66,6 +66,12 @@ const Avatar: React.FC<AvatarProps> = ({
       return "red";
     }
   };
+
+  const _getFontSize = (): number => {
+    if (size) return size / 2.5;
+    else return 16;
+  };
+
   return (
     <Container
       width={size ? size : 40}
@@ -89,7 +95,9 @@ const Avatar: React.FC<AvatarProps> = ({
           src={src}
         />
       ) : (
-        <span className="pal-avatar-font">{_getLabel()}</span>
+        <span className="pal-avatar-font" style={{ fontSize: _getFontSize() }}>
+          {_getLabel()}
+        </span>
       )}
     </Container>
   );

@@ -7,7 +7,7 @@ The `Modal` component is used to render a Dialog in the user interface above an 
 Modals blocks interaction on the page until it is closed or clicked on the action buttons. Genarally used if you want
 to prompt the user with something.
 
-## Usage
+### Usage
 
 export const ButtonModal1 = () => {
   const [open, setOpen] = useState(false);
@@ -45,7 +45,7 @@ const ButtonModal = () => {
 };
 ```
 
-## Detachable Header and Footer
+### Detachable Header and Footer
 
 The header and footer of the modal is detachable to remove header just don't add the `header` prop and for removing
 the footer just make `hideFooter` prop true
@@ -86,7 +86,7 @@ const ButtonModal = () => {
 };
 ```
 
-## Customizable Action Buttons
+### Customizable Action Buttons
 
 The action button names can be customized by using the object props `primaryButton` & `secondaryButton`. These two props accept
 an object and it has `name` and `type` prop which you can use to customize the buttons
@@ -151,7 +151,7 @@ const ButtonModal = () => {
 };
 ```
 
-## Actions
+### Actions
 
 The two action buttons can perform certain actions the `secondaryButton` the `onClose` function you pass
 whereas the `primaryButton` calls the `onConfirm` action
@@ -208,7 +208,7 @@ const ButtonModal = () => {
 };
 ```
 
-## API
+### API
 
 |                      Prop                       |    Type    |           Possible values           |         Default Value          |
 | :---------------------------------------------: | :--------: | :---------------------------------: | :----------------------------: |

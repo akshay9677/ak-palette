@@ -293,7 +293,7 @@ const Select: React.FC<SelectProps> = ({
                   src={Empty}
                   alt="empty-svg"
                 />
-                <Text label="No Options" paddingY={4} />
+                <Text paddingY={4}>No Options</Text>
               </div>
             )}
           </Container>

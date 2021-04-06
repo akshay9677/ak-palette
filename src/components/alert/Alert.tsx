@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Spinner from "../spinner/Spinner";
 import Text from "../typography/Text";
+import Button from "../buttons/Button";
 
 import "./alert.scss";
 
@@ -91,14 +92,17 @@ const Alert: React.FC<AlertProps> = ({
         </div>
       </div>
       {(onClose || showLoading) && (
-        <div
-          className="pal-alert-secondary-container"
-          onClick={() => {
-            onClose && onClose();
-          }}
-        >
+        <div className="pal-alert-secondary-container">
           {!showLoading ? (
-            <FontAwesomeIcon icon={faTimes} />
+            <Button
+              appearance="tertiary"
+              onClick={() => {
+                onClose && onClose();
+              }}
+              type="default"
+            >
+              <FontAwesomeIcon icon={faTimes} />
+            </Button>
           ) : (
             <Spinner color={_colorHash[_getAlertType()].color} />
           )}

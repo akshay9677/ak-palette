@@ -5,7 +5,7 @@ import { toast } from "../../src/index";
 The toaster component is used to render a toast message in the user interface. This acts as a response handler for some
 tasks done by the user.
 
-## Usage
+### Usage
 
 The toaster component has a toast method which can be use to render the toast message. It has five methods which differentiates
 the types of Alert messages
@@ -35,7 +35,7 @@ Check out Alert component to know more about the types
 > The toast component, when called renders only one toast message. If it is called n number of
 > times then the nth toast will only be displayed
 
-## Properties
+### Properties
 
 The toast method accepts a optional second argument which defines the properties for the toast methods
 
@@ -66,7 +66,7 @@ Toaster has a title method which can be used to add a title to the Toast message
 As you can see the toast has second argument with title key which is used to render the title for the toaster. The second argument for
 toast method can be used to give certain properties for the toaster component
 
-## Loading
+### Loading
 
 It is possible to add a loading for the toast method. By making a `showLoading` as `true` to the second argument
 
@@ -90,7 +90,7 @@ It is possible to add a loading for the toast method. By making a `showLoading` 
 </Button>
 ```
 
-## Custom Duration
+### Custom Duration
 
 We can add a custom duration to the toast method. By default the toast method has a duration of `5 seconds`. In the following
 example the toast component has a duration of `10 seconds`.
@@ -115,7 +115,7 @@ example the toast component has a duration of `10 seconds`.
 </Button>
 ```
 
-## Positions
+### Positions
 
 The position of the toast is also customizable, the second argument accepts an optional properties `horizontal` and `vertical`,
 which defines the position of the toast message
@@ -226,9 +226,9 @@ Top Center
 
 The `vertical` property has two values `top` & `bottom` and the `horizontal` property has `left`, `center` & `right`
 
-## API
+### API
 
-### Options
+#### Options
 
 The toast method accepts two argument
 
@@ -245,7 +245,7 @@ The following table are the properties given as second argument to the toast met
 |  vertical   | `string`  |     `top` & `bottom`      |     `top`     |
 | horizontal  | `string`  | `left`,`center` & `right` |   `center`    |
 
-### Methods
+#### Methods
 
 - `toast.default()` - grey
 - `toast.success()` - green

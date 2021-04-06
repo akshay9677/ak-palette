@@ -44,6 +44,10 @@ export * from './components/sidesheet/SideSheet';
 export {default as Spinner} from './components/spinner/Spinner'
 export * from './components/spinner/Spinner';
 
+
+export {default as Table} from './components/table/Table'
+export * from './components/table/Table';
+
 export {default as TextArea} from './components/textarea/TextArea'
 export * from './components/textarea/TextArea';
 

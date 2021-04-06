@@ -116,6 +116,23 @@
           {
             "collapsed": true,
             "type": "category",
+            "label": "Patterns",
+            "items": [
+              {
+                "type": "link",
+                "label": "Card",
+                "href": "/docs/component-docs/Card"
+              },
+              {
+                "type": "link",
+                "label": "Table",
+                "href": "/docs/component-docs/Table"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
             "label": "FeedBack / Indicators",
             "items": [
               {
@@ -144,18 +161,6 @@
                 "href": "/docs/component-docs/Toast"
               }
             ]
-          },
-          {
-            "collapsed": true,
-            "type": "category",
-            "label": "Patterns",
-            "items": [
-              {
-                "type": "link",
-                "label": "Card",
-                "href": "/docs/component-docs/Card"
-              }
-            ]
           }
         ]
       }
@@ -176,6 +181,7 @@
     "/docs/component-docs/Select": "someSidebar",
     "/docs/component-docs/SideSheet": "someSidebar",
     "/docs/component-docs/Spinner": "someSidebar",
+    "/docs/component-docs/Table": "someSidebar",
     "/docs/component-docs/TextArea": "someSidebar",
     "/docs/component-docs/TimePicker": "someSidebar",
     "/docs/component-docs/Toast": "someSidebar",

@@ -67,7 +67,7 @@ const Modal: React.FC<ModalProps> = ({
           >
             <div className="pal-modal-header">
               <Text size="large">{header}</Text>
-              <Button appearance="tertiary" onClick={onClose}>
+              <Button appearance="tertiary" onClick={onClose} type="default">
                 <FontAwesomeIcon icon={faTimes} />
               </Button>
             </div>

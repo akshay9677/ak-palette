@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Table",
+  "id": "component-docs/Table",
+  "isDocsHomePage": false,
+  "title": "Table",
+  "description": "Beta",
+  "source": "@site/docs/component-docs/Table.mdx",
+  "slug": "/component-docs/Table",
+  "permalink": "/docs/component-docs/Table",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Table.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Card",
+    "permalink": "/docs/component-docs/Card"
+  },
+  "next": {
+    "title": "Alert",
+    "permalink": "/docs/component-docs/Alert"
+  }
+}

@@ -110,6 +110,21 @@
                   {
                     "collapsed": true,
                     "type": "category",
+                    "label": "Patterns",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "component-docs/Card"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "component-docs/Table"
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
                     "label": "FeedBack / Indicators",
                     "items": [
                       {
@@ -133,17 +148,6 @@
                         "id": "component-docs/Toast"
                       }
                     ]
-                  },
-                  {
-                    "collapsed": true,
-                    "type": "category",
-                    "label": "Patterns",
-                    "items": [
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Card"
-                      }
-                    ]
                   }
                 ]
               }
@@ -164,6 +168,7 @@
             "/docs/component-docs/Select": "someSidebar",
             "/docs/component-docs/SideSheet": "someSidebar",
             "/docs/component-docs/Spinner": "someSidebar",
+            "/docs/component-docs/Table": "someSidebar",
             "/docs/component-docs/TextArea": "someSidebar",
             "/docs/component-docs/TimePicker": "someSidebar",
             "/docs/component-docs/Toast": "someSidebar",
@@ -186,8 +191,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Popover",
-                "permalink": "/docs/component-docs/Popover"
+                "title": "Table",
+                "permalink": "/docs/component-docs/Table"
               },
               "next": {
                 "title": "Avatar",
@@ -270,8 +275,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Toast",
-                "permalink": "/docs/component-docs/Toast"
+                "title": "Popover",
+                "permalink": "/docs/component-docs/Popover"
+              },
+              "next": {
+                "title": "Table",
+                "permalink": "/docs/component-docs/Table"
               }
             },
             {
@@ -375,8 +384,8 @@
                 "permalink": "/docs/component-docs/ToolTip"
               },
               "next": {
-                "title": "Alert",
-                "permalink": "/docs/component-docs/Alert"
+                "title": "Card",
+                "permalink": "/docs/component-docs/Card"
               }
             },
             {
@@ -464,6 +473,27 @@
               }
             },
             {
+              "unversionedId": "component-docs/Table",
+              "id": "component-docs/Table",
+              "isDocsHomePage": false,
+              "title": "Table",
+              "description": "Beta",
+              "source": "@site/docs/component-docs/Table.mdx",
+              "slug": "/component-docs/Table",
+              "permalink": "/docs/component-docs/Table",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Table.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Card",
+                "permalink": "/docs/component-docs/Card"
+              },
+              "next": {
+                "title": "Alert",
+                "permalink": "/docs/component-docs/Alert"
+              }
+            },
+            {
               "unversionedId": "component-docs/TextArea",
               "id": "component-docs/TextArea",
               "isDocsHomePage": false,
@@ -520,10 +550,6 @@
               "previous": {
                 "title": "Spinner",
                 "permalink": "/docs/component-docs/Spinner"
-              },
-              "next": {
-                "title": "Card",
-                "permalink": "/docs/component-docs/Card"
               }
             },
             {

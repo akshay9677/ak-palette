@@ -23,6 +23,8 @@ The Popover component is used to render a floating card with respect to a target
 
 > The `children` is a single child element of the `Popover` component
 
+### Usage
+
 <Popover
   content={
     <div
@@ -65,7 +67,7 @@ const SampleContent = () => {
 </Popover>;
 ```
 
-## Trigger
+### Trigger
 
 The Popver component can show the popup content either triggered by a click or a hover event, this can be achieved by using the
 `trigger` prop which accepts `"click"` or `"hover"` strings as its value
@@ -95,7 +97,7 @@ The Popver component can show the popup content either triggered by a click or a
 </Popover>
 ```
 
-## Placement
+### Placement
 
 The Popover component position can be varied by using the `placement` prop which accepts a string value.
 The accepted values are the following, each reperesents a seperate position for the component,
@@ -220,7 +222,7 @@ The accepted values are the following, each reperesents a seperate position for 
 </Popover>
 ```
 
-## Close from within the content
+### Close from within the content
 
 The Popover content can be closed from within by using `togglePopup` prop. This prop is used when the value is changed
 so if it is required to close the popup content from within set the value for `togglePopup` as `false`
@@ -285,7 +287,7 @@ const MyComponent = () => {
 };
 ```
 
-## API
+### API
 
 |    Prop     |    Type     |                                                                        Possible values                                                                        | Default Value |
 | :---------: | :---------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------: |

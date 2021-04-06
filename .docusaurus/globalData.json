@@ -81,6 +81,11 @@
               "sidebar": "someSidebar"
             },
             {
+              "id": "component-docs/Table",
+              "path": "/docs/component-docs/Table",
+              "sidebar": "someSidebar"
+            },
+            {
               "id": "component-docs/TextArea",
               "path": "/docs/component-docs/TextArea",
               "sidebar": "someSidebar"

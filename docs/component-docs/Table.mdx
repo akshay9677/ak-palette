@@ -1,0 +1,145 @@
+import { Text, Avatar, Table, Badge, palette } from "../../src/index";
+
+> <div style={{ color: palette.grey.primary, fontWeight: "bold" }}>Beta</div>
+
+The Table component has a set of Table properties which can be used to build a table and render it in the user interface
+
+### Usage
+
+export let data = [
+  {
+    name: "Akshay Kannan",
+    email: "akshayk@gmail.com",
+    phone: "8878978132",
+    isNew: true,
+  },
+  {
+    name: "Akash Kannan",
+    email: "akashk@gmail.com",
+    phone: "9178978110",
+    isNew: false,
+  },
+  {
+    name: "Aravind G",
+    email: "aravindg@gmail.com",
+    phone: "3613671231",
+    isNew: false,
+  },
+  {
+    name: "Akshay Kannan",
+    email: "akshayk@gmail.com",
+    phone: "8878978132",
+    isNew: true,
+  },
+  {
+    name: "Akash Kannan",
+    email: "akashk@gmail.com",
+    phone: "9178978110",
+    isNew: false,
+  },
+  {
+    name: "Aravind G",
+    email: "aravindg@gmail.com",
+    phone: "3613671231",
+    isNew: false,
+  },
+];
+
+<Table>
+  <Table.Head>
+    <Table.Cell>
+      <Text>User</Text>
+    </Table.Cell>
+    <Table.Cell>
+      <Text>Name</Text>
+    </Table.Cell>
+    <Table.Cell>
+      <Text>Email</Text>
+    </Table.Cell>
+    <Table.Cell>
+      <Text>Phone</Text>
+    </Table.Cell>
+    <Table.Cell>
+      <Text>Main</Text>
+    </Table.Cell>
+  </Table.Head>
+  <Table.Body>
+    {data.map((value, index) => {
+      return (
+        <Table.Row key={index}>
+          <Table.Cell>
+            <Avatar label={value.name} size={30} />
+          </Table.Cell>
+          <Table.Cell>
+            <Text>{value.name}</Text>
+          </Table.Cell>
+          <Table.Cell>
+            <Text>{value.email}</Text>
+          </Table.Cell>
+          <Table.Cell>
+            <Text>+91 {value.phone}</Text>
+          </Table.Cell>
+          <Table.Cell>
+            {value.isNew ? (
+              <Badge label="New" color="red" />
+            ) : (
+              <Badge label="Old" color="blue" />
+            )}
+          </Table.Cell>
+        </Table.Row>
+      );
+    })}
+  </Table.Body>
+</Table>
+
+#### Code
+
+```jsx
+<Table>
+  <Table.Head>
+    <Table.Cell>
+      <Text>User</Text>
+    </Table.Cell>
+    <Table.Cell>
+      <Text>Name</Text>
+    </Table.Cell>
+    <Table.Cell>
+      <Text>Email</Text>
+    </Table.Cell>
+    <Table.Cell>
+      <Text>Phone</Text>
+    </Table.Cell>
+  </Table.Head>
+  <Table.Body height={200}>
+    {data.map((value, index) => {
+      return (
+        <Table.Row key={index}>
+          <Table.Cell>
+            <Avatar label={value.name} size={30} />
+          </Table.Cell>
+          <Table.Cell>
+            <Text>{value.name}</Text>
+          </Table.Cell>
+          <Table.Cell>
+            <Text>{value.email}</Text>
+          </Table.Cell>
+          <Table.Cell>
+            <Text>+91 {value.phone}</Text>
+          </Table.Cell>
+        </Table.Row>
+      );
+    })}
+  </Table.Body>
+</Table>
+```
+
+### API
+
+| Component  |  Prop  |   Type   |          Possible values          | Default Value |
+| :--------: | :----: | :------: | :-------------------------------: | :-----------: |
+|   Table    | width  | `number` |    Any number accepted values     |    `100%`     |
+| Table.Body | height | `number` |    Any number accepted values     |    `100%`     |
+| Table.Cell | width  | `number` |    Any number accepted values     |    `200px`    |
+| Table.Cell | align  | `string` | `"center"`,`"left"` and `"right"` |    `left`     |
+
+Built by Akshay 🤙

@@ -3,7 +3,7 @@ import { Select } from "../../src/index";
 The Select component is used to render a field with list which users can use to select a single value or
 multiple values.
 
-## Usage
+### Usage
 
 The select component uses `options` prop to render the list of options for the select component. The `options` prop is an
 `array of object` in which each object should have a `label` and `value` properties, where `label` is used as the display string and
@@ -36,7 +36,7 @@ export let optionsList = [
 />
 ```
 
-## Size
+### Size
 
 The size of the select component can be varied by using the `height` and `width` prop bothe accepts number values and this
 determines the size of the component the default values are `32` and `300` respectively.
@@ -70,7 +70,7 @@ determines the size of the component the default values are `32` and `300` respe
 <Select width={300} height={46} options={optionsList} placeholder="Select a country" />
 ```
 
-## Multiple Select
+### Multiple Select
 
 The select component can be used for adding multiple values by using `multiple` boolean prop `true`
 
@@ -132,7 +132,7 @@ to know about the available tag colors
 />
 ```
 
-## Disabled
+### Disabled
 
 The input field can be disabled by using a boolean prop called `disabled`
 
@@ -144,7 +144,7 @@ The input field can be disabled by using a boolean prop called `disabled`
 <Select disabled placeholder="Select a country" />
 ```
 
-## Validation
+### Validation
 
 The validation of select component is done by two props `isValid` and `validationText`. The `isValid` prop
 is a boolean which denotes the validation for the field and `validationText` acts as a validation message.
@@ -175,7 +175,7 @@ is a boolean which denotes the validation for the field and `validationText` act
 />
 ```
 
-## Clearable
+### Clearable
 
 The selected item be it multiple values or single value can be clearable if `clearable` prop.
 
@@ -197,7 +197,7 @@ The selected item be it multiple values or single value can be clearable if `cle
 <Select options={optionsList} clearable placeholder="Select a country" />
 ```
 
-## API
+### API
 
 |      Prop      |    Type    |                           Possible values                            | Default Value |
 | :------------: | :--------: | :------------------------------------------------------------------: | :-----------: |

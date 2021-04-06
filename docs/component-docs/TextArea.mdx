@@ -2,7 +2,7 @@ import { TextArea } from "../../src/index";
 
 The `TextArea` component is a basic textarea component which users can use to enter values into it.
 
-## Usage
+### Usage
 
 <TextArea placeholder="Enter description" />
 
@@ -12,7 +12,7 @@ The `TextArea` component is a basic textarea component which users can use to en
 <TextArea placeholder="Enter description" />
 ```
 
-## Size
+### Size
 
 The size of the TextArea component can be adjusted by using `width` and `row` for changing the width and height of
 the component respectively. Both props accepts number value where `width` is used as pixels and `row` is the standard row
@@ -26,7 +26,7 @@ prop that comes with the `textarea` tag
 <TextArea placeholder="Enter description" width={300} rows={4} />
 ```
 
-## Disabled
+### Disabled
 
 The TextArea field can be disabled by using a boolean prop called `disabled`
 
@@ -38,7 +38,7 @@ The TextArea field can be disabled by using a boolean prop called `disabled`
 <TextArea placeholder="Enter description" disabled />
 ```
 
-## Validation
+### Validation
 
 The validation of TextArea field is done by two props `isValid` and `validationText`. The `isValid` prop
 is a boolean which denotes the validation for the field and `validationText` acts as a validation message. The
@@ -64,7 +64,7 @@ is a boolean which denotes the validation for the field and `validationText` act
 />
 ```
 
-## Controlled Usage
+### Controlled Usage
 
 The TextArea component from Palette is same as the `textarea` use `value` and `onChange` props to control the field value.
 Use `event.target.value` from `onChange` to set the value
@@ -84,7 +84,7 @@ const MyComponent = () => {
 };
 ```
 
-## API
+### API
 
 |      Prop      |   Type    |      Possible values       | Default Value |
 | :------------: | :-------: | :------------------------: | :-----------: |

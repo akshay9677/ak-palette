@@ -20,6 +20,10 @@ module.exports = {
           "component-docs/ToolTip",
           "component-docs/Popover",
         ],
+        "Patterns":[
+          "component-docs/Card",
+          "component-docs/Table",
+        ],
         "FeedBack / Indicators": [
           "component-docs/Alert",
           "component-docs/Avatar",
@@ -27,10 +31,6 @@ module.exports = {
           "component-docs/Spinner",
           "component-docs/Toast",
         ],
-        "Patterns":[
-
-          "component-docs/Card",
-        ]
       },
     ],
   },
