@@ -48,7 +48,7 @@ function Feature({ imageUrl, title, description }) {
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
-      <Text size="xlarge">{title}</Text>
+      <Text size="xlarge" fontWeight={600}>{title}</Text>
       <Text size="medium">{description}</Text>
     </div>
   );

@@ -5,9 +5,12 @@ export default {
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
-  "favicon": "img/favicon.ico",
+  "favicon": "img/logo.svg",
   "organizationName": "akshay",
   "projectName": "palette",
+  "clientModules": [
+    "/Users/test/Desktop/palette/src/index.js"
+  ],
   "themeConfig": {
     "sidebarCollapsible": false,
     "colorMode": {

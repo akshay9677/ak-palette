@@ -5,9 +5,10 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
   organizationName: 'akshay', // Usually your GitHub org/user name.
   projectName: 'palette', // Usually your repo name.
+  clientModules:[require.resolve('./src/index.js')],
   themeConfig: {
     sidebarCollapsible: false,
     colorMode:{

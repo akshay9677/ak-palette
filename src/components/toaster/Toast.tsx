@@ -5,14 +5,16 @@ import Toaster from "./Toaster";
 
 class Toast {
   constructor() {
-    const container = document.createElement("div");
-    container.setAttribute("pal-toaster-main", "");
-    document.body.appendChild(container);
+    if (Boolean(typeof window !== "undefined" && window.document)) {
+      const container = document.createElement("div");
+      container.setAttribute("pal-toaster-main", "");
+      document.body.appendChild(container);
 
-    ReactDOM.render(
-      <Toaster onShow={this._onShow} key={this.key} />,
-      container
-    );
+      ReactDOM.render(
+        <Toaster onShow={this._onShow} key={this.key} />,
+        container
+      );
+    }
   }
   key = 0;
   _toggleShow: any;

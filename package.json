@@ -1,10 +1,10 @@
 {
   "name": "ak-palette",
   "version": "0.5.1",
-  "main": "build/index.js",
-  "module": "build/index.esm.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "files": [
-    "build"
+    "dist"
   ],
   "author": {
     "name": "Akshay K",
@@ -51,6 +51,8 @@
     "build-storybook": "build-storybook -s public",
     "docusaurus": "docusaurus",
     "doc-start": "docusaurus start",
+    "doc-build": "docusaurus build",
+    "doc-serve": "docusaurus serve",
     "publish": "npm run build && np"
   },
   "np": {
