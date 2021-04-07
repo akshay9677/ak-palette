@@ -37,6 +37,7 @@
   }
 
   .pal-select-container:hover > .pal-select-clear {
+    display: flex;
     visibility: visible;
   }
 
@@ -58,9 +59,9 @@
   }
 
   .isInvalid {
-    border-color: #e67575;
+    border-color: #e85a4b;
     &:hover {
-      border-color: #e67575;
+      border-color: #e85a4b;
       outline: 0;
       -webkit-box-shadow: none;
       box-shadow: none;
@@ -68,7 +69,9 @@
   }
 
   .validate-text {
-    color: #e67575;
+    display: flex;
+    align-items: center;
+    color: #e85a4b;
     font-family: $pal-font-family;
     font-size: 13px;
     padding: 3px 0px 0px 2px;
@@ -78,6 +81,7 @@
     font-size: 10px;
     transition: all 0.15s ease 0s;
     padding-right: 3px;
+    padding-top: 3px;
   }
 
   .pal-select-clear {
@@ -116,6 +120,7 @@
     display: flex;
     margin: 5px 0px;
     justify-content: space-between;
+    align-items: center;
     &:hover {
       background-color: #f5f4f4;
     }

@@ -23,6 +23,7 @@ const Template: Story = (args) => {
       multiple={args.multiple}
       tagColor={args.tagColor}
       collapseTags={args.collapseTags}
+      options={[{ label: "Akshay", value: "Akshay" }]}
     />
   );
 };

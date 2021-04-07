@@ -4,7 +4,9 @@
   display: inline-flex;
   flex-direction: column;
   .validate-text {
-    color: #e67575;
+    display: flex;
+    align-items: center;
+    color: #e85a4b;
     font-family: $pal-font-family;
     font-size: 12px;
     padding: 5px 0px 0px 2px;

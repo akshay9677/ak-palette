@@ -15,7 +15,6 @@ type DatePickerProps = {
   validationText?: string;
   value?: any;
   onChange?: (date: any) => void;
-  isDoc?: boolean;
 };
 
 const DatePickers: React.FC<DatePickerProps> = ({
@@ -27,7 +26,6 @@ const DatePickers: React.FC<DatePickerProps> = ({
   validationText,
   value,
   onChange,
-  isDoc,
 }) => {
   const [startDate, setStartDate] = useState(value ? value : null);
   const InputDate = forwardRef((values: any, ref: any) => {
@@ -49,7 +47,7 @@ const DatePickers: React.FC<DatePickerProps> = ({
               width: "14px",
               height: "14px",
             }}
-            src={isDoc ? "/img/calendar.svg" : Calendar}
+            src={Calendar}
             alt="calendar-svg"
           />
         }

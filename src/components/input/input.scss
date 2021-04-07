@@ -28,15 +28,15 @@
   }
 
   .isInvalid {
-    border-color: #e67575;
+    border-color: #e85a4b;
     &:focus-within {
-      border-color: #e67575;
+      border-color: #e85a4b;
       outline: 0;
       -webkit-box-shadow: none;
       box-shadow: none;
     }
     &:hover {
-      border-color: #e67575;
+      border-color: #e85a4b;
     }
   }
 
@@ -74,7 +74,9 @@
   }
 
   .validate-text {
-    color: #e67575;
+    display: flex;
+    align-items: center;
+    color: #e85a4b;
     font-family: $pal-font-family;
     font-size: 11px;
     padding: 3px 0px 0px 2px;

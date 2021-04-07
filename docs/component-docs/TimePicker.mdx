@@ -1,26 +1,16 @@
-import { TimePicker } from "../../src/index";
+import { TimePicker } from "../../dist/index";
 
 The TimePicker component is used to render a time picker field which users can use to select a time from the list of
 time intervals. The intervals, start time and end time for the selection list is customizable is customizable
 
 ### Usage
 
-<TimePicker
-  isDoc
-  startTime="00:00"
-  endTime="12:00"
-  placeholder="Select a time"
-/>
+<TimePicker startTime="00:00" endTime="12:00" placeholder="Select a time" />
 
 #### Code
 
 ```jsx
-<TimePicker
-  isDoc
-  startTime="00:00"
-  endTime="12:00"
-  placeholder="Select a time"
-/>
+<TimePicker startTime="00:00" endTime="12:00" placeholder="Select a time" />
 ```
 
 ### Customizable Time Range
@@ -31,7 +21,6 @@ The `step` prop accepts `number` values where the number represents the interval
 example the interval is `15 min`
 
 <TimePicker
-  isDoc
   startTime="00:00"
   endTime="12:00"
   step={15}
@@ -42,7 +31,6 @@ example the interval is `15 min`
 
 ```jsx
 <TimePicker
-  isDoc
   startTime="00:00"
   endTime="12:00"
   step={15}
@@ -56,7 +44,6 @@ The time range or time list from the TimePicker component can be either in 12 ho
 using the prop `is12Hour` boolean prop. If true then the startTime and endTime should be in that format
 
 <TimePicker
-  isDoc
   startTime="12:00 am"
   endTime="12:00 pm"
   step={15}
@@ -83,7 +70,6 @@ determines the size of the component, the default values are `32` and `300` resp
 
 <TimePicker
   width={280}
-  isDoc
   startTime="00:00"
   endTime="12:00"
   height={38}
@@ -92,7 +78,6 @@ determines the size of the component, the default values are `32` and `300` resp
 <div style={{ paddingBottom: "10px" }}></div>
 <TimePicker
   width={300}
-  isDoc
   startTime="00:00"
   endTime="12:00"
   height={46}
@@ -123,7 +108,6 @@ determines the size of the component, the default values are `32` and `300` resp
 The TimePicker component can be disabled by using a boolean prop called `disabled`
 
 <TimePicker
-  isDoc
   startTime="00:00"
   endTime="12:00"
   placeholder="Select a time"
@@ -149,7 +133,6 @@ is a boolean which denotes the validation for the field and `validationText` act
 > The `validationText` prop is not mandatory for indicating validation. It can be used for providing context.
 
 <TimePicker
-  isDoc
   startTime="00:00"
   endTime="12:00"
   placeholder="Select a time"
@@ -174,7 +157,6 @@ is a boolean which denotes the validation for the field and `validationText` act
 The selected item can be clearable if `clearable` prop.
 
 <TimePicker
-  isDoc
   startTime="00:00"
   endTime="12:00"
   placeholder="Select a time"

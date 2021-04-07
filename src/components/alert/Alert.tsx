@@ -1,16 +1,15 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCheckCircle,
-  faInfoCircle,
-  faExclamationCircle,
-  faTimes,
-} from "@fortawesome/free-solid-svg-icons";
 import Spinner from "../spinner/Spinner";
 import Text from "../typography/Text";
 import Button from "../buttons/Button";
 
 import "./alert.scss";
+import Success from "./svg/success.svg";
+import Default from "./svg/default.svg";
+import Info from "./svg/info.svg";
+import Danger from "../../assets/icons/danger.svg";
+import Warning from "./svg/warning.svg";
+import CloseIcon from "../../assets/icons/close.svg";
 
 type AlertProps = {
   label: string;
@@ -49,11 +48,11 @@ const _colorHash = {
 };
 
 const _iconHash = {
-  success: faCheckCircle,
-  info: faInfoCircle,
-  warning: faExclamationCircle,
-  danger: faExclamationCircle,
-  default: faInfoCircle,
+  success: Success,
+  info: Info,
+  warning: Warning,
+  danger: Danger,
+  default: Default,
 };
 
 const Alert: React.FC<AlertProps> = ({
@@ -82,9 +81,13 @@ const Alert: React.FC<AlertProps> = ({
       <div className="pal-alert-main">
         <span
           className="pal-alert-primary-icon"
-          style={{ color: _getAlertTypeStyle().color }}
+          style={{ color: _getAlertTypeStyle().color, display: "flex" }}
         >
-          <FontAwesomeIcon icon={_getIcon()} />
+          <img
+            style={{ width: "15px", height: "15px" }}
+            src={_getIcon()}
+            alt="type-symbol"
+          />
         </span>
         <div>
           <Text size="medium">{title}</Text>
@@ -101,7 +104,11 @@ const Alert: React.FC<AlertProps> = ({
               }}
               type="default"
             >
-              <FontAwesomeIcon icon={faTimes} />
+              <img
+                style={{ width: "8px", height: "8px" }}
+                src={CloseIcon}
+                alt="close-svg"
+              />
             </Button>
           ) : (
             <Spinner color={_colorHash[_getAlertType()].color} />

@@ -1,7 +1,4 @@
-import { ToolTip, Button } from "../../src/index";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { ToolTip, Button, Text } from "../../dist/index";
 
 The `Tooltip` component is used render a small info toast for any content, when it is hovered.
 
@@ -12,9 +9,7 @@ to render the text for the tooltip
 
 <div style={{ padding: "0px 0px 10px 0px" }}>
   <ToolTip label="Sample tool tip">
-    <div style={{ fontSize: "20px", color: "#888" }}>
-      <FontAwesomeIcon icon={faInfoCircle} />
-    </div>
+    <Text>Hover over me</Text>
   </ToolTip>
 </div>
 
@@ -22,7 +17,7 @@ to render the text for the tooltip
 
 ```jsx
 <ToolTip label="Sample tool tip">
-  <FontAwesomeIcon icon={faInfoCircle} />
+  <Text>Hover over me</Text>
 </ToolTip>
 ```
 
@@ -56,7 +51,7 @@ export const ToolTipText = ({ placement }) => {
           alignItems: "center",
         }}
       >
-        <FontAwesomeIcon icon={faInfoCircle} />
+        <Text>Hover over me</Text>
         <div style={{ fontSize: "14px", color: "black" }}>
           {placement.toUpperCase()}
         </div>

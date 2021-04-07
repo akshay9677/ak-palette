@@ -1,6 +1,4 @@
-import { Input } from "../../src/index";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAt, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { Input } from "../../dist/index";
 
 The `Input` component is a basic input component which users can use to enter values into it.
 
@@ -43,28 +41,28 @@ The input field can have a icon by using the props `suffix` and `prefix`
 
 <div style={{ paddingBottom: "15px" }}>
   <Input
-    placeholder="Enter your email"
+    placeholder="Time Picker"
     suffix={
-      <div style={{ color: "#888" }}>
-        <FontAwesomeIcon icon={faAt} />
-      </div>
+      <img
+        style={{ height: "12px", width: "12px" }}
+        src={"/img/clock.svg"}
+        alt="clock-svg"
+      />
     }
   />
 </div>
 <div style={{ paddingBottom: "15px" }}>
   <Input
-    placeholder="Search"
+    placeholder="Calendar"
     prefix={
-      <div style={{ color: "#888" }}>
-        <FontAwesomeIcon icon={faSearch} />
-      </div>
+      <img
+        style={{ height: "13px", width: "13px" }}
+        src={"/img/calendar.svg"}
+        alt="clock-svg"
+      />
     }
   />
 </div>
-<Input
-  placeholder="Enter amount"
-  prefix={<div style={{ color: "#888" }}>₹</div>}
-/>
 
 #### Code
 
@@ -72,17 +70,19 @@ The input field can have a icon by using the props `suffix` and `prefix`
 <Input
   placeholder="Enter your email"
   suffix={
-    <div style={{ color: "#888" }}>
-      <FontAwesomeIcon icon={faAt} />
-    </div>
+      <img
+        src={"/img/clock.svg"}
+        alt="clock-svg"
+      />
   }
 />
 <Input
   placeholder="Search"
   prefix={
-    <div style={{ color: "#888" }}>
-      <FontAwesomeIcon icon={faSearch} />
-    </div>
+      <img
+        src={"/img/calendar.svg"}
+        alt="clock-svg"
+      />
   }
 />
 <Input
