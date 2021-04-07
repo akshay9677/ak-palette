@@ -1,9 +1,10 @@
 import React from "react";
 
 import "./modal.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import Button from "../buttons/Button";
 import Text from "../typography/Text";
-import CloseIcon from "../../assets/icons/close.svg";
 
 type ModalProps = {
   open: boolean;
@@ -67,11 +68,7 @@ const Modal: React.FC<ModalProps> = ({
             <div className="pal-modal-header">
               <Text size="large">{header}</Text>
               <Button appearance="tertiary" onClick={onClose} type="default">
-                <img
-                  style={{ width: "8px", height: "8px" }}
-                  src={CloseIcon}
-                  alt="close-svg"
-                />
+                <FontAwesomeIcon icon={faTimes} />
               </Button>
             </div>
             <div className="pal-modal-body">{children}</div>

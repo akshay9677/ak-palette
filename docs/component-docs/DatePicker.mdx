@@ -1,11 +1,11 @@
-import { DatePicker } from "../../dist/index";
+import { DatePicker } from "../../src/index";
 import { useState } from "react";
 
 The DatePicker component is used to render a date picker field which users can use to select a date.
 
 ### Usage
 
-<DatePicker placeholder="Select a date" />
+<DatePicker placeholder="Select a date" isDoc />
 
 #### Code
 
@@ -18,7 +18,7 @@ The DatePicker component is used to render a date picker field which users can u
 The size of the DatePicker component can be adjusted by using the `width` and `height` props of DatePicker component. Both the
 props accepts number values.
 
-<DatePicker placeholder="Select a date" width={300} height={36} />
+<DatePicker placeholder="Select a date" width={300} height={36} isDoc />
 
 #### Code
 
@@ -30,7 +30,7 @@ props accepts number values.
 
 The DatePicker component can be disabled by using the `disabled` boolean props
 
-<DatePicker placeholder="Select a date" disabled />
+<DatePicker placeholder="Select a date" disabled isDoc />
 
 #### Code
 
@@ -49,6 +49,7 @@ is a boolean which denotes the validation for the field and `validationText` act
   placeholder="Select a date"
   isInvalid
   validationText="Please select a date"
+  isDoc
 />
 
 #### Code
@@ -71,6 +72,7 @@ export const DatePickerComponent = () => {
   return (
     <DatePicker
       placeholder="Select a date"
+      isDoc
       value={date}
       onChange={(selectedDate) => {
         alert(selectedDate);

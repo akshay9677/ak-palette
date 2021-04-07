@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Container from "ui-box";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExclamationCircle } from "@fortawesome/free-solid-svg-icons";
 
 import Radio from "../radio/Radio";
 import { OptionProps } from "../select/Select";
 import "./radiogroup.scss";
-import Danger from "../../assets/icons/danger.svg";
 
 type RadioGroupProps = {
   options?: Array<OptionProps>;
@@ -57,12 +58,8 @@ const RadioGroup: React.FC<RadioGroupProps> = ({
       </Container>
       {validationText && (
         <span className="validate-text">
-          <span style={{ paddingRight: "4px", display: "flex" }}>
-            <img
-              style={{ width: "10px", height: "10px" }}
-              src={Danger}
-              alt="danger-svg"
-            />
+          <span style={{ paddingRight: "4px" }}>
+            <FontAwesomeIcon icon={faExclamationCircle} />
           </span>
           {validationText}
         </span>

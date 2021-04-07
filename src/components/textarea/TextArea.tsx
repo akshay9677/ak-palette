@@ -1,7 +1,8 @@
 import React from "react";
 import "./textarea.scss";
 import Container from "ui-box";
-import Danger from "../../assets/icons/danger.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExclamationCircle } from "@fortawesome/free-solid-svg-icons";
 
 type TextAreaProps = {
   placeholder?: string;
@@ -39,12 +40,8 @@ const TextArea: React.FC<TextAreaProps> = ({
       />
       {isInvalid && validationText && (
         <span className="validate-text">
-          <span style={{ paddingRight: "4px", display: "flex" }}>
-            <img
-              style={{ width: "10px", height: "10px" }}
-              src={Danger}
-              alt="danger-svg"
-            />
+          <span style={{ paddingRight: "4px" }}>
+            <FontAwesomeIcon icon={faExclamationCircle} />
           </span>
           {validationText}
         </span>

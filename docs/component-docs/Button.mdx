@@ -1,4 +1,6 @@
-import { Button } from "../../dist/index";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRocket } from "@fortawesome/free-solid-svg-icons";
+import { Button } from "../../src/index";
 
 Button Component is use to render a button in the user interface, that can perform tasks when clicked
 
@@ -228,24 +230,18 @@ Since the child of the Button component is rendered as it is when can render ico
 
 <div style={{ display: "flex", flexDirection: "row" }}>
   <div style={{ display: "flex", padding: "10px" }}>
-    <Button appearance="secondary" type="default">
-      Github
-      <span style={{ padding: "3px 0px 0px 10px", fontSize: "13px" }}>
-        <img
-          style={{ height: "15px", width: "15px" }}
-          src={"/img/github.svg"}
-          alt="github-svg"
-        />
+    <Button>
+      <span style={{ padding: "0px 10px 0px 0px", fontSize: "13px" }}>
+        <FontAwesomeIcon icon={faRocket} />
       </span>
+      Send
     </Button>
   </div>
   <div style={{ display: "flex", padding: "10px" }}>
     <Button appearance="tertiary">
-      <img
-        style={{ height: "20px", width: "20px" }}
-        src={"/img/logo.svg"}
-        alt="github-svg"
-      />
+      <span style={{ fontSize: "13px" }}>
+        <FontAwesomeIcon icon={faRocket} />
+      </span>
     </Button>
   </div>
 </div>
@@ -253,15 +249,9 @@ Since the child of the Button component is rendered as it is when can render ico
 #### Code
 
 ```jsx
-<Button appearance="secondary" type="default">
-  Github
-  <span style={{ padding: "3px 0px 0px 10px", fontSize: "13px" }}>
-    <img
-      style={{ height: "15px", width: "15px" }}
-      src={"/img/github.svg"}
-      alt="github-svg"
-    />
-  </span>
+<Button>
+  <FontAwesomeIcon icon={faRocket} />
+  Send
 </Button>
 ```
 

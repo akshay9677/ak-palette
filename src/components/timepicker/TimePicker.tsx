@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import Select from "../select/Select";
 import moment from "moment";
+import Container from "ui-box";
 
 import Clock from "./clock.svg";
 
@@ -17,8 +18,7 @@ type TimePicker = {
   step?: number;
   clearable?: boolean;
   is12Hour?: boolean;
-  value?: any;
-  onChange?: (e: any) => void;
+  isDoc?: boolean;
 };
 
 const TimePicker: React.FC<TimePicker> = ({
@@ -33,8 +33,7 @@ const TimePicker: React.FC<TimePicker> = ({
   step,
   clearable,
   is12Hour,
-  value,
-  onChange,
+  isDoc,
 }): JSX.Element => {
   const [options, setOptions] = useState<any>();
   useEffect(() => {
@@ -68,15 +67,13 @@ const TimePicker: React.FC<TimePicker> = ({
       validationText={validationText}
       options={options}
       clearable={clearable}
-      onChange={onChange}
-      value={value}
       icon={
         <img
           style={{
             width: "14px",
             height: "14px",
           }}
-          src={Clock}
+          src={isDoc ? "/img/clock.svg" : Clock}
           alt="clock-svg"
         />
       }

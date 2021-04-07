@@ -2,13 +2,16 @@ import React, { useEffect, useRef, useState } from "react";
 import Container from "ui-box";
 import { createPopper } from "@popperjs/core";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronDown,
+  faCheck,
+  faTimesCircle,
+  faExclamationCircle,
+} from "@fortawesome/free-solid-svg-icons";
 import Badge from "../badge/Badge";
 import Text from "../typography/Text";
 import Empty from "../../assets/icons/empty-white-box.svg";
-import Danger from "../../assets/icons/danger.svg";
-import ClearIcon from "./cancel.svg";
-import Tick from "./tick.svg";
-import ChevronDown from "./chevron-down.svg";
 
 import "./select.scss";
 
@@ -234,11 +237,7 @@ const Select: React.FC<SelectProps> = ({
               className="pal-select-down-arrow pal-select-clear"
               onClick={_clearSelection}
             >
-              <img
-                style={{ width: "12px", height: "12px" }}
-                src={ClearIcon}
-                alt="clear-svg"
-              />
+              <FontAwesomeIcon icon={faTimesCircle} />
             </span>
           )}
         <span
@@ -247,21 +246,13 @@ const Select: React.FC<SelectProps> = ({
           }`}
           onClick={_openSelectDropDown}
         >
-          <img
-            style={{ width: "10px", height: "10px" }}
-            src={ChevronDown}
-            alt="down-arrow-svg"
-          />
+          <FontAwesomeIcon icon={faChevronDown} />
         </span>
       </Container>
       {isInvalid && validationText && (
         <span className="validate-text">
-          <span style={{ paddingRight: "4px", display: "flex" }}>
-            <img
-              style={{ width: "10px", height: "10px" }}
-              src={Danger}
-              alt="danger-svg"
-            />
+          <span style={{ paddingRight: "4px" }}>
+            <FontAwesomeIcon icon={faExclamationCircle} />
           </span>
           {validationText}
         </span>
@@ -286,11 +277,7 @@ const Select: React.FC<SelectProps> = ({
                     <Text color={"inherit"}>{label}</Text>
                     {_isSelectedItem(currOption) && (
                       <div className="pal-selected-tick">
-                        <img
-                          style={{ width: "12px", height: "12px" }}
-                          src={Tick}
-                          alt="tick-svg"
-                        />
+                        <FontAwesomeIcon icon={faCheck} />
                       </div>
                     )}
                   </div>

@@ -60,21 +60,19 @@
 // validation
 
 .isInvalid {
-  border-color: #e85a4b;
+  border-color: #e67575;
   &:hover {
-    border-color: #e85a4b;
+    border-color: #e67575;
   }
   &:focus {
-    border-color: #e85a4b;
+    border-color: #e67575;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
 
 .validate-text {
-  display: flex;
-  align-items: center;
-  color: #e85a4b;
+  color: #e67575;
   font-family: $pal-font-family;
   font-size: 12px;
   padding: 3px 0px 0px 2px;
