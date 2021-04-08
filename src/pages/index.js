@@ -55,8 +55,6 @@ function Feature({ imageUrl, title, description }) {
 }
 
 function Home() {
-  const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
   return (
     <Layout
       title={`Palette UI Kit`}
@@ -65,7 +63,8 @@ function Home() {
       <div className={styles.mainHeaderContainer}>
         <div className={styles.headerIntroText}>
           <div className={styles.headerIntro}>
-            <Text fontWeight={600} size="xxxlarge">
+            <img style={{width:'40px',height:'40px',paddingRight:'5px'}} src={useBaseUrl('img/logo.svg')} alt='logo-svg' />
+            <Text className={styles.palLogoName} fontWeight={600} paddingTop={7} size="xxxlarge">
               Palette Design System
             </Text>
           </div>
@@ -106,7 +105,7 @@ function Home() {
         </div>
         <img
           className={styles.headerDesignSvg}
-          src={useBaseUrl("img/Design_Comp.svg")}
+          src={useBaseUrl("img/Landing_page.svg")}
           alt={"header-svg"}
         />
       </div>

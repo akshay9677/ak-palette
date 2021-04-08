@@ -16,7 +16,7 @@ const isObjectFitSupported =
 const SOLID_COLOR_HASH = [
   "#DF3511",
   "#048759",
-  "#03A3C0",
+  "#0569ce",
   "#1A2A4D",
   "#FF9A20",
   "#5851FF",
@@ -25,7 +25,7 @@ const SOLID_COLOR_HASH = [
 const NON_SOLID_COLOR_HASH = [
   "#fdd6d0",
   "#c0f9d9",
-  "#ccf2f4",
+  "#a5d2ff",
   "#eae9e9",
   "#fff0d6",
   "#dddcff",

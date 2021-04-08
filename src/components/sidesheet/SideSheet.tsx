@@ -65,7 +65,7 @@ const SideSheet: React.FC<SideSheetProps> = ({
               paddingX={20}
               paddingY={10}
             >
-              {header && <Text size="large">{header}</Text>}
+              {header && <Text size="xlarge">{header}</Text>}
               {children}
             </Container>
             {/* {!_isRightPosition() && !showClose && (

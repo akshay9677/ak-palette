@@ -66,7 +66,7 @@ const Modal: React.FC<ModalProps> = ({
             style={{ width: _getWidth() }}
           >
             <div className="pal-modal-header">
-              <Text size="large">{header}</Text>
+              <Text size="xlarge">{header}</Text>
               <Button appearance="tertiary" onClick={onClose} type="default">
                 <FontAwesomeIcon icon={faTimes} />
               </Button>

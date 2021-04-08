@@ -24,6 +24,7 @@
   --ifm-heading-color: #234361;
   --ifm-navbar-background-color: #0569ce;
   /* --ifm-menu-color: #ffffff; */
+  --ifm-font-color-base: #425a70;
 }
 
 .docusaurus-highlight-code-line {
@@ -46,6 +47,11 @@ a:hover {
   font-size: 13px;
   color: #425a70;
   font-weight: 500;
+}
+.navbar__logo {
+  height: 100%;
+  margin-right: 0.5rem;
+  width: 34px;
 }
 
 .navbar__brand {
