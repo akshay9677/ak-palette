@@ -21,8 +21,8 @@ const Button: React.FC<ButtonProps> = ({
   ...rest
 }): JSX.Element => {
   const _colorHash = {
-    success: "#3BC178",
-    info: "#0569ce",
+    success: "#52BD95",
+    info: "#2952cc",
     warning: "#E89F29",
     danger: "#E85A4B",
     default: "#475967",

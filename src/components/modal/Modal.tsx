@@ -79,22 +79,22 @@ const Modal: React.FC<ModalProps> = ({
                 >
                   <div style={{ paddingRight: "15px" }}>
                     <Button
-                      type={(primaryButton || {}).color}
-                      onClick={onConfirm}
+                      appearance="tertiary"
+                      type={(secondaryButton || {}).color}
+                      onClick={onClose}
                     >
-                      {(primaryButton || {}).name
-                        ? (primaryButton || {}).name
-                        : "Confirm"}
+                      {(secondaryButton || {}).name
+                        ? (secondaryButton || {}).name
+                        : "Cancel"}
                     </Button>
                   </div>
                   <Button
-                    appearance="tertiary"
-                    type={(secondaryButton || {}).color}
-                    onClick={onClose}
+                    type={(primaryButton || {}).color}
+                    onClick={onConfirm}
                   >
-                    {(secondaryButton || {}).name
-                      ? (secondaryButton || {}).name
-                      : "Cancel"}
+                    {(primaryButton || {}).name
+                      ? (primaryButton || {}).name
+                      : "Confirm"}
                   </Button>
                 </div>
               </div>

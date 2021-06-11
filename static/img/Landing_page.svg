@@ -1,19 +1,19 @@
 <svg width="548" height="497" viewBox="0 0 548 497" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <ellipse cx="252.238" cy="248.5" rx="252.238" ry="248.5" fill="#F3F7FA"/>
-<line x1="60" y1="130.5" x2="167" y2="130.5" stroke="#CCCCCC" stroke-width="5"/>
-<line x1="62.5" y1="173" x2="62.5" y2="130" stroke="#CCCCCC" stroke-width="5"/>
-<line x1="190" y1="298.5" x2="297" y2="298.5" stroke="#CCCCCC" stroke-width="5"/>
-<line x1="327" y1="127.5" x2="434" y2="127.5" stroke="#CCCCCC" stroke-width="5"/>
-<line x1="431.5" y1="180" x2="431.5" y2="128" stroke="#CCCCCC" stroke-width="5"/>
-<line x1="327" y1="178.5" x2="434" y2="178.5" stroke="#CCCCCC" stroke-width="5"/>
-<line x1="191.5" y1="365" x2="191.5" y2="258" stroke="#CCCCCC" stroke-width="5"/>
-<line x1="449.5" y1="261" x2="449.5" y2="240" stroke="#CCCCCC" stroke-width="5"/>
-<line x1="341" y1="259.5" x2="448" y2="259.5" stroke="#CCCCCC" stroke-width="5"/>
-<line x1="90.5" y1="433.541" x2="90.5" y2="286" stroke="#CCCCCC" stroke-width="5"/>
-<line x1="91" y1="423.5" x2="198" y2="423.5" stroke="#CCCCCC" stroke-width="5"/>
-<line x1="294.238" y1="208.501" x2="294.238" y2="129.999" stroke="#CCCCCC" stroke-width="5"/>
-<line x1="80.5" y1="130.52" x2="80.5" y2="96.0039" stroke="#CCCCCC" stroke-width="5"/>
-<rect x="422.375" y="142.278" width="36.4237" height="19.4902" rx="4" fill="#0569CE"/>
+<line x1="60" y1="130.5" x2="167" y2="130.5" stroke="#E6E8F0" stroke-width="5"/>
+<line x1="62.5" y1="173" x2="62.5" y2="130" stroke="#E6E8F0" stroke-width="5"/>
+<line x1="190" y1="298.5" x2="297" y2="298.5" stroke="#E6E8F0" stroke-width="5"/>
+<line x1="327" y1="127.5" x2="434" y2="127.5" stroke="#E6E8F0" stroke-width="5"/>
+<line x1="431.5" y1="180" x2="431.5" y2="128" stroke="#E6E8F0" stroke-width="5"/>
+<line x1="327" y1="178.5" x2="434" y2="178.5" stroke="#E6E8F0" stroke-width="5"/>
+<line x1="191.5" y1="365" x2="191.5" y2="258" stroke="#E6E8F0" stroke-width="5"/>
+<line x1="449.5" y1="261" x2="449.5" y2="240" stroke="#E6E8F0" stroke-width="5"/>
+<line x1="341" y1="259.5" x2="448" y2="259.5" stroke="#E6E8F0" stroke-width="5"/>
+<line x1="90.5" y1="433.541" x2="90.5" y2="286" stroke="#E6E8F0" stroke-width="5"/>
+<line x1="91" y1="423.5" x2="198" y2="423.5" stroke="#E6E8F0" stroke-width="5"/>
+<line x1="294.238" y1="208.501" x2="294.238" y2="129.999" stroke="#E6E8F0" stroke-width="5"/>
+<line x1="80.5" y1="130.52" x2="80.5" y2="96.0039" stroke="#E6E8F0" stroke-width="5"/>
+<rect x="422.375" y="142.278" width="36.4237" height="19.4902" rx="4" fill="#2952cc"/>
 <rect x="429.891" y="150.075" width="21.3917" height="4.67765" rx="2.33882" fill="white"/>
 <rect x="466.976" y="142.278" width="36.4237" height="19.4902" rx="4" fill="#E89F29"/>
 <rect x="474.492" y="150.075" width="21.3917" height="4.67765" rx="2.33882" fill="white"/>
@@ -23,17 +23,17 @@
 <rect x="138.484" y="323.537" width="306.643" height="128.635" rx="4" fill="white"/>
 </g>
 <rect x="138.484" y="420.443" width="306.643" height="31.73" fill="#F2F5F7"/>
-<rect x="337.89" y="426.445" width="43.4263" height="18.8665" rx="4" fill="#0569CE"/>
+<rect x="337.89" y="426.445" width="43.4263" height="18.8665" rx="4" fill="#2952cc"/>
 <rect x="346.851" y="433.992" width="25.5043" height="4.52796" rx="2.26398" fill="white"/>
-<rect x="398.155" y="434.164" width="28.36" height="4.28784" rx="2.14392" fill="#0569CE"/>
-<rect x="154.436" y="334.686" width="88.625" height="11.1484" rx="5.5742" fill="#CCCCCC"/>
+<rect x="398.155" y="434.164" width="28.36" height="4.28784" rx="2.14392" fill="#2952cc"/>
+<rect x="154.436" y="334.686" width="88.625" height="11.1484" rx="5.5742" fill="#E6E8F0"/>
 <rect x="156.209" y="359.555" width="272.079" height="11.1484" rx="5.5742" fill="#E7E7E7"/>
 <rect x="156.209" y="384.425" width="272.079" height="11.1484" rx="5.5742" fill="#E7E7E7"/>
 <g filter="url(#filter1_d)">
 <rect x="252.238" y="161.769" width="161.235" height="146.176" rx="4" fill="white"/>
 </g>
 <rect x="252.238" y="271.888" width="161.235" height="36.0569" fill="#F2F5F7"/>
-<rect x="260.626" y="174.437" width="46.5996" height="12.6686" rx="6.33431" fill="#CCCCCC"/>
+<rect x="260.626" y="174.437" width="46.5996" height="12.6686" rx="6.33431" fill="#E6E8F0"/>
 <rect x="261.141" y="283.582" width="46.5996" height="12.6686" rx="6.33431" fill="#E7E7E7"/>
 <rect x="261.558" y="202.698" width="143.061" height="12.6686" rx="6.33431" fill="#E7E7E7"/>
 <rect x="261.558" y="229.01" width="143.061" height="12.6686" rx="6.33431" fill="#E7E7E7"/>
@@ -81,7 +81,7 @@
 </g>
 <ellipse cx="448.935" cy="233.723" rx="3.50189" ry="3.18207" fill="white"/>
 <path d="M467.32 233.723C467.32 231.966 468.745 230.541 470.502 230.541H513.165C514.922 230.541 516.347 231.966 516.347 233.723C516.347 235.481 514.922 236.905 513.165 236.905H470.502C468.745 236.905 467.32 235.481 467.32 233.723Z" fill="#E7E7E7"/>
-<rect x="73" y="89" width="18" height="18" rx="4" fill="#0569CE"/>
+<rect x="73" y="89" width="18" height="18" rx="4" fill="#2952cc"/>
 <line x1="79.8854" y1="103.428" x2="89.2795" y2="92.9962" stroke="white" stroke-width="3"/>
 <line x1="75.3567" y1="97.445" x2="81.5124" y2="102.707" stroke="white" stroke-width="3"/>
 <defs>

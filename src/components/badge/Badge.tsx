@@ -20,7 +20,7 @@ const badgeColorHash = {
   },
   green: {
     backgroundColor: "#EAF7EE",
-    color: "#3BC178",
+    color: "#52BD95",
   },
   red: {
     backgroundColor: "#FFDDE5",

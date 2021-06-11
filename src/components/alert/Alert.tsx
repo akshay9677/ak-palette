@@ -23,13 +23,13 @@ type AlertProps = {
 const _colorHash = {
   success: {
     // backgroundColor: "#EAF7EE",
-    borderLeft: "solid 6px #3BC178",
-    color: "#3BC178",
+    borderLeft: "solid 6px #52BD95",
+    color: "#52BD95",
   },
   info: {
     // backgroundColor: "#E5F2FD",
-    borderLeft: "solid 6px #0569ce",
-    color: "#0569ce",
+    borderLeft: "solid 6px #2952cc",
+    color: "#2952cc",
   },
   warning: {
     // backgroundColor: "#FEF7E9",

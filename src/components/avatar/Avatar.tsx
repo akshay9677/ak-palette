@@ -16,7 +16,7 @@ const isObjectFitSupported =
 const SOLID_COLOR_HASH = [
   "#DF3511",
   "#048759",
-  "#0569ce",
+  "#2952cc",
   "#1A2A4D",
   "#FF9A20",
   "#5851FF",

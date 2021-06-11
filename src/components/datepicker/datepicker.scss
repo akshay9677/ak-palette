@@ -60,7 +60,7 @@
 .react-datepicker__year-text--in-selecting-range,
 .react-datepicker__year-text--in-range {
   background-color: $pal-primary;
-  color: #ffffff;
+  color: #ffffff !important;
   &:hover {
     background-color: $pal-primary;
     opacity: 0.4;

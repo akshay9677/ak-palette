@@ -9,7 +9,7 @@ export default {
   "organizationName": "akshay",
   "projectName": "palette",
   "clientModules": [
-    "/Users/test/Desktop/palette/src/index.js"
+    "/Users/test/Desktop/ak-palette/src/index.js"
   ],
   "themeConfig": {
     "sidebarCollapsible": false,
@@ -72,7 +72,7 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/Users/test/Desktop/palette/sidebars.js",
+          "sidebarPath": "/Users/test/Desktop/ak-palette/sidebars.js",
           "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/"
         },
         "blog": {
@@ -80,7 +80,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/blog/"
         },
         "theme": {
-          "customCss": "/Users/test/Desktop/palette/static/custom.css"
+          "customCss": "/Users/test/Desktop/ak-palette/static/custom.css"
         }
       }
     ]

@@ -8,9 +8,9 @@
           "versionPath": "/docs",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/Users/test/Desktop/palette/sidebars.js",
-          "docsDirPath": "/Users/test/Desktop/palette/docs",
-          "docsDirPathLocalized": "/Users/test/Desktop/palette/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/Users/test/Desktop/ak-palette/sidebars.js",
+          "docsDirPath": "/Users/test/Desktop/ak-palette/docs",
+          "docsDirPathLocalized": "/Users/test/Desktop/ak-palette/i18n/en/docusaurus-plugin-content-docs/current",
           "mainDocId": "getting-started/overview",
           "sidebars": {
             "someSidebar": [
