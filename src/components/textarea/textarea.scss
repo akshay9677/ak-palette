@@ -9,7 +9,7 @@
   color: #403e75;
   &:focus-within {
     border-color: $pal-primary;
-    box-shadow: rgb(3 102 214 / 30%) 0px 0px 0px 3px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
   }
   &:hover {
     border-color: $pal-primary;
