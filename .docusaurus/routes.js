@@ -44,7 +44,7 @@ export default [
 },
 {
   path: '/docs',
-  component: ComponentCreator('/docs','d9b'),
+  component: ComponentCreator('/docs','7b1'),
   
   routes: [
 {
@@ -90,6 +90,11 @@ export default [
 {
   path: '/docs/component-docs/Modal',
   component: ComponentCreator('/docs/component-docs/Modal','cff'),
+  exact: true,
+},
+{
+  path: '/docs/component-docs/Pagination',
+  component: ComponentCreator('/docs/component-docs/Pagination','9e1'),
   exact: true,
 },
 {

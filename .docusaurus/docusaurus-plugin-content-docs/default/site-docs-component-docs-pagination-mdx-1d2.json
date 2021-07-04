@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Pagination",
+  "id": "component-docs/Pagination",
+  "isDocsHomePage": false,
+  "title": "Pagination",
+  "description": "Pagination component helps you divide a larger data into smaller chunks or pieces.",
+  "source": "@site/docs/component-docs/Pagination.mdx",
+  "slug": "/component-docs/Pagination",
+  "permalink": "/docs/component-docs/Pagination",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Pagination.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Table",
+    "permalink": "/docs/component-docs/Table"
+  },
+  "next": {
+    "title": "Alert",
+    "permalink": "/docs/component-docs/Alert"
+  }
+}

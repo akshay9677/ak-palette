@@ -10,6 +10,8 @@ The Palette Button component has two `appearance`
 
 - `primary`
 - `secondary`
+- `tertiary`
+- `link`
 
 ##### Example
 
@@ -47,13 +49,16 @@ The Palette Button component has two `appearance`
 ```jsx
 <Button onClick={() => alert("hello")}>Primary Button</Button>
 <Button appearance="secondary" onClick={() => alert("hello")}>
-Secondary Button
+  Secondary Button
 </Button>
 <Button appearance="tertiary" onClick={() => alert("hello")}>
-Tertiary Button
+  Tertiary Button
 </Button>
-<Button appearance="link" onClick={() => alert("hello")}>
-Link Button
+<Button
+  appearance="link"
+  onClick={() => window.open("https://www.google.com/")}
+>
+  Link Button
 </Button>
 ```
 

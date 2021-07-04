@@ -19,10 +19,10 @@
   --ifm-code-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-  --ifm-navbar-link-color: #ffffff;
-  --ifm-navbar-link-hover-color: #ffffff;
+  --ifm-navbar-link-color: #234361;
+  --ifm-navbar-link-hover-color: #234361;
   --ifm-heading-color: #234361;
-  --ifm-navbar-background-color: #2952cc;
+  --ifm-navbar-background-color: #fff;
   /* --ifm-menu-color: #ffffff; */
   --ifm-font-color-base: #425a70;
 }
@@ -35,7 +35,7 @@
 }
 
 .navbar__link--active {
-  color: #ffffff;
+  color: #2952cc;
 }
 a:hover {
   text-decoration: none;
@@ -43,7 +43,7 @@ a:hover {
 
 .navbar__brand:hover {
   text-decoration: none;
-  color: #ffff;
+  color: #234361;
 }
 
 .footer {
@@ -73,5 +73,5 @@ a:hover {
 }
 
 .navbar-sidebar__items .menu__link {
-  color: #ffffff;
+  color: #234361;
 }

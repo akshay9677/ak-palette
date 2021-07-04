@@ -45,6 +45,46 @@ const ButtonModal = () => {
 };
 ```
 
+### Custom Modal Intent
+
+The Modal component has five display type which can be mentioned using the `type` prop. By default the alert has type as undefined, so no
+type related css will be applied. The alert component also has a label prop which is used to render the main text of the response
+
+- `default`
+- `success`
+- `info`
+- `warning`
+- `danger`
+
+export const ButtonModalIntent = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{ padding: "10px 0px 20px 0px" }}>
+      <Button
+        appearance="secondary"
+        type="danger"
+        onClick={() => setOpen(true)}
+      >
+        Open Error Modal
+      </Button>
+      <Modal
+        type="danger"
+        open={open}
+        onClose={() => setOpen(false)}
+        header="Dialog Title"
+      >
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud .
+        </div>
+      </Modal>
+    </div>
+  );
+};
+
+<ButtonModalIntent />
+
 ### Detachable Header and Footer
 
 The header and footer of the modal is detachable to remove header just don't add the `header` prop and for removing
@@ -56,7 +96,7 @@ export const ButtonModal2 = () => {
     <div style={{ padding: "10px 0px 20px 0px" }}>
       <Button onClick={() => setOpen(true)}>No Header Footer Modal</Button>
       <Modal open={open} onClose={() => setOpen(false)} hideFooter={true}>
-        <div>
+        <div style={{ padding: "20px 0px" }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud .
@@ -210,15 +250,16 @@ const ButtonModal = () => {
 
 ### API
 
-|                      Prop                       |    Type    |           Possible values           |         Default Value          |
-| :---------------------------------------------: | :--------: | :---------------------------------: | :----------------------------: |
-|                      size                       |  `string`  | `"small"`,`"medium"` and `"large"`  |           `"medium"`           |
-|                     header                      |  `string`  |          Any string value           |               --               |
-|                   hideFooter                    | `boolean`  |         `true` and `false`          |             false              |
-|                      open                       | `boolean`  |         `true` and `false`          |             false              |
-| onClose - Used when secondary button is clicked | `()=>void` |                 --                  |               --               |
-| onConfirm - Used when primary button is clicked | `()=>void` |                 --                  |               --               |
-|                  primaryButton                  |  `object`  | {name:`string`,type:`Button types`} | `{name:'Confirm',type:'info'}` |
-|                 secondaryButton                 |  `object`  | {name:`string`,type:`Button types`} | `{name:'Cancel',type:'info'}`  |
+|                      Prop                       |    Type    |                        Possible values                         |         Default Value          |
+| :---------------------------------------------: | :--------: | :------------------------------------------------------------: | :----------------------------: |
+|                      size                       |  `string`  |               `"small"`,`"medium"` and `"large"`               |           `"medium"`           |
+|                     header                      |  `string`  |                        Any string value                        |               --               |
+|                      type                       |  `string`  | `"default"`, `"success"`, `"info"`, `"danger"` and `"warning"` |           `default`            |
+|                   hideFooter                    | `boolean`  |                       `true` and `false`                       |             false              |
+|                      open                       | `boolean`  |                       `true` and `false`                       |             false              |
+| onClose - Used when secondary button is clicked | `()=>void` |                               --                               |               --               |
+| onConfirm - Used when primary button is clicked | `()=>void` |                               --                               |               --               |
+|                  primaryButton                  |  `object`  |              {name:`string`,type:`Button types`}               | `{name:'Confirm',type:'info'}` |
+|                 secondaryButton                 |  `object`  |              {name:`string`,type:`Button types`}               | `{name:'Cancel',type:'info'}`  |
 
 Built by Akshay 🤙

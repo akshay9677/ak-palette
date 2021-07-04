@@ -27,6 +27,7 @@ const Template: Story = (args) => {
         primaryButton={args.primaryButton}
         secondaryButton={args.secondaryButton}
         hideFooter={args.hideFooter}
+        type={args.type}
       >
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

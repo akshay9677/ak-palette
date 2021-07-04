@@ -1,7 +1,7 @@
 @import "../../assets/main.scss";
 
 .pal-text-area-field {
-  border: 1px solid #d9d9d9;
+  border: solid 1px #d8dae5;
   border-radius: $pal-border-radius;
   font-family: $pal-font-family;
   padding: 10px;
@@ -9,9 +9,7 @@
   color: #403e75;
   &:focus-within {
     border-color: $pal-primary;
-    outline: 0;
-    -webkit-box-shadow: 0 0 0 2px $pal-primary-light;
-    box-shadow: 0 0 0 2px $pal-primary-light;
+    box-shadow: rgb(3 102 214 / 30%) 0px 0px 0px 3px;
   }
   &:hover {
     border-color: $pal-primary;

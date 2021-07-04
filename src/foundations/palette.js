@@ -6,7 +6,7 @@ const palette = {
   },
   secondary: {
     primary: "#ffffff",
-    secondary: "#f2f5f7",
+    secondary: "#F3F6FF",
   },
   green: {
     primary: "#52BD95",
@@ -17,7 +17,7 @@ const palette = {
     secondary: "#fef7e9",
   },
   red: {
-    primary: "#e85a4b",
+    primary: "#D04443",
     secondary: "#ffdde0",
   },
   grey: {

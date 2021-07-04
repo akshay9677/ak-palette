@@ -56,6 +56,11 @@
               "sidebar": "someSidebar"
             },
             {
+              "id": "component-docs/Pagination",
+              "path": "/docs/component-docs/Pagination",
+              "sidebar": "someSidebar"
+            },
+            {
               "id": "component-docs/Popover",
               "path": "/docs/component-docs/Popover",
               "sidebar": "someSidebar"

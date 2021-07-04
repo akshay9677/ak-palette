@@ -48,7 +48,9 @@ function Feature({ imageUrl, title, description }) {
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
-      <Text size="xlarge" fontWeight={600}>{title}</Text>
+      <Text size="xlarge" fontWeight={600}>
+        {title}
+      </Text>
       <Text size="medium">{description}</Text>
     </div>
   );
@@ -63,26 +65,30 @@ function Home() {
       <div className={styles.mainHeaderContainer}>
         <div className={styles.headerIntroText}>
           <div className={styles.headerIntro}>
-            <img style={{width:'40px',height:'40px',paddingRight:'5px'}} src={useBaseUrl('img/logo.svg')} alt='logo-svg' />
-            <Text className={styles.palLogoName} fontWeight={600} paddingTop={7} size="xxxlarge">
+            <img
+              style={{ width: "40px", height: "40px", paddingRight: "5px" }}
+              src={useBaseUrl("img/logo.svg")}
+              alt="logo-svg"
+            />
+            <Text
+              className={styles.palLogoName}
+              fontWeight={600}
+              paddingTop={7}
+              size="xxxlarge"
+            >
               Palette Design System
             </Text>
           </div>
-          <Text size="large" paddingTop={5} paddingBottom={15}>
-            A minimal component library and design system <br /> for React 🔥
+          <Text
+            size="large"
+            paddingTop={5}
+            paddingLeft={5}
+            paddingBottom={15}
+            width="70%"
+          >
+            A minimal component library and design system for React
           </Text>
-          <div style={{ display: "flex" }}>
-            <Button
-              onClick={() =>
-                (window.location.href = "docs/getting-started/overview")
-              }
-            >
-              <div style={{ display: "flex", alignItems: "center" }}>
-                
-              <Text color='white'>Get Started</Text>
-              </div>
-            </Button>
-            <span style={{ paddingLeft: "5px" }}></span>
+          <div style={{ display: "flex", paddingLeft: 5 }}>
             <Button
               appearance="secondary"
               onClick={() => {
@@ -100,6 +106,16 @@ function Home() {
                 src={useBaseUrl("img/github.svg")}
                 alt="github-svg"
               />
+            </Button>
+            <span style={{ paddingLeft: "20px" }}></span>
+            <Button
+              onClick={() =>
+                (window.location.href = "docs/getting-started/overview")
+              }
+            >
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <Text color="white">Get Started</Text>
+              </div>
             </Button>
           </div>
         </div>

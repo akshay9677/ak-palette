@@ -8,9 +8,9 @@
           "versionPath": "/docs",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/Users/test/Desktop/ak-palette/sidebars.js",
-          "docsDirPath": "/Users/test/Desktop/ak-palette/docs",
-          "docsDirPathLocalized": "/Users/test/Desktop/ak-palette/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/Users/test/Documents/personal/ak-palette/sidebars.js",
+          "docsDirPath": "/Users/test/Documents/personal/ak-palette/docs",
+          "docsDirPathLocalized": "/Users/test/Documents/personal/ak-palette/i18n/en/docusaurus-plugin-content-docs/current",
           "mainDocId": "getting-started/overview",
           "sidebars": {
             "someSidebar": [
@@ -119,6 +119,10 @@
                       {
                         "type": "doc",
                         "id": "component-docs/Table"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "component-docs/Pagination"
                       }
                     ]
                   },
@@ -163,6 +167,7 @@
             "/docs/component-docs/DatePicker": "someSidebar",
             "/docs/component-docs/Input": "someSidebar",
             "/docs/component-docs/Modal": "someSidebar",
+            "/docs/component-docs/Pagination": "someSidebar",
             "/docs/component-docs/Popover": "someSidebar",
             "/docs/component-docs/Radio": "someSidebar",
             "/docs/component-docs/Select": "someSidebar",
@@ -191,8 +196,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Table",
-                "permalink": "/docs/component-docs/Table"
+                "title": "Pagination",
+                "permalink": "/docs/component-docs/Pagination"
               },
               "next": {
                 "title": "Avatar",
@@ -368,6 +373,27 @@
               }
             },
             {
+              "unversionedId": "component-docs/Pagination",
+              "id": "component-docs/Pagination",
+              "isDocsHomePage": false,
+              "title": "Pagination",
+              "description": "Pagination component helps you divide a larger data into smaller chunks or pieces.",
+              "source": "@site/docs/component-docs/Pagination.mdx",
+              "slug": "/component-docs/Pagination",
+              "permalink": "/docs/component-docs/Pagination",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Pagination.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Table",
+                "permalink": "/docs/component-docs/Table"
+              },
+              "next": {
+                "title": "Alert",
+                "permalink": "/docs/component-docs/Alert"
+              }
+            },
+            {
               "unversionedId": "component-docs/Popover",
               "id": "component-docs/Popover",
               "isDocsHomePage": false,
@@ -489,8 +515,8 @@
                 "permalink": "/docs/component-docs/Card"
               },
               "next": {
-                "title": "Alert",
-                "permalink": "/docs/component-docs/Alert"
+                "title": "Pagination",
+                "permalink": "/docs/component-docs/Pagination"
               }
             },
             {

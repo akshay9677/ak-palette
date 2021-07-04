@@ -32,6 +32,8 @@
   }
   .headerIntroText {
     width: 100% !important;
+    align-items: center;
+    text-align: center;
   }
   .headerDesignSvg {
     width: 100% !important;
@@ -58,7 +60,7 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
-  background-color: #f3f7fa;
+  background-color: #f3f6ff;
 }
 
 .featureImage {

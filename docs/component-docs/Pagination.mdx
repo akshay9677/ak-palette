@@ -1,0 +1,33 @@
+import { Pagination } from "../../src/index";
+import { useState } from "react";
+
+Pagination component helps you divide a larger data into smaller chunks or pieces.
+
+### Usage
+
+The Pagination component in palette is quite straight forward, it requires two main props `page` and `totalPages`, where `page`
+denotes the current page and `totalPages` denotes the total number of pages. Apart from these two there is also another prop
+`onPageChange` which is a function where the page to changed is given as argument.
+
+export const Paginate1 = () => {
+  const [page, setPage] = useState(1);
+  return (
+    <Pagination
+      page={page}
+      onPageChange={(currPage) => setPage(currPage)}
+      totalPages={10}
+    />
+  );
+};
+
+<Paginate1 />
+
+## API
+
+|     Prop     |            Type             | Possible values | Default Value |
+| :----------: | :-------------------------: | :-------------: | :-----------: |
+|     page     |          `number`           |   Any number    |       -       |
+|  totalPages  |          `number`           |   Any number    |       -       |
+| onPageChange | `(currPage:number) => void` |        -        |       -       |
+
+Built by Akshay 🤙

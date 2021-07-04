@@ -1,10 +1,12 @@
 import React from "react";
 
 import "./modal.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import Button from "../buttons/Button";
 import Text from "../typography/Text";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { _getIcon, _getAlertTypeStyle } from "../../utils/intent";
+import Container from "ui-box";
 
 type ModalProps = {
   open: boolean;
@@ -22,12 +24,13 @@ type ModalProps = {
     color?: "success" | "info" | "warning" | "danger" | "default";
   };
   hideFooter?: boolean;
+  type?: "success" | "info" | "warning" | "danger" | "default";
 };
 
 const _sizeHash = {
-  small: "424px",
-  medium: "600px",
-  large: "800px",
+  small: "400px",
+  medium: "550px",
+  large: "700px",
 };
 
 const Modal: React.FC<ModalProps> = ({
@@ -40,6 +43,7 @@ const Modal: React.FC<ModalProps> = ({
   primaryButton,
   secondaryButton,
   hideFooter,
+  type,
 }): JSX.Element => {
   const _getWidth = (): string => {
     let currSize = size ? size : "medium";
@@ -53,6 +57,7 @@ const Modal: React.FC<ModalProps> = ({
     let divClassName = e.target.getAttribute("class");
     if (divClassName === "pal-modal") onClose();
   };
+
   return (
     <>
       {open && (
@@ -66,7 +71,19 @@ const Modal: React.FC<ModalProps> = ({
             style={{ width: _getWidth() }}
           >
             <div className="pal-modal-header">
-              <Text size="xlarge">{header}</Text>
+              <Container
+                color={_getAlertTypeStyle(type).color}
+                display="flex"
+                alignItems="center"
+              >
+                {type && (
+                  <FontAwesomeIcon
+                    icon={_getIcon(type)}
+                    style={{ marginRight: "10px" }}
+                  />
+                )}
+                <Text size="xlarge">{header}</Text>
+              </Container>
               <Button appearance="tertiary" onClick={onClose} type="default">
                 <FontAwesomeIcon icon={faTimes} />
               </Button>
@@ -79,8 +96,8 @@ const Modal: React.FC<ModalProps> = ({
                 >
                   <div style={{ paddingRight: "15px" }}>
                     <Button
-                      appearance="tertiary"
-                      type={(secondaryButton || {}).color}
+                      appearance="secondary"
+                      type={type}
                       onClick={onClose}
                     >
                       {(secondaryButton || {}).name
@@ -88,10 +105,7 @@ const Modal: React.FC<ModalProps> = ({
                         : "Cancel"}
                     </Button>
                   </div>
-                  <Button
-                    type={(primaryButton || {}).color}
-                    onClick={onConfirm}
-                  >
+                  <Button onClick={onConfirm} type={type}>
                     {(primaryButton || {}).name
                       ? (primaryButton || {}).name
                       : "Confirm"}

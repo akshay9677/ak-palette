@@ -24,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({
     success: "#52BD95",
     info: "#2952cc",
     warning: "#E89F29",
-    danger: "#E85A4B",
+    danger: "#D04443",
     default: "#475967",
   };
 

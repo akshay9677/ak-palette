@@ -10,16 +10,17 @@
   background-color: RGB(0, 0, 0);
   background-color: RGBA(18, 52, 77, 0.5);
   justify-content: center;
-  align-items: center;
+  align-items: start;
   font-family: $pal-font-family;
   transition: all 0.3s linear 0s;
 }
 
 .pal-modal-container {
   background-color: #ffffff;
-  border-radius: $pal-border-radius;
-  animation: modal-entry 0.5s 1;
+  border-radius: 7px;
+  animation: modal-entry 0.2s 1;
   text-align: left;
+  margin-top: 60px;
 }
 
 .pal-modal-header {
@@ -41,19 +42,19 @@
 }
 
 .pal-modal-body {
-  padding: 10px 30px 20px 30px;
+  padding: 10px 30px 0px;
+  font-size: 14px;
 }
 
 .pal-modal-footer {
-  border-radius: $pal-border-radius;
-  padding: 10px 30px;
-  background-color: #f2f5f7;
+  border-radius: 7px;
+  padding: 15px 30px;
   height: 10%;
   display: flex;
   justify-content: flex-end;
 }
 .pal-modal-exit {
-  animation: modal-entry 0.5s 1;
+  animation: modal-exit 0.2s 1;
 }
 
 @keyframes modal-entry {
@@ -63,5 +64,15 @@
 
   to {
     transform: translateY(0);
+  }
+}
+
+@keyframes modal-exit {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-15px);
   }
 }

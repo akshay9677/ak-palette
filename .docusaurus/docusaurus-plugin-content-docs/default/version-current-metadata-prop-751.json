@@ -127,6 +127,11 @@
                 "type": "link",
                 "label": "Table",
                 "href": "/docs/component-docs/Table"
+              },
+              {
+                "type": "link",
+                "label": "Pagination",
+                "href": "/docs/component-docs/Pagination"
               }
             ]
           },
@@ -176,6 +181,7 @@
     "/docs/component-docs/DatePicker": "someSidebar",
     "/docs/component-docs/Input": "someSidebar",
     "/docs/component-docs/Modal": "someSidebar",
+    "/docs/component-docs/Pagination": "someSidebar",
     "/docs/component-docs/Popover": "someSidebar",
     "/docs/component-docs/Radio": "someSidebar",
     "/docs/component-docs/Select": "someSidebar",

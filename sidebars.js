@@ -1,9 +1,9 @@
 module.exports = {
   someSidebar: {
     GettingStarted: ["getting-started/overview"],
-    Foundations:["foundation/Color","foundation/Typography"],
+    Foundations: ["foundation/Color", "foundation/Typography"],
     Components: [
-      { 
+      {
         Forms: [
           "component-docs/Button",
           "component-docs/Checkbox",
@@ -20,9 +20,10 @@ module.exports = {
           "component-docs/ToolTip",
           "component-docs/Popover",
         ],
-        "Patterns":[
+        Patterns: [
           "component-docs/Card",
           "component-docs/Table",
+          "component-docs/Pagination",
         ],
         "FeedBack / Indicators": [
           "component-docs/Alert",

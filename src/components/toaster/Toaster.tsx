@@ -63,7 +63,6 @@ const Toaster: React.FC<ToasterProps> = ({ onShow }): JSX.Element => {
 
   const closeTimer = () => {
     clearTimeout(timer.current);
-    timer.current = null;
   };
 
   const startTimer = () => {

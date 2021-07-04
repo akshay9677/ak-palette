@@ -18,9 +18,9 @@ type TextProps = {
 };
 
 const SIZE_HASH = {
-  xxxlarge: { fontSize: "33px", color: "#234361", fontWeight: 600 },
-  xxlarge: { fontSize: "25px", color: "#234361", fontWeight: 600 },
-  xlarge: { fontSize: "21px", color: "#234361", fontWeight: 600 },
+  xxxlarge: { fontSize: "33px", color: "#234361", fontWeight: 800 },
+  xxlarge: { fontSize: "25px", color: "#234361", fontWeight: 800 },
+  xlarge: { fontSize: "21px", color: "#234361", fontWeight: 700 },
   large: { fontSize: "17px", color: "#234361", fontWeight: 500 },
   medium: { fontSize: "15px", color: "#234361", fontWeight: 400 },
   normal: { fontSize: "13px", color: "#425a70", fontWeight: 400 },
