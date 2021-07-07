@@ -11,8 +11,8 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Pagination",
-    "permalink": "/docs/component-docs/Pagination"
+    "title": "Accordian",
+    "permalink": "/docs/component-docs/Accordian"
   },
   "next": {
     "title": "Avatar",

@@ -44,9 +44,14 @@ export default [
 },
 {
   path: '/docs',
-  component: ComponentCreator('/docs','7b1'),
+  component: ComponentCreator('/docs','504'),
   
   routes: [
+{
+  path: '/docs/component-docs/Accordian',
+  component: ComponentCreator('/docs/component-docs/Accordian','9d3'),
+  exact: true,
+},
 {
   path: '/docs/component-docs/Alert',
   component: ComponentCreator('/docs/component-docs/Alert','a85'),

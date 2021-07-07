@@ -11,11 +11,11 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "TimePicker",
-    "permalink": "/docs/component-docs/TimePicker"
+    "title": "Input",
+    "permalink": "/docs/component-docs/Input"
   },
   "next": {
-    "title": "SideSheet",
-    "permalink": "/docs/component-docs/SideSheet"
+    "title": "Pagination",
+    "permalink": "/docs/component-docs/Pagination"
   }
 }

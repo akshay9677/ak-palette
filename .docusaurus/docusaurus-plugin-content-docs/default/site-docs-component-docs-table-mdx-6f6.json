@@ -11,11 +11,11 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Card",
-    "permalink": "/docs/component-docs/Card"
+    "title": "Spinner",
+    "permalink": "/docs/component-docs/Spinner"
   },
   "next": {
-    "title": "Pagination",
-    "permalink": "/docs/component-docs/Pagination"
+    "title": "TextArea",
+    "permalink": "/docs/component-docs/TextArea"
   }
 }

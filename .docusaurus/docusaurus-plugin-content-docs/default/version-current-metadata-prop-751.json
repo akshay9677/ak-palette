@@ -40,138 +40,116 @@
         "label": "Components",
         "items": [
           {
-            "collapsed": true,
-            "type": "category",
-            "label": "Forms",
-            "items": [
-              {
-                "type": "link",
-                "label": "Button",
-                "href": "/docs/component-docs/Button"
-              },
-              {
-                "type": "link",
-                "label": "Checkbox",
-                "href": "/docs/component-docs/Checkbox"
-              },
-              {
-                "type": "link",
-                "label": "DatePicker",
-                "href": "/docs/component-docs/DatePicker"
-              },
-              {
-                "type": "link",
-                "label": "Input",
-                "href": "/docs/component-docs/Input"
-              },
-              {
-                "type": "link",
-                "label": "Radio",
-                "href": "/docs/component-docs/Radio"
-              },
-              {
-                "type": "link",
-                "label": "Select",
-                "href": "/docs/component-docs/Select"
-              },
-              {
-                "type": "link",
-                "label": "TextArea",
-                "href": "/docs/component-docs/TextArea"
-              },
-              {
-                "type": "link",
-                "label": "TimePicker",
-                "href": "/docs/component-docs/TimePicker"
-              }
-            ]
+            "type": "link",
+            "label": "Accordian",
+            "href": "/docs/component-docs/Accordian"
           },
           {
-            "collapsed": true,
-            "type": "category",
-            "label": "Overlays",
-            "items": [
-              {
-                "type": "link",
-                "label": "Modal",
-                "href": "/docs/component-docs/Modal"
-              },
-              {
-                "type": "link",
-                "label": "SideSheet",
-                "href": "/docs/component-docs/SideSheet"
-              },
-              {
-                "type": "link",
-                "label": "ToolTip",
-                "href": "/docs/component-docs/ToolTip"
-              },
-              {
-                "type": "link",
-                "label": "Popover",
-                "href": "/docs/component-docs/Popover"
-              }
-            ]
+            "type": "link",
+            "label": "Alert",
+            "href": "/docs/component-docs/Alert"
           },
           {
-            "collapsed": true,
-            "type": "category",
-            "label": "Patterns",
-            "items": [
-              {
-                "type": "link",
-                "label": "Card",
-                "href": "/docs/component-docs/Card"
-              },
-              {
-                "type": "link",
-                "label": "Table",
-                "href": "/docs/component-docs/Table"
-              },
-              {
-                "type": "link",
-                "label": "Pagination",
-                "href": "/docs/component-docs/Pagination"
-              }
-            ]
+            "type": "link",
+            "label": "Avatar",
+            "href": "/docs/component-docs/Avatar"
           },
           {
-            "collapsed": true,
-            "type": "category",
-            "label": "FeedBack / Indicators",
-            "items": [
-              {
-                "type": "link",
-                "label": "Alert",
-                "href": "/docs/component-docs/Alert"
-              },
-              {
-                "type": "link",
-                "label": "Avatar",
-                "href": "/docs/component-docs/Avatar"
-              },
-              {
-                "type": "link",
-                "label": "Badge",
-                "href": "/docs/component-docs/Badge"
-              },
-              {
-                "type": "link",
-                "label": "Spinner",
-                "href": "/docs/component-docs/Spinner"
-              },
-              {
-                "type": "link",
-                "label": "Toast",
-                "href": "/docs/component-docs/Toast"
-              }
-            ]
+            "type": "link",
+            "label": "Badge",
+            "href": "/docs/component-docs/Badge"
+          },
+          {
+            "type": "link",
+            "label": "Button",
+            "href": "/docs/component-docs/Button"
+          },
+          {
+            "type": "link",
+            "label": "Card",
+            "href": "/docs/component-docs/Card"
+          },
+          {
+            "type": "link",
+            "label": "Checkbox",
+            "href": "/docs/component-docs/Checkbox"
+          },
+          {
+            "type": "link",
+            "label": "DatePicker",
+            "href": "/docs/component-docs/DatePicker"
+          },
+          {
+            "type": "link",
+            "label": "Input",
+            "href": "/docs/component-docs/Input"
+          },
+          {
+            "type": "link",
+            "label": "Modal",
+            "href": "/docs/component-docs/Modal"
+          },
+          {
+            "type": "link",
+            "label": "Pagination",
+            "href": "/docs/component-docs/Pagination"
+          },
+          {
+            "type": "link",
+            "label": "Popover",
+            "href": "/docs/component-docs/Popover"
+          },
+          {
+            "type": "link",
+            "label": "Radio",
+            "href": "/docs/component-docs/Radio"
+          },
+          {
+            "type": "link",
+            "label": "Select",
+            "href": "/docs/component-docs/Select"
+          },
+          {
+            "type": "link",
+            "label": "SideSheet",
+            "href": "/docs/component-docs/SideSheet"
+          },
+          {
+            "type": "link",
+            "label": "Spinner",
+            "href": "/docs/component-docs/Spinner"
+          },
+          {
+            "type": "link",
+            "label": "Table",
+            "href": "/docs/component-docs/Table"
+          },
+          {
+            "type": "link",
+            "label": "TextArea",
+            "href": "/docs/component-docs/TextArea"
+          },
+          {
+            "type": "link",
+            "label": "TimePicker",
+            "href": "/docs/component-docs/TimePicker"
+          },
+          {
+            "type": "link",
+            "label": "Toast",
+            "href": "/docs/component-docs/Toast"
+          },
+          {
+            "type": "link",
+            "label": "ToolTip",
+            "href": "/docs/component-docs/ToolTip"
           }
         ]
       }
     ]
   },
   "permalinkToSidebar": {
+    "/docs/component-docs/Accordian": "someSidebar",
     "/docs/component-docs/Alert": "someSidebar",
     "/docs/component-docs/Avatar": "someSidebar",
     "/docs/component-docs/Badge": "someSidebar",

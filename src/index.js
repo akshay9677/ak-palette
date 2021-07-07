@@ -1,3 +1,6 @@
+export { default as Accordian } from "./components/accordian/Accordian";
+export * from "./components/accordian/Accordian";
+
 export { default as Alert } from "./components/alert/Alert";
 export * from "./components/alert/Alert";
 

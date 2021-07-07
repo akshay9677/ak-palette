@@ -11,7 +11,11 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Spinner",
-    "permalink": "/docs/component-docs/Spinner"
+    "title": "TimePicker",
+    "permalink": "/docs/component-docs/TimePicker"
+  },
+  "next": {
+    "title": "ToolTip",
+    "permalink": "/docs/component-docs/ToolTip"
   }
 }

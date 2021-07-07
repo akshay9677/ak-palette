@@ -11,11 +11,11 @@
   "version": "current",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Typography",
-    "permalink": "/docs/foundation/Typography"
+    "title": "Badge",
+    "permalink": "/docs/component-docs/Badge"
   },
   "next": {
-    "title": "Checkbox",
-    "permalink": "/docs/component-docs/Checkbox"
+    "title": "Card",
+    "permalink": "/docs/component-docs/Card"
   }
 }

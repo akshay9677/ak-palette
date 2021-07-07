@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Accordian",
+  "id": "component-docs/Accordian",
+  "isDocsHomePage": false,
+  "title": "Accordian",
+  "description": "The accordian component is a vertically stacked list of headers that can be clicked to reveal or hide content",
+  "source": "@site/docs/component-docs/Accordian.mdx",
+  "slug": "/component-docs/Accordian",
+  "permalink": "/docs/component-docs/Accordian",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Accordian.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Typography",
+    "permalink": "/docs/foundation/Typography"
+  },
+  "next": {
+    "title": "Alert",
+    "permalink": "/docs/component-docs/Alert"
+  }
+}

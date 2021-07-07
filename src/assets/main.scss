@@ -32,3 +32,17 @@ $pal-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
 }
 
 $pal-border-radius: 5px;
+
+.slide-down-animation {
+  transition: max-height 0.2s ease-out;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-15px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

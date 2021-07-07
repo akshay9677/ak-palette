@@ -46,118 +46,95 @@
                 "label": "Components",
                 "items": [
                   {
-                    "collapsed": true,
-                    "type": "category",
-                    "label": "Forms",
-                    "items": [
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Button"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Checkbox"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/DatePicker"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Input"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Radio"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Select"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/TextArea"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/TimePicker"
-                      }
-                    ]
+                    "type": "doc",
+                    "id": "component-docs/Accordian"
                   },
                   {
-                    "collapsed": true,
-                    "type": "category",
-                    "label": "Overlays",
-                    "items": [
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Modal"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/SideSheet"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/ToolTip"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Popover"
-                      }
-                    ]
+                    "type": "doc",
+                    "id": "component-docs/Alert"
                   },
                   {
-                    "collapsed": true,
-                    "type": "category",
-                    "label": "Patterns",
-                    "items": [
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Card"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Table"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Pagination"
-                      }
-                    ]
+                    "type": "doc",
+                    "id": "component-docs/Avatar"
                   },
                   {
-                    "collapsed": true,
-                    "type": "category",
-                    "label": "FeedBack / Indicators",
-                    "items": [
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Alert"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Avatar"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Badge"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Spinner"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "component-docs/Toast"
-                      }
-                    ]
+                    "type": "doc",
+                    "id": "component-docs/Badge"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Button"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Card"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Checkbox"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/DatePicker"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Input"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Modal"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Pagination"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Popover"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Radio"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Select"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/SideSheet"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Spinner"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Table"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/TextArea"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/TimePicker"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/Toast"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "component-docs/ToolTip"
                   }
                 ]
               }
             ]
           },
           "permalinkToSidebar": {
+            "/docs/component-docs/Accordian": "someSidebar",
             "/docs/component-docs/Alert": "someSidebar",
             "/docs/component-docs/Avatar": "someSidebar",
             "/docs/component-docs/Badge": "someSidebar",
@@ -184,6 +161,27 @@
           },
           "docs": [
             {
+              "unversionedId": "component-docs/Accordian",
+              "id": "component-docs/Accordian",
+              "isDocsHomePage": false,
+              "title": "Accordian",
+              "description": "The accordian component is a vertically stacked list of headers that can be clicked to reveal or hide content",
+              "source": "@site/docs/component-docs/Accordian.mdx",
+              "slug": "/component-docs/Accordian",
+              "permalink": "/docs/component-docs/Accordian",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Accordian.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Typography",
+                "permalink": "/docs/foundation/Typography"
+              },
+              "next": {
+                "title": "Alert",
+                "permalink": "/docs/component-docs/Alert"
+              }
+            },
+            {
               "unversionedId": "component-docs/Alert",
               "id": "component-docs/Alert",
               "isDocsHomePage": false,
@@ -196,8 +194,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Pagination",
-                "permalink": "/docs/component-docs/Pagination"
+                "title": "Accordian",
+                "permalink": "/docs/component-docs/Accordian"
               },
               "next": {
                 "title": "Avatar",
@@ -242,8 +240,8 @@
                 "permalink": "/docs/component-docs/Avatar"
               },
               "next": {
-                "title": "Spinner",
-                "permalink": "/docs/component-docs/Spinner"
+                "title": "Button",
+                "permalink": "/docs/component-docs/Button"
               }
             },
             {
@@ -259,12 +257,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Typography",
-                "permalink": "/docs/foundation/Typography"
+                "title": "Badge",
+                "permalink": "/docs/component-docs/Badge"
               },
               "next": {
-                "title": "Checkbox",
-                "permalink": "/docs/component-docs/Checkbox"
+                "title": "Card",
+                "permalink": "/docs/component-docs/Card"
               }
             },
             {
@@ -280,12 +278,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Popover",
-                "permalink": "/docs/component-docs/Popover"
+                "title": "Button",
+                "permalink": "/docs/component-docs/Button"
               },
               "next": {
-                "title": "Table",
-                "permalink": "/docs/component-docs/Table"
+                "title": "Checkbox",
+                "permalink": "/docs/component-docs/Checkbox"
               }
             },
             {
@@ -301,8 +299,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Button",
-                "permalink": "/docs/component-docs/Button"
+                "title": "Card",
+                "permalink": "/docs/component-docs/Card"
               },
               "next": {
                 "title": "DatePicker",
@@ -347,8 +345,8 @@
                 "permalink": "/docs/component-docs/DatePicker"
               },
               "next": {
-                "title": "Radio",
-                "permalink": "/docs/component-docs/Radio"
+                "title": "Modal",
+                "permalink": "/docs/component-docs/Modal"
               }
             },
             {
@@ -364,12 +362,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "TimePicker",
-                "permalink": "/docs/component-docs/TimePicker"
+                "title": "Input",
+                "permalink": "/docs/component-docs/Input"
               },
               "next": {
-                "title": "SideSheet",
-                "permalink": "/docs/component-docs/SideSheet"
+                "title": "Pagination",
+                "permalink": "/docs/component-docs/Pagination"
               }
             },
             {
@@ -385,12 +383,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Table",
-                "permalink": "/docs/component-docs/Table"
+                "title": "Modal",
+                "permalink": "/docs/component-docs/Modal"
               },
               "next": {
-                "title": "Alert",
-                "permalink": "/docs/component-docs/Alert"
+                "title": "Popover",
+                "permalink": "/docs/component-docs/Popover"
               }
             },
             {
@@ -406,12 +404,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "ToolTip",
-                "permalink": "/docs/component-docs/ToolTip"
+                "title": "Pagination",
+                "permalink": "/docs/component-docs/Pagination"
               },
               "next": {
-                "title": "Card",
-                "permalink": "/docs/component-docs/Card"
+                "title": "Radio",
+                "permalink": "/docs/component-docs/Radio"
               }
             },
             {
@@ -427,8 +425,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Input",
-                "permalink": "/docs/component-docs/Input"
+                "title": "Popover",
+                "permalink": "/docs/component-docs/Popover"
               },
               "next": {
                 "title": "Select",
@@ -452,8 +450,8 @@
                 "permalink": "/docs/component-docs/Radio"
               },
               "next": {
-                "title": "TextArea",
-                "permalink": "/docs/component-docs/TextArea"
+                "title": "SideSheet",
+                "permalink": "/docs/component-docs/SideSheet"
               }
             },
             {
@@ -469,12 +467,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Modal",
-                "permalink": "/docs/component-docs/Modal"
+                "title": "Select",
+                "permalink": "/docs/component-docs/Select"
               },
               "next": {
-                "title": "ToolTip",
-                "permalink": "/docs/component-docs/ToolTip"
+                "title": "Spinner",
+                "permalink": "/docs/component-docs/Spinner"
               }
             },
             {
@@ -490,12 +488,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Badge",
-                "permalink": "/docs/component-docs/Badge"
+                "title": "SideSheet",
+                "permalink": "/docs/component-docs/SideSheet"
               },
               "next": {
-                "title": "Toast",
-                "permalink": "/docs/component-docs/Toast"
+                "title": "Table",
+                "permalink": "/docs/component-docs/Table"
               }
             },
             {
@@ -511,12 +509,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Card",
-                "permalink": "/docs/component-docs/Card"
+                "title": "Spinner",
+                "permalink": "/docs/component-docs/Spinner"
               },
               "next": {
-                "title": "Pagination",
-                "permalink": "/docs/component-docs/Pagination"
+                "title": "TextArea",
+                "permalink": "/docs/component-docs/TextArea"
               }
             },
             {
@@ -532,8 +530,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Select",
-                "permalink": "/docs/component-docs/Select"
+                "title": "Table",
+                "permalink": "/docs/component-docs/Table"
               },
               "next": {
                 "title": "TimePicker",
@@ -557,8 +555,8 @@
                 "permalink": "/docs/component-docs/TextArea"
               },
               "next": {
-                "title": "Modal",
-                "permalink": "/docs/component-docs/Modal"
+                "title": "Toast",
+                "permalink": "/docs/component-docs/Toast"
               }
             },
             {
@@ -574,8 +572,12 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Spinner",
-                "permalink": "/docs/component-docs/Spinner"
+                "title": "TimePicker",
+                "permalink": "/docs/component-docs/TimePicker"
+              },
+              "next": {
+                "title": "ToolTip",
+                "permalink": "/docs/component-docs/ToolTip"
               }
             },
             {
@@ -591,12 +593,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "SideSheet",
-                "permalink": "/docs/component-docs/SideSheet"
-              },
-              "next": {
-                "title": "Popover",
-                "permalink": "/docs/component-docs/Popover"
+                "title": "Toast",
+                "permalink": "/docs/component-docs/Toast"
               }
             },
             {
@@ -637,8 +635,8 @@
                 "permalink": "/docs/foundation/Color"
               },
               "next": {
-                "title": "Button",
-                "permalink": "/docs/component-docs/Button"
+                "title": "Accordian",
+                "permalink": "/docs/component-docs/Accordian"
               }
             },
             {
