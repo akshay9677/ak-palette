@@ -91,6 +91,11 @@
               "sidebar": "someSidebar"
             },
             {
+              "id": "component-docs/Tab",
+              "path": "/docs/component-docs/Tab",
+              "sidebar": "someSidebar"
+            },
+            {
               "id": "component-docs/Table",
               "path": "/docs/component-docs/Table",
               "sidebar": "someSidebar"

@@ -52,6 +52,9 @@ export * from "./components/spinner/Spinner";
 export { default as Table } from "./components/table/Table";
 export * from "./components/table/Table";
 
+export { default as Tab } from "./components/tab/Tab";
+export * from "./components/tab/Tab";
+
 export { default as TextArea } from "./components/textarea/TextArea";
 export * from "./components/textarea/TextArea";
 

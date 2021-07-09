@@ -19,6 +19,7 @@ module.exports = {
       "component-docs/Select",
       "component-docs/SideSheet",
       "component-docs/Spinner",
+      "component-docs/Tab",
       "component-docs/Table",
       "component-docs/TextArea",
       "component-docs/TimePicker",

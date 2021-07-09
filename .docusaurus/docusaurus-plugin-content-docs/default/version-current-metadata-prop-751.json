@@ -121,6 +121,11 @@
           },
           {
             "type": "link",
+            "label": "Tab",
+            "href": "/docs/component-docs/Tab"
+          },
+          {
+            "type": "link",
             "label": "Table",
             "href": "/docs/component-docs/Table"
           },
@@ -165,6 +170,7 @@
     "/docs/component-docs/Select": "someSidebar",
     "/docs/component-docs/SideSheet": "someSidebar",
     "/docs/component-docs/Spinner": "someSidebar",
+    "/docs/component-docs/Tab": "someSidebar",
     "/docs/component-docs/Table": "someSidebar",
     "/docs/component-docs/TextArea": "someSidebar",
     "/docs/component-docs/TimePicker": "someSidebar",

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Tabs",
+  "id": "component-docs/Tabs",
+  "isDocsHomePage": false,
+  "title": "Tabs",
+  "description": "The Tab component helps us to keep related content in a single container that is shown and hidden through navigation.",
+  "source": "@site/docs/component-docs/Tabs.mdx",
+  "slug": "/component-docs/Tabs",
+  "permalink": "/docs/component-docs/Tabs",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Tabs.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Table",
+    "permalink": "/docs/component-docs/Table"
+  },
+  "next": {
+    "title": "TextArea",
+    "permalink": "/docs/component-docs/TextArea"
+  }
+}

@@ -68,10 +68,14 @@ a:hover {
   margin-right: 1rem;
 }
 
-.docTitle_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocItem- {
-  font-size: 33px !important;
+h1 {
+  font-size: 35px !important;
 }
 
 .navbar-sidebar__items .menu__link {
   color: #234361;
+}
+
+.menu__link {
+  font-size: 15px !important;
 }

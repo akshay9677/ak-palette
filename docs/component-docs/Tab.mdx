@@ -1,0 +1,158 @@
+import { Tab } from "../../src/index";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
+
+The `Tab` component helps us to keep related content in a single container that is shown and hidden through navigation.
+
+### Usage
+
+The Tabs component expects a `Tab.TabPane` component which should be provided as a child to the `Tab` component. The
+The tab name is given as `tab` prop to `Tab.TabPane` and the children to this component acts as the content of this tab.
+
+<div
+  style={{ border: "solid 1px #d8dae5", padding: "10px", borderRadius: "5px" }}
+>
+  <Tab>
+    <Tab.TabPane tab="Tab Title 1" key={1}>
+      Tab 1
+    </Tab.TabPane>
+    <Tab.TabPane tab="Tab Title 2" key={2}>
+      Tab 2
+    </Tab.TabPane>
+    <Tab.TabPane tab="Tab Title 3" key={3}>
+      Tab 3
+    </Tab.TabPane>
+  </Tab>
+</div>
+
+<br />
+
+```jsx
+<Tab>
+  <Tab.TabPane tab="Tab Title 1" key={1}>
+    Tab 1
+  </Tab.TabPane>
+  <Tab.TabPane tab="Tab Title 2" key={2}>
+    Tab 2
+  </Tab.TabPane>
+  <Tab.TabPane tab="Tab Title 3" key={3}>
+    Tab 3
+  </Tab.TabPane>
+</Tab>
+```
+
+### Disabled Tab
+
+A particular Tab can be disabled by giving the prop `disabled` to `Tab.TabPane` component, which means the user can't switch
+to that particular tab.
+
+<div
+  style={{ border: "solid 1px #d8dae5", padding: "10px", borderRadius: "5px" }}
+>
+  <Tab>
+    <Tab.TabPane tab="Tab Title 1" key={1}>
+      Tab 1
+    </Tab.TabPane>
+    <Tab.TabPane tab="Tab Title 2" key={2} disabled>
+      Tab 2
+    </Tab.TabPane>
+    <Tab.TabPane tab="Tab Title 3" key={3}>
+      Tab 3
+    </Tab.TabPane>
+  </Tab>
+</div>
+
+### Icon Tabs
+
+Since the tab name is a ReactNode we can render text with icons as Tab Title
+
+<div
+  style={{ border: "solid 1px #d8dae5", padding: "10px", borderRadius: "5px" }}
+>
+  <Tab>
+    <Tab.TabPane
+      tab={
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <FontAwesomeIcon icon={faBell} />
+          <div style={{ paddingLeft: "8px" }}>Notifications</div>
+        </div>
+      }
+      key={1}
+    >
+      Notifications
+    </Tab.TabPane>
+    <Tab.TabPane tab="Tab Title 1" key={2}>
+      Tab 1
+    </Tab.TabPane>
+    <Tab.TabPane tab="Tab Title 2" key={3}>
+      Tab 2
+    </Tab.TabPane>
+  </Tab>
+</div>
+
+<br />
+
+```jsx
+<Tab>
+  <Tab.TabPane
+    tab={
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <FontAwesomeIcon icon={faBell} />
+        <div style={{ paddingLeft: "8px" }}>Notifications</div>
+      </div>
+    }
+    key={1}
+  >
+    Notifications
+  </Tab.TabPane>
+  <Tab.TabPane tab="Tab Title 1" key={2}>
+    Tab 1
+  </Tab.TabPane>
+  <Tab.TabPane tab="Tab Title 2" key={3}>
+    Tab 2
+  </Tab.TabPane>
+</Tab>
+```
+
+:::note
+`FontAwesomeIcon` is used for reference here
+:::
+
+### Vertical Tabs
+
+The tabs can be vertically positioned using the `isVertical` boolean prop
+
+<div
+  style={{ border: "solid 1px #d8dae5", padding: "10px", borderRadius: "5px" }}
+>
+  <Tab isVertical>
+    <Tab.TabPane tab="Tab Title 1" key={1}>
+      Tab 1
+    </Tab.TabPane>
+    <Tab.TabPane tab="Tab Title 2" key={2}>
+      Tab 2
+    </Tab.TabPane>
+    <Tab.TabPane tab="Tab Title 3" key={3}>
+      Tab 3
+    </Tab.TabPane>
+  </Tab>
+</div>
+
+### API
+
+#### Tab
+
+|    Prop     |    Type    |  Possible values   | Default Value |
+| :---------: | :--------: | :----------------: | :-----------: |
+| onTabChange | `()=>void` |         -          |       -       |
+| isVertical  | `boolean`  | `true` and `false` |    `false`    |
+
+#### TabPane
+
+|   Prop   |    Type     |  Possible values   |     Default Value     |
+| :------: | :---------: | :----------------: | :-------------------: |
+|   tab    | `ReactNode` |         -          |           -           |
+| disabled |  `boolean`  | `true` and `false` |        `false`        |
+|   key    |  `number`   |     Any number     | Index of the element` |
+
+Built by Akshay 🤙

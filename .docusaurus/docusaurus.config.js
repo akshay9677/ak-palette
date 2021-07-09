@@ -38,7 +38,7 @@ export default {
           "position": "left"
         },
         {
-          "to": "docs/component-docs/button",
+          "to": "docs/component-docs/accordian",
           "label": "Components",
           "position": "left"
         },

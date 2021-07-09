@@ -111,6 +111,10 @@
                   },
                   {
                     "type": "doc",
+                    "id": "component-docs/Tab"
+                  },
+                  {
+                    "type": "doc",
                     "id": "component-docs/Table"
                   },
                   {
@@ -150,6 +154,7 @@
             "/docs/component-docs/Select": "someSidebar",
             "/docs/component-docs/SideSheet": "someSidebar",
             "/docs/component-docs/Spinner": "someSidebar",
+            "/docs/component-docs/Tab": "someSidebar",
             "/docs/component-docs/Table": "someSidebar",
             "/docs/component-docs/TextArea": "someSidebar",
             "/docs/component-docs/TimePicker": "someSidebar",
@@ -492,6 +497,27 @@
                 "permalink": "/docs/component-docs/SideSheet"
               },
               "next": {
+                "title": "Tab",
+                "permalink": "/docs/component-docs/Tab"
+              }
+            },
+            {
+              "unversionedId": "component-docs/Tab",
+              "id": "component-docs/Tab",
+              "isDocsHomePage": false,
+              "title": "Tab",
+              "description": "The Tab component helps us to keep related content in a single container that is shown and hidden through navigation.",
+              "source": "@site/docs/component-docs/Tab.mdx",
+              "slug": "/component-docs/Tab",
+              "permalink": "/docs/component-docs/Tab",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Tab.mdx",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Spinner",
+                "permalink": "/docs/component-docs/Spinner"
+              },
+              "next": {
                 "title": "Table",
                 "permalink": "/docs/component-docs/Table"
               }
@@ -509,8 +535,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Spinner",
-                "permalink": "/docs/component-docs/Spinner"
+                "title": "Tab",
+                "permalink": "/docs/component-docs/Tab"
               },
               "next": {
                 "title": "TextArea",

@@ -1,43 +1,47 @@
 module.exports = {
-  title: 'Palette',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/logo.svg',
-  organizationName: 'akshay', // Usually your GitHub org/user name.
-  projectName: 'palette', // Usually your repo name.
-  clientModules:[require.resolve('./src/index.js')],
+  title: "Palette",
+  tagline: "The tagline of my site",
+  url: "https://your-docusaurus-test-site.com",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/logo.svg",
+  organizationName: "akshay", // Usually your GitHub org/user name.
+  projectName: "palette", // Usually your repo name.
+  clientModules: [require.resolve("./src/index.js")],
   themeConfig: {
     sidebarCollapsible: false,
-    colorMode:{
-      defaultMode: 'light',
+    colorMode: {
+      defaultMode: "light",
       disableSwitch: true,
     },
     navbar: {
-      title: 'Palette',
+      title: "Palette",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "My Site Logo",
+        src: "img/logo.svg",
       },
       items: [
         {
-          to: 'docs/getting-started/overview',
-          activeBasePath: 'docs',
-          label: 'Getting Started',
-          position: 'left',
+          to: "docs/getting-started/overview",
+          activeBasePath: "docs",
+          label: "Getting Started",
+          position: "left",
         },
-        {to: 'docs/component-docs/button', label: 'Components', position: 'left'},
         {
-          href: 'https://github.com/akshay9677/palette',
-          label: 'GitHub',
-          position: 'right',
+          to: "docs/component-docs/accordian",
+          label: "Components",
+          position: "left",
+        },
+        {
+          href: "https://github.com/akshay9677/palette",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'light',
+      style: "light",
       // links: [
       //   {
       //     title: 'Community',
@@ -72,25 +76,26 @@ module.exports = {
       // ],
       copyright: `Copyright © ${new Date().getFullYear()} Akshay 🤙`,
     },
-  },plugins: ['docusaurus-plugin-sass'],
+  },
+  plugins: ["docusaurus-plugin-sass"],
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            "https://github.com/facebook/docusaurus/edit/master/website/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
         },
         theme: {
-          customCss: require.resolve('./static/custom.css'),
+          customCss: require.resolve("./static/custom.css"),
         },
       },
     ],

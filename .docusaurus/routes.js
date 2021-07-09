@@ -44,7 +44,7 @@ export default [
 },
 {
   path: '/docs',
-  component: ComponentCreator('/docs','504'),
+  component: ComponentCreator('/docs','a5d'),
   
   routes: [
 {
@@ -125,6 +125,11 @@ export default [
 {
   path: '/docs/component-docs/Spinner',
   component: ComponentCreator('/docs/component-docs/Spinner','d3c'),
+  exact: true,
+},
+{
+  path: '/docs/component-docs/Tab',
+  component: ComponentCreator('/docs/component-docs/Tab','06b'),
   exact: true,
 },
 {
