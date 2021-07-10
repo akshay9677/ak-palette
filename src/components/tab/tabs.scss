@@ -10,13 +10,9 @@
   font-size: 13px;
   font-weight: 550;
   border-radius: $pal-border-radius;
-  &:hover {
-    background-color: $pal-blue-2;
-    color: $pal-primary;
-  }
 }
 .pal-selected-tab {
-  background-color: $pal-blue-2;
+  background-color: $pal-blue-2 !important;
   color: $pal-info;
 }
 .pal-tab-disabled {

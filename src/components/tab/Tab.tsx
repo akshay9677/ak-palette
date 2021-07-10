@@ -20,8 +20,8 @@ const Tab = (props: TabsProps): JSX.Element => {
           return (
             <div
               className={`pal-tab-title ${
-                _selected === index && "pal-selected-tab"
-              } ${props.disabled && "pal-tab-disabled"}`}
+                _selected === index ? "pal-selected-tab" : ""
+              } ${props.disabled ? "pal-tab-disabled" : ""}`}
               key={key || index}
               onClick={() => {
                 if (!props.disabled) {

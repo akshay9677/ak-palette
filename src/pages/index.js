@@ -1,17 +1,17 @@
 import React from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 import { Button, Text } from "../index";
+import ComponentList from "./ComponentList";
 
 const features = [
   {
     title: "Easy to Use",
     imageUrl: "img/Design.svg",
     description: (
-      <Text>
+      <Text color="#fff">
         Palette was designed from the ground up to be easily installed and used
         to get your website up and running quickly.
       </Text>
@@ -21,7 +21,7 @@ const features = [
     title: "Focus on What Matters",
     imageUrl: "img/Code.svg",
     description: (
-      <Text>
+      <Text color="#fff">
         Palette lets you focus on your project, and we&apos;ll do the chores. Go
         ahead and install <code>@ak/palette</code> to use Palette library.
       </Text>
@@ -31,7 +31,7 @@ const features = [
     title: "Powered by React",
     imageUrl: "img/Webdev.svg",
     description: (
-      <Text>
+      <Text color="#fff">
         Palette is a React component library which has pre-defined and re-usable
         react component that you can install and use it right away.
       </Text>
@@ -48,7 +48,7 @@ function Feature({ imageUrl, title, description }) {
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
-      <Text size="xlarge" fontWeight={600}>
+      <Text size="xlarge" fontWeight={600} color="#fff">
         {title}
       </Text>
       <Text size="medium">{description}</Text>
@@ -66,14 +66,13 @@ function Home() {
         <div className={styles.headerIntroText}>
           <div className={styles.headerIntro}>
             <img
-              style={{ width: "40px", height: "40px", paddingRight: "5px" }}
+              style={{ width: "40px", height: "40px", paddingRight: "10px" }}
               src={useBaseUrl("img/logo.svg")}
               alt="logo-svg"
             />
             <Text
               className={styles.palLogoName}
               fontWeight={600}
-              paddingTop={7}
               size="xxxlarge"
             >
               Palette Design System
@@ -137,6 +136,7 @@ function Home() {
             </div>
           </section>
         )}
+        <ComponentList />
       </main>
     </Layout>
   );

@@ -5,11 +5,30 @@
  * and scoped locally.
  */
 
+.palCardComp:hover {
+  box-shadow: 0 0 1px rgb(67 90 111 / 30%), 0 8px 10px -4px rgb(67 90 111 / 47%);
+}
+
+.palCardComp {
+  box-shadow: 0 0 1px rgb(67 90 111 / 30%), 0 2px 4px -2px rgb(67 90 111 / 47%);
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: left;
   position: relative;
   overflow: hidden;
+}
+
+.componentList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.componentHeader {
+  width: 65%;
 }
 
 .headerIntro {
@@ -42,6 +61,21 @@
   .palLogoName {
     font-size: 22px !important;
   }
+  .palComponentImage {
+    width: 110px !important;
+    height: 110px !important;
+  }
+  .componentList {
+    text-align: center;
+  }
+  .features {
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .componentHeader {
+    width: 90% !important;
+  }
 }
 
 .hero--primary {
@@ -55,12 +89,17 @@
   justify-content: flex-start;
 }
 
+.palComponentImage {
+  width: 180px;
+  height: 180px;
+}
+
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 0px 0 25px;
   width: 100%;
-  background-color: #f3f6ff;
+  background-color: #2953cc;
 }
 
 .featureImage {

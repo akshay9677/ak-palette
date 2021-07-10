@@ -43,6 +43,16 @@ export default [
   exact: true,
 },
 {
+  path: '/ComponentCard',
+  component: ComponentCreator('/ComponentCard','434'),
+  exact: true,
+},
+{
+  path: '/ComponentList',
+  component: ComponentCreator('/ComponentList','e79'),
+  exact: true,
+},
+{
   path: '/docs',
   component: ComponentCreator('/docs','a5d'),
   

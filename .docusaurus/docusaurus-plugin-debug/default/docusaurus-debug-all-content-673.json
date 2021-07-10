@@ -694,6 +694,16 @@
     "default": [
       {
         "type": "jsx",
+        "permalink": "/ComponentCard",
+        "source": "@site/src/pages/ComponentCard.jsx"
+      },
+      {
+        "type": "jsx",
+        "permalink": "/ComponentList",
+        "source": "@site/src/pages/ComponentList.jsx"
+      },
+      {
+        "type": "jsx",
         "permalink": "/",
         "source": "@site/src/pages/index.js"
       }
