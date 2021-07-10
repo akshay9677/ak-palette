@@ -699,8 +699,8 @@
       },
       {
         "type": "jsx",
-        "permalink": "/ComponentList",
-        "source": "@site/src/pages/ComponentList.jsx"
+        "permalink": "/Components",
+        "source": "@site/src/pages/Components.js"
       },
       {
         "type": "jsx",

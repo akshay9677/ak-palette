@@ -29,7 +29,7 @@ module.exports = {
           position: "left",
         },
         {
-          to: "docs/component-docs/accordian",
+          to: "components",
           label: "Components",
           position: "left",
         },

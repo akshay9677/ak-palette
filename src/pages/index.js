@@ -4,7 +4,6 @@ import Layout from "@theme/Layout";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 import { Button, Text } from "../index";
-import ComponentList from "./ComponentList";
 
 const features = [
   {
@@ -136,7 +135,6 @@ function Home() {
             </div>
           </section>
         )}
-        <ComponentList />
       </main>
     </Layout>
   );

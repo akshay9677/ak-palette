@@ -48,8 +48,8 @@ export default [
   exact: true,
 },
 {
-  path: '/ComponentList',
-  component: ComponentCreator('/ComponentList','e79'),
+  path: '/Components',
+  component: ComponentCreator('/Components','e65'),
   exact: true,
 },
 {

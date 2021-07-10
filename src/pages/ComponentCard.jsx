@@ -9,10 +9,10 @@ const ComponentCard = ({ name, img }) => {
     <Container
       borderRadius={10}
       className={styles.palCardComp}
-      margin={10}
+      margin={15}
       cursor="pointer"
       onClick={() =>
-        (window.location.href = `docs/component-docs/${name.toLowerCase()}`)
+        (window.location.href = `/docs/component-docs/${name.toLowerCase()}`)
       }
       display="flex"
       alignItems="center"

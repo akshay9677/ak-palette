@@ -3,6 +3,7 @@ import Container from "ui-box";
 import ComponentCard from "./ComponentCard";
 import { Text } from "../index";
 import styles from "./styles.module.css";
+import Layout from "@theme/Layout";
 
 const COMPONENT_HASH = [
   {
@@ -97,37 +98,42 @@ const COMPONENT_HASH = [
 
 const ComponentList = () => {
   return (
-    <Container className={styles.componentList}>
-      <Container className={styles.componentHeader}>
-        <Text fontWeight={600} paddingTop={20} size="xxlarge">
-          Component List
-        </Text>
-        <Text paddingY={3} size="medium">
-          Components are the reusable building blocks of our design system. Each
-          component meets a specific interaction or UI need, and has been
-          specifically created to work together to create patterns and intuitive
-          user experiences.
-        </Text>
+    <Layout
+      title={`Palette UI Kit`}
+      description="Description will go into a meta tag in <head />"
+    >
+      <Container className={styles.componentList}>
+        <Container className={styles.componentHeader}>
+          <Text fontWeight={600} paddingTop={20} size="xxlarge">
+            Components
+          </Text>
+          <Text paddingY={3} size="medium">
+            Components are the reusable building blocks of our design system.
+            Each component meets a specific interaction or UI need, and has been
+            specifically created to work together to create patterns and
+            intuitive user experiences.
+          </Text>
+        </Container>
+        <Container
+          display="flex"
+          justifyContent="center"
+          padding={20}
+          flexWrap="wrap"
+          width="95%"
+        >
+          {COMPONENT_HASH.map((component, index) => {
+            return (
+              <ComponentCard
+                key={index}
+                img={component.img}
+                summary={component.summary}
+                name={component.name}
+              />
+            );
+          })}
+        </Container>
       </Container>
-      <Container
-        display="flex"
-        justifyContent="center"
-        padding={20}
-        flexWrap="wrap"
-        width="80%"
-      >
-        {COMPONENT_HASH.map((component, index) => {
-          return (
-            <ComponentCard
-              key={index}
-              img={component.img}
-              summary={component.summary}
-              name={component.name}
-            />
-          );
-        })}
-      </Container>
-    </Container>
+    </Layout>
   );
 };
 
