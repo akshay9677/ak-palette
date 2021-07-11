@@ -11,8 +11,8 @@
           "mainDocId": "getting-started/overview",
           "docs": [
             {
-              "id": "component-docs/Accordian",
-              "path": "/docs/component-docs/Accordian",
+              "id": "component-docs/Accordion",
+              "path": "/docs/component-docs/Accordion",
               "sidebar": "someSidebar"
             },
             {

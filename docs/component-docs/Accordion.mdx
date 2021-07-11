@@ -1,0 +1,67 @@
+import { Accordion, Text } from "../../src/index";
+
+The accordion component is a vertically stacked list of headers that can be clicked to reveal or hide content
+associated with them.
+
+### Usage
+
+The actual `Accordion` component acts as a container for the accordion whereas the `Accordion.Item` acts as the item list
+container, which comes as a child to `Accordion`. The `Accordion.Item` has two props `header` which is the header of the
+list and the `key` which is used to uniquely identify this item in list. The content is given as child to `Accordion.Item`.
+
+<Accordion>
+  <Accordion.Item header="Accordion Header 1" key={1}>
+    <Text>Accordion Content 1</Text>
+  </Accordion.Item>
+  <Accordion.Item header="Accordion Header 2" key={2}>
+    <Text>Accordion Content 2</Text>
+  </Accordion.Item>
+</Accordion>
+<br />
+
+```jsx
+<Accordion>
+  <Accordion.Item header="Accordion Header 1" key={1}>
+    <Text>Accordion Content 1</Text>
+  </Accordion.Item>
+  <Accordion.Item header="Accordion Header 2" key={2}>
+    <Text>Accordion Content 2</Text>
+  </Accordion.Item>
+</Accordion>
+```
+
+### Current Active
+
+The current active list item can be given by using the `active` prop which is a boolean. It is given to `Accordion.Item`
+
+<Accordion>
+  <Accordion.Item active header="Accordion Header 1" key={1}>
+    <Text>Accordion Content 1</Text>
+  </Accordion.Item>
+  <Accordion.Item header="Accordion Header 2" key={2}>
+    <Text>Accordion Content 2</Text>
+  </Accordion.Item>
+</Accordion>
+
+<br />
+
+```jsx
+<Accordion>
+  <Accordion.Item active header="Accordion Header 1" key={1}>
+    <Text>Accordion Content 1</Text>
+  </Accordion.Item>
+  <Accordion.Item header="Accordion Header 2" key={2}>
+    <Text>Accordion Content 2</Text>
+  </Accordion.Item>
+</Accordion>
+```
+
+### API
+
+> The following api is for `Accordion.Item`, no props is required for `Accordion` component since it is a simple wrapper
+
+|  Prop  |   Type    | Possible values  | Default Value |
+| :----: | :-------: | :--------------: | :-----------: |
+| header | `string`  |    Any string    |     `""`      |
+|  key   | `number`  |    Any number    |    `null`     |
+| active | `boolean` | `true` & `false` |    `false`    |

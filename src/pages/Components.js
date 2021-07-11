@@ -8,7 +8,7 @@ import Layout from "@theme/Layout";
 const COMPONENT_HASH = [
   {
     img: "components/accordian.svg",
-    name: "Accordian",
+    name: "Accordion",
   },
   {
     img: "components/alert.svg",

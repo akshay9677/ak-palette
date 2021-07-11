@@ -46,8 +46,8 @@
         "items": [
           {
             "type": "link",
-            "label": "Accordian",
-            "href": "/docs/component-docs/Accordian"
+            "label": "Accordion",
+            "href": "/docs/component-docs/Accordion"
           },
           {
             "type": "link",
@@ -159,7 +159,7 @@
     ]
   },
   "permalinkToSidebar": {
-    "/docs/component-docs/Accordian": "someSidebar",
+    "/docs/component-docs/Accordion": "someSidebar",
     "/docs/component-docs/Alert": "someSidebar",
     "/docs/component-docs/Avatar": "someSidebar",
     "/docs/component-docs/Badge": "someSidebar",

@@ -59,12 +59,12 @@ export default [
 },
 {
   path: '/docs',
-  component: ComponentCreator('/docs','f6c'),
+  component: ComponentCreator('/docs','12e'),
   
   routes: [
 {
-  path: '/docs/component-docs/Accordian',
-  component: ComponentCreator('/docs/component-docs/Accordian','9d3'),
+  path: '/docs/component-docs/Accordion',
+  component: ComponentCreator('/docs/component-docs/Accordion','2ed'),
   exact: true,
 },
 {

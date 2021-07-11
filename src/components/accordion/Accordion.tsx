@@ -6,7 +6,7 @@ type AccordianProps = {
   children?: React.ReactNode;
 };
 
-const Accordian = (props: AccordianProps): JSX.Element => {
+const Accordion = (props: AccordianProps): JSX.Element => {
   let { children } = props;
   return (
     <Container border="solid 1px #d8dae5" borderRadius={5} borderBottom="none">
@@ -15,6 +15,6 @@ const Accordian = (props: AccordianProps): JSX.Element => {
   );
 };
 
-Accordian.Item = AccordianItem;
+Accordion.Item = AccordianItem;
 
-export default Accordian;
+export default Accordion;

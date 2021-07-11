@@ -7,7 +7,7 @@ module.exports = {
       "foundation/Patterns",
     ],
     Components: [
-      "component-docs/Accordian",
+      "component-docs/Accordion",
       "component-docs/Alert",
       "component-docs/Avatar",
       "component-docs/Badge",

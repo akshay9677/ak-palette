@@ -51,7 +51,7 @@
                 "items": [
                   {
                     "type": "doc",
-                    "id": "component-docs/Accordian"
+                    "id": "component-docs/Accordion"
                   },
                   {
                     "type": "doc",
@@ -142,7 +142,7 @@
             ]
           },
           "permalinkToSidebar": {
-            "/docs/component-docs/Accordian": "someSidebar",
+            "/docs/component-docs/Accordion": "someSidebar",
             "/docs/component-docs/Alert": "someSidebar",
             "/docs/component-docs/Avatar": "someSidebar",
             "/docs/component-docs/Badge": "someSidebar",
@@ -171,15 +171,15 @@
           },
           "docs": [
             {
-              "unversionedId": "component-docs/Accordian",
-              "id": "component-docs/Accordian",
+              "unversionedId": "component-docs/Accordion",
+              "id": "component-docs/Accordion",
               "isDocsHomePage": false,
-              "title": "Accordian",
-              "description": "The accordian component is a vertically stacked list of headers that can be clicked to reveal or hide content",
-              "source": "@site/docs/component-docs/Accordian.mdx",
-              "slug": "/component-docs/Accordian",
-              "permalink": "/docs/component-docs/Accordian",
-              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Accordian.mdx",
+              "title": "Accordion",
+              "description": "The accordion component is a vertically stacked list of headers that can be clicked to reveal or hide content",
+              "source": "@site/docs/component-docs/Accordion.mdx",
+              "slug": "/component-docs/Accordion",
+              "permalink": "/docs/component-docs/Accordion",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Accordion.mdx",
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
@@ -204,8 +204,8 @@
               "version": "current",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Accordian",
-                "permalink": "/docs/component-docs/Accordian"
+                "title": "Accordion",
+                "permalink": "/docs/component-docs/Accordion"
               },
               "next": {
                 "title": "Avatar",
@@ -666,8 +666,8 @@
                 "permalink": "/docs/foundation/Typography"
               },
               "next": {
-                "title": "Accordian",
-                "permalink": "/docs/component-docs/Accordian"
+                "title": "Accordion",
+                "permalink": "/docs/component-docs/Accordion"
               }
             },
             {

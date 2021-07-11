@@ -1,0 +1,21 @@
+{
+  "unversionedId": "component-docs/Accordion",
+  "id": "component-docs/Accordion",
+  "isDocsHomePage": false,
+  "title": "Accordion",
+  "description": "The accordion component is a vertically stacked list of headers that can be clicked to reveal or hide content",
+  "source": "@site/docs/component-docs/Accordion.mdx",
+  "slug": "/component-docs/Accordion",
+  "permalink": "/docs/component-docs/Accordion",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/component-docs/Accordion.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Patterns",
+    "permalink": "/docs/foundation/Patterns"
+  },
+  "next": {
+    "title": "Alert",
+    "permalink": "/docs/component-docs/Alert"
+  }
+}
