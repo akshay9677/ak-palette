@@ -704,6 +704,11 @@
       },
       {
         "type": "jsx",
+        "permalink": "/Foundations",
+        "source": "@site/src/pages/Foundations.js"
+      },
+      {
+        "type": "jsx",
         "permalink": "/",
         "source": "@site/src/pages/index.js"
       }

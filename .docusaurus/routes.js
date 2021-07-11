@@ -53,6 +53,11 @@ export default [
   exact: true,
 },
 {
+  path: '/Foundations',
+  component: ComponentCreator('/Foundations','790'),
+  exact: true,
+},
+{
   path: '/docs',
   component: ComponentCreator('/docs','a5d'),
   

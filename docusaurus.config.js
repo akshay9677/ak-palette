@@ -25,7 +25,12 @@ module.exports = {
         {
           to: "docs/getting-started/overview",
           activeBasePath: "docs",
-          label: "Getting Started",
+          label: "Introduction",
+          position: "left",
+        },
+        {
+          to: "foundations",
+          label: "Foundation",
           position: "left",
         },
         {

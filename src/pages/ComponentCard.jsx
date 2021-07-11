@@ -4,16 +4,19 @@ import Container from "ui-box";
 import { Text } from "../index";
 import styles from "./styles.module.css";
 
-const ComponentCard = ({ name, img }) => {
+const ComponentCard = ({ name, img, isFoundation }) => {
   return (
     <Container
-      borderRadius={10}
+      borderRadius={6}
       className={styles.palCardComp}
-      margin={15}
       cursor="pointer"
-      onClick={() =>
-        (window.location.href = `/docs/component-docs/${name.toLowerCase()}`)
-      }
+      onClick={() => {
+        if (isFoundation) {
+          window.location.href = `/docs/foundation/${name.toLowerCase()}`;
+        } else {
+          window.location.href = `/docs/component-docs/${name.toLowerCase()}`;
+        }
+      }}
       display="flex"
       alignItems="center"
       flexDirection="column"
@@ -25,7 +28,7 @@ const ComponentCard = ({ name, img }) => {
       />
       <Container
         paddingX={10}
-        paddingY={6}
+        paddingTop={15}
         marginBottom={10}
         textAlign="center"
       >

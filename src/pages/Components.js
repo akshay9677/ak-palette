@@ -117,9 +117,8 @@ const ComponentList = () => {
         <Container
           display="flex"
           justifyContent="center"
-          padding={20}
+          padding={15}
           flexWrap="wrap"
-          width="95%"
         >
           {COMPONENT_HASH.map((component, index) => {
             return (
