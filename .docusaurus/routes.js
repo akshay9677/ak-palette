@@ -59,7 +59,7 @@ export default [
 },
 {
   path: '/docs',
-  component: ComponentCreator('/docs','a5d'),
+  component: ComponentCreator('/docs','f6c'),
   
   routes: [
 {
@@ -175,6 +175,11 @@ export default [
 {
   path: '/docs/foundation/Color',
   component: ComponentCreator('/docs/foundation/Color','cf1'),
+  exact: true,
+},
+{
+  path: '/docs/foundation/Patterns',
+  component: ComponentCreator('/docs/foundation/Patterns','986'),
   exact: true,
 },
 {

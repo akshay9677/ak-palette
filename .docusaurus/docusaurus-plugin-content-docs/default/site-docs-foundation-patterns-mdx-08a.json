@@ -1,0 +1,21 @@
+{
+  "unversionedId": "foundation/Patterns",
+  "id": "foundation/Patterns",
+  "isDocsHomePage": false,
+  "title": "Patterns",
+  "description": "import {",
+  "source": "@site/docs/foundation/Patterns.mdx",
+  "slug": "/foundation/Patterns",
+  "permalink": "/docs/foundation/Patterns",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/foundation/Patterns.mdx",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Typography",
+    "permalink": "/docs/foundation/Typography"
+  },
+  "next": {
+    "title": "Accordian",
+    "permalink": "/docs/component-docs/Accordian"
+  }
+}

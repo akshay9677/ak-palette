@@ -1,0 +1,168 @@
+import {
+  Button,
+  Text,
+  Input,
+  TextArea,
+  RadioGroup,
+  Popover,
+} from "../../src/index";
+import Container from "ui-box";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEllipsisH } from "@fortawesome/free-solid-svg-icons";
+
+Patterns are reusable structure composed from existing components. Reusable patterns helps organizations in enforcing
+design rules. A design pattern is like a template for your project. It uses certain conventions and you can expect a specific
+kind of behavior from it. Some of the common Patterns are explained below.
+
+### Empty State
+
+Empty states always appear in an empty space, in the context of the data that's missing. They can be used whenever a data displaying
+component or a page does not have the required data in it.
+
+<Container
+  display="flex"
+  flexDirection="column"
+  alignItems="center"
+  paddingX={10}
+  paddingBottom={30}
+  paddingTop={20}
+  marginY={10}
+  borderRadius={6}
+  border="solid 1px #ccc"
+  padding={20}
+>
+  <img
+    style={{ width: "190px" }}
+    src={useBaseUrl("img/empty.svg")}
+    alt="Empty"
+  />
+  <Text size="xlarge">No records found</Text>
+  <Text size="medium">Seems like we have beaten off track</Text>
+  <Container display="flex" marginTop="15px">
+    <Button appearance="secondary">Go Back</Button>
+    <span style={{ marginLeft: "10px" }}></span>
+    <Button>Create Record</Button>
+  </Container>
+</Container>
+
+<br />
+
+From the above design, you can see that the first row has a graphic or an image, representing some reason for the empty data, the second
+row has the primary text and the third row has a secondary text. The fourth row is optional, it can be used for navigation buttons. The entire
+empty state has to be center aligned.
+
+### Forms
+
+Forms are used to interact with the user to get the required data to use it in the aplication or to configure some options.
+Designing forms requires to decide on structure form labels, error feedbacks, titles, action buttons position, etc.
+
+<Container border="solid 1px #ccc" padding={20} borderRadius={6}>
+  <Text size="xlarge">New record</Text>
+  <Text fontSize="13px">
+    Create a record by entering values in the below fields
+  </Text>
+  <Container marginTop={20}>
+    <Text marginBottom={3} fontWeight={600} size="medium">
+      Name
+    </Text>
+    <Input placeholder="Enter your name" width="60%" />
+  </Container>
+  <Container marginTop={10}>
+    <Text marginBottom={3} fontWeight={600} size="medium">
+      Age
+    </Text>
+    <Input placeholder="Enter your age" width="60%" />
+  </Container>
+  <Container marginTop={10}>
+    <Text marginBottom={3} fontWeight={600} size="medium">
+      Description
+    </Text>
+    <TextArea width="80%" rows={4} placeholder="Enter description" />
+  </Container>
+  <Container marginTop={10}>
+    <Text marginBottom={2} fontWeight={600} size="medium">
+      Vaccinated
+    </Text>{" "}
+    <Text marginBottom={5} size="small">
+      Click yes if you are vaccinate or else click no
+    </Text>{" "}
+    <RadioGroup
+      value="Yes"
+      options={[
+        { label: "Yes", value: "Yes" },
+        { label: "No", value: "No" },
+      ]}
+    />
+  </Container>
+  <Container display="flex" marginTop={30}>
+    <Button appearance="secondary">Cancel</Button>
+    <span style={{ marginLeft: "10px" }}></span>
+    <Button>Save</Button>
+  </Container>
+</Container>
+
+<br />
+
+Form design pattern has three main sections, the heading portion which contains a primary header and an optional secondary text.
+The the actual form field section, this can have all the form fields like `input` , `textarea` , `select` , etc.
+
+In the form section, each form field part has a label and a optional description which comes
+as a single unit (i.e both the texts should not have gap more than 3px) and the other portion is the actual field item. The width of the bordered
+fields (select, input, textarea, timepicker and datepicker) should be always increasing
+or same and not decreasing. For example the name and age field are of same size and
+description field has larger size compared to name and age field.
+
+The final section is the action buttons section if there are any. As you can see the secondary button comes first and then the
+primary button comes.
+
+### Multiple Buttons
+
+<Container
+  border="solid 1px #ccc"
+  display="flex"
+  alignItems="center"
+  padding={20}
+  borderRadius={6}
+  justifyContent="center"
+>
+<Popover
+  content={
+    <div
+      style={{
+        width: "150px",
+        height: "100px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection:"column",
+        padding:"10px",
+        textAlign:'center'
+      }}
+    >
+    <Text>List of Other Buttons</Text>
+    </div>
+  }
+>
+  <Button appearance="secondary">
+    <FontAwesomeIcon icon={faEllipsisH} />
+  </Button>
+  </Popover>
+  <span style={{ marginLeft: "10px" }}></span>
+  <Button appearance="secondary">Secondary</Button>
+  <span style={{ marginLeft: "10px" }}></span>
+  <Button>Primary</Button>
+
+</Container>
+
+<br />
+
+In general, if there are two buttons, then the secondary button should come first and then the primary button.
+If there are more than two buttons then all the buttons except the primary & secondary buttons should be compresed in the form of a popover and
+then the secondary button and the primary button should be present.
+
+<br />
+
+:::tip Coming Soon
+More new patterns are coming soon. Ex: Table layout pattern, error message pattern, etc.
+:::

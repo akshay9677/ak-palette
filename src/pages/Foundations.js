@@ -14,6 +14,10 @@ const COMPONENT_HASH = [
     img: "components/typography.svg",
     name: "Typography",
   },
+  {
+    img: "components/patterns.svg",
+    name: "Patterns",
+  },
 ];
 
 const FoundationsList = () => {
@@ -24,14 +28,13 @@ const FoundationsList = () => {
     >
       <Container className={styles.componentList}>
         <Container className={styles.componentHeader}>
-          <Text fontWeight={600} paddingTop={20} size="xxlarge">
+          <Text fontWeight={700} paddingTop={20} size="xxxlarge">
             Foundations
           </Text>
           <Text paddingY={3} size="medium">
-            Components are the reusable building blocks of our design system.
-            Each component meets a specific interaction or UI need, and has been
-            specifically created to work together to create patterns and
-            intuitive user experiences.
+            Foundations are the visual elements needed to create engaging
+            end-to-end user experiences. This includes guidance on iconography,
+            typography, layout and structure.
           </Text>
         </Container>
         <Container

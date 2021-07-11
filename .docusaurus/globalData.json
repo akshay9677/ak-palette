@@ -126,6 +126,11 @@
               "sidebar": "someSidebar"
             },
             {
+              "id": "foundation/Patterns",
+              "path": "/docs/foundation/Patterns",
+              "sidebar": "someSidebar"
+            },
+            {
               "id": "foundation/Typography",
               "path": "/docs/foundation/Typography",
               "sidebar": "someSidebar"

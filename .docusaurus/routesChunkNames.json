@@ -37,7 +37,7 @@
     "component": "component---site-src-pages-foundations-js-44-a-6a8",
     "config": "config---5-e-9-4f3"
   },
-  "/docs-a5d": {
+  "/docs-f6c": {
     "component": "component---theme-doc-page-1-be-9be",
     "versionMetadata": "versionMetadata---docs-935-398"
   },
@@ -132,6 +132,10 @@
   "/docs/foundation/Color-cf1": {
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-foundation-color-2-fd-d74"
+  },
+  "/docs/foundation/Patterns-986": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-foundation-patterns-08-a-fa2"
   },
   "/docs/foundation/Typography-8a4": {
     "component": "component---theme-doc-item-178-a40",

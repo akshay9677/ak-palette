@@ -104,7 +104,7 @@ const ComponentList = () => {
     >
       <Container className={styles.componentList}>
         <Container className={styles.componentHeader}>
-          <Text fontWeight={600} paddingTop={20} size="xxlarge">
+          <Text fontWeight={700} paddingTop={20} size="xxxlarge">
             Components
           </Text>
           <Text paddingY={3} size="medium">
