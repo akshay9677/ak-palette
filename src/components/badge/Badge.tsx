@@ -2,6 +2,7 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import Container from "ui-box";
 
 import "./badge.scss";
 
@@ -54,14 +55,14 @@ const Badge: React.FC<BadgeProps> = ({
       : badgeColorHash["default"];
   };
   return (
-    <span {...rest} style={_getBadgeColors()} className="pal-badge">
+    <Container {...rest} style={_getBadgeColors()} className="pal-badge">
       {label}
       {showClose && (
         <span className="pal-badge-close" onClick={onClose}>
           <FontAwesomeIcon icon={faTimes} />
         </span>
       )}
-    </span>
+    </Container>
   );
 };
 

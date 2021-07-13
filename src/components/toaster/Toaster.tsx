@@ -27,6 +27,7 @@ const HORIZONTAL_HASH: HorizontalType = {
 
 type ToasterProps = {
   onShow?: (toggleShow: any) => void;
+  [prop: string]: any;
 };
 
 type ToastDetailsType = {
@@ -39,7 +40,7 @@ type ToastDetailsType = {
   type?: "success" | "info" | "warning" | "danger" | "default";
 };
 
-const Toaster: React.FC<ToasterProps> = ({ onShow }): JSX.Element => {
+const Toaster: React.FC<ToasterProps> = ({ onShow, ...rest }): JSX.Element => {
   const [showToast, setShowToast] = useState(false);
   const [toastDetails, setToastDetails] = useState<ToastDetailsType>({
     duration: 5,
@@ -93,6 +94,7 @@ const Toaster: React.FC<ToasterProps> = ({ onShow }): JSX.Element => {
         <div className="pal-toast-container" style={_getPositionHash()}>
           <div style={{ padding: "10px" }}>
             <Alert
+              {...rest}
               label={toastDetails.description}
               title={toastDetails.title}
               type={toastDetails.type || "info"}

@@ -7,6 +7,7 @@ type TabsProps = {
   children?: ReactElement[];
   onTabChange?: (index: number) => void;
   isVertical?: Boolean;
+  [prop: string]: any;
 };
 
 const Tab = (props: TabsProps): JSX.Element => {

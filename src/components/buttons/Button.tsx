@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "ui-box";
 import Spinner from "../spinner/Spinner";
 import "./button.scss";
 
@@ -9,6 +10,7 @@ type ButtonProps = {
   disabled?: boolean;
   type?: "success" | "info" | "warning" | "danger" | "default";
   loading?: boolean;
+  [prop: string]: any;
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -43,7 +45,7 @@ const Button: React.FC<ButtonProps> = ({
   };
 
   return (
-    <div className="pal-button">
+    <Container {...rest} className="pal-button">
       <button
         onClick={() => {
           if (!disabled && onClick) onClick();
@@ -52,7 +54,6 @@ const Button: React.FC<ButtonProps> = ({
     ${appearance ? appearance : "primary"}
      ${disabled && "disabled"}`}
         style={_getButtonCss()}
-        {...rest}
       >
         {loading && (
           <>
@@ -69,7 +70,7 @@ const Button: React.FC<ButtonProps> = ({
         )}
         {children}
       </button>
-    </div>
+    </Container>
   );
 };
 

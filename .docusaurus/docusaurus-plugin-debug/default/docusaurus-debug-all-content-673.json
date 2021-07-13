@@ -737,6 +737,11 @@
         "type": "jsx",
         "permalink": "/",
         "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "jsx",
+        "permalink": "/components/EmptyState",
+        "source": "@site/src/pages/components/EmptyState.jsx"
       }
     ]
   },

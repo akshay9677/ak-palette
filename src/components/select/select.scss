@@ -1,5 +1,10 @@
 @import "../../assets/main.scss";
 .pal-select {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
   display: inline-flex;
   flex-direction: column;
   .pal-select-input-field {
@@ -18,7 +23,7 @@
     }
   }
   .pal-select-container {
-    border: solid 1px #d8dae5;
+    border: solid 1.8px #d8dae5;
     border-radius: $pal-border-radius;
     padding: 5px;
     display: flex;
@@ -95,12 +100,11 @@
     border-radius: $pal-border-radius;
     font-family: $pal-font-family;
     background-color: #ffffff;
-    padding: 5px;
+    padding: 5px 0px;
     animation: pal-popver 0.1s 1;
     box-shadow: RGB(18 52 77 / 16%) 0px 2px 18px 0px,
       RGB(18 52 77 / 6%) 0px 2px 4px 0px;
     font-size: 14px;
-
     max-height: 200px;
     overflow: scroll;
   }
@@ -109,13 +113,14 @@
     padding: 10px;
     cursor: pointer;
     font-weight: 500;
-    border-radius: $pal-border-radius;
     font-size: 11px;
     display: flex;
     margin: 5px 0px;
     justify-content: space-between;
+    border-left: solid 2px #fff;
     &:hover {
       background-color: #f5f4f4;
+      border-left: solid 2px $pal-primary;
     }
   }
   .pal-select-dropdown-no-item {
@@ -134,6 +139,7 @@
   .pal-selected-item {
     background-color: $pal-blue-2 !important;
     color: $pal-primary;
+    border-left: solid 2px $pal-primary;
   }
 
   @keyframes pal-popver {

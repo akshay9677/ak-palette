@@ -5,6 +5,7 @@ import Spinner from "../spinner/Spinner";
 import Text from "../typography/Text";
 import Button from "../buttons/Button";
 import { _getAlertTypeStyle, _getIcon } from "../../utils/intent";
+import Container from "ui-box";
 
 import "./alert.scss";
 
@@ -14,6 +15,7 @@ type AlertProps = {
   type?: "success" | "info" | "warning" | "danger" | "default";
   onClose?: () => void;
   showLoading?: boolean;
+  [prop: string]: any;
 };
 
 const Alert: React.FC<AlertProps> = ({
@@ -22,9 +24,11 @@ const Alert: React.FC<AlertProps> = ({
   title,
   onClose,
   showLoading,
+  ...rest
 }): JSX.Element => {
   return (
-    <div
+    <Container
+      {...rest}
       className="pal-alert-container"
       style={{ ..._getAlertTypeStyle(type), color: "#425a70" }}
     >
@@ -57,7 +61,7 @@ const Alert: React.FC<AlertProps> = ({
           )}
         </div>
       )}
-    </div>
+    </Container>
   );
 };
 

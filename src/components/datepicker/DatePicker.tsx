@@ -16,6 +16,7 @@ type DatePickerProps = {
   value?: any;
   onChange?: (date: any) => void;
   isDoc?: boolean;
+  [prop: string]: any;
 };
 
 const DatePickers: React.FC<DatePickerProps> = ({
@@ -28,12 +29,14 @@ const DatePickers: React.FC<DatePickerProps> = ({
   value,
   onChange,
   isDoc,
+  ...rest
 }) => {
   const [startDate, setStartDate] = useState(value ? value : null);
   const InputDate = forwardRef((values: any, ref: any) => {
     let { value, onClick } = values;
     return (
       <Input
+        {...rest}
         ref={ref}
         value={value}
         onClick={onClick}

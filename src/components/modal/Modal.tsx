@@ -25,6 +25,7 @@ type ModalProps = {
   };
   hideFooter?: boolean;
   type?: "success" | "info" | "warning" | "danger" | "default";
+  [prop: string]: any;
 };
 
 const _sizeHash = {
@@ -44,6 +45,7 @@ const Modal: React.FC<ModalProps> = ({
   secondaryButton,
   hideFooter,
   type,
+  ...rest
 }): JSX.Element => {
   const _getWidth = (): string => {
     let currSize = size ? size : "medium";
@@ -66,9 +68,10 @@ const Modal: React.FC<ModalProps> = ({
           className="pal-modal"
           onClick={_handleOutsideClick}
         >
-          <div
-            className={`pal-modal-container ${!open && "pal-modal-exit"}`}
+          <Container
+            {...rest}
             style={{ width: _getWidth() }}
+            className={`pal-modal-container ${!open && "pal-modal-exit"}`}
           >
             <div className="pal-modal-header">
               <Container
@@ -113,7 +116,7 @@ const Modal: React.FC<ModalProps> = ({
                 </div>
               </div>
             )}
-          </div>
+          </Container>
         </div>
       )}
     </>

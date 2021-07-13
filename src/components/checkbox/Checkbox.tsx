@@ -7,6 +7,7 @@ type CheckBoxProps = {
   disabled?: boolean;
   label?: string;
   checked: boolean;
+  [prop: string]: any;
 };
 
 const CheckBox: React.FC<CheckBoxProps> = ({
@@ -23,10 +24,10 @@ const CheckBox: React.FC<CheckBoxProps> = ({
   };
   return (
     <label
+      {...rest}
       className={`pal-checkbox-container ${
         disabled ? "pal-checkbox-disabled" : ""
       }`}
-      {...rest}
     >
       <input
         type="checkbox"

@@ -7,21 +7,25 @@ import {
 import Button from "../buttons/Button";
 import Text from "../typography/Text";
 import "./pagination.scss";
+import Container from "ui-box";
 
 type PaginationProps = {
   page: number;
   perPage?: number;
   totalPages: number;
   onPageChange: (page: number) => void;
+  [prop: string]: any;
 };
 
 const Pagination: React.FC<PaginationProps> = ({
   page,
   totalPages,
   onPageChange,
+  ...rest
 }): JSX.Element => {
   return (
-    <div
+    <Container
+      {...rest}
       style={{ display: "flex", alignItems: "center" }}
       className="pal-pagination-container"
     >
@@ -42,7 +46,7 @@ const Pagination: React.FC<PaginationProps> = ({
       </Button>
       <Text style={{ padding: "0px 5px" }}>of</Text>
       <Text style={{ padding: "0px 5px" }}>{totalPages}</Text>
-    </div>
+    </Container>
   );
 };
 

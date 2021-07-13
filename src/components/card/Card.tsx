@@ -10,6 +10,7 @@ type CardProps = {
   width?: number;
   footer?: React.ReactNode;
   src?: string;
+  [prop: string]: any;
 };
 
 const isObjectFitSupported =
@@ -22,9 +23,10 @@ const Card: React.FC<CardProps> = ({
   width,
   footer,
   src,
+  ...rest
 }): JSX.Element => {
   return (
-    <Container width={width ? width : 300} className="pal-card">
+    <Container {...rest} width={width ? width : 300} className="pal-card">
       {src && (
         <Container
           is="img"

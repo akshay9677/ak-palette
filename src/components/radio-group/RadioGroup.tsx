@@ -14,6 +14,7 @@ type RadioGroupProps = {
   disabled?: boolean;
   value?: any;
   validationText?: string;
+  [prop: string]: any;
 };
 
 const RadioGroup: React.FC<RadioGroupProps> = ({
@@ -23,6 +24,7 @@ const RadioGroup: React.FC<RadioGroupProps> = ({
   value,
   disabled,
   validationText,
+  ...rest
 }): JSX.Element => {
   const [selectedItem, setSelectedValue] = useState(value);
 
@@ -32,7 +34,7 @@ const RadioGroup: React.FC<RadioGroupProps> = ({
   };
 
   return (
-    <div className="pal-radio-group-container">
+    <Container {...rest} className="pal-radio-group-container">
       <Container
         display="inline-flex"
         flexDirection={isHorizontal ? "row" : "column"}
@@ -64,7 +66,7 @@ const RadioGroup: React.FC<RadioGroupProps> = ({
           {validationText}
         </span>
       )}
-    </div>
+    </Container>
   );
 };
 

@@ -19,6 +19,7 @@ type TimePicker = {
   clearable?: boolean;
   is12Hour?: boolean;
   isDoc?: boolean;
+  [prop: string]: any;
 };
 
 const TimePicker: React.FC<TimePicker> = ({
@@ -34,6 +35,7 @@ const TimePicker: React.FC<TimePicker> = ({
   clearable,
   is12Hour,
   isDoc,
+  ...rest
 }): JSX.Element => {
   const [options, setOptions] = useState<any>();
   useEffect(() => {
@@ -59,6 +61,7 @@ const TimePicker: React.FC<TimePicker> = ({
   }, []);
   return (
     <Select
+      {...rest}
       placeholder={placeholder}
       width={width ? width : 150}
       height={height}

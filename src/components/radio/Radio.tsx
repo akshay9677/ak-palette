@@ -9,6 +9,7 @@ type RadioProps = {
   checked?: boolean;
   onChange?: (e: any) => void;
   disabled?: boolean;
+  [prop: string]: any;
 };
 
 const Radio: React.FC<RadioProps> = ({
@@ -16,6 +17,7 @@ const Radio: React.FC<RadioProps> = ({
   checked,
   onChange,
   disabled,
+  ...rest
 }): JSX.Element => {
   const [isChecked, setChecked] = useState(checked ? checked : false);
 
@@ -30,6 +32,7 @@ const Radio: React.FC<RadioProps> = ({
 
   return (
     <Container
+      {...rest}
       marginY={8}
       className={`pal-radio-container ${disabled && "pal-radio-disabled"}`}
       onClick={_handleCheckClick}

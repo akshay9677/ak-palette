@@ -25,6 +25,7 @@ type PopoverProps = {
   onOpen?: () => void;
   onClose?: () => void;
   togglePopup?: boolean;
+  [prop: string]: any;
 };
 
 const PLACEMENT_HASH = [
@@ -51,6 +52,7 @@ const Popover: React.FC<PopoverProps> = ({
   onClose,
   onOpen,
   togglePopup,
+  ...rest
 }): JSX.Element => {
   const [showPopover, setShowPopover] = useState(
     togglePopup ? togglePopup : false
@@ -112,7 +114,8 @@ const Popover: React.FC<PopoverProps> = ({
     }
   };
   return (
-    <div
+    <Container
+      {...rest}
       className="pal-popover"
       onClick={_onClickOpen}
       onMouseEnter={_onHoverPopover}
@@ -137,7 +140,7 @@ const Popover: React.FC<PopoverProps> = ({
           ></div>
         )}
       </div>
-    </div>
+    </Container>
   );
 };
 

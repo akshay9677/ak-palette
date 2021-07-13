@@ -7,6 +7,7 @@ type AvatarProps = {
   filled?: boolean;
   size?: number;
   src?: string;
+  [prop: string]: any;
 };
 
 const isObjectFitSupported =
@@ -36,6 +37,7 @@ const Avatar: React.FC<AvatarProps> = ({
   filled,
   size,
   src,
+  ...rest
 }): JSX.Element => {
   const _getLabel = (): string => {
     if (label) {
@@ -74,6 +76,7 @@ const Avatar: React.FC<AvatarProps> = ({
 
   return (
     <Container
+      {...rest}
       width={size ? size : 40}
       height={size ? size : 40}
       overflow="hidden"

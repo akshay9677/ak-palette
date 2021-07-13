@@ -45,6 +45,7 @@ const Input: React.FC<InputProps> = ({
           <Container
             maxWidth={40}
             paddingX="2px"
+            marginRight={8}
             display="flex"
             alignItems="center"
           >
@@ -52,7 +53,6 @@ const Input: React.FC<InputProps> = ({
           </Container>
         )}
         <input
-          className="pal-input-field"
           placeholder={placeholder}
           disabled={disabled}
           style={{
@@ -61,6 +61,7 @@ const Input: React.FC<InputProps> = ({
             ),
           }}
           {...rest}
+          className="pal-input-field"
         />
 
         {suffix && (
@@ -69,6 +70,7 @@ const Input: React.FC<InputProps> = ({
             paddingX="2px"
             display="flex"
             alignItems="center"
+            marginLeft={8}
           >
             {suffix}
           </Container>

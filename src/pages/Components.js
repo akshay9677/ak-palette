@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "ui-box";
 import ComponentCard from "./ComponentCard";
-import { Text } from "../index";
+import { Text, Input } from "../index";
 import styles from "./styles.module.css";
 import Layout from "@theme/Layout";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { isEmpty } from "../utils/validations";
+import EmptyState from "./components/EmptyState";
 
 const COMPONENT_HASH = [
   {
@@ -97,6 +101,8 @@ const COMPONENT_HASH = [
 ];
 
 const ComponentList = () => {
+  const [componentsList, setComponentsList] = useState(COMPONENT_HASH);
+  const [searchText, setSearchText] = useState("");
   return (
     <Layout
       title={`Palette UI Kit`}
@@ -113,6 +119,33 @@ const ComponentList = () => {
             specifically created to work together to create patterns and
             intuitive user experiences.
           </Text>
+          <Container marginTop={20} width="100%">
+            <Input
+              value={searchText}
+              onChange={(e) => {
+                let value = e.target.value;
+                setSearchText(value);
+                if (value === "") {
+                  setComponentsList(COMPONENT_HASH);
+                } else {
+                  setComponentsList(
+                    COMPONENT_HASH.filter((comp) => {
+                      let name = comp.name;
+                      name = name.toLowerCase();
+                      return name.startsWith(value.toLowerCase());
+                    })
+                  );
+                }
+              }}
+              prefix={
+                <div style={{ color: "#888" }}>
+                  <FontAwesomeIcon icon={faSearch} />
+                </div>
+              }
+              placeholder="Search components by name"
+              width="100%"
+            />
+          </Container>
         </Container>
         <Container
           display="flex"
@@ -120,16 +153,24 @@ const ComponentList = () => {
           padding={15}
           flexWrap="wrap"
         >
-          {COMPONENT_HASH.map((component, index) => {
-            return (
-              <ComponentCard
-                key={index}
-                img={component.img}
-                summary={component.summary}
-                name={component.name}
-              />
-            );
-          })}
+          {!isEmpty(componentsList) ? (
+            componentsList.map((component, index) => {
+              return (
+                <ComponentCard
+                  key={index}
+                  img={component.img}
+                  summary={component.summary}
+                  name={component.name}
+                  className="helloclass"
+                />
+              );
+            })
+          ) : (
+            <EmptyState
+              primaryText="No components were found"
+              secondaryText="Seems like we are beaten off track, clear the search text."
+            />
+          )}
         </Container>
       </Container>
     </Layout>

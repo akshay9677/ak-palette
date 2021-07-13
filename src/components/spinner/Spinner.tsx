@@ -5,6 +5,7 @@ import "./spinner.scss";
 interface SpinnerProps {
   size?: "small" | "medium" | "large" | "default";
   color?: string;
+  [prop: string]: any;
 }
 
 const sizeHash = {
@@ -25,6 +26,7 @@ const Spinner: React.FC<SpinnerProps> = ({
   };
   return (
     <svg
+      {...rest}
       className={`spinner`}
       style={{
         width: `${getDimensions()}px`,

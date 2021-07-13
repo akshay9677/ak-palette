@@ -53,6 +53,11 @@ export default [
   exact: true,
 },
 {
+  path: '/components/EmptyState',
+  component: ComponentCreator('/components/EmptyState','540'),
+  exact: true,
+},
+{
   path: '/Foundations',
   component: ComponentCreator('/Foundations','790'),
   exact: true,

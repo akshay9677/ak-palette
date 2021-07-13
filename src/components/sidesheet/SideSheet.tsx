@@ -13,6 +13,7 @@ type SideSheetProps = {
   position?: "right" | "left";
   showClose?: boolean;
   header?: string;
+  [prop: string]: any;
 };
 
 const SideSheet: React.FC<SideSheetProps> = ({
@@ -23,6 +24,7 @@ const SideSheet: React.FC<SideSheetProps> = ({
   position,
   showClose,
   header,
+  ...rest
 }): JSX.Element => {
   const _handleOutsideClick = (e: any): void => {
     let clickedDiv = e.target.getAttribute("id");
@@ -43,7 +45,8 @@ const SideSheet: React.FC<SideSheetProps> = ({
           onClick={_handleOutsideClick}
           id="pal-side-sheet-main"
         >
-          <div
+          <Container
+            {...rest}
             id="pal-side-sheet-child"
             className={
               _isRightPosition() ? "modal-entry-right" : "modal-entry-left"
@@ -76,7 +79,7 @@ const SideSheet: React.FC<SideSheetProps> = ({
                 <FontAwesomeIcon icon={faTimes} />
               </div>
             )}
-          </div>
+          </Container>
         </div>
       )}
     </>
